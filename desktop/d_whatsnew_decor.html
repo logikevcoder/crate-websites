@@ -1,0 +1,1265 @@
+<style>
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero {
+    position: relative;
+    margin-bottom: 5%;
+  }
+
+  .hero__text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translatey(-50%)
+  }
+
+  /*=======================================================
+Texture/Details & Metallics
+=======================================================*/
+
+  .tdm__container {
+    position: relative;
+    margin: 0 auto 5%;
+    width: 90%;
+    display: flex;
+  }
+
+  .tdm__img-container {
+    position: relative;
+  }
+
+  .tdm__img {
+    width: 45%;
+    position: relative;
+    display: inline-block;
+  }
+
+  .tdm__img:hover {
+    z-index: 20;
+  }
+
+  .tdm__img--2 {
+    z-index: 5;
+    margin: 15% 0 0 -12%;
+  }
+
+  .tdm__img--3 {
+    width: 45%;
+    position: absolute;
+    left: 69%;
+    top: 38%
+  }
+
+  .tdm__header {
+    position: absolute;
+    left: 47%;
+  }
+
+  .tdm__text {
+    text-align: right;
+    margin-right: 32%;
+  }
+
+  /*=======================================================
+Mixed Materials
+=======================================================*/
+
+  .mixedMaterials__container {
+    position: relative;
+    margin: 0 auto 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mixedMaterials__img-container {
+    position: relative;
+  }
+
+  .mixedMaterials__img {
+    width: 45%;
+    position: relative;
+    display: inline-block;
+  }
+
+  .mixedMaterials__img:hover {
+    z-index: 20;
+  }
+
+  .mixedMaterials__img--2 {
+    z-index: 5;
+    margin-right: -12%;
+  }
+
+  .mixedMaterials__img--1 {
+    width: 20%;
+    margin: 20% 1% 0 5%;
+  }
+
+  .mixedMaterials__text {
+    text-align: right;
+    margin-right: 32%;
+  }
+
+  /*=======================================================
+Trends
+=======================================================*/
+
+  .trends {
+    display: inline-block;
+    position: relative;
+  }
+
+  .trends__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trends__block {
+    display: inline-block;
+    position: relative;
+    vertical-align: center;
+  }
+
+  .trends__header {
+    width: 15%;
+    padding: 0 2% 0 1%;
+    text-align: right;
+  }
+
+  .trends__text {
+    width: 100%;
+    margin-top: 25%;
+  }
+
+  .trends__img-container {
+    width: 100%;
+  }
+
+  .trends__img {
+    position: relative;
+    width: 48.8%;
+    display: inline-block;
+  }
+
+  /*=======================================================
+Gallery
+=======================================================*/
+
+  .gallery {
+    width: 38%;
+    display: inline-block;
+  }
+
+  .gallery__item {
+    width: 32.5%;
+    display: inline-block;
+    position: relative;
+  }
+
+  .gallery__item img {
+    width: 100%;
+  }
+
+  /*=======================================================
+frames
+=======================================================*/
+
+  .frames__container {
+    position: relative;
+  }
+
+  .frames__header {
+    position: absolute;
+    left: 57%;
+    top: 25%;
+    color: #000;
+  }
+
+  .frames__body {
+    position: absolute;
+    top: 74%;
+    right: 5%;
+    color: #000;
+    text-align: right
+  }
+
+  /*=======================================================
+vases & poufs
+=======================================================*/
+
+  .vasesPoufs__container {
+    display: flex;
+    margin: 0 1.5%;
+    position: relative;
+  }
+
+  .vasesPoufs__header {
+    text-align: center;
+    margin: 0 auto 2%;
+  }
+
+  .vasesPoufs__text {
+    text-align: right;
+    margin-right: -4%;
+    margin-top: 19%;
+  }
+
+  .vasesPoufs__text--2 {
+    text-align: left;
+    margin-left: 5%
+  }
+
+  .vasesPoufs__img--2 {
+    margin: 15% 0 0 10%;
+  }
+
+  /*=======================================================
+Shop All Banner
+=======================================================*/
+.shopAll-banner {
+  background-color: #222;
+  height:176px;
+  width:100%;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+
+  /*=======================================================
+Overlay
+=======================================================*/
+
+  .overlay {
+    background: rgba(255, 255, 255, 0.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    transition: .4s ease;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .overlay div {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .overlay a {
+    color: #222;
+  }
+
+  .textPos {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
+Slick Styling
+=======================================================*/
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #222 !important;
+  }
+
+  .slick-prev.slick-disabled::before,
+  .slick-next.slick-disabled::before {
+    opacity: 0;
+  }
+
+  .slick-next.slick-disabled:before,
+  .slick-prev.slick-disabled:before {
+    opacity: 0 !important;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 30px !important;
+    opacity: 1 !important;
+  }
+
+  .slick-next {
+    right: -.1% !important;
+  }
+
+  .slick-prev {
+    left: -1% !important;
+  }
+
+  .slick-arrow {
+    z-index: 3;
+    top: 50% !important;
+  }
+
+  /*=======================================================
+Carousel Styling
+=======================================================*/
+
+  .carousel-wrapper {
+    width: 70%;
+    margin: 0 auto 10%;
+  }
+
+  .carousel-wrapper__right {
+    width: 70%;
+    margin: 0 1.5% 10% auto;
+  }
+
+  .product-carousel__header__right {
+    margin-left: 45.9%;
+  }
+
+  .carousel-wrapper__left {
+    width: 70%;
+    margin: 0 auto 10% 1.5%;
+  }
+
+  .product-carousel__header__left {
+    margin-left: 2%;
+  }
+
+  .carousel-wrapper::before {
+    content: none;
+  }
+
+  .carousel-wrapper::after {
+    content: none;
+  }
+
+  .product-carousel__header {
+    margin-left: 15%;
+  }
+
+  .carousel__container {
+    width: 100%;
+    padding-right: 1%;
+  }
+
+  .carousel__block {
+    width: 24%;
+    margin: 0 !important;
+    position: relative;
+    padding-right: .2%
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  .gallery .textPos :last-child {
+    margin-top: 4% !important;
+  }
+
+  ;
+  /*=======================================================
+General Styling
+=======================================================*/
+
+  .zero-margin {
+    margin: 0 !important;
+  }
+
+  .margin-tb {
+    margin: 2% 0;
+  }
+
+  .borderTop-right {
+    width: 50px;
+    border-top: 6px solid #000;
+    margin: 5% 0 5% auto;
+  }
+
+  .borderTop-right--2 {
+    margin: 0 0 2% auto !important;
+  }
+
+  .borderTop-left {
+    width: 50px;
+    border-top: 6px solid #000;
+    margin: 5% auto 3% 0;
+  }
+
+  .borderTop {
+    border-top: 5px solid black;
+    width: 60px;
+  }
+
+  .mBottom8 {
+    margin-bottom: 8%
+  }
+
+  .mBottom4 {
+    margin-bottom: 4%;
+  }
+
+  .mBottom2 {
+    margin-bottom: 2%;
+  }
+
+  /*=======================================================
+Breakouts and Fixes
+=======================================================*/
+
+  .fullDiv {
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fullDiv a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  .marginDiv {
+    width: 95%;
+    min-width: 819px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+    margin: 2.5% auto;
+  }
+
+  .marginDiv a {
+    color: #222;
+  }
+
+  .content-layout {
+    max-width: 100% !important;
+  }
+
+  .content {
+    width: 100% !important;
+  }
+
+  .divMargins {
+    margin-bottom: 2% !important;
+  }
+
+  .fullImg {
+    width: 100%;
+    max-width: 1680px;
+  }
+
+  .cmsArrowR {
+    border-width: 0.4vw;
+  }
+
+  .ctaMargin {
+    margin: 1vw 0;
+  }
+
+  .subMargin {
+    margin: 1vw 0 0;
+  }
+
+  #topNavWrap {
+    background: transparent;
+  }
+
+  #topNavContainer {
+    border: none;
+  }
+
+  #footerContainer {
+    float: none !important;
+    margin: -1px auto 30px !important;
+  }
+
+  /*=======================================================
+Font Sizes
+=======================================================*/
+
+  .bf-eyebrow {
+    font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+    text-transform: uppercase;
+  }
+
+  .bf-headline {
+    font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .bf-copy {
+    font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-XL {
+    font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
+    line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
+    letter-spacing: -0.15vw;
+  }
+
+  .headline-large {
+    font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-medium {
+    font-size: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-small {
+    font-size: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.05vw;
+  }
+
+  .copy-sub {
+    font-size: calc(16px + (20 - 16) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(14px + (20 - 16) * (100vw - 1024px) / (1440 - 1024));
+    margin: 0.8vw 0 !important;
+  }
+
+  .copy-gr {
+    font-size: calc(14px + (16 - 14) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(13px + (16 - 14) * (100vw - 1024px) / (1440 - 1024));
+    margin: 8px 0 !important;
+  }
+
+  .copy-cta {
+    font-size: calc(12px + (14 - 12) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin-top: calc(10px + (12 - 12) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
+  }
+</style>
+
+<section class="fullDiv" style="margin: 0 auto;">
+  <!--=============== HERO ===============-->
+  <section class="hero fullDiv">
+    <a href="/all-new-decor">
+      <div class="hero__img">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_hero_201801?wid=1400&qlt=75" alt="">
+        <div class="hero__text">
+          <p class="crate-helvetica-light headline-large" style="margin-left:-29%;margin-bottom:0;">
+            What&rsquo;s New: Decor
+          </p>
+          <p class="crate-utopia-italic copy-sub">
+            Think special details and terrariums that grow faux.
+          </p>
+          <p class="crate-helvetica-bold copy-cta">
+            Shop all new Decor
+          </p>
+        </div>
+        <!-- hero__text -->
+      </div>
+      <!-- hero__img -->
+    </a>
+  </section>
+
+  <!--=============== Texture/Details & Metalics ===============-->
+  <section class="tdm fullDiv">
+    <div class="tdm__container">
+      <div class="tdm__header">
+        <a href="/special-features/texture-design-trend/1">
+          <p class="crate-helvetica-light copy-sub">
+            FEELS FRESH
+            <br>Texture and pattern make the difference.
+          </p>
+          <p class="crate-helvetica-bold copy-sub margin-tb">
+            Knits in the now pair up with mixed
+            <br>metals to give the room a point of view.
+          </p>
+          <p class="crate-helvetica-bold copy-cta">
+            SHOP THE LOOK
+          </p>
+        </a>
+      </div>
+      <!-- tdm header -->
+      <div class="tdm__img">
+        <a href="/special-features/texture-design-trend/1" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_pillwtext_201801?wid=606&qlt=75"
+            alt="">
+          <div class="overlay">
+            <div class="textPos">
+
+              <p class="crate-utopia-italic copy-sub">1960s-inspired weaves, fresh for today.</p>
+              <p class="crate-helvetica-bold copy-cta">shop now</p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+        <div class="tdm__text">
+          <div class="borderTop-right" style="margin-top:7%;"></div>
+          <a href="/special-features/texture-design-trend/1">
+            <p class="crate-helvetica-bold copy-gr zero-margin">
+              Warm the Room
+            </p>
+            <p class="crate-utopia-italic copy-gr zero-margin">
+              An element of craftsmanship
+              <br>tells a story in your space.
+            </p>
+            <p class="crate-helvetica-bold copy-cta">
+              Shop Textured Decor
+            </p>
+          </a>
+        </div>
+      </div>
+      <!-- tdm img -->
+
+      <!-- tdm text -->
+      <div class="tdm__img tdm__img--2">
+        <a href="/special-features/texture-design-trend/1" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_vasestext_201801?wid=284" alt="">
+          <div class="overlay">
+            <div class="textPos">
+
+              <p class="crate-utopia-italic copy-sub">Glazed ceramics make an impression.</p>
+              <p class="crate-helvetica-bold copy-cta">shop now</p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- tdm img -->
+
+      <div class="tdm__img--3">
+        <a href="/special-features/texture-design-trend/1">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_texture_201801?wid=604&qlt=75" alt="">
+        </a>
+      </div>
+      <!-- tdm img -->
+    </div>
+    <!-- tdm container -->
+  </section>
+
+  <!--=============== Mixed Materials ===============-->
+  <section class="mixedMaterials fullDiv">
+    <div class="mixedMaterials__container">
+
+      <div class="mixedMaterials__img--1">
+        <a href="/special-features/copper-home-decor/1">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_mixedMtls_201801" alt="">
+        </a>
+      </div>
+      <!-- mixedMaterials img -->
+
+      <div class="mixedMaterials__img mixedMaterials__img--2">
+        <div class="mixedMaterials__text">
+          <div class="borderTop-right" style="margin-top:7%;"></div>
+          <a href="/special-features/copper-home-decor/1" style="position:relative;display:block;">
+            <p class="crate-helvetica-bold copy-gr zero-margin">
+              Metal in the Mix
+            </p>
+            <p class="crate-utopia-italic copy-gr zero-margin">
+              Pair different finishes to elevate
+              <br>the room...and have a little fun.
+            </p>
+            <p class="crate-helvetica-bold copy-cta">
+              Shop Metal Decor
+            </p>
+          </a>
+        </div>
+        <a href="/special-features/copper-home-decor/1">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_mixedMtlsVse_201801" alt="">
+          <div class="overlay">
+            <div class="textPos">
+
+              <p class="crate-utopia-italic copy-sub">Metallic finishes add subtle glam.</p>
+              <p class="crate-helvetica-bold copy-cta">shop now</p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- mixedMaterials img -->
+
+      <div class="mixedMaterials__img mixedMaterials__img--3">
+        <a href="/special-features/copper-home-decor/1" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_mixedMtlsfrm_201801" alt="">
+          <div class="overlay">
+            <div class="textPos">
+
+              <p class="crate-utopia-italic copy-sub">Candlelight gets an architectural glow.</p>
+              <p class="crate-helvetica-bold copy-cta">shop now</p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- mixedMaterials img -->
+
+    </div>
+    <!-- mixedMaterials container -->
+  </section>
+
+
+  <!--=============== CAROUSEL ===============-->
+  <section class="product-carousel fullDiv mBottom8">
+    <div class="product-carousel__container">
+      <div class="product-carousel__header">
+        <p class="crate-helvetica-bold copy-sub" style="margin-bottom:1%;">
+          Shop the Trends
+        </p>
+      </div>
+      <!-- carousel header -->
+
+      <div class="carousel-wrapper responsive crate-helvetica-roman">
+        <div class="carousel__block">
+          <a id="grabber0Link" href="">
+            <img id="grabber0Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber0Name" class="crate-utopia-italic copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- carousel block -->
+
+        <div class="carousel__block">
+          <a id="grabber1Link" href="">
+            <img id="grabber1Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber1Name" class="crate-utopia-italic copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- carousel block -->
+
+        <div class="carousel__block">
+          <a id="grabber2Link" href="">
+            <img id="grabber2Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber2Name" class="crate-utopia-italic copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- carousel block -->
+
+        <div class="carousel__block">
+          <a id="grabber3Link" href="">
+            <img id="grabber3Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber3Name" class="crate-utopia-italic copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- carousel block -->
+
+        <div class="carousel__block">
+          <a id="grabber4Link" href="">
+            <img id="grabber4Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber4Name" class="crate-utopia-italic copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- carousel block -->
+
+        <div class="carousel__block">
+          <a id="grabber5Link" href="">
+            <img id="grabber5Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber5Name" class="crate-utopia-italic copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- carousel block -->
+
+        <div class="carousel__block">
+          <a id="grabber6Link" href="">
+            <img id="grabber6Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber6Name" class="crate-utopia-italic copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- carousel block -->
+
+        <div class="carousel__block">
+          <a id="grabber7Link" href="">
+            <img id="grabber7Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber7Name" class="crate-utopia-italic copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- carousel block -->
+      </div>
+      <!-- carousel responsive -->
+    </div>
+    <!-- carousel container -->
+  </section>
+  <!-- metal furniture carousel -->
+
+  <!--=============== Terarriums & Pillows ===============-->
+  <section class="trends fullDiv mBottom8">
+    <div class="trends__container">
+      <div class="trends__header">
+        <a href="/decorating-and-accessories/terrariums-and-supplies/1">
+          <div class="trends__header__text">
+            <p class="crate-helvetica-light copy-sub">
+              TREND REPORT
+            </p>
+            <p class="crate-helvetica-bold headline-small">
+              Small updates that make a big impact.
+            </p>
+          </div>
+          <div class="trends__header__text-body">
+            <div class="borderTop-right" style="margin:22% 0 5% auto;"></div>
+            <p class="crate-helvetica-bold copy-gr zero-margin">
+              How Does Your Terrarium Faux?
+            </p>
+            <p class="crate-helvetica-light copy-gr">
+              With lifelike plants and no care at all.
+            </p>
+            <p class="crate-helvetica-bold copy-cta">
+              Shop Faux Terrariums
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- trends-header -->
+      <div class="trends__img-container mBottom2">
+        <div class="trends__img" style="margin-right:.01%;">
+          <a href="/decorating-and-accessories/terrariums-and-supplies/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_terranium_201801?wid=674&qlt=75"
+              alt="baby clothes and items">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-helvetica-bold copy-sub">
+                  How Does Your Terrarium Faux?
+                </p>
+                <p class="crate-utopia-italic grabberProductPrice copy-sub">
+                  With lifelike plants and no care at all.
+                </p>
+                <p class="crate-helvetica-bold copy-cta">
+                  Shop Faux Terrariums
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- trends-img -->
+
+        <div class="trends__img">
+          <a href="https://www.crateandbarrel.com/decorating-and-accessories/decorative-pillows/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_pillws_201801?wid=674&qlt=75" alt="baby clothes and items">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-helvetica-bold copy-sub">
+                  Revamp your living room.
+                </p>
+                <p class="crate-utopia-italic grabberProductPrice copy-sub">
+                  Botanicals and graphic geometry bring your sofa to life.
+                </p>
+                <p class="crate-helvetica-bold copy-cta">
+                  Shop Patterned Pillows
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- trends-img -->
+      </div>
+    </div>
+    <!-- trends-container -->
+
+    <!--=============== GALLERY ===============-->
+    <div class="gallery" style="margin:0 4% 0 15.5%;">
+      <div class="gallery__header">
+        <p class="crate-helvetica-bold copy-sub">
+          Shop Faux Terrariums
+        </p>
+      </div>
+      <!-- gallery header -->
+      <div class="gallery__item">
+        <a id="grabber8Link" href="">
+          <img id="grabber8Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber8Name" class="crate-helvetica-bold copy-gr mBottom8"></p>
+              <p class="crate-helvetica-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- gallery item -->
+      <div class="gallery__item">
+        <a id="grabber9Link" href="">
+          <img id="grabber9Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber9Name" class="crate-helvetica-bold copy-gr mBottom8"></p>
+              <p class="crate-helvetica-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- gallery item -->
+      <div class="gallery__item">
+        <a id="grabber10Link" href="">
+          <img id="grabber10Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber10Name" class="crate-helvetica-bold copy-gr mBottom8"></p>
+              <p class="crate-helvetica-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- gallery item -->
+    </div>
+    <!-- gallery -->
+
+    <div class="gallery">
+      <div class="gallery__header">
+        <p class="crate-helvetica-bold copy-sub">
+          Shop Patterned Pillows
+        </p>
+      </div>
+      <!-- gallery header -->
+      <div class="gallery__item">
+        <a id="grabber11Link" href="">
+          <img id="grabber11Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber11Name" class="crate-helvetica-bold copy-gr mBottom8"></p>
+              <p class="crate-helvetica-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- gallery item -->
+      <div class="gallery__item">
+        <a id="grabber12Link" href="">
+          <img id="grabber12Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber12Name" class="crate-helvetica-bold copy-gr mBottom8"></p>
+              <p class="crate-helvetica-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- gallery item -->
+      <div class="gallery__item">
+        <a id="grabber13Link" href="">
+          <img id="grabber13Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber13Name" class="crate-helvetica-bold copy-gr mBottom8"></p>
+              <p class="crate-helvetica-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- gallery item -->
+    </div>
+    <!-- Gallery -->
+  </section>
+  <!-- Trends -->
+
+  <!--=============== Frames ===============-->
+  <section class="frames fullDiv mBottom8">
+    <div class="frames__container">
+      <a href="https://www.crateandbarrel.com/decorating-and-accessories/frames/1">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_frames_201801?wid=1600&qlt=75" alt="">
+        <div class="frames__header">
+          <p class="crate-helvetica-light copy-sub">
+            easy update
+          </p>
+          <p class="crate-helvetica-bold headline-small">
+            Float a new idea.
+          </p>
+        </div>
+
+        <div class="frames__body">
+          <div class="borderTop-right"></div>
+          <p class="crate-utopia-italic copy-gr" style="margin:0 0 5% 0 !important;">
+            Show off favorite photos
+            <br>in a new way: riveted
+            <br>with steel studs.
+          </p>
+          <p class="crate-helvetica-bold copy-cta">
+            Shop Acrylic Floating Frames
+          </p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!--=============== Vases & Poufs ===============-->
+  <section class="vasesPoufs fullDiv mBottom8">
+    <div class="vasesPoufs__header mBottom2">
+      <p class="crate-helvetica-light copy-sub">
+        GREAT FEATURES
+      </p>
+      <p class="crate-helvetica-bold headline-small">
+        The extras we&rsquo;re loving right now.
+      </p>
+    </div>
+    <div class="vasesPoufs__container">
+      <div class="vasesPoufs__container__left" style="position: relative;">
+        <div class="vasesPoufs__img vasesPoufs__img--1">
+          <a href="https://www.crateandbarrel.com/decorating-and-accessories/vases/1" style="position:relative;display:block;">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_vases_201801" alt="">
+            <div class="overlay">
+              <div class="textPos">
+
+                <p class="crate-utopia-italic copy-sub">Add a little art to your table. </p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- vasesPoufs img 1 -->
+        <div class="vasesPoufs__text">
+          <a href="https://www.crateandbarrel.com/decorating-and-accessories/poufs/1">
+            <div class="borderTop-right borderTop-right--2"></div>
+            <p class="crate-helvetica-bold copy-gr">
+              Pouf, It&rsquo;s Magic
+            </p>
+            <p class="crate-utopia-italic copy-gr">
+              And all the sudden, you&rsquo;ve
+              <br> got three extra seats.
+            </p>
+            <p class="crate-helvetica-bold copy-cta">
+              Shop Poufs
+            </p>
+          </a>
+        </div>
+        <!-- vasesPoufs text 2 -->
+      </div>
+      <!-- left container -->
+      <div class="vasesPoufs__container__right" style="position: relative;">
+        <div class="vasesPoufs__text--2">
+          <a href="https://www.crateandbarrel.com/decorating-and-accessories/vases/1">
+            <div class="borderTop-left"></div>
+            <p class="crate-helvetica-bold copy-gr">
+              Table Display
+            </p>
+            <p class="crate-utopia-italic copy-gr" style="margin-bottom:4%;">
+              Cluster vases that mix, not
+              <br> match—high to low, neutral to bold.
+            </p>
+            <p class="crate-helvetica-bold copy-cta">
+              Shop Vases
+            </p>
+          </a>
+        </div>
+        <!-- vasesPoufs text 1 -->
+        <div class="vasesPoufs__img vasesPoufs__img--2">
+          <a href="https://www.crateandbarrel.com/decorating-and-accessories/poufs/1" style="position:relative;display:block;">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWDCR_poufs_201801" alt="">
+            <div class="overlay">
+              <div class="textPos">
+
+                <p class="crate-utopia-italic copy-sub">What's your pouf personality? </p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- vasesPoufs img 2 -->
+      </div>
+    </div>
+    <!-- container -->
+  </section>
+
+  <a href="/all-new-decor">
+    <section class="shopAll-banner mBottom8">
+      <div class="shopAll-banner__text">
+        <h2 class="crate-helvetica-bold cmsWhite headline-medium" style="padding:0;">Shop All New Decor&#x25B8; </h2>
+      </div>
+    </section>
+  </a>
+
+</section>
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+      $('.responsive').slick({
+
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+
+      var getProductNavigateDetail = function (skuList) {
+
+        var postUrl = "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+          imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+        $.ajax({
+          url: postUrl,
+          type: "POST",
+          data: { skus: skuList },
+          dataType: "json",
+          success: function (result) {
+            if (result[0] != null) {
+
+              for (let i = 0; i < result.length; i++) {
+                $('#grabber' + [i] + 'Link').attr('href', result[i].NavigateUrl);
+                $('#grabber' + [i] + 'Image').attr('src', imageURL + result[i].ImagePath);
+                $('#grabber' + [i] + 'Name').html(result[i].Name);
+              }
+            }
+          },
+          error: function (jqXhr, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+          }
+        });
+      }
+      getProductNavigateDetail('331537,469172,463766,324393,303224,680580,187315,215162,472025,443747,443571,469209,468839,464181');
+    });
+  };
+
+  $(window).on("load", runTheThings());
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+</script>

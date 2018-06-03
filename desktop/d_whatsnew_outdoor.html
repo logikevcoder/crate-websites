@@ -1,0 +1,1251 @@
+<style>
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero {
+    position: relative;
+    margin-bottom: 5%;
+  }
+
+  .hero__text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translatey(-50%)
+  }
+
+  /*=======================================================
+Texture/Details & Metallics
+=======================================================*/
+
+  .concrete-tops__container {
+    position: relative;
+    margin: 0 auto 5%;
+    width: 90%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .concrete-tops__img-container {
+    position: relative;
+  }
+
+  .concrete-tops__img {
+    width: 45%;
+    position: relative;
+    display: inline-block;
+  }
+
+  .concrete-tops__img:hover {
+    z-index: 20;
+  }
+
+  .concrete-tops__img--2 {
+    z-index: 5;
+    margin: 15% 0 0 -15%;
+  }
+
+  .concrete-tops__img--3 {
+    width: 18%;
+    position: absolute;
+    left: 79%;
+    top: 36%
+  }
+
+  .concrete-tops__header {
+    position: absolute;
+    left: 47%;
+  }
+
+  .concrete-tops__text {
+    text-align: right;
+    margin-right: 38%;
+    margin-top: 9%;
+  }
+
+  /*=======================================================
+Collections in Grey, Cilantro accessories
+=======================================================*/
+
+  .collections__container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 1.5%
+  }
+
+  .collections__header {
+    text-align: center;
+    margin: 0 auto 2%;
+  }
+
+  .collections__text {
+    text-align: right;
+    margin-right: -4%;
+    margin-top: 15%;
+  }
+
+  .collections__text--2 {
+    text-align: left;
+    margin-left: 5%
+  }
+
+  .collections__img--2 {
+    margin: 10% 0 0 10%;
+  }
+
+  /*=======================================================
+outdoor-faves
+=======================================================*/
+
+  .outdoor-faves {
+    display: inline-block;
+    position: relative;
+  }
+
+  .outdoor-faves__container {
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .outdoor-faves__block {
+    display: inline-block;
+    position: relative;
+    vertical-align: center;
+  }
+
+  .outdoor-faves__header {
+    width: 20%;
+    padding: 0 2%;
+    text-align: right;
+  }
+
+  .outdoor-faves__text {
+    width: 100%;
+    margin-top: 25%;
+  }
+
+  .outdoor-faves__img-container {
+    width: 100%;
+  }
+
+  .outdoor-faves__img {
+    position: relative;
+    width: 49.6%;
+    display: inline-block;
+  }
+
+  /*=======================================================
+Outdoor Pillows
+=======================================================*/
+
+  .outdoor-pillows__container {
+    position: relative;
+  }
+
+  .outdoor-pillows__body {
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    color: #000;
+    text-align: left
+  }
+
+  /*=======================================================
+What we're Loving
+=======================================================*/
+
+  .wwl__container {
+    width: 100%;
+    margin: 0 2%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+  }
+
+  .wwl__text:after {
+    border-top: solid #000 5px;
+  }
+
+  .wwl__text {
+    position: absolute;
+  }
+
+  .wwl__text--1 {
+    text-align: right;
+    margin-left: -5%;
+    width: 100%;
+  }
+
+  .wwl__text--2 {
+    text-align: left;
+    margin-top: -38%;
+  }
+
+  .wwl__text--3 {
+    text-align: left;
+  }
+
+  .wwl__img {
+    margin-top: 3%;
+    position: relative;
+  }
+
+  .wwl__img--2 {
+    margin: 13% 5% 10% .8%;
+  }
+
+  .wwl__img--3 {
+    margin-top: 5.5%
+  }
+/*=======================================================
+Shop All Banner
+=======================================================*/
+.shopAll-banner {
+  background-color: #222;
+  height:176px;
+  width:100%;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+
+  /*=======================================================
+Overlay
+=======================================================*/
+
+  .overlay {
+    background: rgba(255, 255, 255, 0.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    transition: .4s ease;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .overlay div {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .overlay a {
+    color: #222;
+  }
+
+  .textPos {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
+Slick Styling
+=======================================================*/
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #222 !important;
+  }
+
+  .slick-prev.slick-disabled::before,
+  .slick-next.slick-disabled::before {
+    opacity: 0;
+  }
+
+  .slick-next.slick-disabled:before,
+  .slick-prev.slick-disabled:before {
+    opacity: 0 !important;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 30px !important;
+    opacity: 1 !important;
+  }
+
+  .slick-next {
+    right: -.1% !important;
+  }
+
+  .slick-prev {
+    left: -1% !important;
+  }
+
+  .slick-arrow {
+    z-index: 3;
+    top: 50% !important;
+  }
+
+  /*=======================================================
+Carousel Styling
+=======================================================*/
+
+  .carousel-wrapper {
+    width: 70%;
+    margin: 0 auto 10%;
+  }
+
+  .carousel-wrapper__right {
+    width: 70%;
+    margin: 0 1.5% 10% auto;
+  }
+
+  .product-carousel__header__right {
+    margin-left: 45.9%;
+  }
+
+  .carousel-wrapper__left {
+    width: 70%;
+    margin: 0 auto 10% 1.5%;
+  }
+
+  .product-carousel__header__left {
+    margin-left: 2%;
+  }
+
+  .carousel-wrapper::before {
+    content: none;
+  }
+
+  .carousel-wrapper::after {
+    content: none;
+  }
+
+  .product-carousel__header {
+    margin-left: 15%;
+  }
+
+  .carousel__container {
+    width: 100%;
+    padding-right: 1%;
+  }
+
+  .carousel__block {
+    width: 24%;
+    margin: 0 !important;
+    position: relative;
+    padding-right: .2%
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  .gallery .textPos :last-child {
+    margin-top: 4% !important;
+  }
+
+  /*=======================================================
+General Styling
+=======================================================*/
+
+  .zero-margin {
+    margin: 0 !important;
+  }
+
+  /* overrides margin styling */
+
+  .borderTop-right {
+    width: 50px;
+    border-top: 6px solid #000;
+    margin: 20px 0 20px auto;
+  }
+
+  .borderTop-left {
+    width: 50px;
+    border-top: 6px solid #000;
+    margin: 20px auto 20px 0;
+  }
+
+  .borderTop {
+    border-top: 5px solid black;
+    width: 60px;
+  }
+
+  .mBottom8 {
+    margin-bottom: 8%
+  }
+
+  .mBottom4 {
+    margin-bottom: 4%;
+  }
+
+  .mBottom2 {
+    margin-bottom: 2%;
+  }
+
+  /*=======================================================
+Breakouts and Fixes
+=======================================================*/
+
+  .fullDiv {
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fullDiv a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  .marginDiv {
+    width: 95%;
+    min-width: 819px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+    margin: 2.5% auto;
+  }
+
+  .marginDiv a {
+    color: #222;
+  }
+
+  .content-layout {
+    max-width: 100% !important;
+  }
+
+  .content {
+    width: 100% !important;
+  }
+
+  .divMargins {
+    margin-bottom: 2% !important;
+  }
+
+  .fullImg {
+    width: 100%;
+    max-width: 1680px;
+  }
+
+  .cmsArrowR {
+    border-width: 0.4vw;
+  }
+
+  .ctaMargin {
+    margin: 1vw 0;
+  }
+
+  .subMargin {
+    margin: 1vw 0 0;
+  }
+
+  #topNavWrap {
+    background: transparent;
+  }
+
+  #topNavContainer {
+    border: none;
+  }
+
+  #footerContainer {
+    float: none !important;
+    margin: -1px auto 30px !important;
+  }
+
+  /*=======================================================
+Font Sizes
+=======================================================*/
+
+  .bf-eyebrow {
+    font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+    text-transform: uppercase;
+  }
+
+  .bf-headline {
+    font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .bf-copy {
+    font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-XL {
+    font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
+    line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
+    letter-spacing: -0.15vw;
+  }
+
+  .headline-large {
+    font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-medium {
+    font-size: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-small {
+    font-size: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.05vw;
+  }
+
+  .copy-sub {
+    font-size: calc(16px + (20 - 16) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(14px + (20 - 16) * (100vw - 1024px) / (1440 - 1024));
+    margin: 0.5vw 0 !important;
+  }
+
+  .copy-gr {
+    font-size: calc(14px + (16 - 14) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(13px + (16 - 14) * (100vw - 1024px) / (1440 - 1024));
+    margin: 8px 0 !important;
+  }
+
+  .copy-cta {
+    font-size: calc(12px + (14 - 12) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin-top: calc(10px + (12 - 12) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
+  }
+</style>
+
+<section class="fullDiv" style="margin: 0 auto;">
+  <!--=============== HERO ===============-->
+  <section class="hero fullDiv">
+    <a href="/all-new-outdoor">
+      <div class="hero__img">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWOTDR_hero_201801?wid=1400&qlt=75" alt="">
+        <div class="hero__text">
+          <p class="crate-helvetica-light headline-large" style="margin-left:-12%;margin-bottom:0;">
+            WHAT&rsquo;S NEW: OUTDOOR
+          </p>
+          <p class="crate-utopia-italic copy-sub" style="font-weight:600;">
+            Indoor details and style with outdoor durability.
+          </p>
+          <p class="crate-helvetica-bold copy-cta">
+            Shop all new Outdoor
+          </p>
+        </div>
+        <!-- hero__text-->
+      </div>
+      <!-- hero__img -->
+    </a>
+  </section>
+  <!-- hero -->
+
+  <!--=============== Concrete Tops ===============-->
+  <section class="concrete-tops fullDiv">
+    <div class="concrete-tops__container">
+      <div class="concrete-tops__header">
+        <a href="/shop-by-room/grey-outdoor-furniture/1">
+          <p class="crate-helvetica-light copy-sub" style="margin-top:0;">
+            FEELS FRESH
+          </p>
+          <p class="crate-helvetica-bold headline-small">
+            The modern look
+            <br> of faux concrete.
+          </p>
+          <p class="crate-helvetica-roman copy-gr">
+            Knits in the now pair up with mixed
+            <br>metals to give the room a point of view.
+          </p>
+          <p class="crate-helvetica-bold copy-cta">
+            SHOP THE LOOK
+          </p>
+        </a>
+      </div>
+      <!-- concrete-tops header-->
+      <div class="concrete-tops__img">
+        <a href="/shop-by-room/grey-outdoor-furniture/1" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWOTDR_fauxTbl_201801?wid=604&qlt=75"
+            alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p class="crate-utopia-italic copy-sub">Handcrafted and sanded smooth.</p>
+              <p class="crate-helvetica-bold copy-cta">shop now</p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+        <div class="concrete-tops__text">
+          <a href="/shop-by-room/grey-outdoor-furniture/1">
+            <div class="borderTop-right" style="margin-top:7%;"></div>
+            <p class="crate-utopia-italic copy-gr zero-margin">
+              Lighter and stronger than real stone,
+              <br> composite materials are smart
+              <br> and sleek for outdoor living.
+            </p>
+          </a>
+        </div>
+      </div>
+      <!-- concrete-tops img -->
+
+      <!-- concrete-tops text-->
+      <div class="concrete-tops__img concrete-tops__img--2 mBottom8">
+        <a href="/shop-by-room/grey-outdoor-furniture/1" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWOTDR_cymLounge_201801?wid=606&qlt=75"
+            alt="">
+          <div class="overlay">
+            <div class="textPos">
+
+              <p class="crate-utopia-italic copy-sub">Live outdoors like you mean it.</p>
+              <p class="crate-helvetica-bold copy-cta">shop now</p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- concrete-tops img -->
+
+      <div class="concrete-tops__img--3">
+        <a href="/shop-by-room/grey-outdoor-furniture/1">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWOTDR_fauxCloseup_201801?wid=284&qlt=75"
+            alt="">
+        </a>
+      </div>
+      <!-- concrete-tops img -->
+    </div>
+    <!-- concrete-tops container-->
+  </section>
+  <!-- concrete-tops -->
+
+  <!--=============== collections in grey and cilantro ===============-->
+  <section class="collections fullDiv mBottom2">
+    <div class="collections__header">
+      <p class="crate-helvetica-light copy-sub">
+        TREND REPORT
+      </p>
+      <p class="crate-helvetica-bold headline-small">
+        Cool grey with a whiff of fresh cilantro.
+      </p>
+    </div>
+    <div class="collections__container">
+      <div class="collections__container__left" style="position: relative;">
+        <div class="collections__img collections__img--1">
+          <a href="/outdoor-furniture-collections/" style="position:relative;display:block;">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWOTDR_loungeOutdr_201801" alt="">
+            <div class="overlay">
+              <div class="textPos">
+
+                <p class="crate-utopia-italic copy-sub">The indoor living room that lives outside. </p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- collections img 1 -->
+        <div class="collections__text">
+          <a href="/special-features/green-furniture-decor/1">
+            <div class="borderTop-right"></div>
+            <p class="crate-utopia-italic copy-gr mBottom4">
+              <strong>Vibrant, natural green.</strong>
+              <br> Brighten the patio or deck
+              <br> with a lively burst of
+              <br> our new cilantro hue.
+            </p>
+            <p class="crate-helvetica-bold copy-cta">
+              SHOP CILANTRO ACCESSORIES
+            </p>
+          </a>
+        </div>
+        <!-- collections text1 -->
+      </div>
+      <!-- left container-->
+      <div class="collections__container__right" style="position: relative;">
+
+
+        <div class="collections__text--2">
+          <a href="/outdoor-furniture-collections/">
+            <div class="borderTop-left borderTop-left--2"></div>
+            <p class="crate-utopia-italic copy-gr">
+              <strong>Upholstered in grey. </strong>
+              <br> What's your style? We have four
+              <br> collections in the sophisticated
+              <br> shade that plays well in the sun.
+            </p>
+            <p class="crate-helvetica-bold copy-cta">
+              SHOP FURNITURE COLLECTIONS
+            </p>
+          </a>
+        </div>
+        <!-- collections text2 -->
+        <div class="collections__img collections__img--2">
+          <a href="/special-features/green-furniture-decor/1" style="position:relative;display:block;">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWOTDR_siloGrUmblla_201801" alt="">
+            <div class="overlay">
+              <div class="textPos">
+
+                <p class="crate-utopia-italic copy-sub">Just add friends and a few summery bites.</p>
+                <p class="crate-helvetica-bold copy-cta">shop now</p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+        <!-- collections img 2 -->
+      </div>
+    </div>
+    <!-- container-->
+  </section>
+  <!-- Collections -->
+
+  <!--=============== CAROUSEL ===============-->
+  <section class="product-carousel fullDiv">
+    <div class="product-carousel__container">
+      <div class="product-carousel__header">
+        <p class="crate-helvetica-bold copy-sub" style="margin-bottom:1%;">
+          Shop these trends
+        </p>
+      </div>
+      <!-- carousel header-->
+
+      <div class="carousel-wrapper responsive crate-helvetica-roman">
+        <div class="carousel__block">
+          <a id="grabber0Link" href="">
+            <img id="grabber0Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber0Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber1Link" href="">
+            <img id="grabber1Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber1Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber2Link" href="">
+            <img id="grabber2Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber2Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber3Link" href="">
+            <img id="grabber3Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber3Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber4Link" href="">
+            <img id="grabber4Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber4Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+      </div>
+      <!-- carousel responsive -->
+    </div>
+    <!-- carousel container-->
+  </section>
+  <!-- product carousel -->
+
+  <!--=============== New Outdoor Faves ===============-->
+  <section class="outdoor-faves fullDiv mBottom8">
+    <div class="outdoor-faves__container">
+      <div class="outdoor-faves__header">
+        <a href="/shop-by-brand/outdoor-faves/1">
+          <div class="outdoor-faves__header__text">
+            <p class="crate-helvetica-light copy-sub">
+              UPDATED FAVORITES
+            </p>
+            <p class="crate-helvetica-bold headline-small">
+              Two top-selling indoor styles step outside.
+            </p>
+          </div>
+          <div class="outdoor-faves__header__text-body">
+            <div class="borderTop-right" style="margin:20px 0 20px auto;"></div>
+            <p class="crate-utopia-italic copy-gr zero-margin">
+              Sunbrella fabrics and
+              <br> marine-grade woods
+              <br> bring our comfortable
+              <br> Miles dining chair and
+              <br> Lounge sofa collection
+              <br> out of the house.
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- outdoor-faves-header-->
+      <div class="outdoor-faves__img-container mBottom2">
+        <div class="outdoor-faves__img" style="margin-right:.01%;">
+          <a id="grabber5Link" href="">
+            <img id="grabber5Image" class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/" alt="">
+          </a>
+        </div>
+        <!-- outdoor-faves-img -->
+
+        <div class="outdoor-faves__img">
+          <a id="grabber6Link" href="/outdoor-furniture-collections/lounge-ii-petite-outdoor-slipcovered-collection/">
+            <img id="grabber6Image" class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/" alt="">
+          </a>
+        </div>
+        <!-- outdoor-faves-img -->
+      </div>
+    </div>
+    <!-- outdoor-faves-container-->
+  </section>
+  <!-- outdoor-faves -->
+
+  <!--=============== Outdoor Pillows ===============-->
+  <section class="outdoor-pillows fullDiv mBottom2">
+    <div class="outdoor-pillows__container">
+      <a href="/decorating-and-accessories/outdoor-pillows/1">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWOTDR_pillows_201801?wid=1600&qlt=75"
+          alt="">
+        <div class="outdoor-pillows__body">
+          <div class="outdoor-pillows__header" style="margin-bottom:20%;">
+            <p class="crate-helvetica-light copy-sub">
+              STYLING TIP
+            </p>
+            <p class="crate-helvetica-bold headline-small">
+              For a casual
+              <br> outdoor vibe.
+            </p>
+          </div>
+
+          <div class="borderTop-left"></div>
+          <p class="crate-utopia-italic copy-gr mBottom4">
+            Mix patterns, sizes
+            <br> and colors...and
+            <br> remember: the more,
+            <br> the comfier.
+          </p>
+          <p class="crate-helvetica-bold copy-cta zero-margin">
+            SHOP OUTDOOR PILLOWS
+          </p>
+        </div>
+      </a>
+    </div>
+    <!-- outdoor-pillows__container -->
+  </section>
+  <!-- outdoor pillows -->
+
+  <!--=============== CAROUSEL ===============-->
+  <section class="product-carousel fullDiv">
+    <div class="product-carousel__container">
+      <div class="product-carousel__header">
+        <p class="crate-helvetica-bold copy-sub" style="margin-bottom:1%;">
+          Shop these trends
+        </p>
+      </div>
+      <!-- carousel header-->
+
+      <div class="carousel-wrapper responsive crate-helvetica-roman">
+        <div class="carousel__block">
+          <a id="grabber7Link" href="">
+            <img id="grabber7Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber7Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber8Link" href="">
+            <img id="grabber8Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber8Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber9Link" href="">
+            <img id="grabber9Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber9Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber10Link" href="">
+            <img id="grabber10Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber10Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+        <div class="carousel__block">
+          <a id="grabber11Link" href="">
+            <img id="grabber11Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber11Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber12Link" href="">
+            <img id="grabber12Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber12Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber13Link" href="">
+            <img id="grabber13Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber13Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber14Link" href="">
+            <img id="grabber14Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber14Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+      </div>
+      <!-- carousel responsive -->
+    </div>
+    <!-- carousel container-->
+  </section>
+  <!-- product carousel -->
+
+  <!--=============== WHAT WE LOVE ===============-->
+  <section class="wwl fullDiv">
+    <div class="wwl__container">
+      <div class="wwl__img wwl__img--1">
+        <a href="/dune-double-chaise-sofa-lounge-with-canopy/s489249" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWOTDR_duneChse_201801" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber18Name" class="crate-helvetica-bold copy-sub"></p>
+              <p class="crate-utopia-italic copy-sub">
+                Our Dune canopied double chaise goes from conversational to pure relaxation.
+              </p>
+              <p class="crate-helvetica-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos-->
+          </div>
+          <!-- overlay-->
+        </a>
+        <div class="wwl__text wwl__text--1">
+          <div class="borderTop-right"></div>
+          <a href="/dune-double-chaise-sofa-lounge-with-canopy/s489249">
+            <p class="crate-helvetica-bold copy-gr">
+              Can we sleep out here?
+            </p>
+            <p class="crate-utopia-italic copy-gr mBottom4">
+              Our Dune canopied double
+              <br> chaise goes from conversational
+              <br> to pure relaxation.
+            </p>
+            <p class="crate-helvetica-bold copy-cta">
+              SHOP DUNE COLLECTION
+            </p>
+          </a>
+        </div>
+        <!-- wwl text1 -->
+      </div>
+      <!-- wwl img 1 -->
+
+      <div class="wwl__img wwl__img--2">
+        <div class="wwl__text wwl__text--2">
+          <p class="crate-helvetica-light copy-sub">
+            GREAT FEATURES
+          </p>
+          <p class="crate-helvetica-bold headline-small" style="margin-top:4%;">
+            The extras we&rsquo;re loving right now.
+          </p>
+        </div>
+
+        <!-- wwl text2 -->
+        <a href="/dune-double-chaise-sofa-lounge-with-canopy/s489249" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWOTDR_openDuneChase_201801" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber19Name" class="crate-helvetica-bold copy-sub"></p>
+              <p class="crate-utopia-italic copy-sub">
+                Our Dune canopied double chaise goes from conversational to pure relaxation.
+              </p>
+              <p class="crate-helvetica-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos-->
+          </div>
+          <!-- overlay-->
+        </a>
+      </div>
+      <!-- wwl img 2 -->
+
+      <div class="wwl__img wwl__img--3">
+        <a href="/9-round-sunbrella-isle-palm-patio-umbrella-with-fsc-eucalyptus-frame/s485393" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWOTDR_sunbrella_201801" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber20Name" class="crate-helvetica-bold copy-sub"></p>
+              <p class="crate-utopia-italic copy-sub">
+                Can't make it to an island? Gaze into our leafy Sunbrella palm print.
+              </p>
+              <p class="crate-helvetica-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos-->
+          </div>
+          <!-- overlay-->
+        </a>
+        <div class="wwl__text wwl__text--3--left">
+          <a href="/9-round-sunbrella-isle-palm-patio-umbrella-with-fsc-eucalyptus-frame/s485393">
+            <div class="borderTop-left"></div>
+            <p class="crate-helvetica-bold copy-gr">
+              The paradise effect.
+            </p>
+            <p class="crate-utopia-italic copy-gr">
+              Can't make it to an
+              <br> island? Gaze into our
+              <br> leafy Sunbrella palm print.
+            </p>
+            <p class="crate-helvetica-bold copy-cta">
+              SHOP UMBRELLAS
+            </p>
+          </a>
+        </div>
+        <!-- wwl text3 -->
+      </div>
+      <!-- wwl img 3 -->
+    </div>
+    <!-- container-->
+  </section>
+
+  <a href="/all-new-outdoor">
+    <section class="shopAll-banner mBottom8">
+      <div class="shopAll-banner__text">
+        <h2 class="crate-helvetica-bold cmsWhite headline-medium" style="padding:0;">Shop All New Outdoor&#x25B8; </h2>
+      </div>
+    </section>
+  </a>
+
+</section>
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+      $('.responsive').slick({
+
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+
+      var getProductNavigateDetail = function (skuList) {
+
+        var postUrl = "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+          imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+        $.ajax({
+          url: postUrl,
+          type: "POST",
+          data: { skus: skuList },
+          dataType: "json",
+          success: function (result) {
+            if (result[0] != null) {
+
+              for (let i = 0; i < result.length; i++) {
+                $('#grabber' + [i] + 'Link').attr('href', result[i].NavigateUrl);
+                $('#grabber' + [i] + 'Image').attr('src', imageURL + result[i].ImagePath);
+                $('#grabber' + [i] + 'Name').html(result[i].Name);
+              }
+            }
+          },
+          error: function (jqXhr, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+          }
+        });
+      }
+      getProductNavigateDetail('485476,447523,445435,443841,445645,502976,450741,447741,445944,447686,447656,447176,447324,446418,447630');
+    });
+  };
+
+
+
+  $(window).on("load", runTheThings());
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+</script>

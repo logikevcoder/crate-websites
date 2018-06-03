@@ -1,0 +1,956 @@
+<style>
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero {
+    position: relative;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .hero__text {
+    position: absolute;
+    width: 90%;
+    color: #000;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transform: translatey(-50%)
+  }
+
+  /*=======================================================
+indoor-outdoor
+=======================================================*/
+
+  .indoor-outdoor__header {
+    text-align: left;
+    position: absolute;
+    left: 2%;
+    top: 4%;
+    z-index: 20;
+    color: #fff;
+  }
+
+  .indoor-outdoor__img {
+    width: 33%;
+    display: inline-block;
+    position: relative;
+  }
+
+  /*=======================================================
+What we're loving
+=======================================================*/
+
+  .wwl__text {
+    position: absolute;
+  }
+
+  .wwl__text--1 {
+    top: 18%;
+    left: 29%;
+  }
+
+  .wwl__text--2 {
+    top: 60%;
+    left: 5%;
+  }
+
+  /*=======================================================
+Shop All Banner
+=======================================================*/
+.shopAll-banner {
+  background-color: #222;
+  height:176px;
+  width:100%;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+  /*=======================================================
+General Styling
+=======================================================*/
+
+  .m-fullDiv {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .m-halfWidth {
+    width: 50%;
+    position: relative;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-marginDiv {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .m-insetDiv {
+    width: 90%;
+    margin: 3% auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-insetDiv>a>.m-headline {
+    margin-top: 10px;
+  }
+
+  .m-fullDiv a,
+  .m-insetDiv a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-zero-margin {
+    margin: 0 !important;
+  }
+
+  .mBottom4 {
+    margin-bottom: 4%;
+  }
+
+  .mBottom8 {
+    margin-bottom: 8%;
+  }
+
+  .mBottom12 {
+    margin-bottom: 12%;
+  }
+
+  .center-header {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4%;
+  }
+
+  /*=======================================================
+Overlay
+=======================================================*/
+
+  .overlay {
+    background: rgba(255, 255, 255, 0.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    transition: .4s ease;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .overlay div {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .overlay a {
+    color: #222;
+  }
+
+  /*=======================================================
+Slick Navigation Styling
+=======================================================*/
+
+  .slick-dots {
+    bottom: -30px !important;
+    top: 102% !important;
+    width: 90px !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 21px !important;
+    line-height: 23px !important;
+    width: 15px !important;
+    height: 15px !important;
+    opacity: 1 !important;
+    color: #000 !important;
+  }
+
+  .slick-dots li {
+    width: 20px !important;
+    margin: 5px 5px !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    border: 2px solid #000 !important;
+    border-radius: 50% !important;
+    color: transparent !important;
+  }
+
+  /*=======================================================
+Carousel Styling
+=======================================================*/
+
+  .product-carousel {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .product-carousel__wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product-carousel__wrapper::before {
+    content: none;
+  }
+
+  .product-carousel__wrapper::after {
+    content: none;
+  }
+
+  .carousel__block {
+    width: 33%;
+    margin: 0 !important;
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  .carousel__item {
+    width: 100%;
+  }
+
+  .indoor-outdoor__carousel .slick-dots {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  .slick-dots {
+    bottom: -30px !important;
+    top: 102% !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 21px !important;
+    line-height: 23px !important;
+    width: 15px !important;
+    height: 15px !important;
+    opacity: 1 !important;
+    color: #000 !important;
+  }
+
+  .slick-dots li {
+    width: 20px !important;
+    margin: 5px 5px !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    border: 2px solid #000 !important;
+    border-radius: 50% !important;
+    color: transparent !important;
+  }
+
+  /*=======================================================
+Image Gallery
+=======================================================*/
+
+  .img__gallery {
+    position: relative;
+    width: 100%;
+    ;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .img__gallery-container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    margin-bottom: 2%;
+  }
+
+  .img__gallery__block {
+    width: 82%;
+    position: relative;
+    display: inline-block;
+    padding-right: .7%;
+    vertical-align: top;
+    white-space: normal;
+  }
+
+  .img__gallery__text {
+    margin-right: 4%;
+  }
+
+  .img__gallery__text-1 {
+    color: #000;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+  }
+
+  .img__gallery__text-2 {
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+  }
+
+  /*=======================================================
+Fonts
+=======================================================*/
+
+  .m-head-large {
+    font-size: 29px;
+    line-height: 1;
+  }
+
+  .m-head-medium {
+    font-size: 23px;
+    line-height: 1;
+  }
+
+  .m-body {
+    font-size: 17px;
+    line-height: 1.2;
+    margin: 5px 0 0 0
+  }
+
+  .m-eyebrow {
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  .m-cta {
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 5px 0;
+  }
+
+  /*=======================================================
+Media Queries
+=======================================================*/
+
+  @media only screen and (max-width:320px) {
+    .m-XLheadline {
+      font-size: 80px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 27px;
+    }
+    .m-head-medium {
+      font-size: 21px;
+    }
+    .m-body {
+      font-size: 15px;
+    }
+    .m-eyebrow {
+      font-size: 12px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 10px;
+    }
+  }
+
+  @media only screen and (min-width:414px) {
+    .m-Xhead-large {
+      font-size: 120px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 31px;
+    }
+    .m-head-medium {
+      font-size: 25px;
+    }
+    .m-body {
+      font-size: 19px;
+      margin-top: 14px;
+    }
+    .m-eyebrow {
+      font-size: 15px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 12px;
+      margin: 8px 0;
+    }
+  }
+</style>
+
+<!--=============== Mobile Hero ===============-->
+<section class="hero m-fullDiv mBottom12">
+  <a href="/whats-new/new-outdoor-living/1">
+    <div class="hero__img">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWOTDR_hero_201801" alt="">
+      <div class="hero__text">
+        <p class="crate-helvetica-bold m-head-large">
+          What&rsquo;s New: Outdoor
+        </p>
+        <p class="crate-helvetica-roman m-head-medium">
+          Indoor style, outdoor durability.
+        </p>
+        <p class="crate-helvetica-bold m-cta">
+          shop new outdoor
+        </p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!--=============== Concrete Products ===============-->
+<section class="concrete m-fullDiv mBottom12">
+  <div class="center-header">
+    <p class="crate-helvetica-light m-eyebrow m-zero-margin">
+      FEELS FRESH
+    </p>
+    <p class="crate-helvetica-bold m-head-medium mBottom4">
+      The modern look of faux concrete.
+    </p>
+  </div>
+  <!-- nat-text header -->
+
+  <div class="m-insetDiv" style="margin-bottom: .5%;">
+    <a href="/special-features/texture-design-trend/1">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWOTDR_fauxTbl_201801" alt="">
+    </a>
+  </div>
+  <!-- header image -->
+
+  <div class="product-carousel">
+    <!-- carousel header -->
+
+    <div class="product-carousel__wrapper responsive crate-helvetica-roman ">
+      <div class="carousel__block">
+        <a id="grabber0Link" href="">
+          <img id="grabber0Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber1Link" href="">
+          <img id="grabber1Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber2Link" href="">
+          <img id="grabber2Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber3Link" href="">
+          <img id="grabber3Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber4Link" href="">
+          <img id="grabber4Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber5Link" href="">
+          <img id="grabber5Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+    </div>
+    <!-- carousel body responsive -->
+  </div>
+  <!-- carousel container -->
+</section>
+<!-- carousel -->
+
+<!--=============== Grey Furniture ===============-->
+<section class="grey-furn m-fullDiv">
+  <div class="center-header">
+    <p class="crate-helvetica-light m-eyebrow">
+      Trend Report
+    </p>
+    <p class="crate-helvetica-bold m-head-medium mBottom4">
+      Cool grey with fresh cilantro.
+    </p>
+  </div>
+  <!-- center-header -->
+  <div class="img__gallery">
+    <div class="img__gallery-container">
+      <div class="img__gallery__block img__gallery__block-2" style="width:85%;">
+        <a href="/outdoor-furniture-collections/">
+          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWOTDR_greyCouch_201801" alt="">
+          <div class="img__gallery__text-1">
+            <p class="crate-helvetica-roman m-head-large mBottom4">
+              Find your style,
+              <br> upholstered in grey.
+            </p>
+            <p class="crate-helvetica-bold m-cta">SHOP FURNITURE COLLECTIONS</p>
+          </div>
+          <!-- img__gallery__text--2 -->
+        </a>
+      </div>
+
+      <!--img__gallery__block -->
+      <div class="img__gallery__block">
+        <a id="grabber6Link" href="">
+          <img id="grabber6Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber6Name" class="crate-helvetica-bold m-body"></p>
+            <p id="grabber6Price" class="crate-helvetica-bold m-body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber7Link" href="">
+          <img id="grabber7Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber7Name" class="crate-helvetica-bold m-body"></p>
+            <p id="grabber7Price" class="crate-helvetica-bold m-body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber8Link" href="">
+          <img id="grabber8Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber8Name" class="crate-helvetica-bold m-body"></p>
+            <p id="grabber8Price" class="crate-helvetica-bold m-body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber9Link" href="">
+          <img id="grabber9Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber9Name" class="crate-helvetica-bold m-body"></p>
+            <p id="grabber9Price" class="crate-helvetica-bold m-body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber10Link" href="">
+          <img id="grabber10Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber10Name" class="crate-helvetica-bold m-body"></p>
+            <p id="grabber10Price" class="crate-helvetica-bold m-body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber11Link" href="">
+          <img id="grabber11Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber11Name" class="crate-helvetica-bold m-body"></p>
+            <p id="grabber11Price" class="crate-helvetica-bold m-body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+    </div>
+    <!-- img__gallery-container -->
+  </div>
+  <!-- img__gallery -->
+</section>
+
+<!--=============== Cilantro Accessories ===============-->
+<section class="cilantro m-fullDiv mBottom12">
+  <div class="img__gallery">
+    <div class="img__gallery-container">
+      <div class="img__gallery__block img__gallery__block-2" style="width:85%;">
+        <a href="/decorating-and-accessories/decorative-pillows/1">
+          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWOTDR_cilantroChr_201801" alt="">
+          <div class="img__gallery__text-2">
+            <p class="crate-helvetica-roman m-head-large mBottom4">
+              Try on a vibrant,
+              <br> natural green.
+            </p>
+            <p class="crate-helvetica-bold m-cta">SHOP CILANTRO ACCESSORIES</p>
+          </div>
+          <!-- img__gallery__text--2 -->
+        </a>
+      </div>
+
+      <!--img__gallery__block -->
+      <div class="img__gallery__block">
+        <a id="grabber12Link" href="">
+          <img id="grabber12Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber12Name" class="crate-helvetica-bold m-body"></p>
+            <p id="grabber12Price" class="crate-helvetica-bold m-body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber13Link" href="">
+          <img id="grabber13Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber13Name" class="crate-helvetica-bold m-body"></p>
+            <p id="grabber13Price" class="crate-helvetica-bold m-body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber14Link" href="">
+          <img id="grabber14Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber14Name" class="crate-helvetica-bold m-body"></p>
+            <p id="grabber14Price" class="crate-helvetica-bold m-body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber15Link" href="">
+          <img id="grabber15Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber15Name" class="crate-helvetica-bold m-body"></p>
+            <p id="grabber15Price" class="crate-helvetica-bold m-body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber16Link" href="">
+          <img id="grabber16Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber16Name" class="crate-helvetica-bold m-body"></p>
+            <p id="grabber16Price" class="crate-helvetica-bold m-body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+    </div>
+    <!-- img__gallery-container -->
+  </div>
+  <!-- img__gallery -->
+</section>
+<!-- cilantro -->
+
+<!--=============== Indoor Outdoor Furniture ===============-->
+<section class="indoor-outdoor m-fullDiv mBottom12" style="padding-bottom:5%;">
+
+  <div class="indoor-outdoor__carousel single-item">
+    <div class="carousel__item single-item">
+      <div class="indoor-outdoor__header">
+        <a href="/outdoor-furniture-collections/cayman-dining-collection/">
+          <p class="crate-helvetica-light m-eyebrow m-zero-margin">
+            UPDATED FAVORITES
+          </p>
+          <p class="crate-helvetica-bold m-head-medium m-margin-tb">
+            Two indoor styles
+            <br> step outside.
+          </p>
+          <p class="crate-helvetica-roman m-body">
+            Thanks to Sunbrella fabrics
+            <br> and marine-grade woods.
+          </p>
+          <p class="crate-helvetica-bold m-cta">
+            SHOP NOW
+          </p>
+        </a>
+      </div>
+      <a href="/outdoor-furniture-collections/lounge-ii-petite-outdoor-slipcovered-collection/">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWOTDR_greyChr_201801" alt="">
+      </a>
+    </div>
+    <!-- carousel__item single-item -->
+
+    <div class="carousel__item single-item">
+      <a id="grabbe17Link" href="">
+        <img id="grabber17Image" src="" alt="">
+      </a>
+    </div>
+    <!-- carousel__item single-item -->
+
+    <div class="carousel__item single-item">
+      <a id="grabbe18Link" href="">
+        <img id="grabber18Image" src="" alt="">
+      </a>
+    </div>
+    <!-- carousel__item single-item -->
+
+    <div class="carousel__item single-item">
+      <a id="grabbe19Link" href="">
+        <img id="grabber19Image" src="" alt="">
+      </a>
+    </div>
+    <!-- carousel__item single-item -->
+
+  </div>
+  <!-- indoor-outdoor__carouself single-item -->
+</section>
+<!-- Indoor Outdoor Furniture -->
+
+<!--=============== Outdoor Pillows ===============-->
+<section class="pillows m-fullDiv mBottom12">
+  <div class="center-header">
+    <p class="crate-helvetica-light m-eyebrow m-zero-margin">
+      STYLING TIP
+    </p>
+    <p class="crate-helvetica-bold m-head-medium mBottom4">
+      Mix it up for a casual vibe.
+    </p>
+  </div>
+  <!-- nat-text header -->
+
+  <div class="nat-text__header-img  nat-text__img-1" style="margin-bottom:.5%;">
+    <a href="/decorating-and-accessories/outdoor-pillows/1">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWOTDR_pillows_201801" alt="">
+    </a>
+  </div>
+  <!-- nat-text__header-img -->
+
+  <div class="product-carousel">
+    <!-- carousel header -->
+
+    <div class="product-carousel__wrapper responsive crate-helvetica-roman ">
+      <div class="carousel__block">
+        <a id="grabber20Link" href="">
+          <img id="grabber20Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber21Link" href="">
+          <img id="grabber21Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber22Link" href="">
+          <img id="grabber22Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber23Link" href="">
+          <img id="grabber23Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber24Link" href="">
+          <img id="grabber24Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber25Link" href="">
+          <img id="grabber25Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber26Link" href="">
+          <img id="grabber26Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber27Link" href="">
+          <img id="grabber27Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+    </div>
+    <!-- product__carousel-wrapper -->
+  </div>
+  <!-- carousel container -->
+</section>
+<!-- Pillows -->
+
+<!--=============== What We're Loving ===============-->
+<section class="m-insetDiv mBottom12">
+  <div class="center-header">
+    <p class="crate-helvetica-light m-eyebrow m-zero-margin">
+      GREAT FEATURES
+    </p>
+    <p class="crate-helvetica-bold m-head-medium mBottom8">
+      Extras we&rsquo;re loving.
+    </p>
+  </div>
+  <!-- center-header -->
+  <div class="dune__img">
+    <a href="/dune-double-chaise-sofa-lounge-with-canopy/s489249">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWOTDR_openDuneChase_201801" alt="">
+      <!-- trends header img -->
+      <div class="wwl__text wwl__text--1">
+        <p class="crate-helvetica-roman m-head-medium">
+          An adjustable,
+          <br> modern retreat.
+        </p>
+        <p class="crate-helvetica-bold m-cta">
+          Shop now
+        </p>
+      </div>
+      <!-- wwl img -->
+    </a>
+  </div>
+  <!-- dune__img -->
+
+  <div class="sunbrella__img">
+    <a href="/9-round-sunbrella-isle-palm-patio-umbrella-with-fsc-eucalyptus-frame/s485393">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWOTDR_sunbrella_201801" alt="">
+      <!-- wwl header img -->
+      <div class="wwl__text wwl__text--2">
+        <p class="crate-helvetica-roman m-head-medium">
+          Get the paradise effect.
+        </p>
+        <p class="crate-helvetica-bold m-cta">
+          Shop Now
+        </p>
+      </div>
+      <!-- trends img -->
+    </a>
+  </div>
+  <!-- sunbrella__Img -->
+</section>
+<!-- What We're Loving -->
+
+  <a href="/all-new-outdoor">
+    <section class="shopAll-banner mBottom8">
+      <div class="shopAll-banner__text">
+        <h2 class="crate-helvetica-bold cmsWhite m-head-medium" style="padding:0;">Shop All New Outdoor&#x25B8; </h2>
+      </div>
+    </section>
+  </a>
+
+
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+      $('.indoor-outdoor__carousel').slick({
+        dots: true,
+        infinite: false,
+        arrows: false
+      });
+
+      $('.responsive').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false
+      });
+
+      var getProductNavigateDetail = function (skuList) {
+
+        var postUrl = "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+          imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+        $.ajax({
+          url: postUrl,
+          type: "POST",
+          data: { skus: skuList },
+          dataType: "json",
+          success: function (result) {
+            if (result[0] != null) {
+
+              for (var i = 0; i < result.length; i++) {
+                $('#grabber' + [i] + 'Link').attr('href', result[i].NavigateUrl);
+                $('#grabber' + [i] + 'Image').attr('src', imageURL + result[i].ImagePath);
+                $('#grabber' + [i] + 'Name').html(result[i].Name);
+                $('#grabber' + [i] + 'Price').html(result[i].FormattedPrice);
+              }
+            }
+          },
+          error: function (jqXhr, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+          }
+        });
+      };
+      getProductNavigateDetail('471568,444117,459281,471846,391664,219131,358365,262955,217155,286564,485572,227895,485476,447523,445435,443841,445645,502976,503074,447741,445944,447686,447656,447176,447324,446418,447630');
+    });
+  }
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+</script>

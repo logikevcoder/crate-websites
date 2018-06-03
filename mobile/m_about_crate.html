@@ -1,0 +1,518 @@
+<style>
+  /*======================================================= Hero =======================================================*/
+
+  .hero__img-text p {
+    position: absolute;
+    left: 7%;
+    top: 1%;
+  }
+
+  .hero__img-text h2 {
+    position: absolute;
+    left: 7%;
+    top: 58%;
+  }
+
+  .hero__text-body>div {
+    width: 85%;
+    margin: 12% auto;
+  }
+
+  .hero__text-body>div>p:not(:last-child) {
+    margin-bottom: 6%;
+  }
+
+  .hero__text-body>p:last-child {
+    margin-bottom: 10%;
+  }
+
+  .hero__footer {
+    background-color: #e7e7e9;
+  }
+
+  .hero__footer>div {
+    width: 85%;
+    margin: 12% auto;
+  }
+
+  /*======================================================= A Crate Story =======================================================*/
+
+  .crate-story {
+    margin-bottom: 5%;
+  }
+
+  /*======================================================= Content Headings =======================================================*/
+
+  .content-heading {
+    position: absolute;
+    top: 80%;
+    left: 7%;
+    color: #fff;
+  }
+
+  .b2bplus:after {
+    position: absolute;
+    content: "+";
+    top: 82px;
+    right: 22px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    z-index: 10;
+  }
+
+  .b2bminus:after {
+    position: absolute;
+    content: "x";
+    top: 82px;
+    right: 25px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 100;
+    z-index: 10;
+  }
+
+  .empty-minus {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+  }
+
+  .b2bQ {
+    position: relative;
+  }
+
+  .b2bA {
+    display: none;
+    width: 85%;
+    margin: 0 auto;
+    padding: 5% 0;
+  }
+
+  .b2bA>h2 {
+    margin-top: 8%;
+    margin-bottom: 2%;
+  }
+
+  /*======================================================= General Styling =======================================================*/
+
+  .m-fullDiv {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-marginDiv {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .m-insetDiv {
+    width: 90%;
+    margin: 5% auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-insetDiv>a>.m-headline {
+    margin-top: 10px;
+  }
+
+  .m-fullDiv a,
+  .m-insetDiv a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-zero-margin {
+    margin: 0 !important;
+  }
+
+  .mBottom4 {
+    margin-bottom: 4%;
+  }
+
+  .mBottom8 {
+    margin-bottom: 8%;
+  }
+
+  .mBottom12 {
+    margin-bottom: 12%;
+  }
+
+  .center-header {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .content-heading {}
+
+  body {
+    margin: 0 !important;
+  }
+
+  /*======================================================= Fonts =======================================================*/
+
+  .m-head-large {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .m-head-medium {
+    font-size: 19px;
+    line-height: 1;
+    margin: 8px 0;
+  }
+
+  .m-body {
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 5px 0;
+  }
+
+  .m-eyebrow {
+    font-size: 13px;
+    margin: 8px 0;
+  }
+
+  .m-cta {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  /*======================================================= Media Queries =======================================================*/
+
+  @media only screen and (max-width: 340px) {
+    .m-XLheadline {
+      font-size: 80px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 19px;
+    }
+    .m-head-medium {
+      font-size: 16px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .m-eyebrow {
+      font-size: 12px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 10px;
+      margin: 5px 0 0 0;
+    }
+    .b2bminus:after {
+      top: 5px;
+    }
+    .b2bplus:after {
+      top: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 413px) {
+    .b2bminus:after {
+      top: 5px;
+    }
+    .b2bplus:after {
+      top: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 414px) {
+    .m-XLheadline {
+      font-size: 120px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 26px;
+    }
+    .m-head-medium {
+      font-size: 21px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 18px;
+      margin-top: 14px;
+    }
+    .m-eyebrow {
+      font-size: 15px;
+    }
+  }
+
+  .home p {
+    margin: 0;
+  }
+
+  .m-fullDiv {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-insetDiv {
+    width: 90%;
+    margin: 5% auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-insetDiv>a>.m-headline {
+    margin-top: 10px;
+  }
+
+  .m-fullDiv a,
+  .m-insetDiv a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  /*NEW FONT STYLES*/
+
+  .m_head_large {
+    font-size: 29px;
+    line-height: 1;
+  }
+
+  .m_head_medium {
+    font-size: 21px;
+    line-height: 1;
+  }
+
+  .m_body {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 5px 0 0 0;
+  }
+
+  .m_cta {
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+  .m_cta_margin {
+    margin: 10px 0 0 0;
+  }
+</style>
+<div class="hero">
+  <div class="hero__img" style="position:relative;">
+    <div class="m-fullDiv">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_AboutUs_201805_Hero?wid=768&qlt=75" alt="family gathered over a table eating food">
+    </div>
+    <div class="hero__img-text cmsWhite">
+      <p class="m-cta">About Us</p>
+      <h2 class="crate-bold cmsWhite m-head-large">
+        <span class="crate-thin">To help people</span>
+        <br> love how they live in
+        <br> moments that matter
+      </h2>
+    </div>
+    <!-- hero__img-text -->
+  </div>
+  <!-- hero__img -->
+  <div class="hero__text-body">
+    <div>
+      <p class="crate-light m-eyebrow">We curate inspiration for the home, connecting the creative work of artisans and designers to people and places around
+        the world.
+      </p>
+      <p class="crate-helvetica-roman m-eyebrow">Crate and Barrel Holdings is a member of the Otto Group and employs 7,500 associates across Crate and Barrel and CB2.
+        With over 100 stores and franchise partners in 11 countries, we are an international destination for contemporary
+        and modern furniture, housewares and decor that help people Welcome Life In.
+      </p>
+      <p class="crate-helvetica-roman m-eyebrow">Our lifestyle brands offer inspired living through high-quality products, exclusive designs, and timeless style - all
+        powered by digital design and visualization tools that provide seamless shopping solutions in-store and online.
+      </p>
+      <p class="crate-helvetica-roman m-eyebrow">With a distinct architectural aesthetic, experiential store environment, and online community, we engage with our customers
+        through social media, mobile shopping, design services, gift registry, and more.</p>
+    </div>
+  </div>
+
+  <div class="hero__footer m-fullDiv">
+    <div>
+      <h2 class="crate-helvetica-bold m-body cmsBlack">Media Inquiries</h2>
+      <p class="crate-helvetica-roman m-eyebrow">For all press and partnership inquiries, contact
+        <strong>
+          <a href="mailto:mediainquiries@crateandbarrel.com">mediainquiries@crateandbarrel.com.</a>
+        </strong>
+      </p>
+
+      <h2 class="crate-helvetica-bold m-body cmsBlack">Contact Center</h2>
+      <p class="crate-helvetica-roman m-eyebrow">For questions and comments regarding your order or shopping experience, contact us through
+        <strong>
+          <a href="http://www.crateandbarrel.com/customer-service">www.crateandbarrel.com/customer-service.</a>
+        </strong>
+      </p>
+    </div>
+  </div>
+  <!-- hero-footer -->
+</div>
+<!-- hero -->
+
+<div class="inspired">
+  <div class="inspired__text__img m-fullDiv b2bQ">
+    <div class="m-fullDiv">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_AboutUs_201805_GlmlP_AboutUs_201805_Cmmtmntobal?wid=768&qlt=75"
+        alt="CB2 store front">
+    </div>
+    <!-- image -->
+
+<p class="empty-minus b2bplus"></p>
+
+    <div class="content-heading">
+      <h2 class="cmsWhite crate-bold m-body">Globally Inspired</h2>
+    </div>
+    <!-- content-heading -->
+  </div>
+  <!-- inspired__text__img -->
+
+  <div class="inspired__text b2bA">
+    <h2 class="crate-thin m-body cmsBlack">Artisans</h2>
+    <p class="crate-helvetica-roman m-eyebrow">Crate and Barrel merchants collaborate with more than 100 artists and designers from around the world. From the U.S.
+      to Thailand and countries in between, we curate inspired design to provide exclusive products in every category.</p>
+    <h2 class="crate-thin m-body cmsBlack">Made in the U.S.A.</h2>
+    <p class="crate-helvetica-roman m-eyebrow">Ninety-nine percent of Crate and Barrel brand’s upholstory is made in the USA from domestic and imported materials.</p>
+    <h2 class="crate-thin m-body cmsBlack">Global Reach</h2>
+    <p class="crate-helvetica-roman m-eyebrow">Crate and Barrel products are produced in 42 countries across the globe, including the Americas, Africa, Asia and Europe.
+    </p>
+  </div>
+</div>
+<!-- inspired -->
+
+<div class="impact">
+  <div class="impact__text__img m-fullDiv b2bQ">
+    <div class="m-fullDiv">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_AboutUs_201805_Cmmtmnts?wid=768&qlt=75"
+        alt="CB2 store front">
+    </div>
+    <!-- image -->
+
+<p class="empty-minus b2bplus"></p>
+
+    <div class="content-heading">
+      <h2 class="cmsWhite crate-bold m-body">Our Impact</h2>
+    </div>
+    <!-- content-heading -->
+  </div>
+  <!-- impact__text__img -->
+
+  <div class="impact__text b2bA">
+    <h2 class="crate-thin m-body cmsBlack">Responsible Packaging</h2>
+    <p class="crate-helvetica-roman m-eyebrow">Certified by the Forest Stewardship Council (FSC) and printed with water-based inks, our shopping bags and iconic black
+      and white boxes are made with renewable fiber that contains post-consumer recyclable material. We also use 100 percent
+      recyclable tissue and sustainable Air Pads, GreenWrap and Microfoam. Source-reduced and photo-degradable, our packaging
+      requires less material and space–reducing waste, fuel, and delivery costs every day.</p>
+    <h2 class="crate-thin m-body cmsBlack">Sustainable Forestry</h2>
+    <p class="crate-helvetica-roman m-eyebrow">Timber is one of our key raw materials and serves as a foundation to build sustainable practices that help conserve,
+      protect and restore forests.Brands work closely with the Forest Stewardship Council® (FSC®) and follow new legal requirements
+      under the Lacey Act for all import suppliers of wood and plant based product. </p>
+    <h2 class="crate-thin m-body cmsBlack">100% LED</h2>
+    <p class="crate-helvetica-roman m-eyebrow">The energy efficient bulbs light our stores, displays and are packaged with eligible lighting purchases –increasing our
+      store’s engery efficiency by at least 66 percent. For customers, we also offer Tala LED. Our Tala LED bulb sales support
+      Tala’s Ten Trees program.</p>
+    <h2 class="crate-thin m-body cmsBlack">LEED Gold Certification</h2>
+    <p class="crate-helvetica-roman m-eyebrow">We have distribution center facilities throughout the United States and Canada. Our facility in Tracy, California was
+      the largest distribution center to become LEED GOLD certified in the United States.</p>
+  </div>
+  <!-- impact__text -->
+</div>
+<!-- impact -->
+
+<div class="crate-story">
+  <div class="crate-story__text__img m-fullDiv b2bQ">
+    <div class="m-fullDiv">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_AboutUs_201805_Story?wid=768&qlt=75" alt="CB2 store front">
+    </div>
+    <!-- image -->
+<p class="empty-minus b2bplus"></p>
+    <div class="content-heading">
+      <h2 class="cmsWhite crate-bold m-body">A Crate Story</h2>
+    </div>
+    <!-- content-heading -->
+  </div>
+  <!-- crate-story__text__img -->
+
+  <div class="crate-story__text b2bA">
+    <h2 class="crate-thin m-body cmsBlack">We&rsquo;ve been around the world for over 55 years. </h2>
+    <p class="crate-helvetica-roman m-eyebrow">Founded by Gordon and Carole Segal in 1962, Crate and Barrel was born after a European honeymoon sparked the idea to
+      bring simple, beautiful and practical housewares to the US market. Their passion resulted inour first storefront, which
+      used crates and barrels as display fixtures in an old elevator factory on Chicago’s Wells Street. Today, we greet over
+      22 million customers in our stores each year and welcome more than 100 million visitors online. </p>
+    <h2 class="crate-thin m-body cmsBlack">Our Stores</h2>
+    <p class="crate-helvetica-roman m-eyebrow">Crate and Barrel has 89 stores and 8 outlets across the U.S. and Canada with 15 international franchise locations that
+      showcase our celebrated housewares and extensive furniture collections. As a pioneer in experiential retail with vignettes
+      for every room in the home, our in-store events span wedding registry and charity events to design and entertainment
+      trends. We are a gifting destination and passionate about customer service, a combination that has brought more than
+      2 million couples to Crate and Barrel for wedding registry alone.
+    </p>
+    <p class="crate-helvetica-roman m-eyebrow">In 2001, Crate and Barrel acquired The Land of Nod, a brand offering kids furniture and toys. In 2018, they became
+      <strong>Crate
+        <span style="color: #2a9f9b;">&amp;kids</span>
+      </strong>, the newest (and tiniest) member of Crate and Barrel, providing customers the opportunity to shop with us for even
+      more of the moments that matter in their lives.</p>
+    <div class="crate-story__text__img m-fullImg">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_AboutUs_201805_CB2?qlt=75" alt="CB2 store front">
+    </div>
+    <!-- crate-story__text__img -->
+    <h2 class="crate-thin m-body cmsBlack">CB2</h2>
+    <p class="crate-helvetica-roman m-eyebrow">Established in 2002, CB2 is committed to high-quality, sophisticated design at an approachable price. Today, CB2 has
+      15 locations across the U.S. and in Canada. Its rapid expansion and reach is transforming the perception of home design
+      for today’s modern customer. A forward thinker in experiential design, CB2 engages customers through curated brand
+      experiences, such as their music-focused event called After Hours and bold design collaborations that have brought
+      design and retail elites into the fold. </p>
+  </div>
+  <!-- crate-story__text -->
+</div>
+<!-- crate-story -->
+<script>
+  function runTheThings() {
+    $(".b2bQ").click(function (e) {
+      if ($(this).children(".empty-minus").hasClass("b2bplus")) {
+        e.preventDefault();
+        $(".b2bA").slideUp("slow");
+        $(".b2bA").children(".empty-minus").removeClass("b2bminus");
+        $(this).next("div").slideDown("slow");
+        $(".b2bQ").children(".empty-minus").removeClass("b2bminus");
+        $(".b2bQ").children(".empty-minus").addClass("b2bplus");
+        $(this).children(".empty-minus").addClass("b2bminus");
+        $(this).children(".empty-minus").removeClass("b2bplus");
+      } else {
+        $(this).next("div").slideUp("slow");
+        $(this).children(".empty-minus").removeClass("b2bminus");
+        $(this).children(".empty-minus").addClass("b2bplus");
+      }
+    });
+  }
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQueryis loaded");
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded,
+        50);
+    }
+  }
+  jQueryIsLoaded();
+</script>

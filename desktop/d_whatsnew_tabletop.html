@@ -1,0 +1,1142 @@
+<style>
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero {
+    position: relative;
+    margin-bottom: 5%;
+  }
+
+  .hero__text {
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translatey(-50%)
+  }
+
+  /*=======================================================
+Matte Black and Mixed Materials
+=======================================================*/
+
+  .mm-mb__container {
+    position: relative;
+    margin: 0 auto 5%;
+    width: 90%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .mm-mb__img-container {
+    position: relative;
+  }
+
+  .mm-mb__img {
+    width: 45%;
+    position: relative;
+    display: inline-block;
+  }
+
+  .mm-mb__img--2 {
+    z-index: 5;
+    margin: 15% 0 0 -15%;
+  }
+
+  .mm-mb__img--3 {
+    width: 20%;
+    position: absolute;
+    left: 76%;
+    top: 36%
+  }
+
+  .mm-mb__header {
+    position: absolute;
+    left: 47%;
+  }
+
+  .mm-mb__text {
+    text-align: right;
+    margin-right: 38%;
+  }
+
+  /*=======================================================
+Trends
+=======================================================*/
+
+  .trends__container {
+    width: 100%;
+    margin: 0 2%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+  }
+
+  .trends__text:after {
+    border-top: solid #000 5px;
+  }
+
+  .trends__text {
+    position: absolute;
+  }
+
+  .trends__text--1 {
+    text-align: right;
+    margin-left: -5%;
+    width: 100%;
+  }
+
+  .trends__text--2 {
+    text-align: left;
+    margin: -51% 0 0 4%;
+  }
+
+  .trends__text--3 {
+    text-align: left;
+  }
+
+  .trends__img {
+    margin-top: 3%;
+    position: relative;
+  }
+
+  .trends__img--2 {
+    margin: 13% 5% 10% .3%;
+  }
+
+  .trends__img--3 {
+    margin-top: 6%
+  }
+
+  /*=======================================================
+Stemware
+=======================================================*/
+
+  .stemware {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .stemware__img {
+    width: 60%;
+  }
+
+  .stemware__text {
+    margin: 5% 0 0 1%;
+  }
+
+  /*=======================================================
+Margin Merver
+=======================================================*/
+
+  .marin-mercer__container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 1.5%
+  }
+
+  .marin-mercer__header {
+    text-align: center;
+    margin: 0 auto 2%;
+  }
+
+  .marin-mercer__text {
+    text-align: right;
+    margin-right: 5%;
+    margin-top: -2%;
+  }
+
+  .marin-mercer__img {
+    margin: 15% 8% 0 0;
+  }
+
+  .marin-mercer__container__right {
+    width: 60%;
+  }
+
+  .marin-mercer__text--2 {
+    text-align: left;
+    margin-left: -3%;
+    margin-top: 4%;
+  }
+
+  /*=======================================================
+runners
+=======================================================*/
+
+  .runners__container {
+    position: relative;
+  }
+
+  .runners__body {
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    color: #000;
+    text-align: left
+  }
+
+  /*=======================================================
+Drink Dispenders, Oven to table servers, Cooling Serving
+=======================================================*/
+
+  .doc {
+    margin: 6% 0;
+  }
+
+  .doc__img-container {
+    width: 100%;
+  }
+
+  .doc__img {
+    width: 33%;
+    display: inline-block;
+    position: relative;
+  }
+
+/*=======================================================
+Shop All Banner
+=======================================================*/
+.shopAll-banner {
+  background-color: #222;
+  height:176px;
+  width:100%;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+  /*=======================================================
+Overlay
+=======================================================*/
+
+  .overlay {
+    background: rgba(255, 255, 255, 0.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    transition: .4s ease;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .overlay div {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .overlay a {
+    color: #222;
+  }
+
+  .textPos {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
+Slick Styling
+=======================================================*/
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #222 !important;
+  }
+
+  .slick-prev.slick-disabled::before,
+  .slick-next.slick-disabled::before {
+    opacity: 0;
+  }
+
+  .slick-next.slick-disabled:before,
+  .slick-prev.slick-disabled:before {
+    opacity: 0 !important;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 30px !important;
+    opacity: 1 !important;
+  }
+
+  .slick-next {
+    right: -.1% !important;
+  }
+
+  .slick-prev {
+    left: -1% !important;
+  }
+
+  .slick-arrow {
+    z-index: 3;
+    top: 50% !important;
+  }
+
+  /*=======================================================
+Carousel Styling
+=======================================================*/
+
+  .carousel-wrapper {
+    width: 70%;
+    margin: 0 auto 10%;
+  }
+
+  .carousel-wrapper__right {
+    width: 70%;
+    margin: 0 1.5% 10% auto;
+  }
+
+  .product-carousel__header__right {
+    margin-left: 45.9%;
+  }
+
+  .carousel-wrapper__left {
+    width: 70%;
+    margin: 0 auto 10% 1.5%;
+  }
+
+  .product-carousel__header__left {
+    margin-left: 2%;
+  }
+
+  .carousel-wrapper::before {
+    content: none;
+  }
+
+  .carousel-wrapper::after {
+    content: none;
+  }
+
+  .product-carousel__header {
+    margin-left: 15%;
+  }
+
+  .carousel__container {
+    width: 100%;
+    padding-right: 1%;
+  }
+
+  .carousel__block {
+    width: 24%;
+    margin: 0 !important;
+    position: relative;
+    padding-right: .2%
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  .gallery .textPos :last-child {
+    margin-top: 4% !important;
+  }
+
+  /*=======================================================
+General Styling
+=======================================================*/
+
+  .zero-margin {
+    margin: 0 !important;
+  }
+
+  /* overrides margin styling */
+
+  .border-button {
+    border: 1px solid #000;
+    width: 170px;
+    padding: 6px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .content-header {
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .borderTop-right {
+    width: 50px;
+    border-top: 6px solid #000;
+    margin: 20px 0 20px auto;
+  }
+
+  .borderTop-left {
+    width: 50px;
+    border-top: 6px solid #000;
+    margin: 20px auto 20px 0;
+  }
+
+  .mBottom8 {
+    margin-bottom: 8%
+  }
+
+  .mBottom4 {
+    margin-bottom: 4%;
+  }
+
+  .mBottom2 {
+    margin-bottom: 2%;
+  }
+
+  /*=======================================================
+Breakouts and Fixes
+=======================================================*/
+
+  .fullDiv {
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fullDiv a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  .marginDiv {
+    width: 95%;
+    min-width: 819px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+    margin: 2.5% auto;
+  }
+
+  .marginDiv a {
+    color: #222;
+  }
+
+  .content-layout {
+    max-width: 100% !important;
+  }
+
+  .content {
+    width: 100% !important;
+  }
+
+  .divMargins {
+    margin-bottom: 2% !important;
+  }
+
+  .fullImg {
+    width: 100%;
+    max-width: 1680px;
+  }
+
+  .cmsArrowR {
+    border-width: 0.4vw;
+  }
+
+  .ctaMargin {
+    margin: 1vw 0;
+  }
+
+  .subMargin {
+    margin: 1vw 0 0;
+  }
+
+  #topNavWrap {
+    background: transparent;
+  }
+
+  #topNavContainer {
+    border: none;
+  }
+
+  #footerContainer {
+    float: none !important;
+    margin: -1px auto 30px !important;
+  }
+
+  /*=======================================================
+Font Sizes
+=======================================================*/
+
+  .bf-eyebrow {
+    font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+    text-transform: uppercase;
+  }
+
+  .bf-headline {
+    font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .bf-copy {
+    font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-XL {
+    font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
+    line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
+    letter-spacing: -0.15vw;
+  }
+
+  .headline-large {
+    font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-medium {
+    font-size: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-small {
+    font-size: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.05vw;
+  }
+
+  .copy-sub {
+    font-size: calc(16px + (20 - 16) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(14px + (20 - 16) * (100vw - 1024px) / (1440 - 1024));
+    margin: 0.8vw 0 !important;
+  }
+
+  .copy-gr {
+    font-size: calc(14px + (16 - 14) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(13px + (16 - 14) * (100vw - 1024px) / (1440 - 1024));
+    margin: 8px 0 !important;
+  }
+
+  .copy-cta {
+    font-size: calc(12px + (14 - 12) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin-top: calc(10px + (12 - 12) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
+  }
+</style>
+
+<section class="fullDiv" style="margin: 0 auto;">
+
+  <!--=============== HERO ===============-->
+  <section class="hero fullDiv">
+    <a href="/all-new-tabletop"
+    class="cmsWhite">
+      <div class="hero__img">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_hero_201801?wid=1400&qlt=75" alt="">
+          <div class="hero__text">
+            <p class="crate-helvetica-thin headline-large" style="margin-left:-29%;margin-bottom:0;">
+              WHAT&rsquo; S NEW: TABLETOP
+            </p>
+            <p class="crate-utopia-italic copy-sub">
+              Set your spring table with artisanal dinnerware and fresh flatware for a modern touch.
+            </p>
+            <p class="crate-helvetica-bold copy-cta">
+              Shop all new Tabletop
+            </p>
+          </div>
+          <!-- hero__text-->
+        </a>
+      </div>
+      <!-- hero__img -->
+    </a>
+  </section>
+  <!-- hero -->
+
+  <!--=============== Matte Black and Mixed Materials ===============-->
+  <section class="mm-mb fullDiv">
+    <div class="mm-mb__container">
+      <div class="mm-mb__header">
+        <a href="/special-features/design-trend-metals/1">
+          <p class="crate-helvetica-light copy-sub" style="margin-top:0;">
+            FEELS FRESH
+          </p>
+          <p class="crate-helvetica-bold headline-small">
+            Matte black mixes it up.
+          </p>
+          <p class="crate-helvetica-bold copy-sub">
+            A new twist on matte black: metallic
+            <br> finishes that reflect the light.
+          </p>
+          <p class="crate-helvetica-bold copy-cta">
+            SHOP THE LOOK
+          </p>
+        </a>
+      </div>
+      <!-- mm-mb header-->
+      <div class="mm-mb__img">
+        <a href="/special-features/design-trend-metals/1" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_marinBlk_201801?wid=604&qlt=75"
+            alt="">
+        </a>
+        <div class="mm-mb__text">
+          <a href="/shop-by-room/grey-outdoor-furniture/1">
+            <div class="borderTop-right"></div>
+            <p class="crate-utopia-italic copy-gr zero-margin">
+              Shimmering flatware in an
+              <br> unexpected finish shines
+              <br> against matte dinnerware.
+            </p>
+          </a>
+        </div>
+      </div>
+      <!-- mm-mb img -->
+
+      <!-- mm-mb text-->
+      <div class="mm-mb__img mm-mb__img--2">
+        <a href="/special-features/design-trend-metals/1" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_lucaFltwr_201801?wid=606&qlt=75"
+            alt="">
+        </a>
+      </div>
+      <!-- mm-mb img -->
+
+      <div class="mm-mb__img--3">
+        <a href="/special-features/design-trend-metals/1">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_gwen_201801?wid=284&qlt=75" alt="">
+        </a>
+      </div>
+      <!-- mm-mb img -->
+    </div>
+    <!-- mm-mb container-->
+  </section>
+  <!-- mm-mb -->
+
+  <!--=============== CAROUSEL ===============-->
+  <section class="product-carousel fullDiv">
+    <div class="product-carousel__container">
+      <div class="product-carousel__header">
+        <p class="crate-helvetica-bold copy-sub" style="margin-bottom:1%;">
+          Shop New Tabletop
+        </p>
+      </div>
+      <!-- carousel header-->
+
+      <div class="carousel-wrapper responsive crate-helvetica-roman">
+        <div class="carousel__block">
+          <a id="grabber0Link" href="">
+            <img id="grabber0Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber0Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber1Link" href="">
+            <img id="grabber1Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber1Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber2Link" href="">
+            <img id="grabber2Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber2Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber3Link" href="">
+            <img id="grabber3Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber3Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber4Link" href="">
+            <img id="grabber4Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber4Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber5Link" href="">
+            <img id="grabber5Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber5Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber6Link" href="">
+            <img id="grabber6Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber6Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber7Link" href="">
+            <img id="grabber7Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber7Name" class="crate-helvetica-bold copy-sub"></p>
+                <p class="crate-helvetica-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+      </div>
+      <!-- carousel responsive -->
+    </div>
+    <!-- carousel container-->
+  </section>
+  <!-- product carousel -->
+
+  <!--=============== Trends ===============-->
+  <section class="trends fullDiv">
+    <div class="trends__container">
+      <div class="trends__img trends__img--1">
+        <a href="/special-features/handmade-dinnerware/1" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_pedra_201801" alt="">
+        </a>
+        <div class="trends__text trends__text--1">
+          <div class="borderTop-right"></div>
+          <a href="/special-features/handmade-dinnerware/1">
+            <p class="crate-helvetica-bold copy-gr">
+              Hand-touched, heart-warmed.
+            </p>
+            <p class="crate-utopia-italic copy-gr mBottom4">
+              Invite craftsmanship to
+              <br> dinner with luminous glazes
+              <br> and eye-catching details.
+            </p>
+            <p class="crate-helvetica-bold copy-cta border-button" style="width:68%;">
+              Shop Artisan Dinnerware
+            </p>
+          </a>
+        </div>
+        <!-- trends text1 -->
+      </div>
+      <!-- trends img 1 -->
+
+      <div class="trends__img trends__img--2">
+        <div class="trends__text trends__text--2">
+          <p class="crate-helvetica-thin copy-gr">
+            TREND REPORT
+          </p>
+          <p class="crate-helvetica-bold headline-small">
+            The artisanal
+            <br> table gets a
+            <br> shot of glam.
+          </p>
+        </div>
+
+        <!-- trends text2 -->
+        <a href="/special-features/handmade-dinnerware/1" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_caspian_201801" alt="">
+        </a>
+      </div>
+      <!-- trends img 2 -->
+
+      <div class="trends__img trends__img--3">
+        <a href="/special-features/design-trend-metals/1" style="position:relative;display:block;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_hayesPltr_201801" alt="">
+        </a>
+        <div class="trends__text trends__text--3--left">
+          <a href="/special-features/design-trend-metals/1">
+            <div class="borderTop-left"></div>
+            <p class="crate-helvetica-bold copy-gr">
+              Marble and Gold
+            </p>
+            <p class="crate-utopia-italic copy-gr">
+              Polished marble and
+              <br> luxe gold team up for
+              <br> the serveware win.
+            </p>
+            <p class="crate-helvetica-bold copy-cta border-button" style="width:100%;">
+              Shop Marble and Gold
+            </p>
+          </a>
+        </div>
+        <!-- trends text3 -->
+      </div>
+      <!-- trends img 3 -->
+    </div>
+    <!-- container-->
+  </section>
+
+  <!--=============== Stemware ===============-->
+  <section class="stemware fullDiv">
+    <div class="stemware__img">
+      <a href="/dining-and-entertaining/wine-glasses/1" style="position:relative;display:block;">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_antigoWne_201801?wid=554&qlt=75"
+          alt="">
+      </a>
+    </div>
+    <div class="stemware__text">
+      <a href="/dining-and-entertaining/wine-glasses/1">
+        <div class="borderTop-left borderTop-left--2"></div>
+        <p class="crate-helvetica-bold copy-gr">
+          Get in Shape
+        </p>
+        <p class="crate-utopia-italic copy-gr mBottom4">
+          Angles, curves and geometry
+          <br> are the toast of the table.
+        </p>
+        <p class="crate-helvetica-bold copy-cta zero-margin border-button" style="width:100%;">
+          Shop New Stemware
+        </p>
+      </a>
+    </div>
+    <!-- Stemware__text -->
+  </section>
+
+  <!--=============== Marin in Black & Mercer in Grey ===============-->
+  <section class="marin-mercer fullDiv mBottom8">
+    <div class="marin-mercer__header">
+      <div class="content-header">
+        <p class="crate-helvetica-light copy-sub zero-margin">
+          UPDATED FAVORITES
+        </p>
+        <p class="crate-helvetica-bold headline-small">
+          Organic is now in season.
+        </p>
+      </div>
+    </div>
+    <div class="marin-mercer__container">
+      <div class="marin-mercer__container__left" style="position: relative;">
+        <div class="marin-mercer__text">
+          <a href="/dinnerware-collections/marin-dinnerware/">
+            <div class="borderTop-right"></div>
+            <p class="crate-helvetica-bold copy-gr">
+              The Colors of Marin
+            </p>
+            <p class="crate-utopia-italic copy-gr mBottom2">
+              Our most coveted casual
+              <br> dinnerware collection,
+              <br> now in black, cream or aqua.
+            </p>
+            <p class="crate-helvetica-bold copy-cta zero-margin border-button">
+              Shop Marin
+            </p>
+          </a>
+        </div>
+        <!-- marin-mercer text 2 -->
+        <div class="marin-mercer__img">
+          <a href="/dinnerware-collections/mercer-dinnerware/" style="position:relative;display:block;">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_mercer_201801?wid=554&qlt=75"
+              alt="">
+          </a>
+        </div>
+        <!-- marin-mercer img 2 -->
+      </div>
+      <!-- marin-mercer__container__left -->
+      <div class="marin-mercer__container__right" style="position: relative;">
+        <div class="marin-mercer__img--2">
+          <a href="/dinnerware-collections/marin-dinnerware/" style="position:relative;display:block;">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_marinBlkSet_201801?wid=972&qlt=75"
+              alt="">
+          </a>
+        </div>
+        <!-- marin-mercer img 1 -->
+        <div class="marin-mercer__text--2">
+          <a href="/dinnerware-collections/mercer-dinnerware/">
+            <div class="borderTop-left borderTop-left--2"></div>
+            <p class="crate-helvetica-bold copy-gr">
+              Mercer Goes Grey
+            </p>
+            <p class="crate-utopia-italic copy-gr mBottom2">
+              A soft and subtle take on our
+              <br> contemporary porcelain collection.
+            </p>
+            <p class="crate-helvetica-bold copy-cta zero-margin border-button">
+              Shop Mercer
+            </p>
+          </a>
+        </div>
+        <!-- marin-mercer text 2 -->
+      </div>
+      <!-- marin-mercer__container__right -->
+    </div>
+    <!-- container -->
+  </section>
+  <!-- marin-mercer -->
+
+  <!--=============== Runners ===============-->
+  <section class="runners fullDiv mBottom8">
+    <div class="runners__container">
+      <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_runner_201801?wid=1600&qlt=75"
+        alt="">
+      <div class="runners__body">
+        <div class="runners__header">
+          <p class="crate-helvetica-light copy-sub">
+            STYLING TIP
+          </p>
+          <p class="crate-helvetica-bold headline-small">
+            A pattern runs
+            <br> through it.
+          </p>
+        </div>
+
+        <div class="borderTop-left"></div>
+        <a href="/dining-and-entertaining/table-runners/1">
+          <p class="crate-utopia-italic copy-gr mBottom4">
+
+            Give the table a new
+            <br> look with eyelet details, rich
+            <br> embroidery and bold color.
+          </p>
+          <p class="crate-helvetica-bold copy-cta zero-margin border-button" style="width:100%;">
+            Shop Table Runners
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Runners -->
+
+  <!--=============== Drink Dispensers, Over to Table, Cool Serving ===============-->
+  <section class="doc fullDiv mBottom8">
+    <div class="content-header mBottom2">
+      <p class="crate-helvetica-light copy-sub zero-margin">
+        EASY ENTERTAINING
+      </p>
+      <p class="crate-helvetica-bold headline-small">
+        What's on tap? A party in a flash.
+      </p>
+    </div>
+    <div class="doc__img-container">
+      <div class="doc__img">
+        <a href="/special-features/everyday-serveware/1">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_wdMrbl_201801?wid=554&qlt=75"
+            alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p class="crate-helvetica-bold copy-sub">
+                The gathering spot for guests.
+              </p>
+              <p class="crate-helvetica-bold copy-cta">
+                Shop Now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <div class="doc__img">
+        <a href="/special-features/everyday-serveware/1">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_whtSet_201801?wid=554&qlt=75"
+            alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p class="crate-helvetica-bold copy-sub">
+                Oven to table to easy and done.
+              </p>
+              <p class="crate-helvetica-bold copy-cta">
+                Shop Now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <div class="doc__img">
+        <a href="/special-features/everyday-serveware/1">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_NEWTBLTP_blkWhtBwl_201801?wid=554&qlt=75"
+            alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p class="crate-helvetica-bold copy-sub">
+                Party snacks get an upgrade.
+              </p>
+              <p class="crate-helvetica-bold copy-cta">
+                Shop Now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- DOC -->
+
+  <a href="/all-new-tabletop">
+    <section class="shopAll-banner mBottom8">
+      <div class="shopAll-banner__text">
+        <h2 class="crate-helvetica-bold cmsWhite headline-medium" style="padding:0;">Shop All New Tabletop&#x25B8; </h2>
+      </div>
+    </section>
+  </a>
+
+</section>
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+      $('.responsive').slick({
+
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+
+      var getProductNavigateDetail = function (skuList) {
+
+        var postUrl = "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+          imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+        $.ajax({
+          url: postUrl,
+          type: "POST",
+          data: { skus: skuList },
+          dataType: "json",
+          success: function (result) {
+            if (result[0] != null) {
+
+              for (let i = 0; i < result.length; i++) {
+                $('#grabber' + [i] + 'Link').attr('href', result[i].NavigateUrl);
+                $('#grabber' + [i] + 'Image').attr('src', imageURL + result[i].ImagePath);
+                $('#grabber' + [i] + 'Name').html(result[i].Name);
+              }
+            }
+          },
+          error: function (jqXhr, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+          }
+        });
+      }
+      getProductNavigateDetail('455853,440821,536585,467216,432941,451001,152407,477701');
+    })
+  };
+
+
+
+  $(window).on("load", runTheThings());
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+</script>

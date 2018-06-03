@@ -1,0 +1,1415 @@
+<style>
+  .main-content {
+    margin: 0 auto;
+    padding-bottom: 600px;
+  }
+
+  .hero-nav-wrapper {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
+Left Ideas Nav
+=======================================================*/
+
+  .left-nav-wrapper {
+    width: 1008px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  .navbar-header {
+    position: absolute;
+    top: 0;
+  }
+
+  .IdeasLeftNav {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 2px;
+    width: 214px;
+    padding: 15px;
+    top: 21%;
+    margin: 0 auto;
+    z-index: 3;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .IdeasLeftNav ul li {
+    width: 100%;
+    font-family: "Neue Helvetica W01", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    margin-top: 8px;
+  }
+
+  .IdeasLeftNav ul li a {
+    color: #222 !important;
+  }
+
+  .IdeasLeftNav .CategoryTitle {
+    color: #4c4c4c;
+    font-weight: bold;
+    border-top: solid 1px #e6e7e9;
+    margin-top: 20px;
+    padding-top: 8px;
+  }
+
+  .moreText {
+    color: #1f74bf;
+    font-weight: bold !important;
+    cursor: pointer;
+  }
+
+  .moreText:hover {
+    text-decoration: underline;
+  }
+
+  /*=======================================================
+Right Images
+=======================================================*/
+
+  .right-images-container {
+    margin: 5% 5% 5% 18%;
+    float: right;
+  }
+
+  .duo-image-container {
+    display: flex;
+  }
+
+  .duo-image-container:not(:last-child) {
+    margin-bottom: 20%;
+  }
+
+  .duo-image-container :first-child {
+    margin-right: 1%;
+  }
+
+  .image-block {
+    max-width: 422px;
+    min-width: 387px;
+    max-height: 422px;
+    min-height: 387px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .image-block div {
+    margin-left: 15px;
+  }
+
+  .image-block img {
+    margin-bottom: 3%;
+  }
+
+  /*=======================================================
+Carousel
+=======================================================*/
+
+  .product-carousel-container {
+    width: 100%;
+    min-height: 500px;
+    background-color: #eee;
+    position: absolute;
+    bottom: 0;
+    display: none;
+  }
+
+  .product-carousel {
+    margin: 10% auto;
+    width: 80%;
+  }
+
+  .product-carousel__header {
+    text-align: center;
+  }
+
+  .carousel-wrapper {
+    width: 98.3%;
+    background-color: #fff;
+  }
+
+  .carousel-wrapper::before {
+    content: none;
+  }
+
+  .carousel-wrapper::after {
+    content: none;
+  }
+
+  .carousel__container {
+    width: 100%;
+
+  }
+
+  .carousel__block:not(:last-child) {
+    width: 20%;
+    position: relative;
+
+  }
+
+  .carousel__block {}
+
+  .carousel__block div {
+    padding: 2px 3px;
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  .carousel__block__text {
+    font-size: 19px;
+  }
+
+  /*=======================================================
+Slick
+=======================================================*/
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-family: slick;
+    font-size: 30px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: #000 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-prev {
+    left: -15px !important;
+    z-index: 10 !important;
+  }
+
+  .slick-next {
+    right: -8px !important;
+  }
+
+  /*=======================================================
+Breakout and Fixes
+=======================================================*/
+
+  #cmpr_querybuilder {
+    display: none;
+  }
+
+  .fullDiv {
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fullDiv a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  #pageWrap {
+    border-top: 2px solid #222;
+    max-width: 1680px;
+    min-width: 1024px;
+    width: 100%;
+    margin: 0 auto !important;
+    float: none !important;
+    clear: left;
+  }
+
+  .width1008Center {
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 1680px;
+  }
+
+  .content {
+    width: 100% !important;
+  }
+
+  #bodyWrap {
+    padding: 0;
+  }
+
+  #jsExpand1 {
+    margin: 0 !important;
+  }
+
+  .fullImg {
+    width: 100%;
+    max-width: 1680px;
+  }
+
+  .cmsArrowR {
+    border-width: 0.4vw;
+  }
+
+  .whtArrw {
+    border-left-color: white;
+  }
+
+  #cmpr_querybuilder {
+    display: none;
+  }
+
+  .ctaMargin {
+    margin: 1vw 0;
+  }
+
+  .subMargin {
+    margin: 1vw 0 0;
+  }
+
+  #topNavWrap {
+    background: transparent;
+  }
+
+  #topNavContainer {
+    border: none;
+  }
+
+  .content-layout {
+    max-width: 100% !important;
+  }
+
+  #topNavWrap {
+    background: transparent;
+  }
+
+  #topNavContainer {
+    border: none;
+  }
+
+  #footerContainer {
+    float: none !important;
+    margin: -1px auto 30px !important;
+  }
+
+  p,
+  h1 {
+    color: #222;
+  }
+
+  a {
+    padding: 0 !important;
+  }
+
+  /*=======================================================
+Font Sizes
+=======================================================*/
+
+  .headline-XL {
+    font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
+    line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
+    letter-spacing: -0.15vw;
+  }
+
+  .headline-large {
+    font-size: calc(54px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-medium {
+    font-size: calc(45px + (45 - 49) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-small {
+    font-size: calc(24px + (34 - 24) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(30px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.05vw;
+  }
+
+  .copy-sub {
+    font-size: calc(14px + (20 - 14) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(15px + (25 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin: 0;
+  }
+
+  .copy-eyebrow {
+    font-size: calc(13px + (14 - 13) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
+  }
+
+  .copy-gr {
+    font-size: calc(13px + (14 - 13) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+  }
+
+  .copy-cta {
+    font-size: calc(10px + (13 - 10) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
+  }
+
+  @media only screen and (min-width: 1680px) {
+    .copy-sub {
+      font-size: 24px;
+    }
+    .copy-eyebrow {
+      font-size: 14px;
+    }
+    .copy-cta {
+      font-size: 12px;
+    }
+    .IdeasLeftNav {
+      top: 21%;
+    }
+    .headline-medium {
+      font-size: 42px;
+    }
+  }
+
+  @media only screen and (max-width: 1350px) {
+    .right-images-container {
+      margin: 5% 0 5% 27%;
+    }
+    .IdeasLeftNav {
+      top: 23%;
+    }
+    .headline-small {
+      font-size: 36px;
+    }
+  }
+
+  /*--- 1024px ---*/
+
+  @media only screen and (max-width: 1024px) {
+    .bf-eyebrow {
+      font-size: 35px;
+      line-height: 35px;
+    }
+    .bf-headline {
+      font-size: 76px;
+      line-height: 76px;
+    }
+    .bf-copy {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    .headline-XL {
+      font-size: 78px;
+      line-height: 52px;
+      letter-spacing: -1.54px;
+    }
+    .headline-large {
+      font-size: 54px;
+      line-height: 45px;
+    }
+    .headline-medium {
+      font-size: 40px;
+      line-height: 36px;
+    }
+    .headline-small {
+      font-size: 36px;
+      line-height: 28px;
+    }
+    .copy-gr {
+      font-size: 13px;
+      line-height: 13px;
+    }
+    .copy-sub {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .copy-cta {
+      font-size: 10px;
+      line-height: 20px;
+    }
+    .right-images-container {
+      margin: 5% 0 5% 25%;
+    }
+    .product-carousel {
+      left: 5%;
+    }
+    .IdeasLeftNav {
+      top: 24%;
+    }
+  }
+</style>
+
+<!--=============== HERO ===============-->
+<section class="main-content fullDiv">
+  <section class="hero-nav-wrapper">
+    <section class="hero fullDiv">
+      <div class="hero__image fullDiv">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestHero
+" alt="">
+      </div>
+    </section>
+    <!--=============== Ideas Left Nav ===============-->
+    <section class="left-nav-wrapper">
+      <h1 class="crate-bold headline-medium cmsWhite navbar-header" style="padding:5% 0 0">Ideas &amp; Advice</h1>
+      <div class="IdeasLeftNav mT5">
+        <ul>
+          <li class="CategoryTitle">Furniture</li>
+          <li>
+            <a href="/ideas-and-advice/living-room-accent-tables">How to Mix and Match Accent Tables</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/bedroom-furniture-decor-ideas">Bedroom Furniture and Decor Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/dining-room-ideas">Dining Room Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/entryway-ideas">Entryway Ideas: Furniture &amp; Decor</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/home-office-ideas">Home Office Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/types-of-sofas">Types of Sofas: Sofa Buying Guide</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-hang-lighting">How to Hang Lighting</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kid-pet-friendly-furniture">Kid &amp; Pet Friendly Furniture</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/tips-for-buying-leather-furniture">Tips for Buying Leather Furniture</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/lighting-ideas">Lighting Ideas for Your Home</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/furniture-for-small-spaces">Furniture for Small Spaces</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-arrange-furniture">Living Room Layouts</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-choose-a-sectional-sofa">How to Choose a Sectional Sofa</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/wood-furniture-cleaning">How to Clean Wood Furniture</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/eat-in-kitchen-ideas">Eat-In Kitchen Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/outdoor-patio-furniture-idea">Outdoor Patio Furniture &amp; Decor Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/reclaimed-wood-furniture">A Guide to Buying Reclaimed Wood Furniture</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/first-apartment-checklist">Your First Apartment Checklist</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/custom-furniture-design">How to Design Custom Furniture</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/cb2">CB2</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/sofa-fabric-types">Sofa Fabric Types</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="CategoryTitle">Entertaining</li>
+          <li>
+            <a href="/ideas-and-advice/cheese-platter-ideas">How to Create a Cheese Platter</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/home-bar-essentials">How to Stock a Home Bar</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/wine-tasting-party">How to Host a Wine Tasting Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/types-of-cocktail-glasses">Cocktail Glass 101</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/table-decorating-ideas">Table Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/cupcake-display-ideas">Cupcake Display Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/serving-decanting-wine-guide">A Guide to Decanting and Serving Wine</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/cocktail-party-ideas">Cocktail Party Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/place-card-ideas">Place Card Holder Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-grill-pizza">How to Grill Pizza</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/knife-sharpening-care">How to Care for Knives</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/ice-cream-social-ideas">How to Host an Ice Cream Social</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/mimosa-bar-ideas">Mimosa Bar Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/brunch-ideas">Brunch Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/potluck-ideas">The Secret to Throwing a Successful Potluck Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/dinner-party-ideas">How to Host a Dinner Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/outdoor-party-ideas">How to Host an Outdoor Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/housewarming-party-ideas">How to Host a Successful Housewarming Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/buffet-party-ideas">Tips for Hosting a Buffet Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-juice-guide">Guide to Juicing</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/spiralizer-ideas">Spiralizer Ideas</a>
+          </li>
+          <a href="/ideas-and-advice/spiralizer-ideas">
+          </a>
+          <li>
+            <a href="/ideas-and-advice/spiralizer-ideas"></a>
+            <a href="/ideas-and-advice/types-of-beer-glasses">Types of Beer Glasses</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/football-party-ideas">Football Party Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/wedding-table-setting-ideas">Wedding Table Setting Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-use-a-slow-cooker">How to Use a Slow Cooker</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/tea-party-ideas">Tea Party Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-choose-tablecloth-size">How to Choose a Tablecloth Size</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-brew-coffee">How to Brew Coffee</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/candy-table-ideas">Candy Table Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/fondue-party">How to Host a Fondue Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-set-a-table">How to Set a Table</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/types-wine-glasses">Types of Wine Glasses</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/party-essentials-checklist">Party Essentials Checklist</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/graduation-party-ideas">Graduation Party Ideas: Food and Decor</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/drink-calculator">Calculating Drink Quantities for a Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/pizza-stone-how-to">How to Use a Pizza Stone</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/barbecue-ideas">Summer Barbecue Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/french-cookware-101">French Cookware 101</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kitchen-essentials-checklist">Kitchen Essentials Checklist</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kitchen-tools-equipment">Must-Have Kitchen Tools and Equipment</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/cutting-board-101"> How to Choose a Cutting Board</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/college-kitchen-essentials">College Kitchen Essentials</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/sous-vide-buying-guide">Sous Vide Buying Guide</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/bridal-shower-ideas">Bridal Shower Theme Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/photo-booth-ideas">DIY Photo Booth Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/wedding-sendoff-ideas">Wedding Send Off Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/batched-drinks-dispensers">Serving Batched Drinks in Drink Dispensers</a>
+          </li>
+
+        </ul>
+
+        <ul>
+          <li class="CategoryTitle">Decor</li>
+          <li>
+            <a href="/ideas-and-advice/bar-cart-ideas">Creative Ways to Use a Bar Cart</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kitchen-organization-ideas">Kitchen Organization Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/wall-art-ideas">How to Incorporate Wall Art into Your Décor</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/decorating-with-mirrors">Decorating with Mirrors</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/candle-centerpiece-ideas">Candle Centerpiece Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/wall-decor-ideas">Designer Tips for Wall Décor</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/bedroom-decorating-ideas">Bedroom Decorating Ideas and Tips</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-arrange-flowers">How to Arrange Flowers for a Floral Centerpiece</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/outdoor-lighting-ideas">Outdoor Lighting Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-choose-a-rug">How to Choose a Rug</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/home-lighting-ideas">How to Create Dramatic Lighting</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/fridge-organization-ideas">How to Organize your Fridge: Tips &amp; Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/pantry-organization-ideas">7 Steps for Pantry Perfection: Storage Solutions</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-declutter">How to Declutter...In Style</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-style-bookcase">How to Style a Bookcase</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/coffee-table-styling">Coffee Table Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/mantel-decorating-ideas">How to Decorate a Mantel</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/bedding-ideas">How to Style Your Bed: Bedding Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/bathroom-storage-ideas">Our Top Tips for Bathroom Storage and Organization</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/room-divider-ideas">7 Room Divider Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/unexpected-bedroom-decor-ideas">Unexpected Elements That Work Great in a Bedroom</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/bathroom-decorating-ideas">Designer Tips for Decorating Your Bathroom</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kitchen-lighting-ideas">Kitchen Lighting Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/pillow-ideas">How to Decorate with Throw Pillows</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/patio-decorating-ideas">Patio Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/types-of-beds">How to Choose the Perfect Type of Bed</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/above-bed-decor">Stylish Above-the-Bed Decor Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-choose-towels">Bath Towels 101: How to Choose Towels</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/home-office-organization-ideas">Home Office Organization Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/loft-decorating-ideas">How to Decorate a Loft Space</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/reading-nook-ideas">Reading Nook Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-choose-curtains">How to Choose Curtains for your Room</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/room-organization-ideas">How to Organize Every Room in your Home</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/bathroom-color-ideas">Design Ideas for a Themed Bathroom</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/bedroom-color-schemes">How to Decorate a Bedroom by Color Scheme</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/foyer-decorating-ideas">Foyer Decorating Ideas to Create a Dramatic Entryway</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kitchen-decorating-ideas">Classic Kitchen Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/beautiful-dining-rooms">Beautiful Dining Room Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/dorm-room-ideas">6 Dorm Room Ideas for a Smooth Semester</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/summer-decorating-ideas">Summer Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/decorating-with-houseplants">A Guide for Decorating with Houseplants</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/front-door-decor-ideas">Front Door Decor Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/chair-styles">Resource Guide for Chair Styles</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/decorating-small-spaces">Top Tips for Decorating Small Spaces</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/hygge-lifestyle">How to Create a Hygge Lifestyle</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/small-bathroom-ideas">Small Bathroom Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/bohemian-bedroom-ideas">Bohemian Bedroom Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-make-bed">How to Make a Bed</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/space-saving-ideas">Space Saving Ideas for Apartment Living</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/small-kitchen-ideas">Small Kitchen Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/small-dining-ideas">Small Dining Room Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/small-bedroom-decorating-ideas">Small Bedroom Decorating Ideas</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="CategoryTitle">Thanksgiving</li>
+          <li>
+            <a href="/ideas-and-advice/fall-decorating-ideas">Fall Decorating Ideas for Your Home</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/thanksgiving-table-setting-ideas">Thanksgiving Table Setting Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/thanksgiving-decorating-ideas">Thanksgiving Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/thanksgiving-checklist">Thanksgiving Prep Checklist: Tools &amp; Tips</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/thanksgiving-entertaining-ideas">How to Host Thanksgiving Dinner</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/thanksgiving-centerpiece-ideas">Thanksgiving Centerpiece Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/friendsgiving-ideas">Friendsgiving Party Ideas</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="CategoryTitle">Christmas</li>
+          <li>
+            <a href="/ideas-and-advice/christmas-centerpiece-ideas">Christmas Centerpiece Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-gift-basket-ideas">Christmas Gift Basket Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-gift-ideas-for-women">Christmas Gift Ideas for Women</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-ornament-ideas">Christmas Ornament Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-decorating-ideas">How to Decorate Your Home for Christmas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-mantel-decorating-ideas">Christmas Mantel Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-table-decoration-ideas">How to Decorate Your Table for Christmas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-tree-decorating-ideas">Christmas Tree Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/teacher-christmas-gift-ideas">Teacher Christmas Gift Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-party-ideas">How to Host A Christmas Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-brunch-ideas">Christmas Brunch Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/cookie-exchange-party">How to Host a Cookie Exchange Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-candy-gifts">Ideas for Christmas Candy Gifts</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/stocking-stuffer-ideas">Impressive Stocking Stuffer Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-gifts-for-men">Christmas Gifts for Men</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/corporate-gift-ideas">The 5 Best Corporate Gift Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/decorate-kids-room-holidays">How to Decorate Your Kid's Room for Christmas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/st-nicholas-day">St. Nicholas Day Gift Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-wreath-ideas">Christmas Wreath Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/christmas-porch-ideas">Christmas Porch Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/holiday-gift-ideas-kids">Holiday Gifts Ideas for Kids By Age</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/first-christmas-gift-ideas">First Christmas Gift Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-christmas-tree-decorating">Christmas Tree Decorating Ideas for Kids</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-christmas-decorating-ideas">Christmas Decorating Ideas for Kids</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="CategoryTitle">More Holidays</li>
+          <li>
+            <a href="/ideas-and-advice/valentine-gift-ideas">Valentine's Day Gift Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/st-patricks-party-ideas">St. Patrick's Day Party Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/easter-brunch-ideas">Easter Brunch Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/easter-basket-ideas">Easter Basket Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/ramadan-decorating-ideas">Ramadan Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/cinco-de-mayo-party-ideas">How to Host a Cinco de Mayo Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/mothers-day-dinner-ideas">Mother's Day Dinner Ideas: How to Host</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/fathers-day-gift-ideas">Father's Day Gift Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/fourth-of-july-party-ideas">How to Host a Fourth of July Party</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/labor-day-party-ideas">6 Creative Labor Day Party Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/halloween-table-ideas">4 Halloween Table Ideas: Kids &amp; Adults</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/halloween-party-ideas">Halloween Party Ideas: Food, Drink &amp; Decor</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/hanukkah-party-ideas">Hanukkah Party Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/new-years-eve-party-ideas">New Year’s Eve Party Ideas</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="CategoryTitle">Product Resource Guides</li>
+          <li>
+            <a href="/ideas-and-advice/bakeware-buying-guide">Essential Baking Equipment Guide</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/bathroom-essentials">Bathroom Essentials Buying Guide</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/bedding-guide">Essential Bedding Guide: Bedding 101</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/essential-cookware-buying-guide">Essential Cookware Buying Guide</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/choosing-curtains-guide">How to Choose Curtains</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/types-of-kitchen-knives">Types of Kitchen Knives</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/unique-dinnerware-buying-guide">Unique Dinnerware Buying Guide</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/types-of-bar-glasses-guide">Guide to Types of Bar Glasses</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/flatware-buying-guide">18/10 Stainless Steel Flatware Buying Guide</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/must-have-kitchen-gadgets">Must Have Kitchen Gadgets Buying Guide</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/hanging-curtain-panels-guide">How to Hang Curtains</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-measure-furniture">How to Measure Furniture</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/must-have-kitchen-appliances">Must-Have Kitchen Appliances Guide</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/types-of-rugs-guide">Guide to Types of Rugs and Rug Materials</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/table-linen-buying-guide">Table Runners and Placemats Buying Guide</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/instant-pot-guide">Instant Pot Guide</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="CategoryTitle">Baby &amp; Kids</li>
+          <li>
+            <a href="/ideas-and-advice/how-to-design-nursery">How to Design a Nursery in Six Steps</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/converting-nursery-into-toddler-room">Convert Your Nursery Into a Toddler Room</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/adding-nursery-master-bedroom">Add a Nursery to Your Master Bedroom</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/playroom-design-ideas">Playroom Design Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/best-baby-shower-books">Best Baby Shower Books</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/baby-shower-gift-ideas">Baby Shower Gift Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/design-gender-neutral-nursery">Gender Neutral Nursery Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/buying-baby-gifts">Buying Baby Gifts: The First Year</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/nursery-decorating-tips">Nursery Decorating Tips</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-choose-crib">How to Choose a Crib</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/first-birthday-gift-ideas">First Birthday Gift Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/car-games-for-kids">Car Games for Kids</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/dining-room-playroom-combo">Create a Dining Room Play Room Combo</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-playroom-ideas">Kids Playroom Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/designing-shared-kids-bedroom">Kids Shared Bedroom Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/family-friendly-living-room">Create a Family Friendly Living Room</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kid-hangout-room-ideas">Kid and Teen Hangout Room Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-homework-station-ideas">Kids Homework Station Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/nursery-kids-room-decorating-ideas">Nursery and Kids' Room Decorating Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-room-paint-colors">How to Choose Paint Colors for a Kid's Room</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-room-lighting-ideas">Kids' Room Lighting Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-goodie-bag-ideas">Creative Kids Goodie Bag Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/playroom-layout-ideas">Playroom Layout Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-shoe-storage-ideas">Kids Shoe Storage Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-storage-ideas">Kids Storage Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-bedroom-design-ideas">Kids Bedroom Design Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-craft-room-ideas">Kids Craft Room Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/choosing-kids-baby-bedding">How to Choose Kids and Baby Bedding</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-bathroom-ideas">Kids Bathroom Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/family-kitchen-design-ideas">Family Kitchen Design Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-mix-patterns">How to Mix Patterns</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/how-to-measure-curtains">How to Measure for Curtains</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/entryway-storage-ideas">Entryway Storage Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/small-kids-room-ideas">Small Kids Room Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/creating-a-gallery-wall">How to Create a Gallery Wall</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/must-have-baby-registry-items">Must Have Baby Registry Items</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/kids-100-cotton-sheets">Why Our Kids and Crib Sheets are Organic Cotton</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/toy-storage-ideas">Toy Storage Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/toddler-bday-ideas">Toddler Birthday Party Ideas</a>
+          </li>
+          <li>
+            <a href="/ideas-and-advice/staycation-ideas">Staycation Ideas for Families</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
+  <!--=============== Right Image Group ===============-->
+  <div class="right-images-container">
+    <div class="duo-image-container">
+
+      <div class="image-block">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory1" alt="">
+        <div>
+          <p class="crate-light copy-eyebrow">Holiday Hosting</p>
+          <p class="crate-italic copy-sub">Christmas centerpiece ideas</p>
+          <p class="crate-bold copy-cta">Call to Action</p>
+        </div>
+      </div>
+      <!-- image-block -->
+
+      <div class="image-block">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory2" alt="">
+        <div>
+          <p class="crate-light copy-eyebrow">Holiday Hosting</p>
+          <p class="crate-italic copy-sub">Christmas centerpiece ideas</p>
+          <p class="crate-bold copy-cta">Call to Action</p>
+        </div>
+      </div>
+      <!-- image-block -->
+
+    </div>
+    <!-- duo-image-container -->
+
+    <div class="duo-image-container">
+      <div class="image-block">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory1" alt="">
+        <div>
+          <p class="crate-light copy-eyebrow">Holiday Hosting</p>
+          <p class="crate-italic copy-sub">Christmas centerpiece ideas</p>
+          <p class="crate-bold copy-cta">Call to Action</p>
+        </div>
+      </div>
+      <!-- image-block -->
+
+      <div class="image-block">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory2" alt="">
+        <div>
+          <p class="crate-light copy-eyebrow">Holiday Hosting</p>
+          <p class="crate-italic copy-sub">Christmas centerpiece ideas</p>
+          <p class="crate-bold copy-cta">Call to Action</p>
+        </div>
+      </div>
+      <!-- image-block -->
+    </div>
+    <!-- duo-image-container -->
+
+    <div class="duo-image-container">
+
+      <div class="image-block">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory1" alt="">
+        <div>
+          <p class="crate-light copy-eyebrow">Holiday Hosting</p>
+          <p class="crate-italic copy-sub">Christmas centerpiece ideas</p>
+          <p class="crate-bold copy-cta">Call to Action</p>
+        </div>
+      </div>
+      <!-- image-block -->
+
+      <div class="image-block">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory2" alt="">
+        <div>
+          <p class="crate-light copy-eyebrow">Holiday Hosting</p>
+          <p class="crate-italic copy-sub">Christmas centerpiece ideas</p>
+          <p class="crate-bold copy-cta">Call to Action</p>
+        </div>
+      </div>
+      <!-- image-block -->
+
+    </div>
+    <!-- duo-image-container -->
+  </div>
+  <!-- right-image-container -->
+
+  <!--=============== CAROUSEL ===============-->
+  <div class="product-carousel-container">
+    <section class="product-carousel">
+      <div class="product-carousel__header">
+        <p class="crate-roman copy-sub" style="margin-bottom:1%;">
+          Additional Articles
+        </p>
+      </div>
+      <!-- carousel header-->
+
+      <div class="carousel-wrapper responsive crate-helvetica-roman">
+        <div class="carousel__block" style="padding-left:.1%;">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory2" alt="">
+          <p class="crate-italic copy-gr">Decorate for the Holidays Using Ornaments</p>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <div>
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory2" alt="">
+          </div>
+          <p class="crate-italic copy-gr">Decorate for the Holidays Using Ornaments</p>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <div>
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory2" alt="">
+          </div>
+          <p class="crate-italic copy-gr">Decorate for the Holidays Using Ornaments</p>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <div>
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory2" alt="">
+          </div>
+          <p class="crate-italic copy-gr">Decorate for the Holidays Using Ornaments</p>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <div>
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory2" alt="">
+          </div>
+          <p class="crate-italic copy-gr">Decorate for the Holidays Using Ornaments</p>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <div>
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory2" alt="">
+          </div>
+          <p class="crate-italic copy-gr">Decorate for the Holidays Using Ornaments</p>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <div>
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory2" alt="">
+          </div>
+          <p class="crate-italic copy-gr">Decorate for the Holidays Using Ornaments</p>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <div>
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dSC_20180517_IDATestStory2" alt="">
+          </div>
+          <p class="crate-italic copy-gr">Decorate for the Holidays Using Ornaments</p>
+        </div>
+        <!-- carousel block-->
+      </div>
+      <!-- carousel container-->
+    </section>
+    <!-- product carousel -->
+  </div>
+  <!-- product carousel container -->
+
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+  />
+</section>
+
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+      $('.responsive').slick({
+
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+
+      var getProductNavigateDetail = function (skuList) {
+
+        var postUrl = "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+          imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+        $.ajax({
+          url: postUrl,
+          type: "POST",
+          data: {
+            skus: skuList
+          },
+          dataType: "json",
+          success: function (result) {
+            if (result[0] != null) {
+
+              for (let i = 0; i < result.length; i++) {
+                $('#grabber' + [i] + 'Link').attr('href', result[i].NavigateUrl);
+                $('#grabber' + [i] + 'Image').attr('src', imageURL + result[i].ImagePath);
+                $('#grabber' + [i] + 'Name').html(result[i].Name);
+              }
+            }
+          },
+          error: function (jqXhr, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+          }
+        });
+      }
+
+      getProductNavigateDetail();
+
+      // Code to make sure the height of the page is at least the height of the long navbar
+      var navbarHeight = "0";
+
+      $(".main-content *").each(function () {
+        if ($(this).height() > navbarHeight) {
+          navbarHeight = $(this).height() + 320;
+        }
+      });
+
+      $(".main-content").height(navbarHeight);
+      $('.product-carousel-container').show();
+    });
+  };
+
+
+
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+</script>

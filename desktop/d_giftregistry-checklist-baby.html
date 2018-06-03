@@ -1,0 +1,508 @@
+<style>
+  .furniture-links {display:none;}
+#furniture {display:block;}
+
+/* GENERAL STYLING */
+.main-content {
+  width: 100%;
+  height: 885px;
+}
+/* HEADER STYLING */
+.checklist-header {
+  height: 180px;
+  background-color: white;
+  width: 100%;
+}
+.header-content {
+  width: 596px;
+  height: 120px;
+  margin: 40px auto 20px;
+  text-align: center;
+  line-height: 40px;
+}
+.header-text {
+  font-size: 32px;
+  margin: 0;
+}
+.header-p {
+  font-size: 15.5px;
+  margin: 15px -1px 20px;
+}
+/* BODY STYLING */
+.checklist-body {
+  height: 705px;
+  width: 100%;
+  background-color: #e0e0e0; 
+}
+.body-content {
+  width: 90%;
+  max-width: 1155px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+.hero-img {
+  width: 100%;
+  padding-top: 53px;
+}
+/* LINK BOX AREA STYLING */
+.checklist-container {
+  width: 100%;
+  height: 260px;
+  margin: 21px 0 35px;
+  text-align: left;
+}
+.checklist-container > * {
+  float: left;
+}
+.link-box {
+  background-color: #fff;
+  float: left;
+  height: 274px;
+}
+.link-box p {
+  font-size: 30px;
+  padding: 8px 0px 0px 31px;
+}
+.link-box ul {
+  float: left;
+  font-size: 14px;
+  line-height: 30px;
+}
+.link-box li {
+  width: 220px;
+  padding-left: 30px;
+}
+.link-box li:hover {
+    background-color: #bababa;
+}
+.link-box .active {
+    background-color: #bababa;
+}
+.link-box a{
+  color: #000;
+  text-decoration: none;
+}
+.catagory-container {
+  width: 49.1%;
+  margin-right: 1.8%;
+}
+.catagory-container li:hover {
+  cursor: pointer;
+}
+.furniture-links {
+  width: 49.1%;
+  float: left;
+}
+.first-col {
+  margin-left: 20px;
+}
+/*ACCESSIBILITY*/
+  a:focus, li:focus{
+    outline:none;
+  }
+h1{
+    padding:0
+}
+.link-box h2 {
+    padding: 8px 0px 0px 31px;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #222;
+}
+.link-box li:focus, .link-box a:focus li {
+    background-color: #bababa;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1024px) and (max-width: 1240px) {
+  .link-box ul {
+    font-size: 12px;
+  }
+  
+  .link-box p {
+    font-size: 26px;
+  }
+  
+  .link-box li {
+    width: 180px;
+  }
+  
+  .first-col {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .link-box ul {
+    font-size: 12px;
+  }
+  
+  .link-box p {
+    font-size: 26px;
+  }
+  
+  .link-box li {
+    width: 150px;
+    padding-left: 5px;
+  }
+  
+  .first-col {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 597px) and (max-width: 767px) {
+   .link-box {
+    height: 250px;
+  } 
+   .link-box li {
+    width: 110px;
+    padding-left: 5px;
+  }
+  
+  .first-col {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 596px) {
+  .link-box {
+    height: 400px;
+  } 
+  .link-box p {
+    font-size: 22px;
+    padding: 15px;
+  }
+  .link-box li {
+    width: 160px;
+    padding-left: 10px;
+  }
+  .first-col {
+    margin-left: 5px;
+    padding: 0;
+  }
+  
+  .btm-btn {
+    margin-top: 20px;
+  }
+}
+.header, .footer {
+  width:1008px;
+  margin:0 auto;
+}
+
+.contentContainer {
+  width:1008px;
+  margin:0 auto;
+}
+</style>
+
+<section class="main-content" style="padding-bottom:5%;">
+  <div class="checklist-header">
+    <div class="header-content">
+      <h1 class="header-text crate-helvetica-light">
+        Baby Registry Checklist
+      </h1>
+      <p class="header-p">
+        They may be tiny, but they sure need a lot of gear. Get organized with our handy guide.
+      </p>
+      <a href="/gift-registry/create/step1?eventType=BB" class="button button-primary button-lg">Create a Registry
+      </a>
+      <a href="/gift-registry/sign-into-registry" class="button button-primary button-lg">Manage My Registry
+      </a>
+    </div>
+    <!-- header-content -->
+  </div>
+  <!-- checklist-header -->
+
+<div class="checklist-body" style="padding-bottom:5%;">
+    <div class="body-content">
+      <img class="hero-img" src="//images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BABYGRChecklist_hero?wid=1155" alt="">
+      <div class="checklist-container">
+        <div class="catagory-container link-box">
+          <h2 class="crate-helvetica-light">Baby Essentials</h2>
+          <ul class="first-col ">
+            <li id="furnitureBtn" class="active" tabindex="0">Furniture</li>
+            <li id="beddingBtn" tabindex="0">Bedding</li>
+            <li id="decorBtn" tabindex="0">Decor</li>
+            <li id="feedingBtn" tabindex="0">Feeding & Nursing</li>
+          </ul>
+          <!-- left links -->
+          <ul class="">
+            <li id="clothingBtn" tabindex="0">Clothing</li>
+            <li id="bathBtn" tabindex="0">Bath</li>
+            <li id="toysBtn" tabindex="0">Toys</li>
+          </ul>
+          <!-- right links -->
+        </div>
+        <!-- left link box -->
+        <!-- FURNITURE -->
+        <div id="furniture" class="furniture-links link-box">
+          <h2 class="crate-helvetica-light">Furniture</h2>
+          <ul class="first-col ">
+            <a href="/kids/cribs-bassinets/1">
+              <li>Bassinet</li>
+            </a>
+            <a href="/kids/cribs-bassinets/1">
+              <li>Crib & Conversion Kit</li>
+            </a>
+            <a href="/kids/mattresses/1">
+              <li>Crib Mattress</li>
+            </a>
+            <a href="/kids/dressers-changing-tables/1">
+              <li>Changing Table</li>
+            </a>
+            <a href="/kids/dressers-changing-tables/1">
+              <li>Dresser</li>
+            </a>
+          </ul>
+          <!-- left-links -->
+          <ul class="">
+            <a href="/kids/nightstands/1">
+              <li>Nightstand</li>
+            </a>
+            <a href="/kids/bookcases/1">
+              <li>Bookcase</li>
+            </a>
+            <a href="/kids/toyboxes/1">
+              <li>Toy Box</li>
+            </a>
+            <a href="/kids/rocking-chairs-gliders/1">
+              <li>Rocking Chair & Ottoman</li>
+            </a>
+          </ul>
+          <!-- right links -->
+        </div>
+        <!-- right link box -->
+        <!-- FEEDING -->
+        <div id="feeding" class="furniture-links link-box">
+          <p class="crate-helvetica-light">Feeding & Nursing</p>
+          <ul class="first-col ">
+            <a href="/kids/swaddle-blankets-bibs/1">
+              <li>Bibs & Burp Cloths</li>
+            </a>
+            <a href="/kids/tableware/1">
+              <li>Plates & Utensils</li>
+            </a>
+            <a href="/high-chair">
+              <li>High Chair</li>
+            </a>
+          </ul>
+          <!-- left-links -->
+          <ul class="">
+            <a href="/rattles">
+              <li>Nursing Pillow</li>
+            </a>
+            <a href="/diaper-bag">
+              <li>Diaper Bag</li>
+            </a>
+          </ul>
+          <!-- right links -->
+        </div>
+        <!-- right link box -->
+        <!-- BEDDING -->
+        <div id="bedding" class="furniture-links link-box">
+          <p class="crate-helvetica-light">Bedding</p>
+          <ul class="first-col ">
+            <a href="/kids/all-crib-bedding/1">
+              <li>Crib Bedding Sets</li>
+            </a>
+            <a href="/kids/crib-sheets/1">
+              <li>Bassinet Sheets</li>
+            </a>
+            <a href="/kids/baby-blankets/1">
+              <li>Baby Blankets</li>
+            </a>
+            <a href="/kids/baby-quilts/1">
+              <li>Baby Quilts</li>
+            </a>
+            <a href="/kids/swaddle-blankets-bibs/1">
+              <li>Swaddle Blankets</li>
+            </a>
+          </ul>
+          <!-- left-links -->
+          <ul class="">
+            <a href="/kids/crib-sheets/1">
+              <li>Crib Fitted Sheets</li>
+            </a>
+            <a href="/kids/crib-skirts/1">
+              <li>Crib Skirts</li>
+            </a>
+            <a href="/waterproof-mattress-pads">
+              <li>Waterproof Mattress Pad</li>
+            </a>
+            <a href="/kids/changing-pads-covers/1">
+              <li>Changing Pad Covers</li>
+            </a>
+          </ul>
+          <!-- right links -->
+        </div>
+        <!-- right link box -->
+        <!-- DECOR -->
+        <div id="decor" class="furniture-links link-box">
+          <p class="crate-helvetica-light">Decor</p>
+          <ul class="first-col ">
+            <a href="/baby-mobile">
+              <li>Mobile</li>
+            </a>
+            <a href="/growth-chart">
+              <li>Growth Chart</li>
+            </a>
+            <a href="/kids/all-kids-rugs/1">
+              <li>Rug</li>
+            </a>
+            <a href="/kids/curtains-hardware/1">
+              <li>Curtains & Blackout Liners</li>
+            </a>
+            <a href="/kids/bins-baskets/1">
+              <li>Nursery & Diaper Storage</li>
+            </a>
+          </ul>
+          <!-- left-links -->
+          <ul class="">
+            <a href="/kids/table-lamps/1">
+              <li>Table Lamp</li>
+            </a>
+            <a href="/kids/floor-lamps/1">
+              <li>Floor Lamp</li>
+            </a>
+            <a href="/kids/night-lights/1">
+              <li>Night Light</li>
+            </a>
+            <a href="/kids/wall-art-decor/1">
+              <li>Wall Art & Decals</li>
+            </a>
+          </ul>
+          <!-- right links -->
+        </div>
+        <!-- right link box -->
+        <!-- TOYS -->
+        <div id="toys" class="furniture-links link-box">
+          <p class="crate-helvetica-light">Toys</p>
+          <ul class="first-col ">
+            <a href="/play-mat">
+              <li>Play Mat & Activity Gym</li>
+            </a>
+            <a href="/rattles">
+              <li>Rattles</li>
+            </a>
+            <a href="/developmental-toys">
+              <li>Developmental Toys</li>
+            </a>
+            <a href="/wooden-toys">
+              <li>Wooden Toys & Blocks</li>
+            </a>
+          </ul>
+          <!-- left-links -->
+          <ul class="">
+            <a href="/stacking-toys">
+              <li>Stacking Toys</li>
+            </a>
+            <a href="/kids/stuffed-animals-dolls/1">
+              <li>Stuffed Animals</li>
+            </a>
+            <a href="/plush-pull-toys">
+              <li>Push & Pull Toys</li>
+            </a>
+          </ul>
+          <!-- right links -->
+        </div>
+        <!-- right link box -->
+        <!-- BATH -->
+        <div id="bath" class="furniture-links link-box">
+          <p class="crate-helvetica-light">Bath</p>
+          <ul class="first-col ">
+            <a href="/hooded-towels">
+              <li>Hooded Bath Towels</li>
+            </a>
+            <a href="/kids/bath/1">
+              <li>Towels & Washcloths</li>
+            </a>
+          </ul>
+          <!-- left-links -->
+          <ul class="">
+            <a href="/kids/closets-hampers/1">
+              <li>Hamper</li>
+            </a>
+          </ul>
+          <!-- right links -->
+        </div>
+        <!-- right link box -->
+        <!-- CLOTHING -->
+        <div id="clothing" class="furniture-links link-box">
+          <p class="crate-helvetica-light">Clothing</p>
+          <ul class="first-col ">
+            <a href="/baby-hats">
+              <li>Hats</li>
+            </a>
+            <a href="/kids/apparel/1">
+              <li>Pajamas</li>
+            </a>
+          </ul>
+          <!-- left-links -->
+          <ul class="">
+            <a href="/kids/apparel/1">
+              <li>Clothing Gift Sets</li>
+            </a>
+          </ul>
+          <!-- right links -->
+        </div>
+        <!-- right link box -->
+      </div>
+      <!-- HIDE 
+      <button class="btm-btn checklist-buttons"> 
+        <a href="#">Print Checklist (pdf)</a>
+      </button>
+    </div> -->
+
+    </div>
+    <!-- body-content -->
+    <div style="width:200px;margin: 5% auto;">
+      <a href="https://www.crateandbarrel.com/assets/gift-registry/BabyRegistryChecklist.pdf" class="button button-primary button-lg"
+        style="margin:0 auto;">
+        download checklist
+      </a>
+    </div>
+  </div>
+  <!-- checklist-body -->
+</section>
+
+<script>
+  function runTheThings() {
+  $(".link-box li").click(function() {
+    $(".link-box li").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  $(".catagory-container li").click(function() {
+    $(".furniture-links").hide();
+    if ($(this).is("#beddingBtn")) {
+      $("#bedding").show();
+    } else if ($(this).is("#feedingBtn")) {
+      $("#feeding").show();
+    } else if ($(this).is("#furnitureBtn")) {
+      $("#furniture").show();
+    } else if ($(this).is("#decorBtn")) {
+      $("#decor").show();
+    } else if ($(this).is("#clothingBtn")) {
+      $("#clothing").show();
+    } else if ($(this).is("#bathBtn")) {
+      $("#bath").show();
+    } else if ($(this).is("#toysBtn")) {
+      $("#toys").show();
+    }
+  });
+}
+
+function jQueryIsLoaded() {
+  if (window.jQuery) {
+    console.log("jQuery is loaded");
+
+    runTheThings();
+  } else {
+    setTimeout(jQueryIsLoaded, 50);
+  }
+}
+
+jQueryIsLoaded();
+</script>

@@ -1,0 +1,540 @@
+<style>
+/*=======================================================
+General Styling
+=======================================================*/
+.zero-margin {margin:0 !important;} /* overrides margin styling */
+.borderTop-right {width:50px;border-top:6px solid #000;margin:3% 0 3% auto;}
+.borderTop-left {width:50px;border-top:6px solid #000;margin:4% auto 4% 0;}
+.borderTop {border-top:5px solid black;width:60px;}
+.mBottom8 {margin-bottom:8%}
+.mBottom4 {margin-bottom:4%;}
+.mBottom2 {margin-bottom:2%;}
+/*=======================================================
+Top Registry Picks
+=======================================================*/
+.top-picks {background-color:#eee;}
+.top-picks__container {width:80%;margin:0 auto;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;;padding-bottom:5%}
+.top-picks__header {color:#090909;margin:3% 0 1% 10%;}
+.top-picks__container p {color:#090909;}
+.top-picks__container div:not(:last-child) {margin-right:.8%;}
+.top-picks__image p {margin-top:10px;}
+/*=======================================================
+Registry
+=======================================================*/
+.register__img-container {position:relative;}
+.register__header {position:absolute;left: 47%;top:5%;}
+.register__text {text-align:right;margin-right:32%;}
+/*=======================================================
+Registry Benefits
+=======================================================*/
+.reg-benefits {background-color:#eee;}
+.reg-benefits__header {text-align:center;padding-top:3%;}
+.reg-benefits__container {width:70%;margin:0 auto;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;;padding-bottom:3%;justify-content:center;}
+.reg-benefits__container div:not(:last-child) {margin-right:4%;}
+.reg-benefits__container div {text-align:center;}
+/*=======================================================
+Registry Events
+=======================================================*/
+.registry-events {display:inline-block;position:relative;margin:6% 0;}
+.border-top {border-top: 1px solid #000;width: 75%;margin-left: 48%;margin-bottom: 5%;}
+.registry-events__img {position:relative;width:60%;float:right;}
+
+.registry-events__text{text-align: right;
+    position: absolute;
+    left: 12%;
+    top: 55%;
+    z-index: 10;}
+/*=======================================================
+Video
+=======================================================*/
+video {width:100%;min-width:1024px;}
+.preDyptic{ position: absolute;bottom: 160px;right: 10px;background: #fff;text-align: left;padding: 30px;padding-right: 0px;}
+
+#playBtn {position:absolute;width:80px;height:80px;background: url(//images.crateandbarrel.com/is/image/Crate/play_replay_button_sprite_white?fmt=png-alpha);background-position:0 0;background-size:200%;bottom: -160px;right:0;left: 0;transform: translateY(-50%);margin:auto;cursor:pointer;z-index:3;
+}
+#replayBtn {position:absolute;width:80px;height:80px;background: url(//images.crateandbarrel.com/is/image/Crate/play_replay_button_sprite_white?fmt=png-alpha);background-position:-100% 0;background-size:200%;bottom: 24%;right: 0;left: 0;transform: translateY(-50%);margin:auto;cursor:pointer;display:none;z-index:3;
+}
+#fallBackImg{background-image: url("//images.crateandbarrel.com/is/image/Crate/CB_DHP_201711_WlcomeLoveVid_v1?wid=1008");position: absolute;left:0;top:0;width:100%;
+}
+#vidOverlay{background:rgba(0,0,0,.65);position: absolute;left:0;top:0;width:100%;height: 567px;z-index:2;
+}
+/*VIDEO*/
+/*TEXT*/
+.startRegistryText{position: absolute;top: 35%;left: 0;right:0;width: 344px;margin:0 auto;
+}
+.startRegistrySubText{position: absolute;top: 41%;left: 0;     right:0;width: 300px;margin:0 auto;
+}
+#grVideoText{position: absolute;text-align:center;top: 37%;left: 0;right: 0;width: 550px;margin: 0 auto;z-index:3;
+}
+/*=======================================================
+Overlay
+=======================================================*/
+.product-carousel__container {display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;;margin:3% auto;width:85%;justify-content:center;}
+.product-carousel__container .carousel__block:not(:last-child) {margin-right:3%;}
+.carousel__block {position:relative;}
+/*=======================================================
+Overlay
+=======================================================*/
+.overlay {background: rgba(255, 255, 255, 0.75);top:0;bottom:0;left:0;right:0;opacity:0;position:absolute;transition:.4s ease;}
+.overlay:hover {opacity: 1;}
+.overlay div {text-align: center;top: 50%;position: absolute;left: 0;right: 0;transform: translateY(-50%);}
+.overlay a {color:#222;}
+.textPos {width:60%; margin: 0 auto;}
+/*=======================================================
+Breakouts and Fixes
+=======================================================*/
+.fullDiv {width: 100%;min-width: 1024px;max-width: 1680px;position: relative;overflow: hidden;}
+.fullDiv a {color: #222;text-decoration: none;}
+.marginDiv {width: 95%;min-width: 819px;max-width: 1680px;position: relative;overflow: hidden;margin: 2.5% auto;}
+.marginDiv a {color: #222;}
+.content-layout {max-width:1680px !important;color:#222;}
+.content {width:100% !important;}
+.divMargins {margin-bottom: 2% !important;}
+.fullImg {width: 100%;max-width: 1680px;}
+.cmsArrowR {border-width: 0.4vw;}
+.ctaMargin {margin: 1vw 0;}
+.subMargin {margin: 1vw 0 0;}
+#topNavWrap {background: transparent;}
+#topNavContainer {border: none;}
+#footerContainer {float:none !important;margin: -1px auto 30px !important;}
+/*=======================================================
+Font Sizes
+=======================================================*/
+.bf-eyebrow {font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.1vw;word-spacing: -0.1vw;text-transform: uppercase;}
+
+.bf-headline {font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.1vw;word-spacing: -0.1vw;}
+
+.bf-copy {font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.1vw;word-spacing: -0.1vw;}
+
+.headline-XL {font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));letter-spacing: -0.15vw;}
+
+.headline-large {font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.1vw;word-spacing: -0.1vw;}
+
+.headline-medium {font-size: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));line-height: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.1vw;word-spacing: -0.1vw;}
+
+.headline-small {font-size: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));line-height: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.05vw;}
+
+.copy-sub {font-size: calc(16px + (20 - 16) * (100vw - 1024px) / (1440 - 1024));line-height:calc(14px + (20 - 16) * (100vw - 1024px) / (1440 - 1024));margin: 0.5vw 0 !important;}
+
+.copy-gr {font-size: calc(14px + (16 - 14) * (100vw - 1024px) / (1440 - 1024));line-height: calc(13px + (16 - 14) * (100vw - 1024px) / (1440 - 1024)); margin:8px 0 !important;}
+
+.copy-cta {font-size: calc(12px + (14 - 12) * (100vw - 1024px) / (1440 - 1024));line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));margin-top: calc(10px + (12 - 12) * (100vw - 1024px) / (1440 - 1024));}
+
+/*--- 1024px ---*/
+@media only screen and (max-width: 1024px) {
+  
+  .registry-events__text {left: 7%;} }
+@media only screen and (min-width:1024px) {
+  .registry-events__text {left: 7%;} }
+@media only screen and (min-width:1224px) {
+  .registry-events__text {left: 9%;} }
+@media only screen and (min-width:1400px) {
+  .registry-events__text {left: 12%;} }
+</style>
+
+
+
+<!--=============== Top Registry Picks ===============-->
+<section class="top-picks fullDiv mBottom2">
+  <div class="top-picks__header">
+    <p class="crate-helvetica-light headline-small">
+      Fall in Love With Our Top Registry Gifts
+    </p>
+  </div>
+  <div class="top-picks__container">
+    <div class="top-picks__image">
+      <a href="/wedding-registrant-favorites/f65206">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_TopPicks_1" alt="">
+          <p class="crate-helvetica-light copy-gr">
+            Top 50 Registrant Faves
+          </p>
+        </a>
+    </div>
+    <div class="top-picks__image">
+      <a href="/things-youll-reach-for-every-day/f62159">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_TopPicks_2" alt="">
+          <p class="crate-helvetica-light copy-gr">
+            Gifts under $25
+          </p>
+        </a>
+    </div>
+    <div class="top-picks__image">
+      <a href="/great-pieces-with-eye-to-design-and-function/f62162">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_TopPicks_3" alt="">
+          <p class="crate-helvetica-light copy-gr">
+            Gifts under $100
+          </p>
+        </a>
+    </div>
+    <div class="top-picks__image">
+      <a href="/curated-to-bring-you-the-best-of-the-best/f62163">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_TopPicks_4" alt="">
+          <p class="crate-helvetica-light copy-gr">
+            Gifts $100 and Higher
+          </p>
+        </a>
+    </div>
+  </div>
+</section>
+
+<!--=============== Group Gifting ===============-->
+<section class="group-gifts fullDiv">
+  <div class="register__container">
+    <div class="register__header">
+      <p class="crate-helvetica-light copy-sub">
+        INTRODUCING GROUP GIFTING
+      </p>
+      <p class="crate-helvetica-light headline-small">
+        Yes, you can group-gifts for that.
+      </p>
+      <p class="crate-helvetica-light copy-gr">
+        Wondering if it’s OK to group-gifts for a big-ticket <br>
+        item? Group gifting lets each guest contribute <br>
+        however much they’d like toward your dream gift.
+      </p>
+      <a href="javascript:Crate.React.Actions.PopupActions.fetchContent('/browse/popup?popupname=GroupGifting');" >
+        <p class="crate-helvetica-bold copy-cta mBottom4">
+          LEARN MORE
+        </p>
+      </a>
+    </div>
+    <!-- group-gifts header -->
+    <div class="register__img">
+      <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dGR_20180401_GroupGifting?wid=1440&qlt=75" alt="">
+    </div>
+    <!-- group-gifts img -->
+  </div>
+  <!-- group-gifts container -->
+</section>
+
+<!--=============== Top Registry Picks ===============-->
+<section class="reg-benefits fullDiv mBottom8">
+  <div class="reg-benefits__header">
+    <a href="https://www.crateandbarrel.com/gift-registry/benefits">
+      <p class="crate-helvetica-roman copy-sub">
+        6 More Reasons We're Your Perfect Match
+      </p>
+      <p class="crate-helvetica-bold copy-cta">
+        View all Registry Benefits
+      </p>
+    </a>
+  </div>
+  <div class="reg-benefits__container">
+    <div class="reg-benefits__image">
+      <a href="https://www.crateandbarrel.com/gift-registry/benefits">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_Benefits_1?fmt=png-alpha" alt="">
+          <p>
+            Exclusive Items
+          </p>
+        </a>
+    </div>
+    <div class="reg-benefits__image">
+      <a href="https://www.crateandbarrel.com/gift-registry/benefits">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_Benefits_2?fmt=png-alpha" alt="">
+          <p>
+            10% Discount
+          </p>
+        </a>
+    </div>
+    <div class="reg-benefits__image">
+      <a href="https://www.crateandbarrel.com/gift-registry/benefits">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_Benefits_3?fmt=png-alpha" alt="">
+          <p>
+            Free Shipping
+          </p>
+        </a>
+    </div>
+    <div class="reg-benefits__image">
+      <a href="https://www.crateandbarrel.com/gift-registry/benefits">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_Benefits_4?fmt=png-alpha" alt="">
+          <p>
+            Expert Advice
+          </p>
+        </a>
+    </div>
+    <div class="reg-benefits__image">
+      <a href="https://www.crateandbarrel.com/gift-registry/benefits">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_Benefits_5?fmt=png-alpha" alt="">
+          <p>
+            East App
+          </p>
+        </a>
+    </div>
+    <div class="reg-benefits__image">
+      <a href="https://www.crateandbarrel.com/gift-registry/benefits">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_Benefits_6?fmt=png-alpha" alt="">
+          <p>
+            Thank You Manager
+          </p>
+        </a>
+    </div>
+  </div>
+</section>
+
+<section class="fullDiv" style="width:80%;margin:0 auto;">
+  <a class="jsPopup" href="/SharedLayer/ShowPopup?popupname=GR_FreeShipping">
+    <img  style="width:100%;margin: 0 auto;" src="//images.crateandbarrel.com/is/image/Crate/gr-main-theme-free-shipping-box?wid=1008&fmt=gif" alt="Free Shipping on Gift Registry orders of $99 or more. Some exclusions apply. Click to learn more about Free Shipping on Gift Registry orders."/>
+  </a>
+</section>
+
+<section class="fullDiv registry-events">
+  <div class="registry-events__container">
+      <div class="registry-events__text">
+      <div class="border-top"></div>
+        <a href="/stores/event">
+        <h2 class="copy-sub crate-helvetica-bold">
+          Private Registry Events
+      
+          <p class="copy-sub crate-helvetica-light">
+            We’re throwing a party just for you.
+        </p>
+        <p class="copy-gr crate-helvetica-light">
+          Have the store all to yourself as you get inside tips<br> 
+          from our registry experts, create your perfect registry<br> 
+          and take home a free gift. 
+        </p>
+        <p class="copy-cta crate-helvetica-bold cmsBlack">
+          Learn more
+        </p>
+      </a>
+    </div>
+    <!-- registry-events__text -->
+  <div class="registry-events__img">
+  <a href="/stores/event">
+      <img class="fullImg" src="//images.crateandbarrel.com/is/image/Crate/CB_DHP_GR_201711_Home" alt="">
+    </a>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+</section>
+
+<!-- PRE VIDEO -->
+<section class="videoPlayer fullDiv">
+<div style="width:85%; margin: 0 auto;position:relative;">
+  <a href="/welcome-love-in">
+    <video id='video1' poster="//images.crateandbarrel.com/is/image/Crate/CB_DHP_201711_WlcomeLoveVid_v1?wid=1008">
+      <source src="https://s7d5.scene7.com/is/content/Crate/Video/Brand Team/cb_dLP_20171117_wlcmlvn.mp4" type="video/mp4">
+    </video>
+  </a>
+  
+  <div id="grVideoText">
+    <h2 class="headline-small crate-helvetica-bold cmsWhite">Welcome Love In</h2>
+    <p class="headline-small crate-helvetica-roman cmsWhite" style="margin:10px 0;">
+      Real love. Real couples.
+    </p>
+    <p class="copy-gr crate-helvetica-roman cmsWhite">
+      And inspiration from their Crate and Barrel wedding registries, for real.
+    </p>
+    
+  <div id='fallBackImg'></div>
+  <div id='playBtn'></div>
+  <div id='replayBtn'></div> 
+  </div> 
+</div>
+</section>
+<!--=============== CAROUSEL ===============-->
+<section class="fullDiv mBottom8">
+  <div class="product-carousel__container">
+      
+      <div class="carousel__block">
+        <a id="grabber0Link" href="">
+            <img class="fullImg" src="//images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_CttngBrd" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber0Name" class="crate-helvetica-roman copy-sub"></p>
+                <p id="grabber0Price" class="crate-helvetica-bold copy-cta"></p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+              </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber1Link" href="">
+           <img class="fullImg" src="//images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_Wine" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber1Name" class="crate-helvetica-roman copy-sub"></p>
+                <p id="grabber1Price" class="crate-helvetica-bold copy-cta"></p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+              </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber2Link" href="">
+            <img class="fullImg" src="//images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_BarSet" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber2Name" class="crate-helvetica-roman copy-sub"></p>
+                <p id="grabber2Price" class="crate-helvetica-bold copy-cta"></p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+              </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber3Link" href="">
+            <img class="fullImg" src="//images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_WddngGRMain_ChipDip" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber3Name" class="crate-helvetica-roman copy-sub"></p>
+                <p id="grabber3Price" class="crate-helvetica-bold copy-cta"></p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+              </a>
+      </div>
+      <!-- carousel block -->
+
+    </div>
+    <!-- carousel responsive -->
+  </div>
+  <!-- product-carousel container -->
+</section>
+<!-- product-carousel -->
+
+<!-- CURALATE -->
+<div class="curalate-text" style="margin:0 auto;width:40%;margin-bottom:1%;text-align:center;">
+  <h2 class="crate-helvetica-bold headline-small cmsBlack"><span class="crate-helvetica-light">#Crate</span>Wedding</h2>
+  <p class="crate-helvetica-roman copy-gr" style="margin:8px 0">Share photos, shop photos and get inspired.</p>
+  <p class="crate-helvetica-roman copy-gr">Follow us on Instagram @crateandbarrel</p>
+</div>
+<div id="curalate-fan-reel-wrapper" class="fullDiv"></div>
+
+<script type="text/javascript" src="//d116tqlcqfmz3v.cloudfront.net/crateandbarrel-288/gallery.js"></script>
+
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+
+
+<script>
+
+Curalate.FanReels.Gallery.init({
+        code: "crateandbarrel",
+        filters: {
+            tags: "giftregistry"
+        }
+    });
+
+function runTheThings() {
+  $(document).ready(function() {
+    $(".responsive").slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    var video = document.getElementById('video1');
+  var plybtn = document.getElementById('playBtn');
+    var overlay = document.getElementById('vidOverlay')
+  var replybtn = document.getElementById('replayBtn');
+  var $text = document.getElementById('grVideoText');
+  var fallBack = document.getElementById('fallBackImg')
+
+  plybtn.addEventListener('click',function(){
+    video.play();
+    $(plybtn).hide();
+    $($text).hide();
+    $(overlay).hide();
+    $(fallBack).hide();
+    
+    },false);
+
+  replybtn.addEventListener('click',function(){
+    video.play();
+    $(replybtn).hide();
+    $($text).hide();
+    $(overlay).hide();
+    $(fallBack).hide();
+    },false);
+
+  video.addEventListener('ended',function(){
+    $('#replayBtn').show();
+    $($text).show();
+    $(overlay).show();
+    $(fallBack).show();
+    });
+  
+
+    var getProductNavigateDetail = function(skuList) {
+      var postUrl =
+          "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+        imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+      $.ajax({
+        url: postUrl,
+        type: "POST",
+        data: { skus: skuList },
+        dataType: "json",
+        success: function(result) {
+          if (result[0] != null) {
+            for (let i = 0; i < result.length; i++) {
+              $("#grabber" + [i] + "Link").attr("href", result[i].NavigateUrl);
+              $("#grabber" + [i] + "Image").attr("src", imageURL + result[i].ImagePath);
+              $("#grabber" + [i] + "Name").html(result[i].Name);
+              $("#grabber" + [i] + 'Price').html(result[i].FormattedPrice);
+            }
+          }
+        },
+        error: function(jqXhr, textStatus, errorThrown) {
+          console.log(textStatus, errorThrown);
+        }
+      });
+    };
+    getProductNavigateDetail("629050,583394,682269,674682");
+  });
+}
+
+function jQueryIsLoaded() {
+  if (window.jQuery) {
+    console.log("jQuery is loaded");
+
+    runTheThings();
+  } else {
+    setTimeout(jQueryIsLoaded, 50);
+  }
+}
+
+jQueryIsLoaded();
+
+</script>

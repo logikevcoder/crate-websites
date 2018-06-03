@@ -1,0 +1,1048 @@
+<style>
+  /*=======================================================
+Header Modules
+=======================================================*/
+
+  .center-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .border-btm {
+    width: 18%;
+    border-bottom: 5px solid #222;
+    margin: 5% auto 7%;
+  }
+
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__text {
+    text-align: center;
+    width: 95%;
+    margin: 5% auto;
+  }
+
+  .hero__text h2 {
+    font-size: 36px;
+    letter-spacing: -.3vw;
+    line-height: 1.1;
+  }
+
+  .hero__text__btns {
+    display: inline-block;
+  }
+
+  /*=======================================================
+video
+=======================================================*/
+
+  video {
+    width: 100%;
+  }
+
+  /*=======================================================
+video
+=======================================================*/
+
+  #vidDJ {
+    width: 100%;
+  }
+
+  .video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vidText {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+  }
+
+  .replayBtn {
+    width: 60px;
+    height: 60px;
+    background: url(//images.crateandbarrel.com/is/image/Crate/play_replay_button_sprite_white?fmt=png-alpha);
+    background-position: -100% 0;
+    background-size: 200%;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    margin: auto;
+    cursor: pointer;
+    display: none;
+    margin-top: 60px;
+  }
+
+  .posterImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+  }
+
+  .stretch {
+    width: 100%;
+    height: 100%;
+  }
+
+  .playBtn {
+    width: 50px;
+    height: 50px;
+    background: url(//images.crateandbarrel.com/is/image/Crate/play_replay_button_sprite_white?fmt=png-alpha);
+    background-position: 0 0;
+    background-size: 200%;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  /*=======================================================
+design service
+=======================================================*/
+
+  .design-service__text {
+    position: absolute;
+    left: 5%;
+    top: 12%;
+  }
+
+  .img-right-text__img {
+    width: 75%;
+  }
+
+  .design-service__img-3 {
+    width: 55%;
+    position: absolute;
+    left: 42%;
+    top: 31%;
+    z-index: 10;
+  }
+
+  /*=======================================================
+Personalize Your Design
+=======================================================*/
+
+  .your-design__img {
+    margin-bottom: -20%;
+  }
+
+  .your-design__text {
+    margin: 0 0 10% 5%;
+  }
+
+  /*=======================================================
+Visualize Your Room
+=======================================================*/
+
+  .your-room__text h2 {
+    margin: 4% 0 3%;
+  }
+
+  /*=======================================================
+2D Floorplan
+=======================================================*/
+
+  .floorplan__text {
+    position: absolute;
+    top: 46%;
+    left: 5%;
+  }
+
+  .floorplan__img {
+    width: 60%;
+    margin-left: auto;
+  }
+
+  /*=======================================================
+Powered By
+=======================================================*/
+
+  .powered-by {
+    width: 90%;
+    margin: 3% auto;
+  }
+
+  /*=======================================================
+Buttons
+=======================================================*/
+
+  .btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-button {
+    text-align: center;
+    margin: 5% 0;
+  }
+
+  .text-button__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #222;
+    width: 140px;
+    height: 50px;
+    margin: 5% auto !important;
+  }
+
+  /*=======================================================
+General Styling
+=======================================================*/
+
+  .m-fullDiv {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .m-halfWidth {
+    width: 50%;
+    position: relative;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-marginDiv {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .m-insetDiv {
+    width: 90%;
+    margin: 5% auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-insetDiv>a>.m-headline {
+    margin-top: 10px;
+  }
+
+  .m-fullDiv a,
+  .m-insetDiv a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-zero-margin {
+    margin: 0 !important;
+  }
+
+  .mBottom4 {
+    margin-bottom: 4%;
+  }
+
+  .mBottom8 {
+    margin-bottom: 8%;
+  }
+
+  .mBottom12 {
+    margin-bottom: 12%;
+  }
+
+  .padTop10 {
+    padding-top: 10%;
+  }
+
+  h2 {
+    color: #222 !important;
+    line-height: .9;
+    letter-spacing: -.2vw;
+    margin-bottom: 15px;
+    padding,
+    margin: 0 !important;
+  }
+
+  p {
+    font-size: 17px;
+    letter-spacing: -.06vw;
+    word-spacing: -.2vw;
+  }
+
+  a h2 {
+    padding: 0 !important;
+  }
+
+
+  /*=======================================================
+Slick Navigation Styling
+=======================================================*/
+
+  .slick-dots {
+    bottom: -30px !important;
+    top: 100% !important;
+    width: 90px !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 21px !important;
+    line-height: 23px !important;
+    width: 15px !important;
+    height: 15px !important;
+    opacity: 1 !important;
+    color: #000 !important;
+  }
+
+  .slick-dots li {
+    width: 20px !important;
+    margin: 5px 5px !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    border: 2px solid #000 !important;
+    border-radius: 50% !important;
+    color: transparent !important;
+  }
+
+  .slick-track {
+    width: 1408px !important;
+  }
+
+  .slick-slide {
+    width: 284px !important;
+    margin-right: 1% !important;
+  }
+
+  /*=======================================================
+Carousel Styling
+=======================================================*/
+
+  .product-carousel {
+    margin-left: 5%;
+  }
+
+  /* .product-carousel__wrapper > div > div > div {margin-right:.5% !important;} */
+
+  .product-carousel__wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product-carousel__wrapper::before {
+    content: none;
+  }
+
+  .product-carousel__wrapper::after {
+    content: none;
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  /*=======================================================
+Image Gallery
+=======================================================*/
+
+  .img__gallery {
+    position: relative;
+    width: 100%;
+    ;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .img__gallery-container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    margin-bottom: 2%;
+  }
+
+  .img__gallery__block {
+    width: 82%;
+    position: relative;
+    display: inline-block;
+    padding-right: .7%;
+    vertical-align: top;
+    white-space: normal;
+  }
+
+  .img__gallery__text {
+    margin-right: 4%;
+  }
+
+
+  /*=======================================================
+Fonts
+=======================================================*/
+
+  .m-head-XL {
+    font-size: 45px;
+    line-height: 1;
+  }
+
+  .m-head-large {
+    font-size: 37px;
+    line-height: 1;
+  }
+
+  .m-head-medium {
+    font-size: 25px;
+    line-height: 1;
+    margin: 8px 0;
+  }
+
+  .m-body {
+    font-size: 19px;
+    line-height: 1.2;
+    margin: 5px 0
+  }
+
+  .m-eyebrow {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .m-cta {
+    font-size: 11px;
+    margin: 5px 0;
+  }
+
+  /*=======================================================
+Media Queries
+=======================================================*/
+
+  @media only screen and (max-width:320px) {
+    .m-head-XL {
+      font-size: 40px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 27px;
+    }
+    .m-head-medium {
+      font-size: 21px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 17px;
+      margin-top: 8px;
+    }
+    .m-eyebrow {
+      font-size: 14px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 10px;
+      margin: 5px 0 0 0;
+    }
+  }
+
+  @media only screen and (min-width:414px) {
+    .m-head-XL {
+      font-size: 50px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 37px;
+    }
+    .m-head-medium {
+      font-size: 29px;
+    }
+    .m-body {
+      font-size: 22px;
+      margin-top: 14px;
+    }
+    .m-eyebrow {
+      font-size: 17px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 12px;
+      margin: 8px 0 0 0;
+    }
+  }
+</style>
+
+<!--=============== Logo ===============-->
+<section class="logo m-fullDiv">
+  <div class="logo__img m-fullDiv">
+    <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_PAGE_TITLE" alt="Crate Design Studio">
+  </div>
+</section>
+<!--=============== Hero ===============-->
+<section class="hero m-fullDiv mBottom12">
+  <!--- Video Section -->
+  <div class="hero__video">
+    <div class="video-container">
+      <video class="vidDJ" width="100%" preload="none" poster="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_HOW_IT_WORKS_VID_POSTER_3">
+        <source src="https://s7d5.scene7.com/is/content/Crate/LandingPages/Design%20Studio/cb_designstudio_HERO_VID_LOOP_9s_20180424.mp4"
+          type="video/mp4">
+      </video>
+      <div class="vidText">
+        <div class="playBtn"></div>
+        <div class="replayBtn"></div>
+      </div>
+      <!-- vidText -->
+    </div>
+    <!-- video-container -->
+
+  </div>
+  <!-- DS-video -->
+  <div class="hero__text">
+    <h2 class="crate-helvetica-light">
+      We design it. You love it.
+      <br>
+      <strong>And it's free.</strong>
+    </h2>
+  </div>
+  <!-- hero__text -->
+  <div class="btn-group">
+    <a href="/design-studio-questionnaire" style="margin-right:2%;">
+      <div class="button button-primary button-lg button-add-single m-cta" value="addToCart" id="addToCartButton">
+        <span>Start online</span>
+      </div>
+    </a>
+    <a href="https://timetrade.com/app/crateandbarrel/workflows/CRATEPAL001/schedule?appointmentTypeGroupId=cratestudios&appointmentTypeId=in_store_design">
+      <div class="button button-primary button-lg button-add-single m-cta" value="addToCart" id="addToCartButton">
+        <span>Start in-store</span>
+      </div>
+    </a>
+  </div>
+  <!-- dual buttons -->
+</section>
+<!--=============== Design Service===============-->
+<section class="design-service m-fullDiv mBottom12">
+  <div class="center-header">
+    <h2 class="crate-helvetica-bold m-head-large">
+      <span class="crate-italic m-body" style="margin-bottom:10px;">Try our </span>
+      <br> Complimentary
+      <br> Design Service.
+    </h2>
+    <div class="border-btm"></div>
+  </div>
+  <!-- center-header -->
+
+  <div class="design-service__img" style="margin-bottom:20%;">
+    <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_COMP_SRVCS_LETS_CHAT_IMG" alt="Let's chat. ">
+  </div>
+  <div class="design-service__text">
+    <h2 class="crate-helvetica-bold m-head-medium">
+      Let's
+      <br> chat.
+    </h2>
+    <p class="crate-helvetica-roman m-eyebrow">
+      Our Design Experts
+      <br> are happy to help
+      <br> with design solutions
+      <br> big and small from
+      <br> finding the perfect
+      <br> sofa to a whole
+      <br> room refresh.
+    </p>
+  </div>
+
+  <div class="design-service__img-3">
+    <div class="DS__video">
+      <div class="video-container">
+        <video class="vidDJ" width="100%" preload="none" poster="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_COMP_SRVCS_CHAT_VID_POSTER">
+          <source src="https://s7d5.scene7.com/is/content/Crate/LandingPages/Design%20Studio/cb_designstudio_VID15_ANTWAN_nocaption.mp4"
+            type="video/mp4">
+        </video>
+        <div class="vidText">
+          <div class="playBtn"></div>
+          <div class="replayBtn"></div>
+        </div>
+        <!-- vidText -->
+      </div>
+      <!-- video-container -->
+    </div>
+    <!-- DS-video -->
+  </div>
+
+  <!--=============== Personalize Your Design ===============-->
+  <div class="your-design m-fullDiv mBottom12">
+    <div class="your-design__img">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_COMP_SRVCS_IPAD" alt="Personalize your design. ">
+    </div>
+    <!-- your-design__img -->
+
+    <div class="your-design__text">
+      <h2 class="crate-helvetica-bold m-head-medium">
+        Personalize
+        <br> your design.
+      </h2>
+      <p class="crate-helvetica-roman m-eyebrow">
+        Bring us your photos and ideas. We’ll work with you to create a digital mood board that’s completely shoppable.
+      </p>
+    </div>
+    <!-- your-design__text -->
+
+
+    <section class="img__gallery">
+      <div class="img__gallery-container">
+
+        <div class="img__gallery__block">
+          <a href="">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_COMP_SRVCS_ROOM_SLIDE_1" alt="">
+            <div class="img__gallery__text">
+              <p class="crate-helvetica-bold m-eyebrow"> </p>
+            </div>
+            <!-- gallery image text -->
+          </a>
+        </div>
+        <!--img gallery block -->
+
+        <div class="img__gallery__block">
+          <a href="">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_COMP_SRVCS_ROOM_SLIDE_2" alt="">
+            <div class="img__gallery__text">
+              <p class="crate-helvetica-bold m-eyebrow"> </p>
+            </div>
+            <!-- gallery image text -->
+          </a>
+        </div>
+        <!--img gallery block -->
+
+        <div class="img__gallery__block">
+          <a href="">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_COMP_SRVCS_ROOM_SLIDE_3" alt="">
+            <div class="img__gallery__text">
+              <p class="crate-helvetica-bold m-eyebrow"> </p>
+            </div>
+            <!-- gallery image text -->
+          </a>
+        </div>
+        <!--img gallery block -->
+
+      </div>
+      <!-- img gallery container -->
+    </section>
+    <!-- img gallery -->
+  </div>
+</section>
+
+<!--=============== Premium Design Service ===============-->
+<section class="WD m-fullDiv">
+  <div class="center-header">
+    <p class="crate-italic m-body" style="margin-bottom: 10px;">
+      or upgrade to our
+    </p>
+    <h2 class="crate-bold m-head-large">Premium
+      <br> Design Service</h2>
+    <p class="crate-helvetica-roman m-eyebrow">
+      for a $99 fee redeemable
+      <br> toward your purchase.
+    </p>
+    <div class="border-btm"></div>
+  </div>
+
+  <!--=============== Visualize Your Room ===============-->
+  <section class="your-room m-insetDiv" style="margin-bottom:-9%;">
+    <div class="your-room__img">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_PREM_SRVCS_VISUALIZE_ROOM" alt="Visualize your room.">
+    </div>
+    <div class="your-room__text">
+      <h2 class="crate-helvetica-bold m-head-medium">
+        Visualize your room.
+      </h2>
+      <p class="crate-helvetica-roman m-eyebrow">
+        Our 3D Visualization allows you to see how
+        <br> furniture and decor will look in your
+        <br> room before you buy.
+      </p>
+    </div>
+  </section>
+
+  <!--=============== 2D Floorplan ===============-->
+  <section class="floorplan m-fullDiv">
+    <div class="floorplan__text">
+      <h2 class="crate-helvetica-bold m-head-medium">
+        2D
+        <br> Floorplan
+      </h2>
+      <p class="crate-helvetica-roman m-eyebrow">
+        We’ll create
+        <br> a custom floorplan
+        <br> to make sure that your new
+        <br> pieces will fit perfectly in your space.
+      </p>
+    </div>
+    <!-- your-room__text -->
+
+    <div class="floorplan__img">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_PREM_SRVCS_2D_FLOORPLAN?fmt=png-alpha"
+        alt="2D Floorplan">
+    </div>
+    <!-- 2d-floorplan__img -->
+
+  </section>
+
+  <!--=============== In-home visits ===============-->
+  <section class="in-home-visits m-insetDiv mBottom12">
+    <div class="hero__video">
+      <div class="video-container">
+        <video class="vidDJ" width="100%" preload="none" poster="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_PREM_HOMEVISIT_VID_POSTER">
+          <source src="https://s7d5.scene7.com/is/content/Crate/LandingPages/Design%20Studio/cb_designstudio_VID30_BRIAN_nocaption.mp4"
+            type="video/mp4">
+        </video>
+        <div class="vidText">
+          <div class="playBtn"></div>
+          <div class="replayBtn"></div>
+        </div>
+        <!-- vidText -->
+      </div>
+      <!-- video-container -->
+    </div>
+    <!-- DS-video -->
+    <div class="your-room__text">
+      <h2 class="crate-helvetica-bold m-head-medium">
+        In-home visits available.
+      </h2>
+      <p class="crate-helvetica-roman m-eyebrow">
+        We&rsquo;re always happy to come to your home and make sure your new pieces work perfectly in your space.
+      </p>
+    </div>
+  </section>
+  <!-- In Home Visits -->
+
+
+  <!--=============== DIY Digital Design Tools ===============-->
+  <section class="sleep-play m-fullDiv mBottom8" sty>
+    <a href="">
+      <div class="center-header" style="margin-top:40px;">
+        <h2 class="crate-helvetica-light m-head-large">
+          Or try our
+          <br>
+          <strong>DIY design tools</strong>
+        </h2>
+        <div class="border-btm"></div>
+      </div>
+      <!-- center-header -->
+    </a>
+
+    <div>
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_VIEW_IN_ROOM" alt="View our products in your room.">
+    </div>
+
+    <div class="text-button">
+      <h2 class="crate-helvetica-bold m-head-medium">
+        View our products
+        <br> in your room.
+      </h2>
+      <p class="crate-helvetica-roman m-eyebrow" style="margin-top:3%;">
+        The Crate and Barrel iPhone app uses your camera to insert our products in your room.
+      </p>
+      <a href="https://www.crateandbarrel.com/mobile/gift-registry-application">
+        <div class="button button-secondary button-lg m-cta crate-bold" aria-disabled="false" style="width: 30%;margin:5% auto;">
+          Learn More
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- Digital Design Tools -->
+
+
+  <!--=============== Ready to get started? ===============-->
+  <section class="get-started m-fullDiv mBottom12">
+    <a href="/design-studio-questionnaire">
+      <div class="center-header" style="margin-top: 40px;">
+        <h2 class="crate-helvetica-bold m-head-large">
+          Ready to
+          <br> get started?
+        </h2>
+        <div class="border-btm"></div>
+      </div>
+      <!-- center-header -->
+
+      <div>
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_READY_TO_GET_STARTED" alt="">
+      </div>
+    </a>
+
+    <div class="btn-group" style="margin:3% 0;">
+      <a href="/design-studio-questionnaire">
+        <a href="/design-studio-questionnaire" style="margin-right:2%;">
+          <button class="button button-primary button-lg button-add-single m-cta" value="addToCart" id="addToCartButton">
+            <span>Start online</span>
+          </button>
+        </a>
+        <a href="https://timetrade.com/app/crateandbarrel/workflows/CRATEPAL001/schedule?appointmentTypeGroupId=cratestudios&appointmentTypeId=in_store_design">
+          <button class="button button-primary button-lg button-add-single m-cta" value="addToCart" id="addToCartButton">
+            <span>Start in-store</span>
+          </button>
+        </a>
+    </div>
+    <!-- dual buttons -->
+
+  </section>
+  <!-- Get Started -->
+
+  <!--=============== Digital Mood Board ===============-->
+  <section class="mood-board m-fullDiv">
+
+    <div class="hero__video">
+      <div class="video-container">
+        <video class="vidDJ" width="100%" preload="none" poster="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_MOODBOARD_VID_POSTER">
+          <source src="https://s7d5.scene7.com/is/content/Crate/LandingPages/Design%20Studio/cb_designstudio_VID30_BRIAN_nocaption.mp4"
+            type="video/mp4">
+        </video>
+        <div class="vidText">
+          <div class="playBtn"></div>
+          <div class="replayBtn"></div>
+        </div>
+        <!-- vidText -->
+      </div>
+      <!-- video-container -->
+    </div>
+    <!-- DS-video -->
+
+    <div class="text-button m-fullDiv">
+      <h2 class="crate-helvetica-bold m-head-medium">
+        Digital Mood Board
+      </h2>
+      <p class="crate-helvetica-roman m-eyebrow" style="margin:3% auto;width:90%;">
+        Choose your favorite pieces and see how they work together.
+      </p>
+      <a href="/moodboard-how-to">
+        <div class="button button-secondary button-lg m-cta crate-bold" aria-disabled="false" style="width: 30%;margin:5% auto;">
+          Learn More
+        </div>
+      </a>
+    </div>
+  </section>
+  <!-- Digital Design Tools -->
+
+  <!--=============== Design Studio ===============-->
+  <section class="DS m-fullDiv mBottom12" style="margin-top:10%;">
+
+    <a href="/kids/">
+      <div class="center-header">
+        <h2 class="crate-helvetica-bold m-head-large">
+          See How
+          <br> it Works
+        </h2>
+        <div class="border-btm"></div>
+      </div>
+      <!-- center-header -->
+    </a>
+
+
+    <section class="img__gallery">
+      <div class="img__gallery-container">
+
+        <div class="img__gallery__block">
+          <div class="hero__video">
+            <div class="video-container">
+              <video class="vidDJ" width="100%" preload="none" poster="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_HOW_IT_WORKS_VID_POSTER_1">
+                <source src="https://s7d5.scene7.com/is/content/Crate/LandingPages/Design%20Studio/cb_designstudio_VID30_BRIAN_nocaption.mp4"
+                  type="video/mp4">
+              </video>
+              <div class="vidText">
+                <div class="playBtn"></div>
+                <div class="replayBtn"></div>
+              </div>
+              <!-- vidText -->
+            </div>
+            <!-- video-container -->
+          </div>
+          <div class="img__gallery__text">
+            <p class="crate-helvetica-bold m-eyebrow"> </p>
+          </div>
+          <!-- gallery image text -->
+        </div>
+        <!--img gallery block -->
+
+        <div class="img__gallery__block">
+          <div class="hero__video">
+            <div class="video-container">
+              <video class="vidDJ" width="100%" preload="none" poster="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_HOW_IT_WORKS_VID_POSTER_2">
+                <source src="https://s7d5.scene7.com/is/content/Crate/LandingPages/Design%20Studio/cb_designstudio_VID30_GINA_nocaption.mp4"
+                  type="video/mp4">
+              </video>
+              <div class="vidText">
+                <div class="playBtn"></div>
+                <div class="replayBtn"></div>
+              </div>
+              <!-- vidText -->
+            </div>
+            <!-- video-container -->
+          </div>
+          <!-- DS-video -->
+          <div class="img__gallery__text">
+            <p class="crate-helvetica-bold m-eyebrow"> </p>
+          </div>
+          <!-- gallery image text -->
+        </div>
+        <!--img gallery block -->
+
+        <div class="img__gallery__block">
+          <div class="hero__video">
+            <div class="video-container">
+              <video class="vidDJ" width="100%" preload="none" poster="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_HOW_IT_WORKS_VID_POSTER_3">
+                <source src="https://s7d5.scene7.com/is/content/Crate/LandingPages/Design%20Studio/cb_designstudio_VID30_ANTWAN_nocaption.mp4"
+                  type="video/mp4">
+              </video>
+              <div class="vidText">
+                <div class="playBtn"></div>
+                <div class="replayBtn"></div>
+              </div>
+              <!-- vidText -->
+            </div>
+            <!-- video-container -->
+          </div>
+          <!-- DS-video -->
+          <div class="img__gallery__text">
+            <p class="crate-helvetica-bold m-eyebrow"> </p>
+          </div>
+          <!-- gallery image text -->
+        </div>
+        <!--img gallery block -->
+
+        <div class="img__gallery__block">
+          <div class="hero__video">
+            <div class="video-container">
+              <video class="vidDJ" width="100%" preload="none" poster="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_HOW_IT_WORKS_VID_POSTER_4">
+                <source src="https://s7d5.scene7.com/is/content/Crate/LandingPages/Design%20Studio/cb_designstudio_VID30_MICHAEL_nocaption.mp4"
+                  type="video/mp4">
+              </video>
+              <div class="vidText">
+                <div class="playBtn"></div>
+                <div class="replayBtn"></div>
+              </div>
+              <!-- vidText -->
+            </div>
+            <!-- video-container -->
+          </div>
+          <!-- DS-video -->
+          <div class="img__gallery__text">
+            <p class="crate-helvetica-bold m-eyebrow"> </p>
+          </div>
+          <!-- gallery image text -->
+        </div>
+        <!--img gallery block -->
+
+      </div>
+      <!-- img gallery container -->
+    </section>
+    <!-- img gallery -->
+
+    <a href="https://www.crateandbarrel.com/blog/category/decor/">
+      <button class="button button-secondary button-lg m-cta crate-bold" aria-disabled="false" style="width: auto;margin:5% auto;">
+        Visit our blog
+      </button>
+    </a>
+
+  </section>
+  <!-- Design Studio -->
+
+  <section class="seo-copy" style="width:95%;position:relative;margin:0 auto 20%;">
+    <div class="crate-roman" style="font-size:12px;">
+      Whether you’re updating your kitchen or redesigning the master bedroom, revamp your home with interior design services from
+      Crate and Barrel. Our design experts will help you find that extra something your room needs, from chic wall mirrors
+      to custom furniture sets. For inspiration and expert interior advice, explore our complimentary design services. Bring
+      in photos of your existing furniture arrangement and your ideas for the new layout, and our design experts will help
+      you build a personalized digital mood board. They’ll work with you to balance color palettes, decide on furniture placement
+      and figure out a decor arrangement to create a cohesive, individual look. For hands-on help visualizing and realizing
+      your dream home, consider our premium design service. With the resources of a full interior design studio, our team can
+      construct a 3D visualization that allows you to see a rendering of the refurbished room before you buy any new furniture
+      or decor. Additionally, our design experts draft a custom 2D floor plan to ensure new pieces fit the dimensions of your
+      living room, dining room or bedroom. Stop in to your local store to learn more, or start at home with our DIY digital
+      design tools. For other Crate and Barrel design services tailored to fit your style, check out our
+      <a href='/custom-rugs'>custom rug program</a>,
+      <a href='/sectional-planner-collections/'>sectional planner</a> and
+      <a href='/custom-upholstery'>custom upholstery</a> program.
+    </div>
+  </section>
+
+  <div class="powered-by">
+    <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mlp_dsgnstd_MODSY_CALLOUT_PG_BOTTOM" alt="">
+  </div>
+
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+  />
+
+  <script>
+    function runTheThings() {
+      $(document).ready(function () {
+        let video = document.getElementById("vidDJ");
+
+        $(".playBtn").click(function () {
+          let video = $(this)
+            .closest(".video-container")
+            .find("video")[0];
+          video.play();
+
+          $(this).hide();
+          $("video").on("click", function () {
+            video.setAttribute("controls", "controls");
+            $("video").click(function () {
+              this.paused ? this.play() : this.pause();
+            });
+          });
+          return false;
+        });
+
+        $("video").addEventListener("ended", function () {
+          video.load();
+          $(".replayBtn").show();
+          $(".playBtn").hide();
+          $(".vidText").show();
+        });
+
+
+
+        document
+          .getElementsByClassName("vidDJ1,vidDJ2,vidDJ3,vidDJ5,vidDJ6,vidDJ7,vidDJ8,")
+          .addEventListener("ended", myHandler, false);
+        function myHandler(e) {
+          video.load();
+          video.removeAttribute("controls");
+          $("#replayBtn").show();
+          $("#playBtn").hide();
+          $("#vidText").show();
+        }
+
+        video.addEventListener("ended", function () {
+          video.load();
+          $(",replayBtn").show();
+          $(".playBtn").hide();
+          $(".vidText").show();
+        });
+      });
+    }
+
+    function jQueryIsLoaded() {
+      if (window.jQuery) {
+        console.log("jQuery is loaded");
+
+        runTheThings();
+      } else {
+        setTimeout(jQueryIsLoaded, 50);
+      }
+    }
+
+    jQueryIsLoaded();
+
+
+
+  </script>

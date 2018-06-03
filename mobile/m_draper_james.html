@@ -1,0 +1,693 @@
+<style>
+  /*=======================================================
+General Styling
+=======================================================*/
+
+  .m-fullDiv {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-marginDiv {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .m-insetDiv {
+    width: 90%;
+    margin: 5% auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-insetDiv>a>.m-headline {
+    margin-top: 10px;
+  }
+
+  .m-fullDiv a,
+  .m-insetDiv a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-zero-margin {
+    margin: 0 !important;
+  }
+
+  .mBottom4 {
+    margin-bottom: 4%;
+  }
+
+  .mBottom8 {
+    margin-bottom: 8%;
+  }
+
+  .mBottom12 {
+    margin-bottom: 12%;
+  }
+
+  .center-header {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /*=======================================================
+Buttons
+=======================================================*/
+
+  .shopAllBtn {
+    background: #222;
+    text-align: center;
+    width: 60%;
+    padding: 5px 30px;
+    margin: 10% auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero {
+    margin-bottom: -23%;
+  }
+
+  .hero__content {
+    position: absolute;
+    background: #fff;
+    left: 0%;
+    right: 0%;
+    top: 43%;
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  .hero__content__img {
+    width: 40%;
+    margin: 7% auto;
+  }
+
+  .hero__content__text {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /*=======================================================
+Video
+=======================================================*/
+
+  .video__container {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  video {
+    width: 100%;
+  }
+
+  #vidDJ {
+    width: 100%;
+  }
+
+  #vidText {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+
+  #playBtn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(//images.crateandbarrel.com/is/image/Crate/play_replay_button_sprite_white?fmt=png-alpha);
+    background-position: 0 0;
+    background-size: 200%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  #replayBtn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url(//images.crateandbarrel.com/is/image/Crate/play_replay_button_sprite_white?fmt=png-alpha);
+    background-position: -100% 0;
+    background-size: 200%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    cursor: pointer;
+    display: none;
+  }
+
+  #posterImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+  }
+
+  .stretch {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*=======================================================
+Shop All CTA
+=======================================================*/
+
+  .shopAll-cta {
+    background-color: #1D365C;
+    height: 60px;
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*=======================================================
+Grid of items
+=======================================================*/
+
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .grid-item img {
+    width: 100%;
+  }
+
+  .grid-text {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 3;
+  }
+
+  .grid-text div {
+    padding: 60px 0;
+    width: 85%;
+  }
+
+  /*=======================================================
+Borders
+=======================================================*/
+
+  .grid-item::before {
+    content: "";
+    width: 10px;
+    position: absolute;
+    border-bottom: 1px dotted #000;
+    width: 95%;
+    top: 95.8%;
+    left: 4px;
+  }
+
+  .grid-item:after {
+    border-right: 1px dotted #000;
+    position: absolute;
+    content: "";
+    height: 93%;
+    top: 1%;
+    left:0.1%;
+  }
+
+  .no-border-bottom {
+    content: none !important;
+  }
+
+  .no-border-left:after {
+    content: none !important;
+  }
+
+  .border-top {
+    border-top: 1px dotted #000;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #d3d3d3;
+    width: 30%;
+    margin: 4% auto;
+  }
+
+  /*=======================================================
+Fonts
+=======================================================*/
+
+  .m-head-large {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .m-head-medium {
+    font-size: 17px;
+    line-height: 1;
+    margin: 8px 0;
+  }
+
+  .m-body {
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 5px 0;
+  }
+
+  .m-eyebrow {
+    font-size: 13px;
+    margin: 8px 0;
+  }
+
+  .m-cta {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  /*=======================================================
+Media Queries
+=======================================================*/
+
+  @media only screen and (max-width: 340px) {
+    .m-XLheadline {
+      font-size: 80px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 19px;
+    }
+    .m-head-medium {
+      font-size: 16px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .m-eyebrow {
+      font-size: 12px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 10px;
+      margin: 5px 0 0 0;
+    }
+  }
+
+  @media only screen and (min-width: 414px) {
+    .m-XLheadline {
+      font-size: 120px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 24px;
+    }
+    .m-head-medium {
+      font-size: 20px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 18px;
+      margin-top: 14px;
+    }
+    .m-eyebrow {
+      font-size: 15px;
+    }
+  }
+</style>
+
+<!-- HERO -->
+<div class="main-content">
+
+  <!--=============== Hero ===============-->
+  <div class="m-fullDiv hero">
+    <a href="/special-features/pool-furniture/1">
+      <img class="m-fullImg" src="//images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_hero?qlt=80&">
+      <div class="hero__content">
+        <div class="hero__content__img">
+          <img class="m-fullImg" src="//images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_logos?qlt=80&">
+        </div>
+        <!-- hero__img -->
+
+        <div class="hero__content__text">
+          <p class="crate-light cmsBlack m-head-large">
+            The magnolias are in bloom,
+            <br> and the party&rsquo;s on the porch.
+          </p>
+          <div class="border-bottom"></div>
+          <p class="crate-light cmsBlack m-body" style="margin: 10px;">
+            Our latest collaboration with Reese Witherspoon&rsquo;s lifestyle brand captures the modern, breezy spirit of Southern get-togethers
+            as the season heats up.
+          </p>
+        </div>
+      </div>
+      <!-- hero__text -->
+    </a>
+  </div>
+  <!-- hero -->
+
+  <!--=============== Reese Video ===============-->
+  <section class="m-marginDiv video" style="margin-bottom: 1%;">
+    <div class="video__container">
+      <video id="vidDJ" preload="none" poster="//images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_posterImg">
+        <source src="http://s7d5.scene7.com/is/content/Crate/LandingPages/Draper James May 2018/cb_Reese_Unpacks_Pool_Parties_SS18_Mobile_Autox360p_800k.mp4"
+          type="video/mp4">
+      </video>
+
+      <div id="vidText" class="cmsWhite">
+        <p class="crate-light m-eyebrow">
+          Reese Unpacks
+        </p>
+        <p class="crate-roman m-body">
+          &ldquo;Pool Party&rdquo;
+        </p>
+        <div id="playBtn"></div>
+        <div id="replayBtn"></div>
+      </div>
+      <!-- vidText -->
+    </div>
+    <!-- reese-vid__container -->
+
+  </section>
+  <!-- video section -->
+
+  <a href="/special-features/pool-furniture/1">
+    <section class="shopAll-cta" style="margin-bottom:2%;">
+      <div class="shopAll-banner__text">
+        <h2 class="crate-helvetica-bold cmsWhite m-body" style="padding:0;margin:0;">SHOP THIS PARTY&#x25B8; </h2>
+      </div>
+    </section>
+  </a>
+
+  <!--=============== PRODUCT GRID ===============-->
+  <div class="m-fullDiv grid">
+
+    <div class="m-fullDiv grid-item no-border-left">
+      <a id="grabber0Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_olymNkp?" alt="blue and white checkered placemat">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item">
+      <a id="grabber1Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_smBwl?" alt="bowl that's white on the outside, blue background with white flowers on the inside">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item no-border-left">
+      <a id="grabber2Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_mgnlTwl?" alt="blue and white beach towel">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item">
+      <a id="grabber3Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_plttr?" alt="blue and white striped food serving tray">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item no-border-left">
+      <a id="grabber4Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_digTwl?" alt="assortment of blue and white checkered hand towels">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item">
+      <a id="grabber5Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_mgnlPlt?" alt="blue and white flower plate">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-text">
+      <div>
+        <h2 class="crate-italic m-head-medium cmsBlack">
+          &ldquo;The season&rsquo;s heating up, y&rsquo;all.&rdquo;
+        </h2>
+        <p class="crate-bold m-eyebrow">
+          XO Reese
+        </p>
+      </div>
+    </div>
+    <!-- grid-text-1 -->
+
+    <div class="m-fullDiv grid-item no-border-left">
+      <div class="border-top"></div>
+      <a id="grabber6Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_sldlPlt?" alt="blue plate with white flower design printed on it">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item">
+      <div class="border-top"></div>
+      <a id="grabber7Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_srvBlw?" alt="white bowl that has black color on the inside with white flowers over it">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item no-border-left">
+      <a id="grabber8Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_mgnRnnr?" alt="White table runner">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item">
+      <a id="grabber9Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_mgnTry?" alt="white serving tray with handle and blue color with white flowers on the inside">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-text">
+      <div>
+        <h2 class="crate-italic m-head-medium cmsBlack">
+          &ldquo;Is there anything better than a party?
+          <br> Yes! A pool party!&rdquo;
+        </h2>
+        <p class="crate-bold m-eyebrow">
+          XO Reese
+        </p>
+      </div>
+    </div>
+    <!-- grid-text-1 -->
+
+    <div class="m-fullDiv grid-item no-border-left">
+      <div class="border-top"></div>
+      <a id="grabber10Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_plcmat?" alt="albaca placemat">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item">
+      <div class="border-top"></div>
+      <a id="grabber11Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_chkTwl?" alt="Blue and white beach towel">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item no-border-left">
+      <a id="grabber12Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_flwr?" alt="silverware with blue and white striped handles">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item">
+      <a id="grabber13Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_dspnsr?" alt="drink dispenser with a blue and transparant checker tile disign">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item no-border-left">
+      <a id="grabber14Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_wnGlss?" alt="wine glasses with the words cheers yall printed on them">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item">
+      <a id="grabber15Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_ckPdst?" alt="cake pedestal">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item no-border-left no-border-bottom">
+      <a id="grabber16Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_tote?" alt="brown tote bag with black and blue stripes on the front">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+    <div class="m-fullDiv grid-item no-border-bottom">
+      <a id="grabber17Link" href="">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_DJ_201805_hat?" alt="striped hat">
+      </a>
+    </div>
+    <!-- grid-item -->
+
+  </div>
+  <!-- Grid -->
+
+  <!--=============== Bottom Button ===============-->
+  <div class="m-fullDiv">
+    <a href="/outdoor-furniture/outdoor-entertaining/">
+      <div class="shopAllBtn">
+        <p class="crate-bold cmsWhite m-cta">
+          SHOP OUTDOOR ENTERTAINING
+        </p>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+
+
+<script>
+  function runTheThings() {
+    var video = document.getElementById("vidDJ");
+    var plybtn = document.getElementById("playBtn");
+    var replybtn = document.getElementById("replayBtn");
+
+    $("#playBtn").click(function () {
+      console.log("working");
+      $("#vidDJ")[0].play();
+      $("#vidText").hide();
+      $("#plybtn").hide();
+    });
+
+    $("#replayBtn").click(function () {
+      console.log("working");
+      $("#vidDJ")[0].play();
+      $("#vidText").hide();
+      $("#replybtn").hide();
+    });
+
+    video.addEventListener("ended", function () {
+      video.load();
+      $("#replayBtn").show();
+      $("#playBtn").hide();
+      $("#vidText").show();
+    });
+    //Add controls and allow pausing on click
+    plybtn.addEventListener(
+      "click",
+      function () {
+        video.play();
+        video.setAttribute("controls", "controls");
+        $("video").click(function () {
+          this.paused ? this.play() : this.pause();
+        });
+        $("#lockupDiv").hide();
+        $("#playDiv").hide();
+        $("#shopAfter").show();
+      },
+      false
+    );
+
+    video.addEventListener("ended", function () {
+      video.load();
+      video.removeAttribute("controls");
+      $("#lockupDiv").show();
+      $("#playDiv").show();
+      $("#shopAfter").hide();
+    });
+
+    var getProductNavigateDetail = function (skuList) {
+      var postUrl =
+        "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+        imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+      $.ajax({
+        url: postUrl,
+        type: "POST",
+        data: { skus: skuList },
+        dataType: "json",
+        success: function (result) {
+          if (result[0] != null) {
+            for (let i = 0; i < result.length; i++) {
+              $("#grabber" + [i] + "Link").attr("href", result[i].NavigateUrl);
+              $("#grabber" + [i] + "Image").attr(
+                "src",
+                imageURL + result[i].ImagePath
+              );
+              $("#grabber" + [i] + "Name").html(result[i].Name);
+            }
+          }
+        },
+        error: function (jqXhr, textStatus, errorThrown) {
+          console.log(textStatus, errorThrown);
+        }
+      });
+    };
+    getProductNavigateDetail(
+      "574633,575019,575875,575078,574641,574968,574987,575026,574342,575047,574504,575890,575304,575159,575230,575213,537655,537821,"
+    );
+  }
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+
+</script>

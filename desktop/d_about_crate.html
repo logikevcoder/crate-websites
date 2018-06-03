@@ -1,0 +1,767 @@
+<style>
+  /*=======================================================
+Main Content
+=======================================================*/
+
+  .main-content {
+    min-width: 1024px;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero {
+    position: relative;
+    max-height: 758px;
+  }
+
+  .hero__text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translatey(-50%);
+    color: #fff;
+  }
+
+  /*=======================================================
+About Crate
+=======================================================*/
+
+  .about-crate {
+    height: 100%;
+    display: flex;
+  }
+
+  .about-crate__header {
+    margin-top:10%;
+  }
+
+  .about-crate__left-block {
+    width: 60%;
+    margin: 0 5%;
+  }
+
+  .about-crate__right-block {
+    width: 40%;
+    background-color: #f5f5f5;
+    position: relative;
+    min-height: 100%;
+  }
+
+  .text-container {
+    position: absolute;
+    left: 12%;
+    bottom: 18%;
+    width:63%;
+  }
+
+  /*=======================================================
+Inspired + Commitment
+=======================================================*/
+
+  .inspired-commit {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.1%;
+  }
+
+  .inspired {
+    position: relative;
+    max-height: 758px;
+    width: 50%;
+    margin-right: 0.1%;
+  }
+
+  .commit {
+    position: relative;
+    max-height: 758px;
+    width: 50%;
+  }
+
+  /*=======================================================
+A Crate Story
+=======================================================*/
+
+  .crate-story {
+    max-height: 598px;
+    margin-bottom: 0.1%;
+  }
+
+  .crate-story-text>div:not(:first-child) {
+    width: 20%;
+  }
+
+  .crate-story-text>div:first-child {
+    width: 25%;
+  }
+
+  /*=======================================================
+Section Headlines
+=======================================================*/
+
+  .catagory-headline {
+    position: absolute;
+    bottom: 7%;
+  }
+
+  .catagory-headline::after {
+    content: "+";
+    position: absolute;
+    right: -35px;
+    top: -1px;
+    font-weight: 200;
+  }
+
+  .minus:after {
+    content: "-";
+    position: absolute;
+    right: -30px;
+    top: -1px;
+    font-weight: 200;
+  }
+
+  .catagory-headline {
+    pointer-events: none;
+  }
+
+  .headline-1,
+  .headline-3 {
+    left: 3%;
+    z-index: 20;
+  }
+
+  .headline-2 {
+    left: 53%;
+    transition: 1s ease;
+  }
+
+  .headline-move {
+    left: 3%;
+    transition: 1s;
+    transition-delay: 0.2s;
+  }
+
+  /*=======================================================
+Image Slide Functionality
+=======================================================*/
+
+  .image-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .slide-in {
+    z-index: 10;
+    /* to position it in front of the other content */
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .slide-in.from-left {
+    left: -100%;
+    transition: all 1s ease;
+  }
+
+  .slide-in.from-right {
+    right: -100%;
+    transition: all 1s ease;
+  }
+
+  .slide-in.from-bottom {
+    bottom: 0;
+  }
+
+  /*=======================================================
+Actual text container styling inside the sliding container
+=======================================================*/
+
+  .slide-in-content {
+    transition: all 0.5s ease;
+    /* our nice transition */
+    display: flex;
+    background-color: #212222;
+    color: #fff;
+    min-height: 100%;
+    justify-content: center;
+  }
+
+  .inspired-text {
+    width: 90%;
+    padding: 15% 10%;
+  }
+
+  .inspired-text>div {
+    width: 25%;
+    vertical-align: top;
+    margin-right: 8% !important;
+  }
+
+  .commit-text {
+    padding: 3%;
+    padding-top: 5%;
+  }
+
+  .commit-text>div {
+    width: 20%;
+  }
+
+  .commit-text>div:not(:last-child) {
+    margin-right: 5%;
+  }
+
+  .crate-story-text {
+    padding-top: 2%;
+  }
+
+  .crate-story-text>div:not(:last-child) {
+    margin-right: 2%;
+  }
+
+  .slide-in.from-left .slide-in-content {
+    /*   transform: translateX(-100%);
+  -webkit-transform: translateX(-100%); */
+    left: 0;
+  }
+
+  .left-zero {
+    left: 0 !important;
+    transition: 3s;
+    pointer-events: auto;
+  }
+
+  .right-zero {
+    right: 0 !important;
+    transition: 3s;
+    pointer-events: auto;
+  }
+
+  .slide-in.from-bottom .slide-in-content {
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+  }
+
+  .slide-in.show .slide-in-content {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    height: 100%;
+
+    pointer-events: auto;
+  }
+
+  /*=======================================================
+Breakout and Fixes
+=======================================================*/
+
+  .fullDiv {
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fullDiv a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  #pageWrap {
+    border-top: 2px solid #222;
+    max-width: 1680px;
+    min-width: 1024px;
+    width: 100%;
+    margin: 0 auto !important;
+    float: none !important;
+    clear: left;
+  }
+
+  .content {
+    width: 100% !important;
+  }
+
+  .content-layout {
+    max-width: 1680px !important;
+  }
+
+  #bodyWrap {
+    padding: 0;
+  }
+
+  #jsExpand1 {
+    margin: 0 !important;
+  }
+
+  .new-marginDiv {
+    width: 80%;
+    min-width: 964px;
+    max-width: 1344px;
+    position: relative;
+    overflow: hidden;
+    margin: 10% auto;
+  }
+
+  .new-marginDiv a {
+    color: #222;
+  }
+
+  .divMargins {
+    margin-bottom: 2% !important;
+  }
+
+  .fullImg {
+    width: 100%;
+    max-width: 1680px;
+  }
+
+  .cmsArrowR {
+    border-width: 0.4vw;
+  }
+
+  .whtArrw {
+    border-left-color: white;
+  }
+
+  #topNavWrap {
+    background: transparent;
+  }
+
+  #topNavContainer {
+    border: none;
+  }
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .clear-both {
+    clear: both;
+  }
+ .third-div {
+   margin-top:35px;
+ }
+ p {margin: 0!important;}
+ .padTB {
+   padding:5% 0;
+ }
+
+  /*=======================================================
+Font Sizes
+=======================================================*/
+
+  .bf-eyebrow {
+    font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+    text-transform: uppercase;
+  }
+
+  .bf-headline {
+    font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .bf-copy {
+    font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-XL {
+    font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
+    line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
+    letter-spacing: -0.15vw;
+  }
+
+  .headline-large {
+    font-size: calc(45px + (54 - 45) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-medium {
+    font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-small {
+    font-size: calc(24px + (26 - 24) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.05vw;
+  }
+
+ .copy-sub { 
+    /* font-size: calc(14px + (12 - 10) * (100vw - 1024px) / (1440 - 1024));  */
+    font-size:22px !important;
+    line-height: 25px; margin:0 !important;}
+
+  .copy-gr {
+    /* font-size: calc(13px + (13 - 12) * (100vw - 1024px) / (1440 - 1024)); */
+    font-size:18px !important;
+    line-height: calc(16px + (14 - 11) * (100vw - 1024px) / (1440 - 1024)); 
+    padding:3% 0 !important;}
+
+  .copy-cta {
+    font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin: 1.3vw 0;
+    text-transform: uppercase;
+  }
+
+  /*--- 1024px ---*/
+
+  @media only screen and (max-width: 1024px) {
+    .bf-eyebrow {
+      font-size: 35px;
+      line-height: 35px;
+    }
+    .bf-headline {
+      font-size: 76px;
+      line-height: 76px;
+    }
+    .bf-copy {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    .headline-XL {
+      font-size: 78px;
+      line-height: 52px;
+      letter-spacing: -1.54px;
+    }
+    .headline-large {
+      font-size: 45px;
+      line-height: 45px;
+    }
+    .headline-medium {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    .headline-small {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .copy-gr {
+      font-size: 13px;
+      line-height: 13px;
+      padding:3% 0;
+    }
+    .copy-sub {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .copy-cta {
+      font-size: 10px;
+      line-height: 20px;
+    }
+    .third-div { margin-top:35px; }
+  }
+ @media only screen and (min-width: 1024px) { 
+   .headline-small { line-height:30px;
+  } 
+  .third-div {
+    margin-top:30px;
+  }}
+
+  @media only screen and (min-width: 1440px) {
+    .headline-large {
+      line-height: 60px !important;
+    }
+  }
+ @media only screen and (min-width: 1680px) {  
+   .headline-large { line-height: 70px !important; 
+   }
+   .copy-gr {line-height:23px !important;}
+  .third-div { margin-top:35px; }
+}
+</style>
+
+<section class="main-content fullDiv">
+
+  <!--=============== HERO ===============-->
+  <section class="hero fullDiv">
+    <div class="hero__img">
+      <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/dLP_AboutUs_201805_Hero?wid=1200&qlt=75" alt="family gathered over a table eating food">
+      <div class="hero__text">
+        <h2 class="crate-bold headline-large cmsWhite">
+          To help people love how they
+          <br> live in moments that matter.
+        </h2>
+      </div>
+      <!-- hero-text -->
+    </div>
+  </section>
+
+  <!--=============== About Crate ===============-->
+  <section class="about-crate fullDiv">
+
+    <div class="about-crate__left-block crate-helvetica-roman">
+      <div class="about-crate__header">
+        <h2 class="cmsBlack crate-bold copy-sub">About Crate</h2>
+
+<p class="crate-helvetica-roman copy-sub" style="padding: 2% 0 1%;">
+          We curate inspiration for the home, connecting the creative work
+          <br> of artisans and designers to people and places around the world.
+        </p>
+      </div>
+
+
+      <div style="display:flex;width:100%;margin-bottom:10%;">
+        <div style="padding-right:3%;width:50%;">
+          <p class="crate-helvetica-roman copy-gr">Crate and Barrel Holdings is a member of the Otto Group and employs 7,500 associates across Crate and Barrel and
+            CB2. With over 100 stores and franchise partners in 11 countries, we are an international destination for contemporary
+            and modern furniture, housewares and decor that help people Welcome Life In.</p>
+
+          <p class="crate-helvetica-roman copy-gr">Our lifestyle brands offer inspired living through high-quality products, exclusive designs, and</p>
+        </div>
+        <div style="width:50%;">
+          <p class=" crate-helvetica-roman copy-gr ">timeless style - all powered by digital design and visualization tools that provide seamless shopping solutions
+            in-store and online.</p>
+
+          <p class="crate-helvetica-roman copy-gr ">With a distinct architectural aesthetic, experiential store environment, and online community, we engage with our
+            customers through social media, mobile shopping, design services, gift registry, and more.</p>
+        </div>
+        <div class="clear-both "></div>
+      </div>
+    </div>
+
+    <div class="about-crate__right-block ">
+      <div class="text-container crate-helvetica-roman ">
+        <div style="margin-bottom:5%; ">
+          <p class="copy-sub crate-bold " style="margin-bottom:0 ">Media Inquiries</p>
+<p class="crate-helvetica-roman copy-gr ">For all press and partnership inquiries, contact <strong>
+<a href="mailto:mediainquiries@crateandbarrel.com">mediainquiries@crateandbarrel.com.</a>
+</strong>
+</p>
+        </div>
+
+        <div>
+          <p class="copy-sub crate-bold " style="margin-bottom:0 ">Contact Center</p>
+<p class="crate-helvetica-roman copy-gr ">For questions and comments regarding your order or shopping experience, contact us through
+  <strong><a href="http://www.crateandbarrel.com/customer-service">www.crateandbarrel.com/customer-service.</a>
+  </strong>
+          </p>
+        </div>
+      </div>
+      <!-- text-container -->
+    </div>
+    <!-- about-crate__right-block -->
+
+  </section>
+
+  <!--================= Globally Inspired + Our Commitment ===================-->
+  <section class="inspired-commit fullDiv ">
+
+    <div class="inspired image-slide ">
+      <div class="inspired__img ">
+        <img class="fullImg " src="//images.crateandbarrel.com/is/image/Crate/dlp_AboutUs_201805_Global?wid=840&qlt=75
+          " alt="hand over a piece of furniture, in the process of building ">
+
+      </div>
+      <!-- inspired__img -->
+    </div>
+    <!-- image-slide -->
+    <div class="slide-in from-left ">
+      <div class="slide-in-content inspired-text ">
+        <div class="crate-helvetica-roman copy-sub " style="margin-top:0; ">
+          <p class="crate-bold copy-sub ">Artisans</p>
+          <p class="crate-helvetica-roman copy-gr ">Crate and Barrel merchants collaborate with more than 100 artists and designers from around the world. From the
+            U.S. to Thailand and countries in between, we curate inspired design to provide exclusive products in every category.</p>
+        </div>
+        <div>
+          <p class="crate-bold copy-sub ">Made in the U.S.A.</p>
+          <p class="crate-helvetica-roman copy-gr ">Ninety-nine percent of Crate and Barrel brand&rsquo;s upholstory is made in the USA from domestic and imported
+            materials.</p>
+        </div>
+        <div>
+          <p class="crate-bold copy-sub ">Global Reach</p>
+          <p class="crate-helvetica-roman copy-gr ">Crate and Barrel products are produced in 42 countries across the globe, including the Americas, Africa, Asia and
+            Europe. </p>
+        </div>
+      </div>
+      <!-- caption__text-container -->
+    </div>
+    <!-- slide-in -->
+
+    <h2 class="crate-bold headline-small cmsWhite catagory-headline headline-1 ">
+      Globally Inspired
+    </h2>
+    <!-- inspired -->
+
+    <div class="commit image-slide ">
+      <div class="commit__img ">
+        <img class="fullImg " src="https://images.crateandbarrel.com/is/image/Crate/cb_dlp_AboutUs_201805_Cmmtmnt?wid=840&qlt=75 "
+          alt="a person adjusting flowers ">
+
+      </div>
+      <!-- commit__img -->
+    </div>
+
+    <div class="slide-in from-right ">
+      <div class="slide-in-content commit-text ">
+        <div>
+          <p class="crate-bold copy-sub ">Responsible Packaging</p>
+          <p class="crate-helvetica-roman copy-gr ">Certified by the Forest Stewardship Council (FSC) and printed with water-based inks, our shopping bags and iconic
+            black and white boxes are made with renewable fiber that contains post-consumer recyclable material. We also
+            use 100 percent recyclable tissue and sustainable Air Pads, GreenWrap and Microfoam. Source-reduced and photo-degradable,
+            our packaging requires less material and space–reducing waste, fuel, and delivery costs every day.</p>
+        </div>
+        <div>
+          <p class="crate-bold copy-sub ">Sustainable Forestry</p>
+          <p class="crate-helvetica-roman copy-gr ">Timber is one of our key raw materials and serves as a foundation to build sustainable practices that help conserve,
+            protect and restore forests. Brands work closely with the Forest Stewardship Council® (FSC®) and follow new legal
+            requirements under the Lacey Act for all import suppliers of wood and plant based product. </p>
+        </div>
+        <div>
+          <p class="crate-bold copy-sub ">100% LED</p>
+          <p class="crate-helvetica-roman copy-gr ">The energy efficient bulbs light our stores, displays and are packaged with eligible lighting purchases –increasing
+            our store’s engery efficiency by at least 66 percent. For customers, we also offer Tala LED. Our Tala LED bulb
+            sales support Tala&rsquo;s Ten Trees program.</p>
+        </div>
+        <div>
+          <p class="crate-bold copy-sub ">LEED Gold Certification</p>
+          <p class="crate-helvetica-roman copy-gr ">We have distribution center facilities throughout the United States and Canada. Our facility in Tracy, California
+            was the largest distribution center to become LEED GOLD certified in the United States.</p>
+        </div>
+      </div>
+      <!-- caption__text-container -->
+    </div>
+    <!-- slide-in -->
+    <h2 class="crate-bold headline-small cmsWhite catagory-headline headline-2 ">
+      Our Commitment
+    </h2>
+
+  </section>
+  <!-- inspired-commit -->
+
+  <!--=============== A Crate Story ===============-->
+  <section class="crate-story fullDiv image-slide-container ">
+    <div>
+      <div class="crate-story__img ">
+        <img class="fullImg " src="https://images.crateandbarrel.com/is/image/Crate/dLP_AboutUs_201805_Story?wid1440&qlt=75
+          " alt="a warehouse building with crate and barrel signs on top ">
+      </div>
+    </div>
+    <!-- crate-story__img -->
+    <div class="slide-in from-bottom ">
+      <div class="slide-in-content crate-story-text ">
+        <div>
+          <p class="crate-thin headline-small ">We&rsquo;ve been around the world for over 55 years.</p>
+          <p class="crate-helvetica-roman copy-gr ">
+            Founded by Gordon and Carole Segal in 1962, Crate and Barrel was born after a European honeymoon sparked the idea to bring
+            simple, beautiful and practical housewares to the US market. Their passion resulted in our first storefront,
+            which used crates and barrels as display fixtures in an old elevator factory on Chicago&rsquo;s Wells Street.
+            Today, we greet over 22 million customers in our stores each year and welcome more than 100 million visitors
+            online. </p>
+        </div>
+        <div style="margin-right:3%; ">
+
+
+          <p class="crate-bold copy-sub ">Our Stores</p>
+          <p class="crate-helvetica-roman copy-gr padTB">
+            Crate and Barrel has 89 stores and 8 outlets across the U.S. and Canada with 15 international franchise locations that showcase
+            our celebrated housewares and extensive furniture collections. As a pioneer in experiential retail with vignettes
+            for every room in the home, our in-store events span wedding registry and charity events to design and entertainment
+            trends. We are a gifting destination and passionate about customer service, a combination
+          </p>
+        </div>
+
+        <div class="third-div" style="margin-right:3%;">
+          <p class="crate-helvetica-roman copy-gr ">
+            that has brought more than 2 million couples to Crate and Barrel for wedding registry alone.
+          </p>
+
+          <p class="crate-helvetica-roman copy-gr ">
+            In 2001, Crate and Barrel acquired The Land of Nod, a brand offering kids furniture and toys. In 2018, they became
+            <strong>Crate
+              <span style="color:#2a9f9b; ">&amp;kids</span>
+            </strong>, the newest (and tiniest) member of Crate and Barrel, providing customers the opportunity to shop with us for
+            even more of the moments that matter in their lives.
+          </p>
+        </div>
+        <div>
+
+
+          <p class="crate-bold copy-sub ">CB2</p>
+<p class="crate-helvetica-roman copy-gr padTB">
+            Established in 2002, CB2 is committed to high-quality, sophisticated design at an approachable price. Today, CB2 has 15 locations
+            across the U.S. and in Canada. Its rapid expansion and reach is transforming the perception of home design for
+            today&rsquo;s modern customer. A forward thinker in experiential design, CB2 engages customers through curated
+            brand experiences, such as their music-focused event called After Hours and bold design collaborations that have
+            brought design and retail elites into the fold.</p>
+          <img class="fullImg " style="width:95%; " src="https://images.crateandbarrel.com/is/image/Crate/dLP_AboutUs_201805_CB2?wid315&qlt=75 "
+            alt="store front for CB2 ">
+        </div>
+      </div>
+      <!-- caption__text-container -->
+    </div>
+    <!-- caption -->
+    <h2 class="crate-bold headline-small cmsWhite catagory-headline headline-3 ">
+      A Crate Story
+    </h2>
+  </section>
+  <!-- crate-story -->
+
+</section>
+<!-- main-content -->
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+
+      // Change styling when clicking the Inspiration section
+      $(".inspired ").click(function () {
+        $(this).next(".slide-in ").toggleClass("show left-zero ");
+        $(this).siblings(".headline-1 ").css('z-index', '20').toggleClass("minus ");
+        $(this).siblings('.headline-2').css('z-index', '0');
+      });
+
+      // Change styling when clicking the commit section
+      $(".commit ").click(function () {
+        $(this).next(".slide-in ").toggleClass("show right-zero ");
+        $(this).siblings(".headline-2 ").css('z-index', '20').toggleClass("minus headline-move ");
+        $(this).siblings('.headline-1').css('z-index', '0');
+      });
+
+      // Change styling when clicking the crate-story section
+      $(".crate-story ").click(function () {
+        $(this).children(".slide-in ").toggleClass("show ");
+        $(this).children("h2 ").toggleClass("minus ");
+      });
+
+      // remove the slide in div by clicking the actual .slide-in div
+      $(".from-left, .from-right ").click(function () {
+        $(".slide-in ").removeClass("show right-zero left-zero ");
+        $(this).siblings("h2 ").removeClass("headline-move minus ");
+      });
+    });
+  }
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded ");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+</script>

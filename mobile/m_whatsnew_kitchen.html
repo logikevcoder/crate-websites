@@ -1,0 +1,855 @@
+<style>
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero {
+    position: relative;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .hero__text {
+    position: absolute;
+    width: 90%;
+    color: #fff;
+    text-align: center;
+    top: 33%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translatey(-50%)
+  }
+
+  /*=======================================================
+Kitchen & Med Cooking / Trends
+=======================================================*/
+
+  .trends__img {
+    position: relative;
+  }
+
+  .trends__text {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+  }
+
+  .trends__text--2 {
+    color: #fff;
+  }
+
+  /*=======================================================
+Poke Cold Brew
+=======================================================*/
+
+  .img__gallery__text-2 {
+    position: absolute;
+    left: 5%;
+    top: 18%;
+    color: #fff;
+  }
+
+  .coldbrew__img-text {
+    position: absolute;
+    left: 5%;
+    top: 93%;
+    color: #fff;
+  }
+
+/*=======================================================
+Shop All Banner
+=======================================================*/
+.shopAll-banner {
+  background-color: #222;
+  height:176px;
+  width:100%;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+  /*=======================================================
+General Styling
+=======================================================*/
+
+  .m-fullDiv {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .m-halfWidth {
+    width: 50%;
+    position: relative;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-marginDiv {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .m-insetDiv {
+    width: 90%;
+    margin: 3% auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-insetDiv>a>.m-headline {
+    margin-top: 10px;
+  }
+
+  .m-fullDiv a,
+  .m-insetDiv a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-zero-margin {
+    margin: 0 !important;
+  }
+
+  .mBottom4 {
+    margin-bottom: 4%;
+  }
+
+  .mBottom8 {
+    margin-bottom: 8%;
+  }
+
+  .mBottom12 {
+    margin-bottom: 12%;
+  }
+
+  .center-header {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4%;
+  }
+
+  /*=======================================================
+Overlay
+=======================================================*/
+
+  .overlay {
+    background: rgba(255, 255, 255, 0.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    transition: .4s ease;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .overlay div {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .overlay a {
+    color: #222;
+  }
+
+  /*=======================================================
+Slick Navigation Styling
+=======================================================*/
+
+  .slick-dots {
+    bottom: -30px !important;
+    top: 102% !important;
+    width: 90px !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 21px !important;
+    line-height: 23px !important;
+    width: 15px !important;
+    height: 15px !important;
+    opacity: 1 !important;
+    color: #000 !important;
+  }
+
+  .slick-dots li {
+    width: 20px !important;
+    margin: 5px 5px !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    border: 2px solid #000 !important;
+    border-radius: 50% !important;
+    color: transparent !important;
+  }
+
+  /*=======================================================
+Carousel Styling
+=======================================================*/
+
+  .product-carousel {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .product-carousel__wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product-carousel__wrapper::before {
+    content: none;
+  }
+
+  .product-carousel__wrapper::after {
+    content: none;
+  }
+
+  .carousel__block {
+    width: 33%;
+    margin: 0 !important;
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  /*=======================================================
+Image Gallery
+=======================================================*/
+
+  .img__gallery {
+    position: relative;
+    width: 100%;
+    ;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .img__gallery-container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    margin-bottom: 2%;
+  }
+
+  .img__gallery__block {
+    width: 82%;
+    position: relative;
+    display: inline-block;
+    padding-right: .7%;
+    vertical-align: top;
+    white-space: normal;
+  }
+
+  .img__gallery__text {
+    margin-right: 4%;
+  }
+
+  .img__gallery__text-1 {
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+  }
+
+  .img__gallery__text-2 {
+    color: #fff;
+    position: absolute;
+    left: 9%;
+    top: 16%;
+  }
+
+  /*=======================================================
+Fonts
+=======================================================*/
+
+  .m-head-large {
+    font-size: 29px;
+    line-height: 1;
+  }
+
+  .m-head-medium {
+    font-size: 23px;
+    line-height: 1;
+  }
+
+  .m-body {
+    font-size: 17px;
+    line-height: 1.2;
+    margin: 5px 0 0 0
+  }
+
+  .m-eyebrow {
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  .m-cta {
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 5px 0;
+  }
+
+  /*=======================================================
+Media Queries
+=======================================================*/
+
+  @media only screen and (max-width:320px) {
+    .m-XLheadline {
+      font-size: 80px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 27px;
+    }
+    .m-head-medium {
+      font-size: 21px;
+    }
+    .m-body {
+      font-size: 15px;
+    }
+    .m-eyebrow {
+      font-size: 12px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 10px;
+    }
+  }
+
+  @media only screen and (min-width:414px) {
+    .m-Xhead-large {
+      font-size: 120px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 31px;
+    }
+    .m-head-medium {
+      font-size: 25px;
+    }
+    .m-body {
+      font-size: 19px;
+      margin-top: 14px;
+    }
+    .m-eyebrow {
+      font-size: 15px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 12px;
+      margin: 8px 0;
+    }
+  }
+</style>
+
+<!--=============== Mobile Kitchen Hero ===============-->
+<section class="hero m-fullDiv mBottom12">
+  <a href="/whats-new/new-kitchen/1">
+    <div class="hero__img">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWKTCH_hero_201801" alt="?wid=&qlt=75">
+      <div class="hero__text">
+        <p class="crate-helvetica-bold m-head-large">
+          What&rsquo;s New: Kitchen
+        </p>
+        <p class="crate-helvetica-roman m-body">
+          Elevated looks and Mediterranean-inspired style.
+        </p>
+        <p class="crate-helvetica-bold m-cta">
+          shop new kitchen
+        </p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!--=============== Mixed Materials ===============-->
+<section class="mixed-mats m-fullDiv mBottom12">
+  <div class="center-header">
+    <p class="crate-helvetica-light m-eyebrow m-zero-margin">
+      FEELS FRESH
+    </p>
+    <p class="crate-helvetica-bold m-head-medium">
+      Metallics meet matte black.
+    </p>
+  </div>
+  <!-- mixed-mats header -->
+
+  <div class="mixed-mats__header-img  mixed-mats__img-1" style="margin-bottom:.5%;">
+    <a href="/kitchen-and-food/copper-and-marble-kitchen-style/1">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWKTCH_mixBwls_201801" alt="">
+    </a>
+  </div>
+  <!-- mixed-mats__header-img -->
+
+  <div class="product-carousel">
+    <!-- carousel header -->
+    <div class="product-carousel__wrapper responsive crate-helvetica-roman ">
+
+      <div class="carousel__block">
+        <a id="grabber0Link" href="">
+          <img id="grabber0Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber1Link" href="">
+          <img id="grabber1Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber2Link" href="">
+          <img id="grabber2Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber3Link" href="">
+          <img id="grabber3Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber4Link" href="">
+          <img id="grabber4Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber5Link" href="">
+          <img id="grabber5Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber6Link" href="">
+          <img id="grabber6Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+    </div>
+    <!-- carousel body responsive -->
+  </div>
+  <!-- carousel container -->
+</section>
+<!-- metal furniture carousel -->
+
+<!--=============== Kitchen Styles & Med Cooking / TRENDS ===============-->
+<section class="trends m-fullDiv mBottom12">
+  <div class="center-header">
+    <p class="crate-helvetica-light m-eyebrow">TREND REPORT</p>
+    <p class="crate-helvetica-bold m-head-medium">Themed kitchens and Mediterranian cooking.</p>
+  </div>
+  <!-- trends-header -->
+  <div class="trends__img m-insetDiv">
+    <a href="/kitchen-and-food/copper-and-marble-kitchen-style/1">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWKTCH_mrblGld_201801" alt="">
+      <!-- trends header img -->
+      <div class="trends__text">
+        <p class="crate-helvetica-roman m-head-medium">Bring it all
+          <br>together. </p>
+        <p class="crate-helvetica-bold m-cta">Shop Kitchen Styles</p>
+      </div>
+      <!-- trends img -->
+    </a>
+  </div>
+  <!-- trends img -->
+  <div class="trends__img m-insetDiv">
+    <a href="/special-features/mediterranean-cooking/1">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWKTCH_medKtch_201801" alt="">
+      <!-- trends header img -->
+      <div class="trends__text trends__text--2">
+        <p class="crate-helvetica-roman m-head-medium">Get the
+          <br>Mediterranean vibe.</p>
+        <p class="crate-helvetica-bold m-cta">Shop the Look</p>
+      </div>
+      <!-- trends img -->
+    </a>
+  </div>
+  <!-- trends img -->
+</section>
+<!-- Kitchen & Med -->
+
+<!--=============== Le Creuset New Colors Image Gallery ===============-->
+<section class="le-creuset m-fullDiv">
+  <div class="le-creuset__header">
+    <a href="/shop-by-brand/le-creuset/1">
+      <p class="crate-helvetica-bold m-head-medium">
+        Our new exclusives are here.
+      </p>
+      <p class="crate-helvetica-bold m-cta">
+        Shop Le Creuset
+      </p>
+    </a>
+  </div>
+  <section class="img__gallery">
+
+    <div class="img__gallery-container">
+      <div class="img__gallery__block">
+        <a id="grabber7Link" href="">
+          <img id="grabber7Image" src="" alt="">
+          <div class="img__gallery__text">
+            <p id="grabber7Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber7Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- gallery image text -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber8Link" href="">
+          <img id="grabber8Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber8Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber8Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber9Link" href="">
+          <img id="grabber9Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber9Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber9Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber10Link" href="">
+          <img id="grabber10Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber10Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber10Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber11Link" href="">
+          <img id="grabber11Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber11Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber11Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber12Link" href="">
+          <img id="grabber12Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber12Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber12Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber13Link" href="">
+          <img id="grabber13Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber13Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber13Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+    </div>
+    <!-- img gallery container -->
+  </section>
+  <!-- img gallery -->
+</section>
+
+<!--=============== Poke Bowls & Cold Brew ===============-->
+<section class="poke-coldbrew m-fullDiv mBottom12">
+  <div class="center-header">
+    <p class="crate-helvetica-light m-eyebrow">
+      style tips
+    </p>
+    <p class="crate-helvetica-bold m-head-medium">
+      Pok&eacute; bowls &amp; cold brew.
+    </p>
+  </div>
+  <!-- poke-coldbrew__header -->
+  <div class="img__gallery">
+    <div class="img__gallery-container">
+      <div class="img__gallery__block img__gallery__block-2" style="width:85%;">
+        <a href="/special-features/sushi/1">
+          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWKTCH_pokeBwl_201801" alt="">
+          <div class="img__gallery__text-2">
+            <p class="crate-helvetica-roman m-head-medium" style="margin-bottom: 8%;">
+              TRY IT NOW
+              <br> A fresh taste
+              <br>of summer.
+            </p>
+            <p class="crate-helvetica-bold m-cta">Shop Pok&eacute; Bowls</p>
+          </div>
+          <!-- img__gallery__text--2 -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber14Link" href="">
+          <img id="grabber14Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber14Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber14Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber15Link" href="">
+          <img id="grabber15Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber15Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber15Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber16Link" href="">
+          <img id="grabber16Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber16Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber16Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber17Link" href="">
+          <img id="grabber17Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber17Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber17Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber18Link" href="">
+          <img id="grabber18Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber18Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber18Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber19Link" href="">
+          <img id="grabber19Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber19Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber19Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block">
+        <a id="grabber20Link" href="">
+          <img id="grabber20Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber20Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber20Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img__gallery__text -->
+        </a>
+      </div>
+      <!--img__gallery__block -->
+    </div>
+    <!-- img__gallery-container -->
+  </div>
+  <!-- img__gallery -->
+
+  <div class="coldbrew__img">
+    <a href="/special-features/cold-brew-coffee/1">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWKTCH_coldBrw_201801" alt="">
+      <div class="coldbrew__img-text">
+        <p class="crate-helvetica-roman m-body">Rich, full-bodied iced coffee at home.</p>
+        <p class="crate-helvetica-bold m-cta">Shop Cold Brew Coffee</p>
+      </div>
+      <!-- coldbrew__img-text -->
+    </a>
+  </div>
+  <!-- coldbrew__img -->
+</section>
+
+<!--=============== Pico Brew ===============-->
+<section class="pico-brew m-fullDiv mBottom12">
+  <div class="center-header">
+    <p class="crate-helvetica-bold m-head-medium">Brew your own craft-style beer.</p>
+    <p class="crate-helvetica-bold m-cta">Shop PicoPacks</p>
+  </div>
+  <div class="pico-brew__img m-marginDiv" style="margin-bottom:.5%;">
+    <a href="/picobrew-pico-model-c-craft-beer-brewing-system/s600327">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWKTCH_picoBrw_201801" alt="">
+      <!-- pico-brew img text -->
+    </a>
+  </div>
+  <!-- pico-brew img -->
+  <div class="product-carousel">
+    <div class="product-carousel__wrapper responsive crate-helvetica-roman ">
+      <div class="carousel__block">
+        <a id="grabber21Link" href="">
+          <img id="grabber21Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+      <div class="carousel__block">
+        <a id="grabber22Link" href="">
+          <img id="grabber22Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+      <div class="carousel__block">
+        <a id="grabber23Link" href="">
+          <img id="grabber23Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+      <div class="carousel__block">
+        <a id="grabber24Link" href="">
+          <img id="grabber17Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+    </div>
+    <!-- carousel responsive -->
+  </div>
+</section>
+<!-- pico-brew -->
+
+  <a href="/all-new-kitchen">
+    <section class="shopAll-banner mBottom8">
+      <div class="shopAll-banner__text">
+        <h2 class="crate-helvetica-bold cmsWhite m-head-medium" style="padding:0;">Shop All New Kitchen&#x25B8; </h2>
+      </div>
+    </section>
+  </a>
+
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+
+      $('.responsive').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      });
+
+      var getProductNavigateDetail = function (skuList) {
+
+        var postUrl = "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+          imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+        $.ajax({
+          url: postUrl,
+          type: "POST",
+          data: { skus: skuList },
+          dataType: "json",
+          success: function (result) {
+            if (result[0] != null) {
+
+              for (var i = 0; i < result.length; i++) {
+                $('#grabber' + [i] + 'Link').attr('href', result[i].NavigateUrl);
+                $('#grabber' + [i] + 'Image').attr('src', imageURL + result[i].ImagePath);
+                $('#grabber' + [i] + 'Name').html(result[i].Name);
+                $('#grabber' + [i] + 'Price').html(result[i].FormattedPrice);
+              }
+            }
+          },
+          error: function (jqXhr, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+          }
+        });
+      };
+      getProductNavigateDetail('603578,455080,455697,456338,564231,458525,460953,460927,462359,460986,472569,472678,472553,460936,467844,462344,458447,462248,194575,507296,462496,600412,600467,600450,600422');
+    });
+  }
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+</script>

@@ -1,0 +1,1870 @@
+<style>
+/* .furniture-links {display:none;}
+#furniture {display:block;}
+ */
+#bakeware {
+  display: block;
+}
+.main-content {
+  width: 100%;
+  max-width:100vw;
+  margin: 0 auto;
+  
+}
+/* =====================================================
+Arrow Styling
+===================================================== */
+i {
+  border: solid #222;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 8px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+.arrow {
+  z-index:0;
+}
+
+/* =====================================================
+Header
+===================================================== */
+.header-content {
+  margin: 40px auto 20px;
+  text-align: center;
+  line-height: 40px;
+}
+.header-content p {
+  margin: 15px 0 !important;
+}
+.hero-img {
+  width: 100%;
+  padding-top: 53px;
+}
+/* =====================================================
+Checklist Body
+===================================================== */
+.checklist {
+  width: 100%;
+  max-width:1155px;
+  margin: 0 auto;
+}
+.checklist img {
+  padding-top:5%;
+}
+.checklist-body {
+  width: 100%;
+  min-height: 960px;
+  max-height:960px;
+  margin: 0 auto;
+  background-color: #eeeff1;
+  position: relative;
+  text-align: center;
+}
+/* =====================================================
+Checklist Content
+===================================================== */ 
+.checklist-container {
+  width: 100%;
+  margin: 21px 0 0;
+  padding-bottom:12%;
+  text-align: left;
+  display:flex;
+}
+.catagory-title {
+  position: relative;
+  height:92px;
+}
+
+.catagory-container .catagory-colums {
+  padding-bottom:7.7%;
+}
+.catagory-title > p {
+  position:absolute;
+  right:7%;
+  top:50%;
+  transform:translatey(-50%);
+}
+.catagory-items {
+  width:50%;
+  margin-right:1%;
+}
+.catagory-colums {
+  
+}
+.catagory-results-container {
+  width:50%;
+}
+.catagory-results {
+  display:none;
+  height:478px;
+}
+.catagory-results .catagory-colums{
+  padding-bottom:1%;
+}
+.catagory-results p {
+  margin-bottom:10px !important;
+}
+.link-box {
+  background-color: #fff;
+}
+.catagory-colums {
+  width:100%;
+}
+.catagory-items div:not(:last-child) {
+  margin-bottom: 3%;
+}
+/* =====================================================
+Buttons
+===================================================== */
+.checklist-btn {
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: 0 auto;
+}
+.button-primary, a.button-primary {
+  letter-spacing: .08ex;
+}
+.button-primary, a.button-primary {
+  border-color: #333;
+  background: #333;
+  color: #fff;
+}
+.GRprint {
+  margin-bottom:40px;
+  width: 225px !important;
+  text-align: center;
+  padding: 2px 0 !important;
+  border: none;
+  float: right;
+}
+/* =====================================================
+ul and li link item styling
+===================================================== */
+h1,h2,p {
+  padding:0!important;
+  margin:0 !important;
+}
+h1 {
+  padding:0!important;
+  margin:0 !important;
+}
+.link-box h1, h2 {
+  padding:4% 5% !important;
+}
+.catagory-results h2 {
+  padding:4% 5% 2% !important;
+}
+.link-box ul p {
+  padding:0 5% 10px 20px!important;
+}
+.link-box__copy{
+  padding:0 0 10px 5% !important;
+}
+.link-box ul h4 {
+  padding-left:20px !important;
+  margin-top:0;
+}
+
+.link-box ul {
+  width:50%;
+  margin-left:5%;
+}
+.link-box ul li:first-child {
+  margin-top:0 !important;
+  width:90%;
+}
+.link-box ul li {
+  width:90%;
+  margin: 5px 0;
+  padding:5px 0 5px 20px;
+}
+.link-box li:hover {
+    background-color: #bababa;
+}
+.link-box .active {
+    background-color: #bababa;
+}
+.link-box a{
+  color: #000;
+  text-decoration: none;
+}
+.catagory-container li:hover {
+  cursor: pointer;
+}
+/*ACCESSIBILITY*/
+a:focus, li:focus{
+    outline:none;
+  }
+h1 {
+    padding:0;
+    margin: 2%;
+}
+.link-box h2 {
+    padding: 8px 0px 0px 31px;
+    margin-bottom: 20px;
+}
+.link-box li:focus, .link-box a:focus li {
+    background-color: #bababa;
+}
+/*=======================================================
+Breakout and Fixes
+=======================================================*/
+.fullDiv {
+  width: 100%;
+  min-width: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.fullDiv a {
+  color: #222;
+  text-decoration: none;
+}
+#pageWrap {
+  border-top: 2px solid #222;
+  max-width: 1680px;
+  min-width: 1024px;
+  width: 100%;
+  margin: 0 auto !important;
+  float: none !important;
+  clear: left;
+}
+.content {
+  width: 100% !important;
+  max-width: 1680px;
+  min-width: 1024px !important;
+}
+.content-layout {
+  max-width: 1680px !important;
+  min-width: 1024px !important;
+}
+#bodyWrap {
+  padding: 0;
+}
+#jsExpand1 {
+  margin: 0 !important;
+}
+.divMargins {
+  margin-bottom: 2% !important;
+}
+.fullImg {
+  width: 100%;
+  max-width: 1680px;
+}
+.cmsArrowR {
+  border-width: 0.4vw;
+}
+.whtArrw {
+  border-left-color: white;
+}
+#topNavWrap {
+  background: transparent;
+}
+#topNavContainer {
+  border: none;
+}
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+h2 {
+  color: #222;
+}
+.bottom-margin-5 {
+  margin-bottom: 4%;
+}
+
+
+/*=======================================================
+Font Sizes
+=======================================================*/
+.bf-eyebrow {
+  font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+  text-transform: uppercase;
+}
+
+.bf-headline {
+  font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.bf-copy {
+  font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.headline-XL {
+  font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
+  line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
+  letter-spacing: -0.15vw;
+}
+
+.headline-large {
+  font-size: calc(60px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.headline-medium {
+  font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.headline-small {
+  font-size: calc(23px + (27 - 24) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.05vw;
+}
+
+.copy-sub {
+  font-size: calc(14px + (18 - 14) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(21px + (25 - 20) * (100vw - 1024px) / (1440 - 1024));
+  margin-bottom:5px;
+}
+
+.copy-gr {
+  font-size: 20px;
+  line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+}
+
+.copy-cta {
+  font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+  text-transform: uppercase;
+  margin:0 !important;
+}
+/*--- 1024px ---*/
+@media only screen and (max-width: 1024px) {
+  .bf-eyebrow {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .bf-headline {
+    font-size: 76px;
+    line-height: 76px;
+  }
+  .bf-copy {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .headline-XL {
+    font-size: 78px;
+    line-height: 52px;
+    letter-spacing: -1.54px;
+  }
+  .headline-large {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .headline-medium {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .headline-small {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .copy-gr {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .copy-sub {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .copy-cta {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  
+  .catagory-container .catagory-colums {
+    padding-bottom:7.2%;
+  }
+  .checklist-container {
+    padding-bottom:8%;
+  }
+  .checklist-body {
+    min-height:940px;
+    max-height:940px;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .catagory-container .catagory-colums {
+    padding-bottom:5.9%;
+  }
+ .catagory-results { 
+   height:467px; 
+ }
+  .copy-gr {
+    font-size:16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .catagory-container .catagory-colums {
+    padding-bottom:4.7%;
+  }
+}
+@media only screen and (min-width: 1350px) {
+  .catagory-container .catagory-colums {
+    padding-bottom:5.4%;
+  }
+  .checklist-body {
+    min-height:990px;
+    max-height:990px;
+  }
+  .copy-gr {
+    font-size:18px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .catagory-results { height:485px; }
+}
+
+@media only screen and (min-width: 1680px) {
+  .catagory-container .catagory-colums {
+    padding-bottom:7.7%;
+  }
+  .checklist-body {
+    min-height:1080px;
+    max-height:1080px;
+  }
+  .checklist-container {
+    padding-bottom:12%;
+  }
+  .catagory-results {
+    height:512px;
+  }
+  .copy-gr {
+    line-height:18px;
+    font-size:18px;
+  }
+}
+</style>
+
+<section class="main-content fullDiv">
+  <div class="checklist-header">
+    <div class="header-content">
+      <h1 class="headline-small crate-light">
+        Wedding Registry Checklist
+      </h1>
+      <p class="copy-gr crate-roman">
+        They may be tiny, but they sure need a lot of gear. Get organized with our handy guide.
+      </p>
+      <a href="/gift-registry/create/step1?eventType=BB" class="button button-primary button-lg cmsWhite">Create a Registry
+      </a>
+      <a href="/gift-registry/sign-into-registry" class="button button-primary button-lg cmsWhite">Manage My Registry
+      </a>
+    </div>
+    <!-- header-content -->
+  </div>
+  <!-- checklist-header -->
+  <div class="checklist-body">
+    <div class="checklist">
+
+      <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180101_GRChecklist_Hero?wid=1154&qlt=75" alt="">
+      <div class="checklist-container">
+        <div class="catagory-items">
+
+          <div class="catagory-container link-box">
+            <div class="catagory-title">
+              <h1 class="crate-roman headline-small">Set the Table</h1>
+              <p>
+                <i class="arrow down"></i>
+              </p>
+            </div>
+            <div class="catagory-colums left-containers hideOnLoad">
+              <ul>
+                <li class="crate-roman copy-gr" id="dinnerwareBtn" tabindex="0">Dinnerware</li>
+                <li class="crate-roman copy-gr" id="flatwareBtn" tabindex="0">Flatware</li>
+                <li class="crate-roman copy-gr" id="drinkwareBtn" tabindex="0">Drinkware</li>
+                <li class="crate-roman copy-gr" id="wineBtn" tabindex="0">Wine Glasses/Accessories</li>
+              </ul>
+              <!-- left links -->
+              <ul>
+                <li class="crate-roman copy-gr" id="cocktailsBtn">Cocktails/Bar Tools</li>
+                <li class="crate-roman copy-gr" id="servingBtn">Serving/Entertaining</li>
+                <li class="crate-roman copy-gr" id="tableBtn">Table Linens</li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Set the Table Catagory Container-->
+
+          <div class="catagory-container link-box">
+            <div class="catagory-title">
+              <h1 class="crate-roman headline-small">Stock the Kitchen</h1>
+              <p style="float:right;">
+                <i class="arrow up"></i>
+              </p>
+            </div>
+            <div class="catagory-colums left-containers ">
+
+              <ul class="catagory-items">
+                <li class="crate-roman copy-gr" id="cookwareBtn" class="active">Cookware</li>
+                <li class="crate-roman copy-gr" id="cutleryBtn">Cutlery</li>
+                <li class="crate-roman copy-gr" id="machinesBtn">Machines</li>
+                <li class="crate-roman copy-gr active" id="bakewareBtn">Bakeware</li>
+              </ul>
+              <!-- left links -->
+              <ul>
+                <li class="crate-roman copy-gr" id="prepBtn">Prep</li>
+                <li class="crate-roman copy-gr" id="gadgetsBtn">Gadgets</li>
+                <li class="crate-roman copy-gr" id="storageBtn">Kitchen Storage</li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Stock the Kitchen Catagory Container -->
+
+          <div class="catagory-container link-box">
+            <div class="catagory-title">
+              <h1 class="crate-roman headline-small">Furnishings</h1>
+              <p style="float:right;">
+                <i class="arrow down"></i>
+              </p>
+            </div>
+            <div class="catagory-colums left-containers hideOnLoad">
+              <ul>
+                <li class="crate-roman copy-gr" id="decorBtn" tabindex="0">Decorations and Accessories</li>
+                <li class="crate-roman copy-gr" id="living-roomBtn" tabindex="0">Living Room</li>
+                <li class="crate-roman copy-gr" id="diningBtn" tabindex="0">Dining and Kitchen</li>
+                <li class="crate-roman copy-gr" id="bedroomBtn" tabindex="0">Master and Guest Bedroom</li>
+                <li class="crate-roman copy-gr" id="bathBtn" tabindex="0">Master and Guest Bath</li>
+              </ul>
+              <!-- left links -->
+              <ul>
+                <li class="crate-roman copy-gr" id="officeBtn" tabindex="0">Home Office</li>
+                <li class="crate-roman copy-gr" id="entryBtn" tabindex="0">Entryway</li>
+                <li class="crate-roman copy-gr" id="utilBtn" tabindex="0">Utility</li>
+                <li class="crate-roman copy-gr" id="patioBtn" tabindex="0">Patio/Outdoor</li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Furnishings Catagory Container-->
+
+        </div>
+
+        <!--============= Catagory Results ==============-->
+        <div class="catagory-results-container">
+
+          <!--============= Set the Table Links ==============-->
+          <div id="dinnerware" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Dinnerware</h2>
+            <div class="catagory-colums">
+              <ul>
+                <h4 class="crate-bold copy-sub">Open Stock</h4>
+                <p class="copy-gr crate-roman">(buy one piece at a time to mix and match):</p>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/dinner-plates/1">Dinner Plates</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/salad-plates/1">Salad Plates</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/individual-bowls/1">Bowls</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/coffee-mugs/1">Cups</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/saucers">Saucers</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/coffee-mugs/1">Mugs</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/sugar-bowls">Sugar Bowl</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/creamers">Creamer</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/teapots-teakettles/1">Teapot</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <h4 class="crate-bold copy-sub">Dinnerware Set</h4>
+                <p class="copy-gr crate-roman">(serves four):</p>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/dinnerware-sets/1">16- or 20-Piece Set</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Cookware -->
+
+          <div id="flatware" class="catagory-results link-box link-box">
+            <h2 class="crate-roman headline-small">Flatware</h2>
+
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/salad-fork">Salad Forks </a>(24)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/forks">Forks </a>(12)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dinner-knife">Dinner Knives </a> (12)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/soup-spoon">Soup Spoons </a> (12)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/teaspoon">Teaspoons </a>(24)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/butter-knife">Butter Knives </a>(12)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/serving-pieces-and-sets/1">Serving Set </a>(12)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/serving-spoons">Serving Spoons </a> (2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/pierced-spoons">Pierced Spoons </a>(2)</li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/serving-fork">Serving Forks </a>(2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/ladle">Ladle</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/salad-servers">Salad Servers</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/pastry-server">Pastry Server</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/hard-cheese-knife">Cheese Knives</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cheese-spreaders">Spreaders </a> (4)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/flatware-caddy">Flatware Caddy</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/flatware-patterns/1">5-Piece Place Settings </a>(12)</li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Flatware -->
+
+          <div id="drinkware" class="catagory-results link-box link-box">
+            <h2 class="crate-roman headline-small">Drinkware</h2>
+            <p class="copy-gr crate-roman link-box__copy">
+<a style="color:#1f74bf;text-decoration:underline;" href="/dining-and-entertaining/top-rated-dinnerware/1">
+                Get a jumpstart by adding our top rated drinkware</a>.
+            </p>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/highballs">Highballs (12–14)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/double-old-fashioned-glasses">Doubles (12–14)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/juice-glasses">Juice Glasses (12–14)</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Drinkware -->
+
+          <div id="wine" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Wine Glasses/Accessories</h2>
+            <p class="copy-gr crate-roman link-box__copy">
+<a style="color:blue;text-decoration:underline;" href="/wine-wedding-gifts/f65186">
+                Learn more about the different types of wine glasses in our wine glass guide</a>.
+            </p>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/red-wine-glasses">Red Wines (12–14)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/white-wine-glasses">White Wines (12–14)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/champagne-flutes/1">Sparkling Wines </a>(12–14)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/wine-carafe">Wine Carafe/Decanter</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/corkscrew">Corkscrews</a>
+                </li>
+                <li class="crate-roman copy-gr">Wine Stoppers</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/wine-chiller">Wine-Champagne Cooler/Coaster</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/wine-racks">Wine Rack/Wine Cellar</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Wine Glasses/Accessories -->
+
+          <div id="cocktails" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Cocktails/Bar Tools</h2>
+<p class="copy-gr crate-roman link-box__copy">
+<a style="color:#1f74bf;text-decoration:underline;" href="/home-bar-gifts-registries/f65188">Learn more about the different type of cocktail glasses in our
+              cocktail guide</a>.</p>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/martini-glasses/1">Martini Glasses</a> (6–8)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/margarita-glasses/1">Margarita Glasses</a> (6–8)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/beer-glasses/1">Beer Glasses</a> (6–8)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/cordial-glasses/1">Cordials/Brandies</a> (6–8)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/whiskey-glasses">Whiskey Glasses (6–8)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bottle-opener">Bottle Openers</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cocktail-shaker">Cocktail Shaker</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/bar-tool-set/s682269">Bar Tool Set</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/muddlers">Muddler/Strainer</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/graters ">Graters</a>
+                  <a href="/peelers ">/Peelers</a>
+                  <a href="/zesters">/Zesters</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/ice-bucket">Ice Bucket</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/beverage-tubs">Beverage Tub</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/trays/1">Cocktail/Bar Tray</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/coasters">Coasters</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Wine Cocktails/Bar Tools -->
+
+          <div id="serving" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Serving/Entertaining</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/serving-platters/1">Platters</a> (2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/serving-bowls/1">Serving Bowls </a>(2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/salad-bowl">Salad Bowl</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/pasta-bowl">Pasta Bowl Set</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/chip-and-dips/1">Chip and Dip</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cheese-platter">Cheese Platter</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cake-stands">Cake Pedestal</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/trifle-bowls">Trifle Bowl</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/condiment-sets">Condiment Dishes (6–12)</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/soup-tureens">Soup Tureen</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/pitchers-and-decanters/1">Pitchers </a>(2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/punch-bowl">Punch Bowl</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/gravy-boats/1">Gravy Boat</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/butter-dish">Butter Dish</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/trivet">Trivet</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/picnicware">Picnicware</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/buffet-and-charger-plates/1">Chargers</a> (12)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/appetizer-and-dessert-plates/1">Appetizer Plates</a> (12–24)</li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Wine Serving/Entertaining -->
+
+          <div id="table" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Table Linens</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/white-tablecloth">Formal White Tablecloth</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/placemats-and-napkins/1">Formal Placements </a>(12–18)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/white-napkins">Formal White Napkins (12–18)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/tablecloths-and-napkins/1">Everyday Tablecloth</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/placemats-and-napkins/1">Everyday Placements</a> (12–18)</li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/napkin/1">Everyday Napkins</a> (12–18)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/table-runners/1">Table Runners</a> (2–3)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/napkin/1">Print/Solid Napkins</a> (12–18)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/napkin-rings/1">Napkin Rings </a>(12–18)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cocktail-napkins">Cocktail Napkins (12–24)</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+          </div>
+          <!-- Catagory-Results Wine Table Linens -->
+
+          <!--============= Stock the Kitchen Links ==============-->
+          <div id="cookware" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Cookware</h2>
+<p class="copy-gr crate-roman link-box__copy" style="color:#1f74bf;text-decoration:underline;">
+              Our sets give you the pots and pans you’ll use the most and offer a significant savings. Add on individual pieces
+ for special recipes you like to cook.
+<a style="color:#1f74bf;text-decoration:underline;" href="/cookware-gifts-wedding-registries/f65204">Learn the cookware basics from our cookware guide</a>.</p>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/cookware-sets/1">Cookware Set</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/special-features/frying-pans/1">Frypans</a> (2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/saute-pans">Sauté Pans</a> (2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/sauce-pans">Saucepans</a> (2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/le-creuset-signature-3.5-qt.-stainless-steel-saucier-with-lid/s255795">Saucier</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/stock-pots">Stock Pot</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/pasta-cooker">Pasta Cooker/Steamer</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/double-boilers">Double Boiler</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/griddles-grill-pans/1">Grill Pan</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/griddles-grill-pans/1">Griddle</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cast-iron-skillet">Cast Iron Skillet</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/dutch-ovens/1">Dutch Oven</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/roasters-lasagna-pans/1">Roaster</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/woks/1">Wok</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/best-egg-poacher">Egg Poacher</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/fondue-pots">Fondue Pot</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/chafing-dishes">Chafing Dish</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/pot-racks/1">Pot Rack</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Cookware -->
+
+          <div id="cutlery" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Cutlery</h2>
+<p class="copy-gr crate-roman link-box__copy" style="color:#1f74bf;text-decoration:underline;">We recommend a block set with all the essential knives at a savings. Add on individual knives for specific tasks.
+<a style="color:#1f74bf;text-decoration:underline;" href="/ideas-and-advice/types-of-kitchen-knives">Learn more</a> how each knife type is used in our blade guide.</p>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/knife-sets/1">Knife Block Set</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/paring-knives">Paring Knife</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/utility-knives">Utility Knife</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/chef-knives">Chef’s Knife</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/santoku-knives">Santoku Knife</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/carving-knives">Carving Knife/Carving Set</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bread-knives">Bread Knife</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/wüsthof-classic-5-boning-knife/s156019">Boning Knife</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/tomato-knife">Tomato Knife</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cleaver">Cleaver</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-shears">Kitchen Shears</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/knife-sharpeners/1">Knife Sharpeners</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/steak-knives/1">Steak Knives</a> (12)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/knife-storage/1">Knife Storage</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Cutlery -->
+
+          <div id="machines" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Machines</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/mixers/1">Stand Mixer</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/hand-mixer">Hand Mixer</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/blenders/1">Blender</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/blenders/1">Hand Blender</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/food-processors/1">Food Processor</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/coffee-makers/1">Coffee Maker</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/espresso-makers/1">Espresso Machine</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/coffee-grinders">Coffee Grinder</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/teapots-teakettles/1">Tea Kettle/Electric Water Boiler</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/juicers/1">Juicer</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/toasters-ovens/1">Toaster</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/toasters-ovens/1">Countertop Oven</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/waffle-makers">Waffle Maker</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/panini-maker">Panini Grill</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/ice-cream-makers">Ice Cream Maker</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/slow-cookers/1">Slow Cooker</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/zojirushi-rice-cooker">Rice Cooker</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/indoor-grill">Indoor Grill</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/electric-fondue">Electric Fondue</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/zyliss-electric-can-opener/s193854">Electric Can Opener</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/wine-chiller">Wine Cellar</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/rapid-beverage-chiller/s678263">Beverage Chiller</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Machines -->
+
+          <div id="bakeware" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Bakeware</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/usa-pan-pro-line-6-piece-bakeware-set/s246530">Bakeware Set</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/baking-sheets">Baking Sheets </a>(4)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/baking-mats">Baking Mats (2)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cooling-racks">Cooling Racks (2–3)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cake-pans">Round Cake Pans</a> (2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cake-pans">Square Pans </a>(2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/muffin-pan">Muffin Pans (2)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/mini-muffin-pan">Mini-Muffin Pans (2)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/pie-pans">Pie Dish</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/loaf-pan">Loaf Pans (2)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/springform-pan">Springform Pan</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bundt-pans">Bundt Pan</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/tart-pans">Tart Pans (2)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/casseroles/1">Casserole Dishes (2)</a></li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dining-and-entertaining/casseroles/1">Oven-to-Table Bakers (2)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/souffle-pans">Souffle Dish</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/baking-stone">Baking Stone</a> (2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/crisper">Crisper</a>(2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/pastry-tools">Pastry Blender/Board</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/flour-sifters">Flour Sifter</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/rolling-pins">Rolling Pin</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cookie-cutters">Cookie Cutters</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/cookie-presses">Cookie Press</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/cookbooks/1">Cookbooks</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Bakeware -->
+
+          <div id="prep" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Prep</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/mixing-bowls/1">Mixing Bowls</a> (3)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/measuring-cups">Measuring Spoons/Cups</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/measuring-cups">Liquid Measuring Cup</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/cutting-boards/1">Cutting Boards</a> (2–3)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/colanders-salad-spinners/1">Salad Spinner</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/colanders-salad-spinners/1">Colanders</a> (2)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/ramekin">Ramekins/Prep Bowls</a> (6–8)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/graters">Grater</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+<a href="/mandolines">Mandoline</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/salt-and-pepper/1">Salt and Peppers</a> (2 sets)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/spice-rack">Spice Rack</a>
+                </li>
+                <li class="crate-roman copy-gr">
+<a href="/mortar-and-pestle">Mortar and Pestle</a>
+                </li>
+                <li class="crate-roman copy-gr">
+<a href="/food-scale">Kitchen Scale</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/aprons">Aprons</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/oven-mitts">Oven Mitts</a>
+                  <a href="/pot-holders">/Potholders (2–4 each)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dish-towels">Dishtowels/Cloths</a> (6–12 each)</li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Prep -->
+
+          <div id="gadgets" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Gadgets</h2>
+            <p class="copy-gr crate-roman link-box__copy">
+<a style="color:#1f74bf;text-decoration:underline;" href="/kitchen-gadget-gifts-registries/f65189">Learn more about our top gadgets and how they are used.</a>
+</p>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/spatula">Spatulas</a> (2–3 each)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/whisk">Whisks</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/tongs">Turners/Tongs</a> (2 each)</li>
+                <li class="crate-roman copy-gr">
+<a href="/vegetable-peelers">Vegetable Peeler</a>
+                </li>
+                <li class="crate-roman copy-gr">
+<a href="/graters">Grater</a>-
+<a href="/zesters">Zester</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/garlic-press">Garlic Press</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/potato-masher">Potato Masher</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/pizza-cutter">Pizza Wheel</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/thermometers-timers/1">Timer</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/thermometers-timers/1">Thermometer</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/can-openers">Can Opener</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/ice-cream-scoops">Ice Cream Scoop</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/prep-utensils/1">Melon Baller/Cookie Dough Scoop</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/strawberry-hullers">Strawberry Huller</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/citrus-squeezers">Citrus Squeezer</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/avocado-slicers">Avocado Slicer</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/herb-scissors">Herb Scissors</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/egg-timers">Egg Timer</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/spoon-rests">Spoon Rest</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Gadgets -->
+
+          <div id="storage" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Kitchen Storage</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/food-containers-storage/1">Storage Containers/Bowls</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-canisters">Canisters</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/flatware-tray">Flatware Tray</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/bread-box">Bread Box</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/fruit-baskets">Fruit Basket/Storage</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+          </div>
+          <!-- Catagory-Results Kitchen Storage -->
+
+          <!--============= Furnishing Links ==============-->
+          <div id="decor" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Decorating and Accessories</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/frames/1">Frames</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/photo-ledges">Ledges</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/mirrors/1">Mirrors</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/clocks/1">Clocks</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/vases/1">Vases</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/candleholders/1">Candleholders/Hurricanes</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/candles/1">Candles</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/botanicals-and-plants/1">Botanical Accents</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/centerpiece-bowls/1">Centerpiece Bowls</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/trays-platters/1">Trays</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/baskets/1">Baskets</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/decorative-pillows/1">Decorative Pillows</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/throws/1">Throws</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/rugs-and-curtains/rugs/">Rugs</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/rugs-and-curtains/curtains-and-hardware/">Curtains/Hardware</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/wall-art/1">Prints/Wall Art</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/lighting/">Lamps/Pendants/Sconces</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Decorating and Accessories -->
+
+          <div id="living-room" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Living Room</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/living-room-furniture/">Sofa/Sleeper/Sectional</a>
+                </li>
+                <li class="crate-roman copy-gr">
+<a href="/furniture/chairs/1">Accent Chairs/Recliners/Ottomans</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/coffee-tables-and-side-tables/">Accent Tables</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/media-stands-consoles/1">TV Stand/Media Console</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/storage-cabinets/1">Storage Cabinets</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/bookcases-cabinets/1">Bookcases/Room Dividers</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/bar-cabinets-and-carts/1">Bar Cabinet</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Living Room -->
+
+          <div id="dining" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Dining and Kitchen</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/dining-kitchen-furniture/">Dining Table/Chairs/Cushions</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/dining-kitchen-furniture/">Kitchen Table/Chairs/Cushions</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/buffets-sideboards/1">Buffet/Sideboard/Hutch Top</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/barstools/1">Bar Stools/Cushions</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/dining-kitchen-storage/1">Kitchen Island/Cart</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/bar-cabinets-and-carts/1">Bar Cabinet/Wine Storage</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Dining and Kitchen -->
+
+          <div id="bedroom" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Master and Guest Bedroom</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/duvet-covers-and-duvet-inserts/1">Duvet Cover</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/duvet-covers-and-duvet-inserts/1">Duvet Insert</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/quilts-coverlets/1">Coverlet/Quilt</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/sheets-sheet-sets/1">Sheets/Cases</a> (2–3 sets)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/pillow-shams">Pillow Shams</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-pillows">Pillows</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/pillow-protectors">Pillow Protectors</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-skirts">Bedskirt</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/beds/1">Bed/Headboard/Frame</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/mattresses-and-boxspring-collections/1">Mattress/Foundation</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/mattress-pad/f26863">Mattress Pad</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/box-spring-covers">Box Spring Cover</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/dressers-chests/1">Dressers/Chests</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/nightstands/1">Nightstands</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/armoires/1">Armoire/Chifforobe</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/bedroom-benches/1">Accent Chair/Bench</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/closet-accessories">Closet Storage</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bedside-carafe">Bedside Carafe</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Master and Guest Bedroom -->
+
+          <div id="bath" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Master and Guest Bath</h2>
+            <p class="copy-gr crate-roman link-box__copy">We recommend the following per bath:</p>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/bath-sheets">Bath Sheets</a> (4)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/bath-towels/1">Bath Towels</a> (4)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/hand-towels">Hand Towels</a> (4)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/washcloths">Washcloths</a> (4)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/bath-towels/1">Guest Towels (4)</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/shower-curtains-rings/1">Shower Curtain</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/shower-curtains-rings/1">Curtain Liner</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/shower-curtains-rings/1">Shower Hooks/Rings</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/bath-rugs/1">Bath Rugs/Mats</a> (2–3)</li>
+                <li class="crate-roman copy-gr">
+                  <a href="/toothbrush-holder">Toothbrush Holder</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/soap-dispenser">Soap Pump</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/soap-dish">Soap Dish</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bathroom-trash-can">Wastebasket</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/hamper">Hamper</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/bathroom-storage/1">Bath Storage</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Master and Guest Bath -->
+
+          <div id="office" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Home Office</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/desks/1">Desk/Work Table</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/office-chairs/1">Desk Chair</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/filing-cabinets-and-carts/1">File Cabinet/Credenza</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/bookcases-cabinets/1">Bookcases/Storage</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/display-shelves-and-picture-ledges/1">Wall Shelves</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/desk-organizer-bin">Desktop Organizers</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+            <!-- catagory-colums -->
+          </div>
+          <!-- Catagory-Results Home Office -->
+
+          <div id="entry" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Entryway</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/entryway-benches/1">Bench</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="https://www.crateandbarrel.com/furniture/coat-rack/1">Coat Rack</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/furniture/chests-cabinets/1">Shelves</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/umbrella-stand">Umbrella Stand</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/console-table">Console</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+          </div>
+          <!-- Catagory-Results Entryway -->
+
+          <div id="util" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Utility</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/vacuums/1">Vacuum</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/irons">Iron</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/ironing-board">Ironing Board</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/hamper">Hamper</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/garment-racks">Clothes Drying Rack</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/bed-and-bath/laundry-storage/1">Laundry/Cleaning Accessories</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/closet-accessories">Storage Bins/Boxes</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/closet-accessories">Closet Storage</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/kitchen-and-food/trash-cans-composters/1">Trash Cans/Recycling Bins</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/dish-rack">Dish Rack</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/paper-towel-holders">Paper Towel Holder</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+          </div>
+          <!-- Catagory-Results Utility -->
+
+          <div id="patio" class="catagory-results link-box">
+            <h2 class="crate-roman headline-small">Patio/Outdoor</h2>
+            <div class="catagory-colums">
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-furniture/outdoor-furniture-by-type/">Dining Table/Chairs/Cushions</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-furniture/outdoor-patio-dining-furniture/1">Bar/Bar Stools/Cushions</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-furniture/outdoor-patio-lounge-furniture/1">Sofa/Cushions</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-furniture/outdoor-patio-lounge-furniture/1">Lounge Chair/Ottoman/Cushions</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-furniture/outdoor-patio-lounge-furniture/1">Chaise/Cushion</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/decorating-and-accessories/outdoor-pillows/1">Decorative Pillows</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-furniture/outdoor-accent-tables/1">Accent Tables</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/umbrella-stand">Umbrellas/Stands</a>
+                </li>
+              </ul>
+              <!-- left-links -->
+              <ul>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-furniture/barbecue-and-grilling/1">Outdoor Grill</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-furniture/barbecue-and-grilling/1">Grilling Tools</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/indoor-outdoor-rugs">Outdoor Rug</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-planters">Planters</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-candle-holders">Candleholders/Hurricanes</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-furniture/outdoor-lighting/1">Candles</a>
+                </li>
+                <li class="crate-roman copy-gr">
+                  <a href="/outdoor-furniture/outdoor-decor/1">Outdoor decor</a>
+                </li>
+              </ul>
+              <!-- right links -->
+            </div>
+          </div>
+          <!-- Catagory-Results Patio -->
+
+        </div>
+        <!-- catagory-results-container -->
+
+      </div>
+      <!-- checklist-container -->
+<!-- <a target="_blank" class="GRprint button button-lg button-primary cmsWhite checklist-btn" href="/assets/gift-registry/registrychecklist.pdf">Print Checkist ( pdf )</a> -->
+    </div>
+    <!-- checklist -->
+  </div>
+  <!-- body-content -->
+</section>
+
+<script>
+  function runTheThings() {
+  $(document).ready(function() {
+    
+    $(".hideOnLoad").hide();
+    
+    $(".catagory-title").click(function(e) {
+      var nextDiv = $(this).next("div");
+      $(".catagory-title").find('.arrow').addClass("down");
+      $(".catagory-title").find('.arrow').removeClass("up");
+      if (nextDiv.css("display") == "none") {
+        e.preventDefault();
+        $(".left-containers").slideUp("slow");
+        nextDiv.slideDown("slow");
+
+        $(this).find('.arrow').addClass("up");
+      } else {
+        nextDiv.slideUp("slow");
+      }
+    });
+
+    $(".link-box li").click(function() {
+      $(".link-box li").removeClass("active");
+      $(this).addClass("active");
+    });
+    // Click events for Set the table
+    $(".catagory-items li").click(function() {
+      $(".catagory-results").hide();
+      if ($(this).is("#dinnerwareBtn")) {
+        $("#dinnerware").show();
+      } else if ($(this).is("#flatwareBtn")) {
+        $("#flatware").show();
+      } else if ($(this).is("#drinkwareBtn")) {
+        $("#drinkware").show();
+      } else if ($(this).is("#wineBtn")) {
+        $("#wine").show();
+      } else if ($(this).is("#cocktailsBtn")) {
+        $("#cocktails").show();
+      } else if ($(this).is("#servingBtn")) {
+        $("#serving").show();
+      } else if ($(this).is("#tableBtn")) {
+        $("#table").show();
+      }
+
+      // Click events for Stock the Kitchen
+      if ($(this).is("#cookwareBtn")) {
+        $("#cookware").show();
+      } else if ($(this).is("#cutleryBtn")) {
+        $("#cutlery").show();
+      } else if ($(this).is("#machinesBtn")) {
+        $("#machines").show();
+      } else if ($(this).is("#bakewareBtn")) {
+        $("#bakeware").show();
+      } else if ($(this).is("#prepBtn")) {
+        $("#prep").show();
+      } else if ($(this).is("#gadgetsBtn")) {
+        $("#gadgets").show();
+      } else if ($(this).is("#storageBtn")) {
+        $("#storage").show();
+      }
+
+      // Click events for Furnishing
+      if ($(this).is("#decorBtn")) {
+        $("#decor").show();
+      } else if ($(this).is("#living-roomBtn")) {
+        $("#living-room").show();
+      } else if ($(this).is("#diningBtn")) {
+        $("#dining").show();
+      } else if ($(this).is("#bedroomBtn")) {
+        $("#bedroom").show();
+      } else if ($(this).is("#bathBtn")) {
+        $("#bath").show();
+      } else if ($(this).is("#officeBtn")) {
+        $("#office").show();
+      }else if ($(this).is("#entryBtn")) {
+        $("#entry").show();
+      }else if ($(this).is("#utilBtn")) {
+        $("#util").show();
+      }else if ($(this).is("#patioBtn")) {
+        $("#patio").show();
+      }
+    });
+  });
+}
+
+function jQueryIsLoaded() {
+  if (window.jQuery) {
+    console.log("jQuery is loaded");
+
+    runTheThings();
+  } else {
+    setTimeout(jQueryIsLoaded, 50);
+  }
+}
+
+jQueryIsLoaded();
+
+</script>

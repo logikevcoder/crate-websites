@@ -1,0 +1,792 @@
+<style>
+/*=======================================================
+Main Content
+=======================================================*/
+.main-content {
+  margin: 0 auto;
+}
+/*=======================================================
+Hero
+=======================================================*/
+
+.hero__logo {
+  width: 60%;
+  position: absolute;
+  top: 5%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/*=======================================================
+Specialty Curated
+=======================================================*/
+.specialty__img {
+  width: 85%;
+}
+/*=======================================================
+Uniquely Crafted
+=======================================================*/
+.unique {
+  background: linear-gradient(#dedede -12%, #fff 40%);
+  margin-bottom: 5%;
+}
+.unique__img {
+  width: 95%;
+  margin-left: auto;
+}
+
+/*=======================================================
+Completely Crushworthy
+=======================================================*/
+.crush {
+  margin-bottom: 5%;
+  background: linear-gradient(#dedede -12%, #fff 40%);
+}
+.crush__img {
+  width: 95%;
+}
+
+/*=======================================================
+Bottom Bar
+=======================================================*/
+.bb__logo > div:first-child {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.bb__logo {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+/*=======================================================
+Image Gallery
+=======================================================*/
+.img__gallery {
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-bottom:15%;
+}
+.img__gallery-container {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  margin-bottom: 2%;
+}
+.img__gallery-container > div:first-child {
+  margin-left:5%;
+}
+.img__gallery__block {
+  width: 40%;
+  position: relative;
+  display: inline-block;
+  padding-right: 0.5%;
+  vertical-align: top;
+  white-space: normal;
+}
+/*=======================================================
+Fade animation
+=======================================================*/
+.fade-in {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-out {
+  opacity: 0;
+  -webkit-transform: translateY(10%);
+  transform: translateY(10%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-down {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-up {
+  opacity: 0;
+  -webkit-transform: translateY(-20%);
+  transform: translateY(-20%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-left {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+.fade-right {
+  opacity: 0;
+  -webkit-transform: translateX(-20%);
+  transform: translateX(-20%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+/*=======================================================
+General Styling 
+=======================================================*/
+.m-fullDiv {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.m-fullImg {
+  width: 100%;
+}
+.m-marginDiv {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.m-insetDiv {
+  width: 90%;
+  margin: 5% auto;
+  position: relative;
+  overflow: hidden;
+}
+.m-insetDiv > a > .m-headline {
+  margin-top: 10px;
+}
+.m-fullDiv a,
+.m-insetDiv a {
+  text-decoration: none;
+  color: #222;
+}
+.m-fullImg {
+  width: 100%;
+}
+.m-zero-margin {
+  margin: 0 !important;
+}
+.mBottom4 {
+  margin-bottom: 4%;
+}
+.mBottom8 {
+  margin-bottom: 8%;
+}
+.mBottom12 {
+  margin-bottom: 12%;
+}
+.center-header {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.content-heading {
+}
+body {
+  margin: 0 !important;
+}
+h2 {
+  color: #222;
+}
+a h2 {
+  padding: 0;
+}
+.flex-group {
+  display: flex;
+  position: relative;
+}
+.section-bg-style {
+  width: 50%;
+  height: 50%;
+  background-color: #212121;
+}
+
+.section-bg-style--tan {
+  background-color: #f1dfbf;
+  position: absolute;
+  width: 47%;
+  height: 90%;
+  z-index: -5;
+  right: 0;
+  left: 0;
+}
+
+.section-bg-style--dark {
+  background-color: #3b434c;
+  position: absolute;
+  width: 47%;
+  height: 90%;
+  z-index: -5;
+  right: 0;
+  top: 0;
+}
+
+.section-bg-style--dark2 {
+  position: absolute;
+  width: 47%;
+  height: 90%;
+  z-index: -5;
+  left: 0;
+  top: 0;
+  background-color: #46443e;
+}
+.center-heading {
+  text-align: center;
+  margin: 10% auto 5%;
+}
+/*=======================================================
+Fonts 
+=======================================================*/
+.m-head-large {
+  font-size: 24px;
+  line-height: 1;
+}
+.m-head-medium {
+  font-size: 19px;
+  line-height: 1;
+  margin: 8px 0;
+}
+.m-body {
+  font-size: 15px;
+  line-height: 1.2;
+  margin: 5px 0;
+}
+.m-eyebrow {
+  font-size: 13px;
+  margin: 8px 0;
+}
+.m-cta {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+/*=======================================================
+Media Queries 
+=======================================================*/
+@media only screen and (max-width: 340px) {
+  .m-XLheadline {
+    font-size: 80px;
+    margin: 0;
+    line-height: 1;
+  }
+  .m-head-large {
+    font-size: 19px;
+  }
+  .m-head-medium {
+    font-size: 16px;
+    margin: 0;
+  }
+  .m-body {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .m-eyebrow {
+    font-size: 12px;
+    margin: 0;
+  }
+  .m-cta {
+    font-size: 10px;
+    margin: 5px 0 0 0;
+  }
+  .b2bminus:after {
+    top: 5px;
+  }
+  .b2bplus:after {
+    top: 5px;
+  }
+}
+@media only screen and (max-width: 413px) {
+}
+@media only screen and (min-width: 414px) {
+  .m-XLheadline {
+    font-size: 120px;
+    margin: 0;
+    line-height: 1;
+  }
+  .m-head-large {
+    font-size: 26px;
+  }
+  .m-head-medium {
+    font-size: 21px;
+    margin: 0;
+  }
+  .m-body {
+    font-size: 18px;
+    margin-top: 14px;
+  }
+  .m-eyebrow {
+    font-size: 15px;
+  }
+}
+
+</style>
+
+<section class="main-content m-fullDiv">
+
+  <!--=============== HERO ===============-->
+  <section class="hero m-fullDiv">
+    <div>
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_20180601_Intro?qlt=75" alt="">
+    </div>
+    <div class="hero__logo">
+      <div>
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_20180601_Logo?wid=423&qlt=75&fmt=png-alpha"
+          alt="">
+      </div>
+
+      <div>
+        <p class="crate-roman m-eyebrow cmsWhite">
+          We&rsquo;re always exploring what&rsquo;s new.
+        </p>
+
+      </div>
+    </div>
+    <!-- hero__logo -->
+
+  </section>
+
+  <!--=============== Speciality Curated ===============-->
+  <section class="specialty m-fullDiv fade-out">
+    <a href="/designspace/design-space-furniture/1">
+
+      <div class="center-heading">
+        <h2 class="crate-bold m-head-large">Specially Curated.</h2>
+        <p class="crate-roman m-eyebrow">Extra bold curves, beautiful colors and
+          <br> trend-forward shapes.</p>
+        <p class="crate-bold m-cta">Shop Furniture</p>
+      </div>
+      <!-- center-heading -->
+
+      <div class="specialty__img">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_20180601_BlueChair?wid=643&qlt=75&fmt=png-alpha"
+          alt="">
+      </div>
+    </a>
+  </section>
+  <!-- Specialty Curated -->
+
+  <!--=============== Image Gallery ===============-->
+<div class="img__gallery fade-out">
+    <!-- text-container -->
+    <div class="img__gallery-container">
+
+      <div class="img__gallery__block">
+        <a id="grabber0Link" href="">
+          <img id="grabber0Image">
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber1Link" href="">
+          <img id="grabber1Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber2Link" href="">
+          <img id="grabber2Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber3Link" href="">
+          <img id="grabber3Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber4Link" href="">
+          <img id="grabber4Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber5Link" href="">
+          <img id="grabber5Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber6Link" href="">
+          <img id="grabber6Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber7Link" href="">
+          <img id="grabber7Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber8Link" href="">
+          <img id="grabber8Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber9Link" href="">
+          <img id="grabber9Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+    </div>
+    <!-- img gallery container -->
+  </div>
+  <!-- img gallery -->
+
+  <!--=============== Uniquely Crafted ===============-->
+  <section class="unique m-fullDiv fade-out">
+    <a href="/designspace/design-space-lighting/1">
+
+      <div class="center-heading">
+        <h2 class="crate-bold m-head-large">Uniquely Crafted.</h2>
+        <p class="crate-roman m-eyebrow">Check out mixed materials, bold brass and
+          <br> gold, and creative finishes.</p>
+        <p class="crate-bold m-cta">Shop Lighting</p>
+      </div>
+      <!-- center-heading -->
+
+      <div class="unique__img">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_20180601_Pendant?wid=711&qlt=75&fmt=png-alpha"
+          alt="">
+      </div>
+      <!-- unique-left__img -->
+
+    </a>
+  </section>
+  <!-- Uniquely Crafted -->
+
+  <!--=============== Image Gallery ===============-->
+<div class="img__gallery fade-out">
+    <!-- text-container -->
+    <div class="img__gallery-container">
+
+      <div class="img__gallery__block">
+        <a id="grabber10Link" href="">
+          <img id="grabber10Image">
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber11Link" href="">
+          <img id="grabber11Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber12Link" href="">
+          <img id="grabber12Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber13Link" href="">
+          <img id="grabber13Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber14Link" href="">
+          <img id="grabber14Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber15Link" href="">
+          <img id="grabber15Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber16Link" href="">
+          <img id="grabber16Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber17Link" href="">
+          <img id="grabber17Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber18Link" href="">
+          <img id="grabber18Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber19Link" href="">
+          <img id="grabber19Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+    </div>
+    <!-- img gallery container -->
+  </div>
+  <!-- img gallery -->
+
+  <!--=============== Completely Crushworthy ===============-->
+  <section class="crush m-fullDiv fade-out">
+    <a href="/designspace/design-space-wall-decor/1">
+
+      <div class="center-heading">
+        <h2 class="crate-bold m-head-large">Completely Crushworthy.</h2>
+        <p class="crate-roman m-eyebrow">Stunning decor finds, big beautiful artwork.
+          <br> A collection we can&rsquo;t stop talking about.</p>
+        <p class="crate-bold m-cta">Shop Decor</p>
+      </div>
+      <!-- center-heading -->
+
+      <div class="crush__img">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_20180601_Prnts?wid=739&qlt=75&fmt=png-alpha"
+          alt="">
+      </div>
+      <!-- crush__img -->
+
+    </a>
+  </section>
+  <!-- crushworthy -->
+
+  <!--=============== Image Gallery ===============-->
+<div class="img__gallery fade-out">
+    <!-- text-container -->
+    <div class="img__gallery-container">
+
+      <div class="img__gallery__block">
+        <a id="grabber20Link" href="">
+          <img id="grabber20Image">
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber21Link" href="">
+          <img id="grabber21Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber22Link" href="">
+          <img id="grabber22Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber23Link" href="">
+          <img id="grabber23Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber24Link" href="">
+          <img id="grabber24Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber25Link" href="">
+          <img id="grabber25Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber26Link" href="">
+          <img id="grabber26Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber27Link" href="">
+          <img id="grabber27Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber28Link" href="">
+          <img id="grabber28Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber29Link" href="">
+          <img id="grabber29Image" src="" alt=''>
+        </a>
+      </div>
+      <!--img gallery block -->
+
+    </div>
+    <!-- img gallery container -->
+  </div>
+  <!-- img gallery -->
+
+  <!--=============== Bottom Bar ===============-->
+  <section class="BB m-fullDiv fade-out">
+    <a href="/designspace/all-design-space/1">
+      <div>
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_20180601_BttmPgBckgrnd?wid=768&qlt=75"
+          alt="">
+      </div>
+
+      <div class="bb__logo">
+        <div>
+          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_20180601_Logo?wid=423&qlt=75&fmt=png-alpha"
+            alt="">
+        </div>
+
+        <div>
+          <p class="crate-bold m-cta cmsWhite">
+            Shop now
+          </p>
+
+        </div>
+      </div>
+      <!-- bb__logo -->
+    </a>
+  </section>
+  <!-- Bottom Bar -->
+
+
+</section>
+<!-- main-content -->
+
+<script>
+  function runTheThings() {
+  $(document).ready(function() {
+    function fade() {
+      var offSet = 0;
+      offSet = offSet + 200;
+      $(".fade-out").each(function(i) {
+        var bottom_of_object = $(this).offset().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if (bottom_of_window > bottom_of_object) {
+          $(this).addClass("fade-in");
+          $(this).removeClass("fade-out");
+        } else {
+          $(this).removeClass("fade-in");
+          $(this).addClass("fade-out");
+        }
+      });
+
+      $(".fade-up").each(function(i) {
+        var bottom_of_object2 = $(this).offset().top;
+        var bottom_of_window2 = $(window).scrollTop() + $(window).height();
+        if (bottom_of_window2 > bottom_of_object2) {
+          $(this).addClass("fade-down");
+          $(this).removeClass("fade-up");
+        } else {
+          $(this).removeClass("fade-up");
+          $(this).addClass("fade-down");
+        }
+      });
+
+      $(".fade-right").each(function(i) {
+        var bottom_of_object2 = $(this).offset().top;
+        var bottom_of_window2 = $(window).scrollTop() + $(window).height();
+        if (bottom_of_window2 > bottom_of_object2) {
+          $(this).addClass("fade-left");
+          $(this).removeClass("fade-right");
+        } else {
+          $(this).removeClass("fade-left");
+          $(this).addClass("fade-right");
+        }
+      });
+    }
+
+    //when scrolling
+    window.addEventListener("scroll", function(event) {
+      fade();
+    });
+
+    //onload check
+    fade();
+
+    var getProductNavigateDetail = function(skuList) {
+      var postUrl =
+          "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+        imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+      $.ajax({
+        url: postUrl,
+        type: "POST",
+        data: { skus: skuList },
+        dataType: "json",
+        success: function(result) {
+          if (result[0] != null) {
+            for (let i = 0; i < result.length; i++) {
+              $("#grabber" + [i] + "Link").attr("href", result[i].NavigateUrl);
+              $("#grabber" + [i] + "Image").attr(
+                "src",
+                imageURL + result[i].ImagePath
+              );
+              $("#grabber" + [i] + "Name").html(result[i].Name);
+            }
+          }
+        },
+        error: function(jqXhr, textStatus, errorThrown) {
+          console.log(textStatus, errorThrown);
+        }
+      });
+    };
+    getProductNavigateDetail(
+ "115885, 116816, 127368, 117378, 117482, 118360, 117786,117703, 128661, 117800, 122546, 122555, 122930, 123061, 123495, 123159, 123128,122305,122906, 123138, 124111, 124076, 124082, 124012, 122952, 123737, 123324, 123746, 123051, 123761"
+    );
+  });
+}
+
+function jQueryIsLoaded() {
+  if (window.jQuery) {
+    console.log("jQuery is loaded");
+
+    runTheThings();
+  } else {
+    setTimeout(jQueryIsLoaded, 50);
+  }
+}
+
+jQueryIsLoaded();
+
+
+</script>

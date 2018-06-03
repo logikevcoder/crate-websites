@@ -1,0 +1,1020 @@
+<style>
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero {
+    position: relative;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+
+  .hero__text {
+    position: absolute;
+    width: 90%;
+    color: #222;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transform: translatey(-50%)
+  }
+
+  /*=======================================================
+metal Furniture
+=======================================================*/
+
+  .metalFurn__header {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .metalFurn__text {
+    position: absolute;
+    left: 27%;
+    top: 80%;
+  }
+
+  .metalFurn__carousel-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .metalFurn__carousel {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .metalFurn__carousel::before {
+    content: none;
+  }
+
+  .metalFurn__carousel::after {
+    content: none;
+  }
+
+  .carousel__block {
+    width: 33%;
+    margin: 0 !important;
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  /*=======================================================
+Trends
+=======================================================*/
+
+  .trends__header {
+    text-align: center;
+    position: relative;
+  }
+
+  .trends__img {
+    margin: 3% 5%;
+  }
+
+  .trends__text {
+    position: absolute;
+    top: 13%;
+    left: 11%;
+  }
+
+  .img__gallery {
+    position: relative;
+    width: 100%;
+    ;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .img__gallery-container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    margin-bottom: 2%;
+  }
+
+  .img__gallery__block {
+    width: 65%;
+    position: relative;
+    display: inline-block;
+    padding-right: .7%;
+    vertical-align: top;
+    white-space: normal;
+  }
+
+  .img__gallery__text {
+    margin-right: 4%;
+  }
+
+  .img__gallery__text-1 {
+    color: #fff;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+  }
+
+  .img__gallery__text-2 {
+    color: #fff;
+    position: absolute;
+    left: 9%;
+    top: 77%;
+  }
+
+  /*=======================================================
+oldFavs
+=======================================================*/
+
+  .oldFavs__header {
+    text-align: left;
+    position: absolute;
+    left: 2%;
+    top: 4%;
+    z-index: 20;
+    color: #fff;
+  }
+
+  .carousel__item {
+    width: 100%;
+  }
+
+  .oldFavs__img {
+    width: 33%;
+    display: inline-block;
+    position: relative;
+  }
+
+  /*=======================================================
+Accent tables
+=======================================================*/
+
+  .accent-tables__header {
+    text-align: center;
+  }
+
+  .accent-tables__img {
+    margin: 0 5%;
+  }
+
+  .accent-tables__carousel-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .accent-tables__carousel {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .accent-tables__carousel::before {
+    content: none;
+  }
+
+  .accent-tables__carousel::after {
+    content: none;
+  }
+
+  .carousel__block {
+    width: 33%;
+    margin: 0 !important;
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  /*=======================================================
+What we love
+=======================================================*/
+
+  .wwl {
+    margin-bottom: 10%;
+  }
+
+  .wwl__header {
+    text-align: center;
+  }
+
+  .wwl__img-text {
+    position: absolute;
+    left: 5%;
+    top: 86%;
+    color: #fff;
+  }
+
+/*=======================================================
+Shop All Banner
+=======================================================*/
+.shopAll-banner {
+  background-color: #222;
+  height:176px;
+  width:100%;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+  /*=======================================================
+General Styling
+=======================================================*/
+
+  .m-fullDiv {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .m-halfWidth {
+    width: 50%;
+    position: relative;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-insetDiv {
+    width: 90%;
+    margin: 5% auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-insetDiv>a>.m-headline {
+    margin-top: 10px;
+  }
+
+  .m-fullDiv a,
+  .m-insetDiv a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-zero-margin {
+    margin: 0 !important;
+  }
+
+  /* overrides margin styling */
+
+  .mBottom4 {
+    margin-bottom: 4%;
+  }
+
+  .mBottom8 {
+    margin-bottom: 8%;
+  }
+
+  .mBottom12 {
+    margin-bottom: 12%;
+  }
+
+  .styled-text::before {
+    border-bottom: 5px solid #000;
+    position: absolute;
+    content: "";
+    width: 45%;
+    left: 60%;
+    top: -20%;
+    margin-top: 5%;
+  }
+
+  .styled-text--left::before {
+    border-bottom: 5px solid #000;
+    position: absolute;
+    content: "";
+    width: 45%;
+    left: 0%;
+    top: -20%;
+    margin-top: 5%;
+  }
+
+  .styled-text--left-white::before {
+    border-bottom: 5px solid #fff;
+    position: absolute;
+    content: "";
+    width: 45%;
+    left: 0%;
+    top: -20%;
+    margin-top: 5%;
+  }
+
+  /*=======================================================
+Overlay
+=======================================================*/
+
+  .overlay {
+    background: rgba(255, 255, 255, 0.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    transition: .4s ease;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .overlay div {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .overlay a {
+    color: #222;
+  }
+
+  /*=======================================================
+Carousel Styling
+=======================================================*/
+
+  .metalFurn__carousel-container .slick-dots {
+    width: 90px !important;
+  }
+
+  .accent-tables__carousel .slick-dots {
+    width: 90px !important;
+    ;
+
+  }
+
+  .slick-dots {
+    bottom: -30px !important;
+    top: 102% !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 21px !important;
+    line-height: 23px !important;
+    width: 15px !important;
+    height: 15px !important;
+    opacity: 1 !important;
+    color: #000 !important;
+  }
+
+  .slick-dots li {
+    width: 20px !important;
+    margin: 5px 5px !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    border: 2px solid #000 !important;
+    border-radius: 50% !important;
+    color: transparent !important;
+  }
+
+  /*=======================================================
+Fonts
+=======================================================*/
+
+  .m-head-large {
+    font-size: 29px;
+    line-height: 1;
+  }
+
+  .m-head-medium {
+    font-size: 23px;
+    line-height: 1;
+  }
+
+  .m-body {
+    font-size: 17px;
+    line-height: 1.2;
+    margin: 5px 0 0 0
+  }
+
+  .m-eyebrow {
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  .m-cta {
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 5px 0;
+  }
+
+  /*=======================================================
+Media Queries
+=======================================================*/
+
+  @media only screen and (max-width:320px) {
+    .m-XLheadline {
+      font-size: 80px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 27px;
+    }
+    .m-head-medium {
+      font-size: 21px;
+    }
+    .m-body {
+      font-size: 15px;
+    }
+    .m-eyebrow {
+      font-size: 12px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 10px;
+    }
+  }
+
+  @media only screen and (min-width:414px) {
+    .m-Xhead-large {
+      font-size: 120px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 31px;
+    }
+    .m-head-medium {
+      font-size: 25px;
+    }
+    .m-body {
+      font-size: 19px;
+      margin-top: 14px;
+    }
+    .m-eyebrow {
+      font-size: 15px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 12px;
+      margin: 8px 0;
+    }
+  }
+</style>
+
+<!-- HERO -->
+<section class="hero m-fullDiv mBottom12">
+  <a href="/whats-new/new-furniture/1">
+    <div class="hero__img">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWFURN_hero_201801" alt="?wid=&qlt=75">
+      <div class="hero__text">
+        <p class="crate-helvetica-bold m-head-large">What&rsquo;s New: Furniture</p>
+        <p class="crate-helvetica-roman m-body">From sleek metallics to lines that curve.</p>
+        <p class="crate-helvetica-bold m-cta">shop new furniture</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!--=============== Metal Furniture ===============-->
+<section class="metalFurn m-fullDiv mBottom12">
+  <div class="metalFurn__header">
+    <a href="/special-features/metallic-dining-chairs/1">
+      <p class="crate-helvetica-light m-eyebrow m-zero-margin">FEELS FRESH </p>
+      <p class="crate-helvetica-bold m-head-medium" style="margin-bottom: 4%;">Get that subtle glow.</p>
+      <div class="metalFurn__header-img  metalFurn__img-1">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWFURN_metalChrs_201801" alt="">
+      </div>
+      <!-- metalFurn__header-img -->
+    </a>
+  </div>
+  <!-- metalFurn header -->
+
+  <div class="metalFurn__carousel-container">
+    <!-- carousel header -->
+    <div class="metalFurn__carousel responsive crate-helvetica-roman ">
+
+      <div class="carousel__block">
+        <a id="grabber0Link" href="">
+          <img id="grabber0Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber1Link" href="">
+          <img id="grabber1Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber2Link" href="">
+          <img id="grabber2Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber3Link" href="">
+          <img id="grabber3Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber4Link" href="">
+          <img id="grabber4Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber5Link" href="">
+          <img id="grabber5Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber6Link" href="">
+          <img id="grabber6Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber7Link" href="">
+          <img id="grabber7Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber8Link" href="">
+          <img id="grabber8Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+    </div>
+    <!-- carousel body responsive -->
+  </div>
+  <!-- carousel container -->
+</section>
+<!-- metal furniture carousel -->
+
+<!--=============== TRENDS ===============-->
+<section class="trends m-fullDiv mBottom12">
+  <div class="trends__header">
+    <p class="crate-helvetica-light m-eyebrow">TREND REPORT</p>
+    <p class="crate-helvetica-bold m-head-medium" style="margin:1% 0 4%;">Soft quilting and curves ahead.</p>
+  </div>
+  <!-- trends-header -->
+  <div class="trends__img">
+    <a href="/curran-quilted-onyx-dining-chair/s559921">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWFURN_tuffChr_201801" alt="">
+      <!-- trends header img -->
+      <div class="trends__text">
+        <p class="crate-helvetica-light m-head-medium">
+          Modern shape,
+          <br> classic detail.
+        </p>
+        <p class="crate-helvetica-bold m-cta">
+          SHOP CURRAN CHAIRS
+        </p>
+      </div>
+      <!-- trends img -->
+    </a>
+  </div>
+  <!-- trends header img -->
+  <div class="img__gallery">
+    <!-- text-container -->
+    <div class="img__gallery-container">
+      <div class="img__gallery__block">
+        <a href="/sydney-3-piece-curved-sectional/s269292">
+          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWFURN_curvedCh_201801" alt="">
+          <div class="img__gallery__text-1">
+            <p class="crate-helvetica-light m-head-medium">
+              Fun, fluid and glam.
+            </p>
+            <p class="crate-helvetica-bold m-cta">
+              SHOP SYDNEY SECTIONAL
+            </p>
+          </div>
+          <!-- gallery image text -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber9Link" href="">
+          <img id="grabber9Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber9Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber9Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber10Link" href="">
+          <img id="grabber10Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber10Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber10Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber11Link" href="">
+          <img id="grabber11Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber11Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber11Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber12Link" href="">
+          <img id="grabber12Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber12Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber12Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber13Link" href="">
+          <img id="grabber13Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber13Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber13Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber14Link" href="">
+          <img id="grabber14Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber14Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber14Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+    </div>
+    <!-- img gallery container -->
+  </div>
+  <!-- img gallery -->
+</section>
+<!-- Trends -->
+
+<!--=============== OLDFAVES ===============-->
+<section class="oldFavs m-fullDiv mBottom12" style="padding-bottom: 5%;">
+
+  <div class="oldFavs__carousel single-item">
+    <div class="carousel__item single-item">
+      <div class="oldFavs__header">
+        <a href="/whats-new/new-furniture/1">
+          <p class="crate-helvetica-light m-eyebrow m-zero-margin">
+            UPDATED FAVES
+          </p>
+          <p class="crate-helvetica-bold m-head-medium m-margin-tb">
+            Most-loved storage pieces
+            <br> in new finishes.
+          </p>
+          <p class="crate-helvetica-roman m_head_body">
+            From sheer grey to warm walnut.
+          </p>
+        </a>
+      </div>
+      <a id="grabber15Link" href="">
+        <img id="grabber15Image" src="" alt="">
+      </a>
+    </div>
+    <!-- carousel__item -->
+
+    <div class="carousel__item single-item">
+      <a id="grabbe16Link" href="">
+        <img id="grabber16Image" src="" alt="">
+      </a>
+    </div>
+    <!-- carousel__item -->
+
+    <div class="carousel__item single-item">
+      <a id="grabber17Link" href="">
+        <img id="grabber17Image" src="" alt="">
+      </a>
+    </div>
+    <!-- carousel__item -->
+
+  </div>
+</section>
+<!-- Old Faves -->
+
+<!--=============== ACCENT TABLES ===============-->
+<section class="accent-tables m-fullDiv mBottom12">
+  <div class="accent-tables__header">
+    <a href="/whats-new/new-furniture/1">
+      <div class="accent-tables__header__text">
+        <p class="m-head-medium crate-helvetica-bold">
+          How to cluster: mix heights and sizes.
+        </p>
+        <p class="m-cta crate-helvetica-bold" style="margin:1% 0 4%;" style="padding-bottom: 5%;">
+          Shop Accent Tables
+        </p>
+      </div>
+    </a>
+  </div>
+  <!-- accent tables header -->
+  <div class="accent-tables__img">
+    <a href="/furniture/coffee-tables-and-side-tables/">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWFURN_accenTbl_201801" alt="">
+    </a>
+  </div>
+  <!-- accent tables image -->
+
+  <div class="accent-tables__carousel-container">
+    <div class="accent-tables__carousel responsive crate-helvetica-roman ">
+
+
+      <div class="carousel__block">
+        <a id="grabber18Link" href="">
+          <img id="grabber18Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber19Link" href="">
+          <img id="grabber19Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber20Link" href="">
+          <img id="grabber20Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber21Link" href="">
+          <img id="grabber21Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber22Link" href="">
+          <img id="grabber22Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber23Link" href="">
+          <img id="grabber23Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber24Link" href="">
+          <img id="grabber24Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber25Link" href="">
+          <img id="grabber25Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber26Link" href="">
+          <img id="grabber26Image" src="" alt="">
+        </a>
+      </div>
+      <!-- carousel block -->
+
+    </div>
+    <!-- carousel responsive -->
+  </div>
+</section>
+<!-- Accent tables -->
+
+<!--=============== WHAT WE LOVE ===============-->
+<section class="wwl m-fullDiv">
+  <div class="wwl__header">
+    <p class="crate-helvetica-light m-eyebrow">
+      great features
+    </p>
+    <p class="crate-helvetica-bold m-head-medium" style="margin:1% 0 4%;">
+      The extras we&rsquo;re loving right now.
+    </p>
+  </div>
+  <!-- trends-header -->
+  <div class="img__gallery">
+    <!-- text-container -->
+    <div class="img__gallery-container">
+      <div class="img__gallery__block" style="width:85%;">
+        <a id="grabber27Link" href="">
+          <img id="grabber27Image">
+          <div class="img__gallery__text-2">
+            <p class="crate-helvetica-light m-head-medium">
+              Need a charge?
+              <br> Try powered furniture.
+            </p>
+          </div>
+          <!-- gallery image text -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber28Link" href="">
+          <img id="grabber28Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber28Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber28Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber29Link" href="">
+          <img id="grabber29Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber29Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber29Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber30Link" href="">
+          <img id="grabber30Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber30Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber30Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber31Link" href="">
+          <img id="grabber31Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber31Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber31Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+      <div class="img__gallery__block img__gallery__block--2">
+        <a id="grabber32Link" href="">
+          <img id="grabber32Image" src="" alt=''>
+          <div class="img__gallery__text">
+            <p id="grabber32Name" class="crate-helvetica-bold m_head_body"></p>
+            <p id="grabber32Price" class="crate-helvetica-bold m_head_body"></p>
+          </div>
+          <!-- img gallery text 2 -->
+        </a>
+      </div>
+      <!--img gallery block -->
+
+    </div>
+    <!-- img gallery container -->
+  </div>
+  <!-- img gallery -->
+  <div class="wwl__img">
+    <a href="/hayden-queen-storage-bed/s568203">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_NEWFURN_hayBed_201801" alt="">
+      <!-- trends header img -->
+      <div class="wwl__img-text">
+        <p class="crate-helvetica-light m-head-medium">
+          Hidden storage tucks
+          <br> away extra bedding.
+        </p>
+        <p class="crate-helvetica-bold m-cta">
+          Shop Hayden Bed
+        </p>
+      </div>
+      <!-- wwl img text -->
+    </a>
+  </div>
+  <!-- wwl img -->
+</section>
+
+<a href="/all-new-furniture">
+  <section class="shopAll-banner mBottom8">
+    <div class="shopAll-banner__text">
+      <h2 class="crate-helvetica-bold cmsWhite m-head-medium" style="padding:0;">Shop All New furniture&#x25B8; </h2>
+    </div>
+  </section>
+</a>
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+      $('.oldFavs__carousel').slick({
+        dots: true,
+        infinite: false
+      });
+
+      $('.responsive').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      });
+
+      var getProductNavigateDetail = function (skuList) {
+
+        var postUrl = "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+          imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+        $.ajax({
+          url: postUrl,
+          type: "POST",
+          data: {
+            skus: skuList
+          },
+          dataType: "json",
+          success: function (result) {
+            if (result[0] != null) {
+
+              for (var i = 0; i < result.length; i++) {
+                $('#grabber' + [i] + 'Link').attr('href', result[i].NavigateUrl);
+                $('#grabber' + [i] + 'Image').attr('src', imageURL + result[i].ImagePath);
+                $('#grabber' + [i] + 'Name').html(result[i].Name);
+                $('#grabber' + [i] + 'Price').html(result[i].FormattedPrice);
+              }
+            }
+          },
+          error: function (jqXhr, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+          }
+        });
+      };
+      getProductNavigateDetail(
+        '327229,438827,459780,463716,214853,164445,449344,443221,348299,532182,559942,475493,469501,559933,270590,440784,476723,439486,481337,443218,462511,462580,481062,481295,442632,442695,442764,667116,443012,453436,474594,453222,453275'
+      );
+    });
+  }
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+</script>

@@ -1,0 +1,1100 @@
+<style>
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__text {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 72%;
+    height: 200px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*=======================================================
+Navigation
+=======================================================*/
+
+  .nav {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .nav-links__item {
+    border: 1px solid #222;
+    padding: 5px;
+    text-align: center;
+    padding: 5%;
+    margin: 3px;
+  }
+
+  /*=======================================================
+indoor-outdoor
+=======================================================*/
+
+  .img-right-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .img-right-text__img {
+    width: 75%;
+  }
+
+  .img-right-text__text {
+    padding-left: 3%;
+    width: 25%;
+  }
+
+  .al-fresco__text {
+    padding-left: 0;
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  /*=======================================================
+Wine & Dine
+=======================================================*/
+
+  .image-text-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .image-text-group__left {
+    width: 50%;
+  }
+
+  .image-text-group__right {
+    width: 50%;
+  }
+
+  /*=======================================================
+Rest & Refresh
+=======================================================*/
+
+  .RR-right {
+    position: absolute;
+    left: 48%;
+  }
+
+  /*=======================================================
+Design Studio
+=======================================================*/
+
+  .DS__img-container {
+    display: flex;
+  }
+
+  .DS__img-container__left {
+    margin: 5% 3% 0 0;
+  }
+
+  .DS__text {
+    margin: 5% 0 0 5%;
+  }
+
+  /*=======================================================
+Crate Blog
+=======================================================*/
+
+  .crate-blog__text {
+    position: absolute;
+    left: 5%;
+    top: 15%;
+  }
+
+  /*=======================================================
+Curalate
+=======================================================*/
+
+  #curalate-fan-reel-wrapper {
+    width: 95%;
+    overflow: auto;
+    margin: 1% auto;
+  }
+
+  .curalateText {
+    display: block;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+
+  .curalateMargins {
+    position: relative;
+    min-width:320px !important;
+    max-width: 414px !important;
+  }
+
+  .curalateDiv {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding-bottom: 6%;
+    margin-top: 3%;
+    min-width: 320px !important;
+  }
+
+  /*=======================================================
+General Styling
+=======================================================*/
+
+  .m-fullDiv {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .m-halfWidth {
+    width: 50%;
+    position: relative;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-marginDiv {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .m-insetDiv {
+    width: 90%;
+    margin: 5% auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-insetDiv>a>.m-headline {
+    margin-top: 10px;
+  }
+
+  .m-fullDiv a,
+  .m-insetDiv a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-zero-margin {
+    margin: 0 !important;
+  }
+
+  .mBottom4 {
+    margin-bottom: 4%;
+  }
+
+  .mBottom8 {
+    margin-bottom: 8%;
+  }
+
+  .mBottom12 {
+    margin-bottom: 12%;
+  }
+
+  .padTop10 {
+    padding-top: 10%;
+  }
+
+  .center-header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+  }
+
+  h2 {
+    color: #222 !important;
+    padding: 0 !important;
+  }
+
+  /*=======================================================
+Image Gallery
+=======================================================*/
+
+  .img__gallery {
+    position: relative;
+    width: 100%;
+    ;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .img__gallery-container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    margin-bottom: 2%;
+    width: 100%;
+  }
+
+  .img__gallery__block {
+    position: relative;
+    display: inline-block;
+    white-space: normal;
+    width: 30%;
+    vertical-align: middle !important;
+  }
+
+  /*=======================================================
+Slick
+=======================================================*/
+
+  .slick-track {
+    width: 3000px !important;
+  }
+
+  .slick-slide {
+    min-width: 105px !important;
+    align-content: middle !important;
+  }
+
+  /*=======================================================
+Fonts
+=======================================================*/
+
+  .m-head-XL {
+    font-size: 45px;
+    line-height: 1;
+  }
+
+  .m-head-large {
+    font-size: 37px;
+    line-height: 1;
+  }
+
+  .m-head-medium {
+    font-size: 29px;
+    line-height: 1;
+    margin: 8px 0;
+  }
+
+  .m-body {
+    font-size: 19px;
+    line-height: 1.2;
+    margin: 5px 0
+  }
+
+  .m-eyebrow {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .m-cta {
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 5px 0;
+  }
+
+  /*=======================================================
+Media Queries
+=======================================================*/
+
+  @media only screen and (max-width:320px) {
+    .m-head-XL {
+      font-size: 40px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 29px;
+    }
+    .m-head-medium {
+      font-size: 23px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .m-eyebrow {
+      font-size: 11px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 10px;
+      margin: 5px 0 0 0;
+    }
+  }
+
+  @media only screen and (min-width:414px) {
+    .m-head-XL {
+      font-size: 50px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 37px;
+    }
+    .m-head-medium {
+      font-size: 29px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 19px;
+      margin-top: 14px;
+    }
+    .m-eyebrow {
+      font-size: 13px;
+      margin: 0;
+      line-height: 16px;
+    }
+    .m-cta {
+      font-size: 12px;
+      margin: 8px 0 0 0;
+    }
+  }
+</style>
+
+<!--=============== Hero ===============-->
+<section class="hero m-fullDiv mBottom4">
+  <div class="hero__img m-fullDiv">
+    <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_Hero" alt="patterned pillow on a beige couch">
+    <div class="hero__text">
+      <h2 class="crate-helvetica-bold m-head-XL">
+        Welcome
+        <br> to Your
+        <br> New Home
+      </h2>
+    </div>
+  </div>
+</section>
+<!--=============== Nav ===============-->
+<div class="nav m-fullDiv">
+  <div class="nav-wrapper">
+    <ul class="nav-links crate-helvetica-bold cmsBlack m-eyebrow">
+      <a href="#live-lounge">
+        <li class="nav-links__item">Live &amp; Lounge</li>
+      </a>
+      <a href="#wine-dine">
+        <li class="nav-links__item">Wine &amp; Dine</li>
+      </a>
+      <a href="#rest-refresh">
+        <li class="nav-links__item">Rest &amp; Refresh</li>
+      </a>
+      <a href="#work-manage">
+        <li class="nav-links__item">Work &amp; Manage</li>
+      </a>
+      <a href="#sleep-playtime">
+        <li class="nav-links__item">Sleep &amp; Playtime</li>
+      </a>
+      <a href="#al-fresco">
+        <li class="nav-links__item">Al Fresco</li>
+      </a>
+      <a href="#design-studio">
+        <li class="nav-links__item">Design Studio</li>
+      </a>
+      <a href="#crate-blog">
+        <li class="nav-links__item">Crate
+          <span class="crate-helvetica-light">BLOG</span>
+        </li>
+      </a>
+    </ul>
+  </div>
+  <!-- nav-wrapper -->
+</div>
+<!-- nav -->
+<!--=============== Live and Lounge ===============-->
+<section id="live-lounge" class="LL m-fullDiv mBottom12 padTop10">
+  <a href="/furniture/">
+    <div class="center-header" style="left:15%;top:6.5%;">
+      <h2 class="crate-helvetica-bold m-head-large">
+        Live &amp; Lounge
+      </h2>
+    </div>
+    <!-- nat-text header -->
+
+    <div class="m-insetDiv img-right-text">
+      <div class="img-right-text__img">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_LvLng_1" alt="colorful room with 2 couches, hanging lamp, coffee table and 2 end tables in front of a stone wall">
+      </div>
+      <div class="img-right-text__text">
+        <p class="crate-helvetica-roman m-eyebrow">
+          Start by
+          <br> finding the
+          <br> perfect spot
+          <br> for your sofa
+          <br> and have the
+          <br> room design
+          <br> flow from
+          <br> there.
+        </p>
+        <p style="display:none;">
+          Keep the room neutral by layering in color through textiles and accent pieces.
+        </p>
+      </div>
+      <!-- img-right-text__text -->
+    </div>
+    <!-- img-right-text -->
+
+    <div class="gallery-header-img">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_LvLng_2" alt="living room furniture with a couch, a beige chair, an arching lamp, a coffee table with flowers on top, and a shelf behind the couch">
+    </div>
+    <!-- gallery-header-img -->
+  </a>
+
+  <div class="img__gallery">
+    <div class="img__gallery-container responsive">
+
+      <!--img__gallery__block -->
+      <div class="img__gallery__block" style="padding-right:0;">
+        <a href="/furniture/all-occasional-tables/1">
+          <img class="m-fullImg" style="width:95px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_LvLng_Table"
+            alt="brown and white table">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="width: 138px;padding-right: 0px;margin: 10px -10px 0 -0.8%;">
+        <a href="/decorating-and-accessories/">
+          <img class="m-fullImg" style="width:100px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_LvLng_Pillow"
+            alt="red and white patterned pillow">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right: 0px;margin: 20px 0.5% 0px 0.5%;width: 160px;">
+        <a href="/living-room-collections/">
+          <img class="m-fullImg" style="width:175px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_LvLng_Sofa"
+            alt="white sofa">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right:0;margin-right:-.5%;margin-top:10px;">
+        <a href="/rugs/all-rugs/1">
+          <img class="m-fullImg" style="width:115px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_LvLng_Rug"
+            alt="green striped rug">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right:0;margin-right:-0.5%;">
+        <a href="/lighting/">
+          <img class="m-fullImg" style="width:105px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_LvLng_Light"
+            alt="hanging lamp">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+    </div>
+    <!-- img__gallery-container -->
+  </div>
+  <!-- img__gallery -->
+
+
+
+  <!-- img__gallery -->
+
+</section>
+<!-- Live & Lounge -->
+
+<!--=============== Wine & Dine ===============-->
+<section id="wine-dine" class="WD m-fullDiv" style="padding-top:2%;">
+  <a href="/dining-and-entertaining/">
+    <div class="center-header" style="top:0%;left:9%;">
+      <h2 class="crate-helvetica-bold m-head-large">
+        Wine &amp; Dine
+      </h2>
+    </div>
+    <!-- center-header -->
+
+    <div class="image-text-group" style="align-items:none;">
+      <div class="image-text-group__left" style="margin:2%;">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WnDn_1" alt="kitchen area with island, a stool, hanging pots and pans in the background">
+      </div>
+      <div class="image-text-group__right">
+        <div style="margin:25% 0 10%">
+          <p style="display:none;">
+            For easy access, keep cooking tools near the food prep area.
+          </p>
+          <p class="crate-helvetica-roman m-eyebrow">
+            Make a quick plan of where
+            <br> items will go before setting
+            <br> up the kitchen.
+          </p>
+          <p style="display:none;">
+            White and neutral dishes are perfect for every occasion, they can be dressed up or down.
+          </p>
+        </div>
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WnDn_2" alt="a dining room furniture set with 4 white chairs and a wooden table">
+      </div>
+    </div>
+  </a>
+
+  <div class="img__gallery">
+    <div class="img__gallery-container responsive">
+
+      <div class="img__gallery__block" style="margin-right: 1%;margin-left: -1%;padding-right: 0px;width: 140px;margin: 40px 0.3% 0 -1%;">
+        <a href="/dining-room-collections/">
+          <img class="m-fullImg" style="width:155px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WnDn_Table"
+            alt="wooden table">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="margin-right:-0.5%;z-index: 10;">
+        <a href="/dinnerware-collections/">
+          <img class="m-fullImg" style="width:135px;margin-top:10px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WnDn_Storage"
+            alt="storage containers">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="width:40%;margin-right:1%;">
+        <a href="/furniture/dining-kitchen-storage/1">
+          <img class="m-fullImg" style="width:155px;margin-top:14px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WnDn_island"
+            alt="blue wooden kitchen island">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="width: 138px;margin-left:-.5%;z-index: 10;">
+        <a href="/kitchen-and-food/">
+          <img class="m-fullImg" style="width:110px;margin-top:20px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WnDn_Dishes"
+            alt="white plates and bowls next to silverware">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+    </div>
+    <!-- img__gallery-container -->
+  </div>
+  <!-- img__gallery -->
+</section>
+<!-- Wine & Dine -->
+
+<!--=============== Rest & Refresh ===============-->
+<section id="rest-refresh" class="RR m-fullDiv">
+  <a href="/bed-and-bath/">
+    <div class="center-header" style="position:relative;text-align:left;margin-top:5%;margin-bottom:2%;">
+      <h2 class="crate-helvetica-bold m-head-large" style=" margin-left: 3%; ">
+        Rest &amp; Refresh
+      </h2>
+      <div class="center-header__text" style="margin:0 5%;">
+        <p style="display:none;">
+
+          Start with the bed, the rooms anchor point. Your headboard and frame will drive the style of the room.
+        </p>
+        <p class="crate-helvetica-roman m-eyebrow">
+          For a beautifully layered bed start with crisp sheets that feel great to the touch then add a luxe duxet and throw.
+        </p>
+        <p style="display:none;">
+          For a spa-like bathroom: use a minimal decor scheme and indulge in the softest towels and luxurious accents.
+        </p>
+      </div>
+      <!-- image-text-group__text -->
+    </div>
+    <!-- nat-text header -->
+    <div class="image-text-group">
+
+      <div class="image-text-group__left" style="width:50%">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_RstRfsh_1" alt="bedroom set including a bed and bedframe, night stand with a lamp and plant on top">
+      </div>
+      <!-- image-text-group__left -->
+      <div class="image-text-group__right RR-right">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_RstRfsh_2" alt="bathroom with a white tub and curtain, with various bathroom decorations on the bathroom sink area">
+      </div>
+      <!-- image-text-group__right -->
+    </div>
+  </a>
+
+  <div class="img__gallery" style="margin-top:5%;">
+    <div class="img__gallery-container responsive">
+
+
+
+      <div class="img__gallery__block" style="margin-right: 1%;margin-left: -1%;padding-right: 0px;width: 140px;margin: -10px 0.3% 0 -1%;">
+        <a href="/furniture/bedroom-furniture/">
+          <img class="m-fullImg" style="width:155px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_RstRfsh_Bed"
+            alt="white bed and pillows on a dark brown bed frame">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <!--img__gallery__block -->
+      <div class="img__gallery__block" style="padding-right: 0px;width: 138px;margin-top: -20px;margin-right: 0.5%;">
+        <a href="/bed-and-bath/all-bedding/1">
+          <img class="m-fullImg" style="width:125px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_RstRfsh_Sheets"
+            alt="different beige and white colored sheets folded on top of each other">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right: 0px;margin-right: 1%;width: 145px;margin: -10px 0.8% 0 -0.6%;">
+        <a href="/bed-and-bath/bath/">
+          <img class="m-fullImg" style="width:145px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_RstRfsh_Storage"
+            alt="clear storage containers">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right: 0px;width: 123px;margin: -10px .5% 0 -0.8%;z-index: 10;">
+        <a href="/bed-and-bath/bath-towels/1">
+          <img class="m-fullImg" style="width:125px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_RstRfsh_Towels"
+            alt="beige towels folded on top of each other">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+
+
+
+
+    </div>
+    <!-- img__gallery-container -->
+  </div>
+  <!-- img__gallery -->
+</section>
+<!-- Wine & Dine -->
+
+<!--=============== Work & Manage ===============-->
+<section id="work-manage" class="WM m-fullDiv">
+  <a href="/furniture/home-office-furniture/">
+    <div class="center-header" style="position:relative;margin-top:5%;/* margin-right: 2%; */margin-left: -4%;text-align:right;">
+      <h2 class="crate-helvetica-bold m-head-large">
+        Work &amp; Manage
+      </h2>
+    </div>
+    <!-- nat-text header -->
+    <div class="image-text-group">
+      <div style="width:80%;">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WrkMng_1" alt="book shelf with various books and decorations on top">
+      </div>
+      <div style="margin:0 4% 0 2%;">
+        <div style=" margin-top: -4%; margin-bottom: 8%;">
+          <p class="crate-helvetica-roman m-eyebrow">
+            Go vertical with at-home work storage using modular shelving you can customize to fit your space.
+          </p>
+          <p style="display:none;">
+            Comfort is key to productivity. Invest in an ergonomic chair and task lamp.
+          </p>
+          <p style="display:none;">
+            Consider adding a workstation to a quiet corner of a living area or under a window with a view.
+          </p>
+        </div>
+        <img style="margin-top:5%;" class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WrkMng_2"
+          alt="work area with desk and decorations on top, desk chair, tables, a plant to side with paints on the wall">
+      </div>
+    </div>
+  </a>
+
+  <div class="img__gallery">
+    <div class="img__gallery-container responsive">
+
+      <!--img__gallery__block -->
+      <div class="img__gallery__block" style="padding-right:0;margin-right:0.3%;">
+        <a href="/furniture/office-chairs/1">
+          <img class="m-fullImg" style="width:95px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WrkMng_Chair"
+            alt="black leather chair">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right:0;margin-left:-.8%;margin-right:0.3%;">
+        <a href="/lighting/table-desk-lamps/1">
+          <img class="m-fullImg" style="width:80px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WrkMng_Lamp"
+            alt="black lamp">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="margin-right:1%;margin-left:-1%;padding-right:0;">
+        <a href="/furniture/desks/1">
+          <img class="m-fullImg" style="width:145px;margin-top:10px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WrkMng_Desk"
+            alt="brown modern desk">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right:0;">
+        <a href="/furniture/bookcases-cabinets/1">
+          <img class="m-fullImg" style="width:105px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_WrkMng_Shelf"
+            alt="dark brown book shelf">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+    </div>
+    <!-- img__gallery-container -->
+  </div>
+  <!-- img__gallery -->
+</section>
+<!-- Work & Manage -->
+
+<!--=============== Sleep and Playtime ===============-->
+<section id="sleep-playtime" class="sleep-play m-fullDiv padTop10 mBottom12">
+  <a href="/kids/">
+    <div class="center-header" style="top:2.7%;text-align:right;right:5%;">
+      <h2 class="crate-helvetica-bold m-head-large">
+        Sleep &amp; Playtime
+      </h2>
+    </div>
+    <!-- nat-text header -->
+
+    <div class="img-right-text" style="width:100%;position:absolute;width:100%;">
+      <div class="img-right-text__img" style="width:52%;margin-left:5%">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_SlpPlytm_1" alt="baby room with a crib, dresser with a lamp and toy on top, and various decorations on the wall">
+      </div>
+      <div class="img-right-text__text" style="padding-left: 5%;width: 35%;margin-bottom:22%;">
+        <p style="display:none;">
+          For younger kids: let them help choose where to put toys and books.
+        </p>
+        <p style="display:none;">
+          For older kids: let them help decorate with paint, artwork and bedding.
+        </p>
+        <p class="crate-helvetica-roman m-eyebrow">
+          Unpack kids’ rooms
+          <br> first. This will create a
+          <br> calm and comforting
+          <br> space amid the
+          <br> chaos of unpacking.
+        </p>
+      </div>
+    </div>
+    <!-- img-right-text -->
+    <div style="margin-top:49%;">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_SlpPlytm_2" alt="toddler room wihth a kids bed, brown night stand with lamp, and a plushed animal toy on the floor">
+    </div>
+  </a>
+  <div class="img__gallery">
+    <div class="img__gallery-container responsive">
+
+      <!--img__gallery__block -->
+      <div class="img__gallery__block" style="padding-right:0;margin-right:1%;">
+        <a href="/bed-and-bath/all-bedding/1">
+          <img class="m-fullImg" style="width:110px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_SlpPlytm_Pillows"
+            alt="animal shaped pillows">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right:0%;margin-left:-.8%;margin-right:1.5%;margin-top:15px;">
+        <a href="kids/cribs-bassinets/1">
+          <img class="m-fullImg" style="width:140px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_SlpPlytm_Crib"
+            alt="brown crib">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="margin-right:.5%;margin-left:-1%;padding-right:0;">
+        <a href="/kids/beds/1">
+          <img class="m-fullImg" style="width:145px;margin-top:15px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_SlpPlytm_Bed"
+            alt="kids bed on a bed frame">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right:0;margin-top:10px;margin-right:0%;">
+        <a href="/kids/bedding/">
+          <img class="m-fullImg" style="width:105px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_SlpPlytm_Bedding"
+            alt="kids bedding with animal designs on it">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right:0;margin-top:-15px;margin-right:0;">
+        <a href="/kids/lighting/">
+          <img class="m-fullImg" style="width:95px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_SlpPlytm_Light"
+            alt="elephant shaped lamp">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+    </div>
+    <!-- img__gallery-container -->
+  </div>
+  <!-- img__gallery -->
+
+</section>
+<!-- Sleep And Playtime -->
+
+<!--=============== Al Fresco ===============-->
+<section id="al-fresco" class="al-fresco m-fullDiv mBottom12">
+  <a href="/outdoor-furniture/">
+    <div class="center-header" style=top:1%;left:-12%;>
+      <h2 class="crate-helvetica-bold m-head-large">
+        Al Fresco
+      </h2>
+    </div>
+    <!-- nat-text header -->
+
+    <div class="img-right-text" style="width:55%;position:absolute;width:100%;">
+      <div class="al-fresco-text" style="padding-left:0;margin: 0 3%; width:100%;">
+        <p style="display:none;">
+          Add instant cozy to any patio with outdoor pillows and throws.
+        </p>
+        <p class="crate-helvetica-roman m-eyebrow">
+          Al fresco dinner parties, casual yard hangs or serious lounge time? Choose furniture that fits your lifestyle.
+        </p>
+        <p style="display:none;">
+          Planters, an outdoor rug and pretty lights are an easy way to add miles of style.
+        </p>
+      </div>
+
+      <div class="img-right-text__img" style="padding-left:0;padding-right:3%;width:100%;">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_AlFrsc_1" alt="outdoor furniture with a patio couch, table, and hanging plant">
+      </div>
+
+    </div>
+    <!-- img-right-text -->
+    <div style="margin-top:59%;">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_AlFrsc_2" alt="outdoor wrap around couch with tables on top of a white and beige patterned rug">
+    </div>
+  </a>
+
+  <div class="img__gallery">
+    <div class="img__gallery-container responsive">
+
+
+      <!--img__gallery__block -->
+      <div class="img__gallery__block" style="padding-right:0;margin-top:10px;margin-right:1%;">
+        <a href="/outdoor-furniture/outdoor-accessories/">
+          <img class="m-fullImg" style="width:100px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_AlFrsc_Planter"
+            alt="potted plant">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right: 0%;margin: 15px 1.5% 0 -0.8%;width: 138px;">
+        <a href="/outdoor-furniture/outdoor-patio-dining-furniture/1">
+          <img class="m-fullImg" style="width:140px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_AlFrsc_Table"
+            alt="patio table">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="margin-right:0.3%;margin-left:-1%;padding-right:0;">
+        <a href="/outdoor-furniture/barbecue-and-grilling/1">
+          <img class="m-fullImg" style="width:125px;margin-top:10px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_AlFrsc_Grill"
+            alt="grill">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+      <div class="img__gallery__block" style="padding-right: 0px;width:165px;margin: 20px 0.2% 0 0;">
+        <a href="/outdoor-furniture/outdoor-patio-lounge-furniture/1">
+          <img class="m-fullImg" style="width:165px;" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_AlFrsc_Furniture"
+            alt="patio couch">
+        </a>
+      </div>
+      <!--img__gallery__block -->
+
+
+
+    </div>
+    <!-- img__gallery-container -->
+  </div>
+  <!-- img__gallery -->
+
+</section>
+<!-- Al Fresco -->
+
+<!--=============== Design Studio ===============-->
+<section id="design-studio" class="DS m-fullDiv padTop10 mBottom12">
+  <a href="/interior-design">
+    <div class="center-header" style="left:-11%;top:4%;">
+      <h2 class="crate-helvetica-bold m-head-large">
+        Design Studio
+      </h2>
+    </div>
+    <!-- nat-text header -->
+
+    <div class="DS__img-container m-fullDiv">
+      <div class="DS__img-container__left">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_DS1" alt="studio tools and work related items such as rulers, pencils, paper, and color swatches arranged neatly on a table">
+      </div>
+      <div class="DS__img-container__right">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_DS2" alt="two people collaborating over a table">
+      </div>
+    </div>
+
+    <div class="DS__text">
+      <p class="crate-helvetica-roman m-eyebrow">
+        Our Design Experts are happy to help with design
+        <br> solutions big and small, from finding the perfect sofa to
+        <br> planning your dream home.
+      </p>
+      <p class="crate-helvetica-bold m-cta">
+        LEARN MORE
+      </p>
+    </div>
+  </a>
+</section>
+<!-- Design Studio -->
+
+<!--=============== Crate Blog ===============-->
+<section id="crate-blog" class="m-fullDiv mBottom12">
+  <a href="www.crateandbarrel.com/blog">
+    <div class="crate-blog__img">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_MLP_20180407_NewMovers_Blog" alt="a plate standing upwright and a food serving bowl and tray with food on top">
+    </div>
+    <!-- crate-blog__img -->
+    <div class="crate-blog__text cmsWhite">
+      <h2 class="crate-helvetica-bold m-body cmsWhite">
+        Love to Entertain?
+      </h2>
+      <p class="crate-helvetica-roman m-eyebrow cmsWhite">
+        Get inspired with tips and
+        <br> ideas from our blog.
+      </p>
+      <p class="crate-helvetica-bold m-cta cmsWhite">
+        CRATE BLOG
+      </p>
+    </div>
+    <!-- crate-blog__text -->
+  </a>
+</section>
+<!-- Crate Blog -->
+
+<!-- CURALATE -->
+
+
+<div class="curalateDiv">
+  <div class="curalateText">
+    <p class="crate-light m-body" style="text-align:center">#Crate
+      <strong>Style</strong>
+    </p>
+    <p class="copy-sub crate-roman" style="text-align:center;">
+      <a href="/Cratestyle">Share photos,</a> shop photos and get inspired.
+      <br>Follow Us on Instagram @crateandbarrel</p>
+  </div>
+  <div id="curalate-fan-reel-wrapper" class="curalateMargins"></div>
+</div>
+
+<script type="text/javascript" src="//d116tqlcqfmz3v.cloudfront.net/crateandbarrel-288/gallery.js"></script>
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
+
+<script>
+
+  function runTheThings() {
+    $(document).ready(function () {
+      $(".responsive").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 2000,
+      });
+
+      // Select all links with hashes
+      $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function (event) {
+          // On-page links
+          if (
+            location.pathname.replace(/^\//, "") ==
+            this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            // Figure out element to scroll to
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            // Does a scroll target exist?
+            if (target.length) {
+              // Only prevent default if animation is actually gonna happen
+              event.preventDefault();
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top
+                },
+                1000,
+                function () {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) {
+                    // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  }
+                }
+              );
+            }
+          }
+        });
+    });
+  }
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+
+  function runCuralate() {
+    var $window = $(window),
+      pageTop = $window.scrollTop(),
+      curTop = $(".curalateDiv").offset().top,
+      curalateDiv = $(".curalateDiv").height();
+
+    $(window).on("load resize scroll", function (e) {
+      var $window = $(window),
+        pageTop = $window.scrollTop(),
+        curTop = $(".curalateDiv").offset().top,
+        curalateDiv = $(".curalateDiv").height();
+
+      $(".curalateDiv").each(function () {
+        if ($(this).hasClass("curalate-visible")) {
+        } else {
+          if (pageTop > curTop - curalateDiv * 2) {
+            Curalate.FanReels.Gallery.init({
+              code: "crateandbarrel",
+              filters: { tags: "homepage" }
+            });
+            $(this).addClass("curalate-visible");
+            console.log("Curalate loaded");
+          }
+        }
+      });
+    });
+  }
+
+  function curalateIsLoaded() {
+    if (window.jQuery) {
+      console.log("Curalate is loaded");
+
+      runCuralate();
+    } else {
+      setTimeout(curalateIsLoaded, 50);
+    }
+  }
+
+  curalateIsLoaded();
+
+</script>

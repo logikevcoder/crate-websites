@@ -1,0 +1,769 @@
+<style>
+  /*Hide Red Banner*/
+
+  .kidsFreeShip {
+    display: none;
+  }
+
+  /*BREAKOUT*/
+
+  .content-layout {
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 1680px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: #222 !important;
+  }
+
+  .slick-arrow {
+    z-index: 3;
+    top: 45% !important;
+  }
+
+  .slick-prev {
+    left: 32px !important;
+  }
+
+  .slick-next {
+    right: 49px !important;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 33px !important;
+  }
+
+  .slick-arrow {
+    top: 40% !important;
+  }
+
+  /* GENERAL STYLING */
+
+  .main-content {
+    width: 100%;
+    min-width: 1024px;
+    height: 100%;
+    background-color: #fff;
+  }
+
+  .main-content a {
+    color: #000;
+  }
+
+  .fullWid {
+    width: 100%;
+  }
+
+  .fullDiv {
+    width: 100%;
+    min-width: 1024px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cms-content a {
+    color: black !important;
+  }
+
+  .cms-content a:hover {
+    color: black !important;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  /* CAROUSEL STYLING */
+
+  .carousel-container {
+    position: relative;
+    margin: 20px 0 0;
+    background-color: #f7f8fa;
+  }
+
+  .carousel-header {
+    padding: 5% 0 0 10%;
+  }
+
+  .baby-reg-carousel {
+    width: 90%;
+    padding: 0px 50px 40px;
+    margin: 0 auto;
+    visibility: hidden;
+    /* Hide the carousel until the page is loaded */
+  }
+
+  /* Show the slick carousel when it's loaded */
+
+  .slick-initialized {
+    visibility: visible;
+  }
+
+  .carousel-block {
+    width: 100%;
+    margin-right: 5px;
+    font-size: 14px;
+  }
+
+  .carousel-block img {
+    width: 100%;
+    margin-right: 5px;
+  }
+
+  .carousel-block p {
+    padding-top: 5px;
+  }
+
+  /*------ Baby Registry Checklist Section ------*/
+
+  .baby-registry-checklist {
+    position: relative;
+  }
+
+  .brc-text {
+    position: absolute;
+    top: 36%;
+    left: 65%;
+  }
+
+  /*------ Space Nursery Ideas Section ------*/
+
+  .space-nursery-ideas {
+    width: 84%;
+    margin: 50px auto 0;
+    position: relative;
+  }
+
+  .sni-text {
+    margin: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .sni-headline {
+    color: #f75900;
+  }
+
+  .sni-header-img {
+    min-width: 1024px;
+    width: 100%;
+  }
+
+  .sni-imgs {
+    text-align: center;
+    margin: 20px auto 0;
+    min-width: 1024px;
+  }
+
+  .sni-imgs img {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .sni-product:hover .sni-overlay,
+  .sni-product a:focus .sni-overlay {
+    opacity: 1;
+  }
+
+  .sni-product {
+    position: relative;
+    width: 24%;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .product-name {
+    text-align: center;
+    position: relative;
+    padding: 7vh 1vw 1vh;
+  }
+
+  .product-name-value,
+  .product-price {
+    color: #000;
+  }
+
+  .sni-product img {
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+  }
+
+  .sni-overlay {
+    background: rgba(255, 255, 255, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+  }
+
+  /*------ Design Service Section ------*/
+
+  .design-service {
+    position: relative;
+    margin-top: -60px;
+    margin-bottom: -20px;
+    z-index: 100;
+  }
+
+  .ds-img-text {
+    width: 27%;
+    position: absolute;
+    top: 59%;
+    left: 10%;
+  }
+
+  .ds-text {
+    position: absolute;
+    left: 43%;
+    top: 40%;
+    line-height: 10px;
+  }
+
+  /*------ Registry Benefits Section ------*/
+
+  .registry-benefits-container {
+    background-color: #f7f8fa;
+    float: left;
+    width: 100%;
+    padding-bottom: 3.2%;
+  }
+
+  .benefits-content {
+    text-align: center;
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  /*padding added to .benefits-content, accessibility*/
+
+  .benefits-header {
+    padding-top: 0;
+  }
+
+  .benefits-icons {
+    width: 78%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 2%;
+    font-size: 12.5px;
+  }
+
+  .icon-block {
+    width: 14% !important;
+    float: left;
+    display: inline-block;
+  }
+
+  .icon-block img {
+    border-radius: 50%;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .icon-block:not(:last-child) {
+    margin-right: 3.2%;
+  }
+
+  /*FONT SIZES*/
+
+  /*FONT SIZES*/
+
+  .headline-XL {
+    font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
+    line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
+    letter-spacing: -0.15vw;
+  }
+
+  .headline-large {
+    font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-medium {
+    font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-small {
+    font-size: calc(24px + (34 - 24) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.05vw;
+  }
+
+  .copy-sub {
+    font-size: calc(14px + (20 - 14) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(21px + (25 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin: 0.8vw 0;
+  }
+
+  .copy-cta {
+    font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin: 1.3vw 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    body section.content-layout {
+      max-width: 1680px;
+    }
+    /*--- 1024px ---*/
+    @media only screen and (max-width: 1024px) {
+      .headline-XL {
+        font-size: 78px;
+        line-height: 52px;
+        letter-spacing: -1.54px;
+      }
+      .headline-large {
+        font-size: 45px;
+        line-height: 45px;
+      }
+      .headline-medium {
+        font-size: 32px;
+        line-height: 36px;
+      }
+      .headline-small {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .copy-sub {
+        font-size: 14px;
+        line-height: 21px;
+      }
+      .copy-cta {
+        font-size: 10px;
+        line-height: 20px;
+      }
+
+    }
+
+    @media only screen and (min-width: 1234px) and (max-width: 1439px) {
+      .ds-text {
+        padding-top: 1%;
+      }
+      .carousel-header {
+        padding: 5% 0 0 9%;
+      }
+    }
+    /*1440px*/
+    @media only screen and (min-width: 1440px) {
+      .headline-XL {
+        font-size: 110px;
+        line-height: 68px;
+        letter-spacing: -2.52px;
+      }
+      .headline-large {
+        font-size: 63px;
+        line-height: 63px;
+      }
+      .headline-medium {
+        font-size: 45px;
+        line-height: 40px;
+      }
+      .headline-small {
+        font-size: 34px;
+        line-height: 31px;
+      }
+      .copy-sub {
+        font-size: 20px;
+        line-height: 25px;
+      }
+      .copy-cta {
+        font-size: 14px;
+        line-height: 21px;
+      }
+      .ds-text {
+        padding-top: 2%;
+        left: 45%;
+      }
+      .carousel-header {
+        padding: 5% 0 0 9%;
+      }
+    }
+    /*CURALATE*/
+    #curalate-fan-reel-wrapper {
+      width: 70%;
+      overflow: auto;
+      margin: 1% auto;
+    }
+    .curalateText {
+      display: block;
+      margin: 0 auto;
+      padding-top: 5%;
+    }
+    .curalateMargins {
+      min-width: 824px;
+      max-width: 1176px;
+      position: relative;
+    }
+    .curalateDiv {
+      width: 100%;
+      min-width: 1024px;
+      background-color: #fff;
+      padding-bottom: 6%;
+      margin-top: 3%;
+    }
+    .curalate-header-copy,
+    .curalate-share-copy,
+    .curalate-header-right {
+      display: none;
+    }
+    /* Accessibility for page as of 4/9/18*/
+    h2 {
+      color: #222;
+      margin-bottom: 20px;
+      padding: 0 !important;
+    }
+    a:focus img {
+      outline: 1px #222 dotted;
+      display: block;
+      margin: 1px 1px 1px 0;
+    }
+    a:focus crate-helvetica-bold.copy-cta {
+      text-decoration: underline;
+    }
+    a:focus p {
+      text-decoration: underline;
+    }
+    a:focus .product-name p {
+      text-decoration: none;
+    }
+    .sni-product a:focus img {
+      outline: none;
+      margin: 0
+    }
+    .registry-benefits-container a:focus img {
+      margin: 0 0 22px 0;
+      outline-offset: -1px;
+    }
+    .benefits-content {
+      padding-top: 8%
+    }
+</style>
+
+<section class="main-content">
+  <div class="carousel-container">
+    <div class="carousel-header">
+      <h2 class="headline-small crate-helvetica-roman" style="margin-bottom:1%;">Drool Over these Registry Faves</h2>
+    </div>
+    <!-- carousel header -->
+    <div class="baby-reg-carousel responsive crate-helvetica-roman ">
+      <div class="carousel-block">
+        <a href="/top-50-baby-registry-faves/f78340">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/BabyGRmain_Carousel_1?wid=300" alt="">
+          <p class="crate-helvetica-bold">Top 50 Registrant Favs</p>
+        </a>
+      </div>
+      <!-- carousel block -->
+      <div class="carousel-block">
+        <a href="/favorite-baby-cribs/f78349">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/BabyGRmain_Carousel_2 " alt="">
+          <p class="crate-helvetica-bold">Cribs</p>
+        </a>
+      </div>
+      <!-- carousel block -->
+      <div class="carousel-block">
+        <a href="/best-baby-storage/f78351">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/BabyGRmain_Carousel_3 " alt="">
+          <p class="crate-helvetica-bold">Storage</p>
+        </a>
+      </div>
+      <!-- carousel block -->
+      <div class="carousel-block">
+        <a href="/neutral-nursery-favorites/f78347">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/BabyGRmain_Carousel_4 " alt="">
+          <p class="crate-helvetica-bold">Nursery</p>
+        </a>
+      </div>
+      <!-- carousel block -->
+      <div class="carousel-block">
+        <a href="/kids/all-toys/1">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/BabyGRmain_Carousel_5?wid:350px " alt="">
+          <p class="crate-helvetica-bold">Toys</p>
+        </a>
+      </div>
+      <!-- carousel block -->
+      <div class="carousel-block">
+        <a href="/favorite-baby-play-mats/f78358">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/BabyGRmain_Carousel_6 " alt="">
+          <p class="crate-helvetica-bold">Playmats</p>
+        </a>
+      </div>
+      <!-- carousel block -->
+      <div class="carousel-block">
+        <a href="/best-baby-bedding/f78352">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/BabyGRmain_Carousel_7 " alt="">
+          <p class="crate-helvetica-bold">Bedding</p>
+        </a>
+      </div>
+      <!-- carousel block -->
+      <div class="carousel-block">
+        <a href="/nursing-feeding-must-haves/f78356">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/BabyGRmain_Carousel_8 " alt="">
+          <p class="crate-helvetica-bold">Feeding</p>
+        </a>
+      </div>
+      <!-- carousel block -->
+    </div>
+    <!-- baby-reg-carousel responsive -->
+  </div>
+  <!-- carousel container -->
+
+  <!--============ Baby Registry Section ============-->
+  <section class="baby-registry-checklist">
+    <a href="https://www.crateandbarrel.com/gift-registry/baby-registry-checklist">
+      <img class="fullWid" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_Chcklst?wid=1440" alt="">
+      <div class="brc-text">
+        <h2 class="headline-small crate-helvetica-bold ">Not sure what you need?</h2>
+        <p class="copy-sub crate-helvetica-roman">Our Baby Registry Checklist will help
+          <br> you take your first steps.</p>
+        <p class="copy-cta crate-helvetica-bold">
+          VIEW CHECKLIST
+        </p>
+      </div>
+      <!-- brc text -->
+    </a>
+  </section>
+  <!-- Baby Registry Checklist Section -->
+
+  <!--============ Space Nursery Ideas Section ============-->
+  <section class="space-nursery-ideas fullWid">
+    <a href="/shop-by-room/space-theme-nursery/1">
+      <img class="sni-header-img" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_SpcNrsry?wid=1200 "
+        alt="">
+      <div class="sni-text">
+        <h2 class="sni-headline crate-helvetica-bold headline-medium" style="margin-bottom: 1%;">Over the Moon</h2>
+        <p class="sni-subHead crate-helvetica-roman copy-sub" style="margin-top:3%;">Reimagine the outer space nursery
+          <br> in T-minus 3, 2, 1…</p>
+        <p class="crate-helvetica-bold copy-cta" style="margin-top:0;">SHOP THIS ROOM</p>
+      </div>
+      <!-- sni text -->
+    </a>
+    <div class="sni-imgs">
+      <div class="sni-product">
+        <a href="/taylor-walnut-crib/s501612
+">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_Crib " alt="">
+          <div class="sni-overlay">
+            <div class="product-name">
+              <p class="copy-sub crate-helvetica-light">Taylor Walnut Crib</p>
+            </div>
+            <span class="product-price copy-sub crate-helvetica-bold">$799.00</span>
+          </div>
+        </a>
+      </div>
+      <div class="sni-product">
+        <a href="/babyletto-tuba-swivel-glider-chair-and-a-half/s468722
+">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_Chair " alt="">
+          <div class="sni-overlay">
+            <div class="product-name">
+              <p class="copy-sub crate-helvetica-light">Babyletto Tuba Swivel Glider Chair and a Half</p>
+            </div>
+            <span class="product-price copy-sub crate-helvetica-bold">$429.00</span>
+          </div>
+        </a>
+      </div>
+      <div class="sni-product">
+        <a href="/modern-baby-gym-with-solar-system-rattles/s489881
+">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_Toy " alt="">
+          <div class="sni-overlay">
+            <div class="product-name">
+              <p class="copy-sub crate-helvetica-light">Modern Baby Gym With Solar System Rattles</p>
+            </div>
+            <span class="product-price copy-sub crate-helvetica-bold">$113.00</span>
+          </div>
+        </a>
+      </div>
+      <div class="sni-product">
+        <a href="/rainbow-throw-pillow/s504294
+">
+          <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_Pillow " alt="">
+          <div class="sni-overlay">
+            <div class="product-name">
+              <p class="copy-sub crate-helvetica-light">Rainbow Throw Pillow</p>
+            </div>
+            <span class="product-price copy-sub crate-helvetica-bold">$29.00</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- slider-images responsive -->
+  </section>
+  <!-- space nursery ideas section -->
+
+  <!--============ Design Service Section =============-->
+  <section class="design-service">
+    <img class="fullWid" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_DsgnSrvcsBnnr?wid=1680&fmt=png-alpha"
+      alt="">
+    <div class="ds-img-text">
+      <a href="/interior-design">
+        <img class="fullWid" src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_DsgnStudLogo?fmt=png-alpha"
+          alt="Crate Design Studio">
+      </a>
+    </div>
+    <!-- ds-img-text -->
+    <div class="ds-text">
+      <h2 class="crate-helvetica-bold headline-small" style="margin-bottom:0;">We design it. You love it.</h2>
+      <p class="copy-sub crate-helvetica-thin" style="margin:5px 0;">Designing a nursery or kids’ room shouldn’t keep you up all night (that’s what babies are for).
+        <br> Our experts can help you decorate like a pro.</p>
+      <p class="copy-cta crate-helvetica-bold" style="color:#000; margin-top:0;">
+        <a href="/interior-design">LEARN MORE
+          <span class="sr-only">about Crate Design Studio</span>
+        </a>
+      </p>
+    </div>
+    <!-- ds-text -->
+  </section>
+  <!-- design service section -->
+
+  <!--============ Registry Benefits Section =============-->
+  <section class="registry-benefits-container fullDiv">
+    <div class="benefits-content">
+      <h2 class="headline-small">A Bundle of Baby Registry Benefits</h2>
+      <a href="/gift-registry/benefits">
+        <div class="benefits-header crate-helvetica-light">
+
+          <p class="copy-cta crate-helvetica-bold">VIEW ALL</p>
+        </div>
+        <!-- benefits-header -->
+        <div class="benefits-icons crate-helvetica-light">
+          <div class="icon-block">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_Benefits_1 " alt="">
+            <p class="crate-helvetica-roman">Exclusive Items</p>
+          </div>
+          <!-- icon-block -->
+          <div class="icon-block">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_Benefits_2 " alt="">
+            <p class="crate-helvetica-roman">Enjoy 10% Off*</p>
+          </div>
+          <!-- icon-block -->
+          <div class="icon-block">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_Benefits_3 " alt="">
+            <p class="crate-helvetica-roman">Free Shipping*</p>
+          </div>
+          <!-- icon-block -->
+          <div class="icon-block">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_Benefits_4 " alt="">
+            <p class="crate-helvetica-roman">Expert Advice</p>
+          </div>
+          <!-- icon-block -->
+          <div class="icon-block">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_Benefits_5 " alt="">
+            <p class="crate-helvetica-roman">App for iPhone</p>
+          </div>
+          <!-- icon-block -->
+          <div class="icon-block">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DDB_20180307_BabyGRMain_Benefits_6 " alt="">
+            <p class="crate-helvetica-roman">Thank Your Guests</p>
+          </div>
+          <!-- icon-block -->
+        </div>
+        <!-- benefits-icons -->
+      </a>
+    </div>
+    <!-- benefits-content -->
+  </section>
+  <!-- registry benefits section -->
+  <div style="clear:both;"></div>
+
+
+
+
+
+  <!-- CURALATE -->
+  <!-- <div class="curalateDiv divMargin">
+ <div class="curalateText">
+   <p class="crate-helvetica-light headline-medium" style="text-align:center">#crate<strong>kids</strong></p>
+   <p class="copy-sub crate-helvetica-roman" style="text-align:center;"><a href="/Cratestyle">Share photos,</a> shop photos and get inspired. <br>Follow Us on Instagram @cratekids</p>
+ </div>
+ <div id="curalate-fan-reel-wrapper" class="curalateMargins"></div>
+</div> -->
+  <div class="fL" style="margin:100px 0 40px 0;">
+    <h2 class="crate-helvetica-bold" style="font-size:12px;">Baby Registry</h2>
+    <p class="crate-helvetica-roman" style="font-size:12px;">Make sure you’re ready for your little bundle of joy with a Crate and Barrel baby registry. Whether this is your first
+      baby or your fourth, find high quality items for your precious boy or girl. Looking for something in which to wrap
+      your newborn? Swaddle blankets, footie pajamas and soft hats help keep babies cozy and make great gifts. Stock your
+      registry with nursery essentials such as furniture, crib bedding, baby blankets and stuffed animals. Don’t forget that
+      newborns grow. Add a selection of apparel and toys that’ll keep your baby happy from their first day home to their
+      first birthday party. All guests have to do to find your baby registry and see your list of must-haves is search for
+      your name. Having a hard time keeping track of who gave you what? Our Thank You Manager Tool helps you remember the
+      gifts each family member and friend gave you. </p>
+  </div>
+
+</section>
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+<script type="text/javascript" src="//d116tqlcqfmz3v.cloudfront.net/landofnod-675/gallery.js"></script>
+
+
+<script>
+
+  function runTheThings() {
+    $(document).ready(function () {
+      console.log("ready!");
+      $('.responsive').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    })
+  };
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded(); 
+</script>
