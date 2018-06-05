@@ -1,464 +1,560 @@
 <style>
-/* .furniture-links {display:none;}
+  /* .furniture-links {display:none;}
 #furniture {display:block;}
  */
-#bakeware {
-  display: block;
-}
-.main-content {
-  width: 100%;
-  max-width:100vw;
-  margin: 0 auto;
-  
-}
-/* =====================================================
+
+  #bakeware {
+    display: block;
+  }
+
+  .main-content {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0 auto;
+
+  }
+
+  /* =====================================================
 Arrow Styling
 ===================================================== */
-i {
-  border: solid #222;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 8px;
-}
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-.up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-.arrow {
-  z-index:0;
-}
 
-/* =====================================================
+  i {
+    border: solid #222;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 8px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  .arrow {
+    z-index: 0;
+  }
+
+  /* =====================================================
 Header
 ===================================================== */
-.header-content {
-  margin: 40px auto 20px;
-  text-align: center;
-  line-height: 40px;
-}
-.header-content p {
-  margin: 15px 0 !important;
-}
-.hero-img {
-  width: 100%;
-  padding-top: 53px;
-}
-/* =====================================================
+
+  .header-content {
+    margin: 40px auto 20px;
+    text-align: center;
+    line-height: 40px;
+  }
+
+  .header-content h1 {
+    margin: 15px 0 !important;
+  }
+
+  .hero-img {
+    width: 100%;
+    padding-top: 53px;
+  }
+
+  /* =====================================================
 Checklist Body
 ===================================================== */
-.checklist {
-  width: 100%;
-  max-width:1155px;
-  margin: 0 auto;
-}
-.checklist img {
-  padding-top:5%;
-}
-.checklist-body {
-  width: 100%;
-  min-height: 960px;
-  max-height:960px;
-  margin: 0 auto;
-  background-color: #eeeff1;
-  position: relative;
-  text-align: center;
-}
-/* =====================================================
-Checklist Content
-===================================================== */ 
-.checklist-container {
-  width: 100%;
-  margin: 21px 0 0;
-  padding-bottom:12%;
-  text-align: left;
-  display:flex;
-}
-.catagory-title {
-  position: relative;
-  height:92px;
-}
 
-.catagory-container .catagory-colums {
-  padding-bottom:7.7%;
-}
-.catagory-title > p {
-  position:absolute;
-  right:7%;
-  top:50%;
-  transform:translatey(-50%);
-}
-.catagory-items {
-  width:50%;
-  margin-right:1%;
-}
-.catagory-colums {
-  
-}
-.catagory-results-container {
-  width:50%;
-}
-.catagory-results {
-  display:none;
-  height:478px;
-}
-.catagory-results .catagory-colums{
-  padding-bottom:1%;
-}
-.catagory-results p {
-  margin-bottom:10px !important;
-}
-.link-box {
-  background-color: #fff;
-}
-.catagory-colums {
-  width:100%;
-}
-.catagory-items div:not(:last-child) {
-  margin-bottom: 3%;
-}
-/* =====================================================
+  .checklist {
+    width: 90%;
+    max-width: 1155px;
+    margin: 0 auto;
+  }
+
+  .checklist img {
+    padding-top: 5%;
+  }
+
+  .checklist-body {
+    width: 100%;
+    min-height: 960px;
+    max-height: 960px;
+    margin: 0 auto;
+    background-color: #eeeff1;
+    position: relative;
+    text-align: center;
+  }
+
+  /* =====================================================
+Checklist Content
+===================================================== */
+
+  .checklist-container {
+    width: 100%;
+    margin: 21px 0 0;
+    padding-bottom: 12%;
+    text-align: left;
+    display: flex;
+  }
+
+  .catagory-title {
+    position: relative;
+    height: 92px;
+  }
+
+  .catagory-container .catagory-colums {
+    padding-bottom: 7.7%;
+    display: flex;
+  }
+
+  .catagory-title>p {
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translatey(-50%);
+  }
+
+  .catagory-items {
+    width: 50%;
+    margin-right: 1%;
+  }
+
+  .catagory-colums {
+    display: flex;
+  }
+
+  .catagory-results-container {
+    width: 50%;
+  }
+
+  .catagory-results {
+    display: none;
+    height: 482px;
+  }
+
+  .catagory-results .catagory-colums {
+    padding-bottom: 1%;
+  }
+
+  .catagory-results p {
+    margin-bottom: 10px !important;
+  }
+
+  .link-box {
+    background-color: #fff;
+  }
+
+  .catagory-colums {
+    width: 100%;
+  }
+
+  .catagory-items div:not(:last-child) {
+    margin-bottom: 3%;
+  }
+
+  /* =====================================================
 Buttons
 ===================================================== */
-.checklist-btn {
-  position: absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  margin: 0 auto;
-}
-.button-primary, a.button-primary {
-  letter-spacing: .08ex;
-}
-.button-primary, a.button-primary {
-  border-color: #333;
-  background: #333;
-  color: #fff;
-}
-.GRprint {
-  margin-bottom:40px;
-  width: 225px !important;
-  text-align: center;
-  padding: 2px 0 !important;
-  border: none;
-  float: right;
-}
-/* =====================================================
+
+  .checklist-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .button-primary,
+  a.button-primary {
+    letter-spacing: .08ex;
+  }
+
+  .button-primary,
+  a.button-primary {
+    border-color: #333;
+    background: #333;
+    color: #fff;
+  }
+
+  .GRprint {
+    margin-bottom: 40px;
+    width: 225px !important;
+    text-align: center;
+    padding: 2px 0 !important;
+    border: none;
+    float: right;
+  }
+
+  /* =====================================================
 ul and li link item styling
 ===================================================== */
-h1,h2,p {
-  padding:0!important;
-  margin:0 !important;
-}
-h1 {
-  padding:0!important;
-  margin:0 !important;
-}
-.link-box h1, h2 {
-  padding:4% 5% !important;
-}
-.catagory-results h2 {
-  padding:4% 5% 2% !important;
-}
-.link-box ul p {
-  padding:0 5% 10px 20px!important;
-}
-.link-box__copy{
-  padding:0 0 10px 5% !important;
-}
-.link-box ul h4 {
-  padding-left:20px !important;
-  margin-top:0;
-}
 
-.link-box ul {
-  width:50%;
-  margin-left:5%;
-}
-.link-box ul li:first-child {
-  margin-top:0 !important;
-  width:90%;
-}
-.link-box ul li {
-  width:90%;
-  margin: 5px 0;
-  padding:5px 0 5px 20px;
-}
-.link-box li:hover {
-    background-color: #bababa;
-}
-.link-box .active {
-    background-color: #bababa;
-}
-.link-box a{
-  color: #000;
-  text-decoration: none;
-}
-.catagory-container li:hover {
-  cursor: pointer;
-}
-/*ACCESSIBILITY*/
-a:focus, li:focus{
-    outline:none;
+  h1,
+  h2,
+  p {
+    padding: 0 !important;
+    margin: 0 !important;
   }
-h1 {
-    padding:0;
+
+  h1 {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .link-box h1,
+  h2 {
+    padding: 4% 5% !important;
+  }
+
+  .catagory-results h2 {
+    padding: 4% 5% 2% !important;
+  }
+
+  .link-box ul p {
+    padding: 0 5% 10px 20px !important;
+  }
+
+  .link-box__copy {
+    padding: 0 5% 10px 5% !important;
+  }
+
+  .link-box ul h4 {
+    padding-left: 20px !important;
+    margin-top: 0;
+  }
+
+  .link-box ul {
+    width: 50%;
+    margin-left: 5%;
+  }
+
+  .link-box ul li:first-child {
+    margin-top: 0 !important;
+    width: 90%;
+  }
+
+  .link-box ul li {
+    width: 90%;
+    margin: 5px 0;
+    padding: 10px 0 5px 20px;
+  }
+
+  .link-box li:hover {
+    background-color: #bababa;
+  }
+
+  .link-box .active {
+    background-color: #bababa;
+  }
+
+  .link-box a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .catagory-container li:hover {
+    cursor: pointer;
+  }
+
+  /*ACCESSIBILITY*/
+
+  a:focus,
+  li:focus {
+    outline: none;
+  }
+
+  h1 {
+    padding: 0;
     margin: 2%;
-}
-.link-box h2 {
+  }
+
+  .link-box h2 {
     padding: 8px 0px 0px 31px;
     margin-bottom: 20px;
-}
-.link-box li:focus, .link-box a:focus li {
+  }
+
+  .link-box li:focus,
+  .link-box a:focus li {
     background-color: #bababa;
-}
-/*=======================================================
+  }
+
+  /*=======================================================
 Breakout and Fixes
 =======================================================*/
-.fullDiv {
-  width: 100%;
-  min-width: 1024px;
-  position: relative;
-  overflow: hidden;
-}
-.fullDiv a {
-  color: #222;
-  text-decoration: none;
-}
-#pageWrap {
-  border-top: 2px solid #222;
-  max-width: 1680px;
-  min-width: 1024px;
-  width: 100%;
-  margin: 0 auto !important;
-  float: none !important;
-  clear: left;
-}
-.content {
-  width: 100% !important;
-  max-width: 1680px;
-  min-width: 1024px !important;
-}
-.content-layout {
-  max-width: 1680px !important;
-  min-width: 1024px !important;
-}
-#bodyWrap {
-  padding: 0;
-}
-#jsExpand1 {
-  margin: 0 !important;
-}
-.divMargins {
-  margin-bottom: 2% !important;
-}
-.fullImg {
-  width: 100%;
-  max-width: 1680px;
-}
-.cmsArrowR {
-  border-width: 0.4vw;
-}
-.whtArrw {
-  border-left-color: white;
-}
-#topNavWrap {
-  background: transparent;
-}
-#topNavContainer {
-  border: none;
-}
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-h2 {
-  color: #222;
-}
-.bottom-margin-5 {
-  margin-bottom: 4%;
-}
+
+  .fullDiv {
+    width: 100%;
+    min-width: 1024px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fullDiv a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  #pageWrap {
+    border-top: 2px solid #222;
+    max-width: 1680px;
+    min-width: 1024px;
+    width: 100%;
+    margin: 0 auto !important;
+    float: none !important;
+    clear: left;
+  }
+
+  .content {
+    width: 100% !important;
+    max-width: 1680px;
+    min-width: 1024px !important;
+  }
+
+  .content-layout {
+    max-width: 1680px !important;
+    min-width: 1024px !important;
+  }
+
+  #bodyWrap {
+    padding: 0;
+  }
+
+  #jsExpand1 {
+    margin: 0 !important;
+  }
+
+  .divMargins {
+    margin-bottom: 2% !important;
+  }
+
+  .fullImg {
+    width: 100%;
+    max-width: 1680px;
+  }
+
+  .cmsArrowR {
+    border-width: 0.4vw;
+  }
+
+  .whtArrw {
+    border-left-color: white;
+  }
+
+  #topNavWrap {
+    background: transparent;
+  }
+
+  #topNavContainer {
+    border: none;
+  }
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  h2 {
+    color: #222;
+  }
+
+  .bottom-margin-5 {
+    margin-bottom: 4%;
+  }
 
 
-/*=======================================================
+  /*=======================================================
 Font Sizes
 =======================================================*/
-.bf-eyebrow {
-  font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
-  letter-spacing: -0.1vw;
-  word-spacing: -0.1vw;
-  text-transform: uppercase;
-}
 
-.bf-headline {
-  font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
-  letter-spacing: -0.1vw;
-  word-spacing: -0.1vw;
-}
-
-.bf-copy {
-  font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
-  letter-spacing: -0.1vw;
-  word-spacing: -0.1vw;
-}
-
-.headline-XL {
-  font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
-  line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
-  letter-spacing: -0.15vw;
-}
-
-.headline-large {
-  font-size: calc(60px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
-  letter-spacing: -0.1vw;
-  word-spacing: -0.1vw;
-}
-
-.headline-medium {
-  font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
-  letter-spacing: -0.1vw;
-  word-spacing: -0.1vw;
-}
-
-.headline-small {
-  font-size: calc(23px + (27 - 24) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
-  letter-spacing: -0.05vw;
-}
-
-.copy-sub {
-  font-size: calc(14px + (18 - 14) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(21px + (25 - 20) * (100vw - 1024px) / (1440 - 1024));
-  margin-bottom:5px;
-}
-
-.copy-gr {
-  font-size: 20px;
-  line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
-}
-
-.copy-cta {
-  font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
-  text-transform: uppercase;
-  margin:0 !important;
-}
-/*--- 1024px ---*/
-@media only screen and (max-width: 1024px) {
   .bf-eyebrow {
-    font-size: 35px;
-    line-height: 35px;
+    font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+    text-transform: uppercase;
   }
+
   .bf-headline {
-    font-size: 76px;
-    line-height: 76px;
+    font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
   }
+
   .bf-copy {
-    font-size: 50px;
-    line-height: 50px;
+    font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
   }
 
   .headline-XL {
-    font-size: 78px;
-    line-height: 52px;
-    letter-spacing: -1.54px;
+    font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
+    line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
+    letter-spacing: -0.15vw;
   }
+
   .headline-large {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: calc(60px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
   }
+
   .headline-medium {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
   }
+
   .headline-small {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: calc(23px + (26 - 23) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.05vw;
   }
-  .copy-gr {
-    font-size: 13px;
-    line-height: 13px;
-  }
+
   .copy-sub {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: calc(14px + (18 - 14) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(21px + (25 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin-bottom: 5px;
   }
+
+  .copy-gr {
+    font-size: 20px;
+    line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+  }
+
   .copy-cta {
-    font-size: 10px;
-    line-height: 20px;
+    font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
+    margin: 0 !important;
   }
-  
-  .catagory-container .catagory-colums {
-    padding-bottom:7.2%;
-  }
-  .checklist-container {
-    padding-bottom:8%;
-  }
-  .checklist-body {
-    min-height:940px;
-    max-height:940px;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .catagory-container .catagory-colums {
-    padding-bottom:5.9%;
-  }
- .catagory-results { 
-   height:467px; 
- }
-  .copy-gr {
-    font-size:16px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .catagory-container .catagory-colums {
-    padding-bottom:4.7%;
-  }
-}
-@media only screen and (min-width: 1350px) {
-  .catagory-container .catagory-colums {
-    padding-bottom:5.4%;
-  }
-  .checklist-body {
-    min-height:990px;
-    max-height:990px;
-  }
-  .copy-gr {
-    font-size:18px;
-  }
-}
 
-@media only screen and (min-width: 1440px) {
-  .catagory-results { height:485px; }
-}
+  /*--- 1024px ---*/
 
-@media only screen and (min-width: 1680px) {
-  .catagory-container .catagory-colums {
-    padding-bottom:7.7%;
+  @media only screen and (max-width: 1024px) {
+    .bf-eyebrow {
+      font-size: 35px;
+      line-height: 35px;
+    }
+    .bf-headline {
+      font-size: 76px;
+      line-height: 76px;
+    }
+    .bf-copy {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    .headline-XL {
+      font-size: 78px;
+      line-height: 52px;
+      letter-spacing: -1.54px;
+    }
+    .headline-large {
+      font-size: 45px;
+      line-height: 45px;
+    }
+    .headline-medium {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    .headline-small {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .copy-gr {
+      font-size: 13px;
+      line-height: 13px;
+    }
+    .copy-sub {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .copy-cta {
+      font-size: 10px;
+      line-height: 20px;
+    }
+
+    .catagory-container .catagory-colums {
+      padding-bottom: 7.2%;
+    }
+    .checklist-container {
+      padding-bottom: 8%;
+    }
+    .checklist-body {
+      min-height: 940px;
+      max-height: 940px;
+    }
   }
-  .checklist-body {
-    min-height:1080px;
-    max-height:1080px;
+
+  @media only screen and (min-width: 1025px) {
+    .catagory-container .catagory-colums {
+      padding-bottom: 5.9%;
+    }
+    .catagory-results {
+      height: 475px;
+    }
+    .link-box ul li {
+      padding: 8px 0 5px 20px;
+    }
+    .copy-gr {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
-  .checklist-container {
-    padding-bottom:12%;
+
+  @media only screen and (min-width: 1200px) {
+    .catagory-results {
+      height: 481px;
+    }
+    .catagory-container .catagory-colums {
+      padding-bottom: 4.7%;
+    }
   }
-  .catagory-results {
-    height:512px;
+
+  @media only screen and (min-width: 1350px) {
+    .catagory-container .catagory-colums {
+      padding-bottom: 5.4%;
+    }
+    .checklist-body {
+      min-height: 990px;
+      max-height: 990px;
+    }
+
   }
-  .copy-gr {
-    line-height:18px;
-    font-size:18px;
+
+  @media only screen and (min-width: 1440px) {
+    .catagory-results {
+      height: 494px;
+    }
+    .copy-gr {
+      line-height: 16px;
+      font-size: 14px;
+    }
+    .link-box ul li {
+      padding: 8px 0 5px 20px;
+    }
   }
-}
+
+  @media only screen and (min-width: 1680px) {
+    .catagory-container .catagory-colums {
+      padding-bottom: 7.7%;
+    }
+    .checklist-body {
+      min-height: 1080px;
+      max-height: 1080px;
+    }
+    .checklist-container {
+      padding-bottom: 12%;
+    }
+    .catagory-results {
+      height: 513px;
+    }
+    .link-box ul li {
+      padding: 10px 0 5px 20px;
+    }
+
+  }
 </style>
 
 <section class="main-content fullDiv">
@@ -467,9 +563,6 @@ Font Sizes
       <h1 class="headline-small crate-light">
         Wedding Registry Checklist
       </h1>
-      <p class="copy-gr crate-roman">
-        They may be tiny, but they sure need a lot of gear. Get organized with our handy guide.
-      </p>
       <a href="/gift-registry/create/step1?eventType=BB" class="button button-primary button-lg cmsWhite">Create a Registry
       </a>
       <a href="/gift-registry/sign-into-registry" class="button button-primary button-lg cmsWhite">Manage My Registry
@@ -677,7 +770,7 @@ Font Sizes
           <div id="drinkware" class="catagory-results link-box link-box">
             <h2 class="crate-roman headline-small">Drinkware</h2>
             <p class="copy-gr crate-roman link-box__copy">
-<a style="color:#1f74bf;text-decoration:underline;" href="/dining-and-entertaining/top-rated-dinnerware/1">
+              <a style="color:#1f74bf;text-decoration:underline;" href="/dining-and-entertaining/top-rated-dinnerware/1">
                 Get a jumpstart by adding our top rated drinkware</a>.
             </p>
             <div class="catagory-colums">
@@ -701,7 +794,7 @@ Font Sizes
           <div id="wine" class="catagory-results link-box">
             <h2 class="crate-roman headline-small">Wine Glasses/Accessories</h2>
             <p class="copy-gr crate-roman link-box__copy">
-<a style="color:blue;text-decoration:underline;" href="/wine-wedding-gifts/f65186">
+              <a style="color:blue;text-decoration:underline;" href="/wine-wedding-gifts/f65186">
                 Learn more about the different types of wine glasses in our wine glass guide</a>.
             </p>
             <div class="catagory-colums">
@@ -739,9 +832,8 @@ Font Sizes
 
           <div id="cocktails" class="catagory-results link-box">
             <h2 class="crate-roman headline-small">Cocktails/Bar Tools</h2>
-<p class="copy-gr crate-roman link-box__copy">
-<a style="color:#1f74bf;text-decoration:underline;" href="/home-bar-gifts-registries/f65188">Learn more about the different type of cocktail glasses in our
-              cocktail guide</a>.</p>
+            <p class="copy-gr crate-roman link-box__copy">
+              <a style="color:#1f74bf;text-decoration:underline;" href="/home-bar-gifts-registries/f65188">Learn more about the different type of cocktail glasses in our cocktail guide</a>.</p>
             <div class="catagory-colums">
               <ul>
                 <li class="crate-roman copy-gr">
@@ -897,10 +989,10 @@ Font Sizes
           <!--============= Stock the Kitchen Links ==============-->
           <div id="cookware" class="catagory-results link-box">
             <h2 class="crate-roman headline-small">Cookware</h2>
-<p class="copy-gr crate-roman link-box__copy" style="color:#1f74bf;text-decoration:underline;">
-              Our sets give you the pots and pans you’ll use the most and offer a significant savings. Add on individual pieces
- for special recipes you like to cook.
-<a style="color:#1f74bf;text-decoration:underline;" href="/cookware-gifts-wedding-registries/f65204">Learn the cookware basics from our cookware guide</a>.</p>
+            <p class="copy-gr crate-roman link-box__copy" style="color:#1f74bf;text-decoration:underline;">
+              Our sets give you the pots and pans you’ll use the most and offer a significant savings. Add on individual pieces for special
+              recipes you like to cook.
+              <a style="color:#1f74bf;text-decoration:underline;" href="/cookware-gifts-wedding-registries/f65204">Learn the cookware basics from our cookware guide</a>.</p>
             <div class="catagory-colums">
               <ul>
                 <li class="crate-roman copy-gr">
@@ -966,8 +1058,8 @@ Font Sizes
 
           <div id="cutlery" class="catagory-results link-box">
             <h2 class="crate-roman headline-small">Cutlery</h2>
-<p class="copy-gr crate-roman link-box__copy" style="color:#1f74bf;text-decoration:underline;">We recommend a block set with all the essential knives at a savings. Add on individual knives for specific tasks.
-<a style="color:#1f74bf;text-decoration:underline;" href="/ideas-and-advice/types-of-kitchen-knives">Learn more</a> how each knife type is used in our blade guide.</p>
+            <p class="copy-gr crate-roman link-box__copy" style="color:#1f74bf;text-decoration:underline;">We recommend a block set with all the essential knives at a savings. Add on individual knives for specific tasks.
+              <a style="color:#1f74bf;text-decoration:underline;" href="/ideas-and-advice/types-of-kitchen-knives">Learn more</a> how each knife type is used in our blade guide.</p>
             <div class="catagory-colums">
               <ul>
                 <li class="crate-roman copy-gr">
@@ -1145,7 +1237,8 @@ Font Sizes
                   <a href="/tart-pans">Tart Pans (2)</a>
                 </li>
                 <li class="crate-roman copy-gr">
-                  <a href="/dining-and-entertaining/casseroles/1">Casserole Dishes (2)</a></li>
+                  <a href="/dining-and-entertaining/casseroles/1">Casserole Dishes (2)</a>
+                </li>
                 <li class="crate-roman copy-gr">
                   <a href="/dining-and-entertaining/casseroles/1">Oven-to-Table Bakers (2)</a>
                 </li>
@@ -1209,7 +1302,7 @@ Font Sizes
               <!-- left-links -->
               <ul>
                 <li class="crate-roman copy-gr">
-<a href="/mandolines">Mandoline</a>
+                  <a href="/mandolines">Mandoline</a>
                 </li>
                 <li class="crate-roman copy-gr">
                   <a href="/kitchen-and-food/salt-and-pepper/1">Salt and Peppers</a> (2 sets)</li>
@@ -1217,10 +1310,10 @@ Font Sizes
                   <a href="/spice-rack">Spice Rack</a>
                 </li>
                 <li class="crate-roman copy-gr">
-<a href="/mortar-and-pestle">Mortar and Pestle</a>
+                  <a href="/mortar-and-pestle">Mortar and Pestle</a>
                 </li>
                 <li class="crate-roman copy-gr">
-<a href="/food-scale">Kitchen Scale</a>
+                  <a href="/food-scale">Kitchen Scale</a>
                 </li>
                 <li class="crate-roman copy-gr">
                   <a href="/aprons">Aprons</a>
@@ -1241,8 +1334,8 @@ Font Sizes
           <div id="gadgets" class="catagory-results link-box">
             <h2 class="crate-roman headline-small">Gadgets</h2>
             <p class="copy-gr crate-roman link-box__copy">
-<a style="color:#1f74bf;text-decoration:underline;" href="/kitchen-gadget-gifts-registries/f65189">Learn more about our top gadgets and how they are used.</a>
-</p>
+              <a style="color:#1f74bf;text-decoration:underline;" href="/kitchen-gadget-gifts-registries/f65189">Learn more about our top gadgets and how they are used.</a>
+            </p>
             <div class="catagory-colums">
               <ul>
                 <li class="crate-roman copy-gr">
@@ -1253,11 +1346,11 @@ Font Sizes
                 <li class="crate-roman copy-gr">
                   <a href="/tongs">Turners/Tongs</a> (2 each)</li>
                 <li class="crate-roman copy-gr">
-<a href="/vegetable-peelers">Vegetable Peeler</a>
+                  <a href="/vegetable-peelers">Vegetable Peeler</a>
                 </li>
                 <li class="crate-roman copy-gr">
-<a href="/graters">Grater</a>-
-<a href="/zesters">Zester</a>
+                  <a href="/graters">Grater</a>-
+                  <a href="/zesters">Zester</a>
                 </li>
                 <li class="crate-roman copy-gr">
                   <a href="/garlic-press">Garlic Press</a>
@@ -1413,7 +1506,7 @@ Font Sizes
                   <a href="/furniture/living-room-furniture/">Sofa/Sleeper/Sectional</a>
                 </li>
                 <li class="crate-roman copy-gr">
-<a href="/furniture/chairs/1">Accent Chairs/Recliners/Ottomans</a>
+                  <a href="/furniture/chairs/1">Accent Chairs/Recliners/Ottomans</a>
                 </li>
                 <li class="crate-roman copy-gr">
                   <a href="/furniture/coffee-tables-and-side-tables/">Accent Tables</a>
@@ -1763,7 +1856,7 @@ Font Sizes
 
       </div>
       <!-- checklist-container -->
-<!-- <a target="_blank" class="GRprint button button-lg button-primary cmsWhite checklist-btn" href="/assets/gift-registry/registrychecklist.pdf">Print Checkist ( pdf )</a> -->
+      <!-- <a target="_blank" class="GRprint button button-lg button-primary cmsWhite checklist-btn" href="/assets/gift-registry/registrychecklist.pdf">Print Checkist ( pdf )</a> -->
     </div>
     <!-- checklist -->
   </div>
@@ -1772,99 +1865,98 @@ Font Sizes
 
 <script>
   function runTheThings() {
-  $(document).ready(function() {
-    
-    $(".hideOnLoad").hide();
-    
-    $(".catagory-title").click(function(e) {
-      var nextDiv = $(this).next("div");
-      $(".catagory-title").find('.arrow').addClass("down");
-      $(".catagory-title").find('.arrow').removeClass("up");
-      if (nextDiv.css("display") == "none") {
-        e.preventDefault();
-        $(".left-containers").slideUp("slow");
-        nextDiv.slideDown("slow");
+    $(document).ready(function () {
 
-        $(this).find('.arrow').addClass("up");
-      } else {
-        nextDiv.slideUp("slow");
-      }
+      $(".hideOnLoad").hide();
+
+      $(".catagory-title").click(function (e) {
+        var nextDiv = $(this).next("div");
+        $(".catagory-title").find('.arrow').addClass("down");
+        $(".catagory-title").find('.arrow').removeClass("up");
+        if (nextDiv.css("display") == "none") {
+          e.preventDefault();
+          $(".left-containers").slideUp("slow");
+          nextDiv.slideDown("slow");
+
+          $(this).find('.arrow').addClass("up");
+        } else {
+          nextDiv.slideUp("slow");
+        }
+      });
+
+      $(".link-box li").click(function () {
+        $(".link-box li").removeClass("active");
+        $(this).addClass("active");
+      });
+      // Click events for Set the table
+      $(".catagory-items li").click(function () {
+        $(".catagory-results").hide();
+        if ($(this).is("#dinnerwareBtn")) {
+          $("#dinnerware").show();
+        } else if ($(this).is("#flatwareBtn")) {
+          $("#flatware").show();
+        } else if ($(this).is("#drinkwareBtn")) {
+          $("#drinkware").show();
+        } else if ($(this).is("#wineBtn")) {
+          $("#wine").show();
+        } else if ($(this).is("#cocktailsBtn")) {
+          $("#cocktails").show();
+        } else if ($(this).is("#servingBtn")) {
+          $("#serving").show();
+        } else if ($(this).is("#tableBtn")) {
+          $("#table").show();
+        }
+
+        // Click events for Stock the Kitchen
+        if ($(this).is("#cookwareBtn")) {
+          $("#cookware").show();
+        } else if ($(this).is("#cutleryBtn")) {
+          $("#cutlery").show();
+        } else if ($(this).is("#machinesBtn")) {
+          $("#machines").show();
+        } else if ($(this).is("#bakewareBtn")) {
+          $("#bakeware").show();
+        } else if ($(this).is("#prepBtn")) {
+          $("#prep").show();
+        } else if ($(this).is("#gadgetsBtn")) {
+          $("#gadgets").show();
+        } else if ($(this).is("#storageBtn")) {
+          $("#storage").show();
+        }
+
+        // Click events for Furnishing
+        if ($(this).is("#decorBtn")) {
+          $("#decor").show();
+        } else if ($(this).is("#living-roomBtn")) {
+          $("#living-room").show();
+        } else if ($(this).is("#diningBtn")) {
+          $("#dining").show();
+        } else if ($(this).is("#bedroomBtn")) {
+          $("#bedroom").show();
+        } else if ($(this).is("#bathBtn")) {
+          $("#bath").show();
+        } else if ($(this).is("#officeBtn")) {
+          $("#office").show();
+        } else if ($(this).is("#entryBtn")) {
+          $("#entry").show();
+        } else if ($(this).is("#utilBtn")) {
+          $("#util").show();
+        } else if ($(this).is("#patioBtn")) {
+          $("#patio").show();
+        }
+      });
     });
-
-    $(".link-box li").click(function() {
-      $(".link-box li").removeClass("active");
-      $(this).addClass("active");
-    });
-    // Click events for Set the table
-    $(".catagory-items li").click(function() {
-      $(".catagory-results").hide();
-      if ($(this).is("#dinnerwareBtn")) {
-        $("#dinnerware").show();
-      } else if ($(this).is("#flatwareBtn")) {
-        $("#flatware").show();
-      } else if ($(this).is("#drinkwareBtn")) {
-        $("#drinkware").show();
-      } else if ($(this).is("#wineBtn")) {
-        $("#wine").show();
-      } else if ($(this).is("#cocktailsBtn")) {
-        $("#cocktails").show();
-      } else if ($(this).is("#servingBtn")) {
-        $("#serving").show();
-      } else if ($(this).is("#tableBtn")) {
-        $("#table").show();
-      }
-
-      // Click events for Stock the Kitchen
-      if ($(this).is("#cookwareBtn")) {
-        $("#cookware").show();
-      } else if ($(this).is("#cutleryBtn")) {
-        $("#cutlery").show();
-      } else if ($(this).is("#machinesBtn")) {
-        $("#machines").show();
-      } else if ($(this).is("#bakewareBtn")) {
-        $("#bakeware").show();
-      } else if ($(this).is("#prepBtn")) {
-        $("#prep").show();
-      } else if ($(this).is("#gadgetsBtn")) {
-        $("#gadgets").show();
-      } else if ($(this).is("#storageBtn")) {
-        $("#storage").show();
-      }
-
-      // Click events for Furnishing
-      if ($(this).is("#decorBtn")) {
-        $("#decor").show();
-      } else if ($(this).is("#living-roomBtn")) {
-        $("#living-room").show();
-      } else if ($(this).is("#diningBtn")) {
-        $("#dining").show();
-      } else if ($(this).is("#bedroomBtn")) {
-        $("#bedroom").show();
-      } else if ($(this).is("#bathBtn")) {
-        $("#bath").show();
-      } else if ($(this).is("#officeBtn")) {
-        $("#office").show();
-      }else if ($(this).is("#entryBtn")) {
-        $("#entry").show();
-      }else if ($(this).is("#utilBtn")) {
-        $("#util").show();
-      }else if ($(this).is("#patioBtn")) {
-        $("#patio").show();
-      }
-    });
-  });
-}
-
-function jQueryIsLoaded() {
-  if (window.jQuery) {
-    console.log("jQuery is loaded");
-
-    runTheThings();
-  } else {
-    setTimeout(jQueryIsLoaded, 50);
   }
-}
 
-jQueryIsLoaded();
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
 
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
 </script>

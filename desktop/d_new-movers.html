@@ -24,7 +24,7 @@ Hero
 
   /* Style the navbar */
 
-  /*=======================================================
+/*=======================================================
 navbar
 =======================================================*/
 
@@ -64,7 +64,7 @@ navbar
 
   .nav li a:hover,
   .nav li a:focus,
-  .active {
+  #navbar > ul > li.active {
     color: #fff;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -2155,8 +2155,7 @@ Font Sizes
   <!-- crate-blog -->
   <div class="curalateDiv">
     <div class="curalateText">
-      <p class="crate-light headline-small" style="text-align:center">#Crate
-        <strong>Style</strong>
+      <p class="crate-light headline-small" style="text-align:center">#Crate<strong>Style</strong>
       </p>
       <p class="copy-sub crate-roman" style="text-align:center;">
         <a href="/Cratestyle">Share photos,</a> shop photos and get inspired.
@@ -2245,15 +2244,14 @@ Font Sizes
       $(".nav").on("click", "a", function (event) {
         event.preventDefault();
         var elAttr = $(this).attr("href");
-        var offset = $(this).attr("data-offset")
-          ? $(this).attr("data-offset")
-          : 0;
+        var offset = $(this).attr("data-offset") ?
+          $(this).attr("data-offset") :
+          0;
         var fixedTop = $("#navbar.secondSticky");
         if (fixedTop && fixedTop.length) {
           offset = fixedTop.outerHeight();
         }
-        $("body,html").animate(
-          {
+        $("body,html").animate({
             scrollTop: $(elAttr).offset().top - offset
           },
           3000
@@ -2321,12 +2319,13 @@ Font Sizes
         curalateDiv = $(".curalateDiv").height();
 
       $(".curalateDiv").each(function () {
-        if ($(this).hasClass("curalate-visible")) {
-        } else {
+        if ($(this).hasClass("curalate-visible")) {} else {
           if (pageTop > curTop - curalateDiv * 2) {
             Curalate.FanReels.Gallery.init({
               code: "crateandbarrel",
-              filters: { tags: "homepage" }
+              filters: {
+                tags: "homepage"
+              }
             });
             $(this).addClass("curalate-visible");
             console.log("Curalate loaded");
@@ -2347,8 +2346,4 @@ Font Sizes
   }
 
   curalateIsLoaded();
-
-
-
-
 </script>
