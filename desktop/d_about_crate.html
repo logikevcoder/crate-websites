@@ -1,495 +1,511 @@
 <style>
-  /*=======================================================
+/*=======================================================
 Main Content
 =======================================================*/
 
-  .main-content {
-    min-width: 1024px;
-    margin: 0 auto;
-  }
+.main-content {
+  min-width: 1024px;
+  margin: 0 auto;
+}
 
-  /*=======================================================
+/*=======================================================
 Hero
 =======================================================*/
 
-  .hero {
-    position: relative;
-    max-height: 758px;
-  }
+.hero {
+  position: relative;
+  max-height: 758px;
+}
 
-  .hero__text {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 50%;
-    transform: translatey(-50%);
-    color: #fff;
-  }
+.hero__text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translatey(-50%);
+  color: #fff;
+}
 
-  /*=======================================================
+/*=======================================================
 About Crate
 =======================================================*/
 
-  .about-crate {
-    height: 100%;
-    display: flex;
-  }
+.about-crate {
+  height: 100%;
+  display: flex;
+}
 
-  .about-crate__header {
-    margin-top:10%;
-  }
+.about-crate__header {
+  margin-top: 10%;
+}
 
-  .about-crate__left-block {
-    width: 60%;
-    margin: 0 5%;
-  }
+.about-crate__left-block {
+  width: 60%;
+  margin: 0 5%;
+}
 
-  .about-crate__right-block {
-    width: 40%;
-    background-color: #f5f5f5;
-    position: relative;
-    min-height: 100%;
-  }
+.about-crate__right-block {
+  width: 40%;
+  background-color: #f5f5f5;
+  position: relative;
+  min-height: 100%;
+}
 
-  .text-container {
-    position: absolute;
-    left: 12%;
-    bottom: 18%;
-    width:63%;
-  }
+.text-container {
+  position: absolute;
+  left: 12%;
+  bottom: 18%;
+  width: 63%;
+}
 
-  /*=======================================================
+/*=======================================================
 Inspired + Commitment
 =======================================================*/
 
-  .inspired-commit {
-    display: flex;
-    width: 100%;
-    margin-bottom: 0.1%;
-  }
+.inspired-commit {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0.1%;
+}
 
-  .inspired {
-    position: relative;
-    max-height: 758px;
-    width: 50%;
-    margin-right: 0.1%;
-  }
+.inspired {
+  position: relative;
+  max-height: 758px;
+  width: 50%;
+  margin-right: 0.1%;
+}
 
-  .commit {
-    position: relative;
-    max-height: 758px;
-    width: 50%;
-  }
+.commit {
+  position: relative;
+  max-height: 758px;
+  width: 50%;
+}
 
-  /*=======================================================
+/*=======================================================
 A Crate Story
 =======================================================*/
-
-  .crate-story {
-    max-height: 598px;
-    margin-bottom: 0.1%;
-  }
-
-  .crate-story-text>div:not(:first-child) {
-    width: 20%;
-  }
-
-  .crate-story-text>div:first-child {
-    width: 25%;
-  }
-
-  /*=======================================================
+.crate-story {
+  max-height: 598px;
+  margin-bottom: 0.1%;
+}
+.slide-in-content.crate-story-text {
+  padding: 2%;
+}
+.story-text-first {
+  width: 25%;
+}
+.story-text-second {
+  width:50%;
+}
+.story-text-second > div {
+  width:100%;
+}
+.story-text-second> div > div {
+  width:50%;
+}
+.story-text-second> div > div:first-child {
+  padding-right:5%;
+}
+.story-text-third {
+  width: 25%;
+}
+.slide-in-content.crate-story-text > div:not(:last-child) {
+  margin-right: 3%;
+}
+/*=======================================================
 Section Headlines
 =======================================================*/
 
-  .catagory-headline {
-    position: absolute;
-    bottom: 7%;
-  }
+.catagory-headline {
+  position: absolute;
+  bottom: 7%;
+}
 
-  .catagory-headline::after {
-    content: "+";
-    position: absolute;
-    right: -35px;
-    top: -1px;
-    font-weight: 200;
-  }
+.catagory-headline::after {
+  content: "+";
+  position: absolute;
+  right: -35px;
+  top: -1px;
+  font-weight: 200;
+}
 
-  .minus:after {
-    content: "-";
-    position: absolute;
-    right: -30px;
-    top: -1px;
-    font-weight: 200;
-  }
+.minus:after {
+  content: "-";
+  position: absolute;
+  right: -30px;
+  top: -1px;
+  font-weight: 200;
+}
 
-  .catagory-headline {
-    pointer-events: none;
-  }
+.catagory-headline {
+  pointer-events: none;
+}
 
-  .headline-1,
-  .headline-3 {
-    left: 3%;
-    z-index: 20;
-  }
+.headline-1,
+.headline-3 {
+  left: 3%;
+  z-index: 20;
+}
 
-  .headline-2 {
-    left: 53%;
-    transition: 1s ease;
-  }
+.headline-2 {
+  left: 53%;
+  transition: 0.6s ease;
+}
 
-  .headline-move {
-    left: 3%;
-    transition: 1s;
-    transition-delay: 0.2s;
-  }
+.headline-move {
+  left: 3%;
+  transition: 0.8s;
+  transition-delay: 0.2s;
+}
 
-  /*=======================================================
+/*=======================================================
 Image Slide Functionality
 =======================================================*/
 
-  .image-slide {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
+.image-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 
-  .slide-in {
-    z-index: 10;
-    /* to position it in front of the other content */
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    pointer-events: none;
-    height: 100%;
-    width: 100%;
-  }
+.slide-in {
+  z-index: 10;
+  /* to position it in front of the other content */
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  pointer-events: none;
+  height: 100%;
+  width: 100%;
+}
 
-  .slide-in.from-left {
-    left: -100%;
-    transition: all 1s ease;
-  }
+.slide-in.from-left {
+  left: -100%;
+  transition: all 1s ease;
+}
 
-  .slide-in.from-right {
-    right: -100%;
-    transition: all 1s ease;
-  }
+.slide-in.from-right {
+  right: -100%;
+  transition: all 1s ease;
+}
 
-  .slide-in.from-bottom {
-    bottom: 0;
-  }
+.slide-in.from-bottom {
+  bottom: 0;
+}
 
-  /*=======================================================
+/*=======================================================
 Actual text container styling inside the sliding container
 =======================================================*/
 
-  .slide-in-content {
-    transition: all 0.5s ease;
-    /* our nice transition */
-    display: flex;
-    background-color: #212222;
-    color: #fff;
-    min-height: 100%;
-    justify-content: center;
-  }
+.slide-in-content {
+  transition: all 0.5s ease;
+  /* our nice transition */
+  display: flex;
+  background-color: #212222;
+  color: #fff;
+  min-height: 100%;
+  justify-content: center;
+}
 
-  .inspired-text {
-    width: 90%;
-    padding: 15% 10%;
-  }
+.inspired-text {
+  width: 90%;
+  padding: 15% 10%;
+}
 
-  .inspired-text>div {
-    width: 25%;
-    vertical-align: top;
-    margin-right: 8% !important;
-  }
+.inspired-text > div {
+  width: 25%;
+  vertical-align: top;
+  margin-right: 8% !important;
+}
 
-  .commit-text {
-    padding: 3%;
-    padding-top: 5%;
-  }
+.commit-text {
+  padding: 3%;
+  padding-top: 5%;
+}
 
-  .commit-text>div {
-    width: 20%;
-  }
+.commit-text > div {
+  width: 20%;
+}
 
-  .commit-text>div:not(:last-child) {
-    margin-right: 5%;
-  }
+.commit-text > div:not(:last-child) {
+  margin-right: 5%;
+}
 
-  .crate-story-text {
-    padding-top: 2%;
-  }
-
-  .crate-story-text>div:not(:last-child) {
-    margin-right: 2%;
-  }
-
-  .slide-in.from-left .slide-in-content {
-    /*   transform: translateX(-100%);
+.slide-in.from-left .slide-in-content {
+  /*   transform: translateX(-100%);
   -webkit-transform: translateX(-100%); */
-    left: 0;
-  }
+  left: 0;
+}
 
-  .left-zero {
-    left: 0 !important;
-    transition: 3s;
-    pointer-events: auto;
-  }
+.left-zero {
+  left: 0 !important;
+  transition: 3s;
+  pointer-events: auto;
+}
 
-  .right-zero {
-    right: 0 !important;
-    transition: 3s;
-    pointer-events: auto;
-  }
+.right-zero {
+  right: 0 !important;
+  transition: 3s;
+  pointer-events: auto;
+}
 
-  .slide-in.from-bottom .slide-in-content {
-    transform: translateY(100%);
-    -webkit-transform: translateY(100%);
-  }
+.slide-in.from-bottom .slide-in-content {
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+}
 
-  .slide-in.show .slide-in-content {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    height: 100%;
+.slide-in.show .slide-in-content {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  height: 100%;
 
-    pointer-events: auto;
-  }
+  pointer-events: auto;
+}
 
-  /*=======================================================
+/*=======================================================
 Breakout and Fixes
 =======================================================*/
 
-  .fullDiv {
-    width: 100%;
-    min-width: 1024px;
-    max-width: 1680px;
-    position: relative;
-    overflow: hidden;
-  }
+.fullDiv {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1680px;
+  position: relative;
+  overflow: hidden;
+}
 
-  .fullDiv a {
-    color: #222;
-    text-decoration: none;
-  }
+.fullDiv a {
+  color: #222;
+  text-decoration: none;
+}
 
-  #pageWrap {
-    border-top: 2px solid #222;
-    max-width: 1680px;
-    min-width: 1024px;
-    width: 100%;
-    margin: 0 auto !important;
-    float: none !important;
-    clear: left;
-  }
+#pageWrap {
+  border-top: 2px solid #222;
+  max-width: 1680px;
+  min-width: 1024px;
+  width: 100%;
+  margin: 0 auto !important;
+  float: none !important;
+  clear: left;
+}
 
-  .content {
-    width: 100% !important;
-  }
+.content {
+  width: 100% !important;
+}
 
-  .content-layout {
-    max-width: 1680px !important;
-  }
+.content-layout {
+  max-width: 1680px !important;
+}
 
-  #bodyWrap {
-    padding: 0;
-  }
+#bodyWrap {
+  padding: 0;
+}
 
-  #jsExpand1 {
-    margin: 0 !important;
-  }
+#jsExpand1 {
+  margin: 0 !important;
+}
 
-  .new-marginDiv {
-    width: 80%;
-    min-width: 964px;
-    max-width: 1344px;
-    position: relative;
-    overflow: hidden;
-    margin: 10% auto;
-  }
+.new-marginDiv {
+  width: 80%;
+  min-width: 964px;
+  max-width: 1344px;
+  position: relative;
+  overflow: hidden;
+  margin: 10% auto;
+}
 
-  .new-marginDiv a {
-    color: #222;
-  }
+.new-marginDiv a {
+  color: #222;
+}
 
-  .divMargins {
-    margin-bottom: 2% !important;
-  }
+.divMargins {
+  margin-bottom: 2% !important;
+}
 
-  .fullImg {
-    width: 100%;
-    max-width: 1680px;
-  }
+.fullImg {
+  width: 100%;
+  max-width: 1680px;
+}
 
-  .cmsArrowR {
-    border-width: 0.4vw;
-  }
+.cmsArrowR {
+  border-width: 0.4vw;
+}
 
-  .whtArrw {
-    border-left-color: white;
-  }
+.whtArrw {
+  border-left-color: white;
+}
 
-  #topNavWrap {
-    background: transparent;
-  }
+#topNavWrap {
+  background: transparent;
+}
 
-  #topNavContainer {
-    border: none;
-  }
+#topNavContainer {
+  border: none;
+}
 
-  body {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
-  .clear-both {
-    clear: both;
-  }
- .third-div {
-   margin-top:35px;
- }
- p {margin: 0!important;}
- .padTB {
-   padding:5% 0;
- }
+.clear-both {
+  clear: both;
+}
 
-  /*=======================================================
+p {
+  margin: 0 !important;
+}
+
+.padTB {
+  padding: 5% 0;
+}
+
+/*=======================================================
 Font Sizes
 =======================================================*/
 
+.bf-eyebrow {
+  font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+  text-transform: uppercase;
+}
+
+.bf-headline {
+  font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.bf-copy {
+  font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.headline-XL {
+  font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
+  line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
+  letter-spacing: -0.15vw;
+}
+
+.headline-large {
+  font-size: calc(45px + (54 - 45) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.headline-medium {
+  font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.headline-small {
+  font-size: calc(24px + (26 - 24) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.05vw;
+}
+
+.copy-sub {
+  /* font-size: calc(14px + (12 - 10) * (100vw - 1024px) / (1440 - 1024));  */
+  font-size: 18px !important;
+  line-height: 18px !important;
+  margin: 0 !important;
+}
+
+.copy-gr {
+  /* font-size: calc(13px + (13 - 12) * (100vw - 1024px) / (1440 - 1024)); */
+  font-size: 15px !important;
+  line-height: calc(16px + (14 - 11) * (100vw - 1024px) / (1440 - 1024));
+  padding: 3% 0 !important;
+}
+
+.copy-cta {
+  font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+  margin: 1.3vw 0;
+  text-transform: uppercase;
+}
+
+/*--- 1024px ---*/
+
+@media only screen and (max-width: 1024px) {
   .bf-eyebrow {
-    font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
-    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 35px;
   }
-
   .bf-headline {
-    font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
+    font-size: 76px;
+    line-height: 76px;
   }
-
   .bf-copy {
-    font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
+    font-size: 50px;
+    line-height: 50px;
   }
 
   .headline-XL {
-    font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
-    line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
-    letter-spacing: -0.15vw;
+    font-size: 78px;
+    line-height: 52px;
+    letter-spacing: -1.54px;
   }
-
   .headline-large {
-    font-size: calc(45px + (54 - 45) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
+    font-size: 45px;
+    line-height: 45px;
   }
-
   .headline-medium {
-    font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
+    font-size: 32px;
+    line-height: 36px;
   }
-
   .headline-small {
-    font-size: calc(24px + (26 - 24) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.05vw;
+    font-size: 24px;
+    line-height: 24px;
   }
-
- .copy-sub { 
-    /* font-size: calc(14px + (12 - 10) * (100vw - 1024px) / (1440 - 1024));  */
-    font-size:22px !important;
-    line-height: 25px; margin:0 !important;}
-
   .copy-gr {
-    /* font-size: calc(13px + (13 - 12) * (100vw - 1024px) / (1440 - 1024)); */
-    font-size:18px !important;
-    line-height: calc(16px + (14 - 11) * (100vw - 1024px) / (1440 - 1024)); 
-    padding:3% 0 !important;}
-
+    font-size: 13px;
+    line-height: 16px;
+    padding: 3% 0;
+  }
+  .copy-sub {
+    font-size: 14px;
+    line-height: 21px;
+  }
   .copy-cta {
-    font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
-    margin: 1.3vw 0;
-    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 20px;
   }
-
-  /*--- 1024px ---*/
-
-  @media only screen and (max-width: 1024px) {
-    .bf-eyebrow {
-      font-size: 35px;
-      line-height: 35px;
-    }
-    .bf-headline {
-      font-size: 76px;
-      line-height: 76px;
-    }
-    .bf-copy {
-      font-size: 50px;
-      line-height: 50px;
-    }
-
-    .headline-XL {
-      font-size: 78px;
-      line-height: 52px;
-      letter-spacing: -1.54px;
-    }
-    .headline-large {
-      font-size: 45px;
-      line-height: 45px;
-    }
-    .headline-medium {
-      font-size: 32px;
-      line-height: 36px;
-    }
-    .headline-small {
-      font-size: 24px;
-      line-height: 28px;
-    }
-    .copy-gr {
-      font-size: 13px;
-      line-height: 13px;
-      padding:3% 0;
-    }
-    .copy-sub {
-      font-size: 14px;
-      line-height: 21px;
-    }
-    .copy-cta {
-      font-size: 10px;
-      line-height: 20px;
-    }
-    .third-div { margin-top:35px; }
-  }
- @media only screen and (min-width: 1024px) { 
-   .headline-small { line-height:30px;
-  } 
-  .third-div {
-    margin-top:30px;
-  }}
-
-  @media only screen and (min-width: 1440px) {
-    .headline-large {
-      line-height: 60px !important;
-    }
-  }
- @media only screen and (min-width: 1680px) {  
-   .headline-large { line-height: 70px !important; 
-   }
-   .copy-gr {line-height:23px !important;}
-  .third-div { margin-top:35px; }
 }
+
+@media only screen and (min-width: 1025px) {
+  .headline-small {
+    line-height: 23px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .headline-large {
+    line-height: 60px !important;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  .headline-large {
+    line-height: 70px !important;
+  }
+  .copy-gr {
+    line-height: 18px !important;
+  }
+}
+
+</style>
+
+<style>
 </style>
 
 <section class="main-content fullDiv">
@@ -515,7 +531,7 @@ Font Sizes
       <div class="about-crate__header">
         <h2 class="cmsBlack crate-bold copy-sub">About Crate</h2>
 
-<p class="crate-helvetica-roman copy-sub" style="padding: 2% 0 1%;">
+        <p class="crate-helvetica-roman copy-sub" style="padding: 2% 0 1%;">
           We curate inspiration for the home, connecting the creative work
           <br> of artisans and designers to people and places around the world.
         </p>
@@ -545,17 +561,19 @@ Font Sizes
       <div class="text-container crate-helvetica-roman ">
         <div style="margin-bottom:5%; ">
           <p class="copy-sub crate-bold " style="margin-bottom:0 ">Media Inquiries</p>
-<p class="crate-helvetica-roman copy-gr ">For all press and partnership inquiries, contact <strong>
-<a href="mailto:mediainquiries@crateandbarrel.com">mediainquiries@crateandbarrel.com.</a>
-</strong>
-</p>
+          <p class="crate-helvetica-roman copy-gr ">For all press and partnership inquiries, contact
+            <strong>
+              <a href="mailto:mediainquiries@crateandbarrel.com">mediainquiries@crateandbarrel.com.</a>
+            </strong>
+          </p>
         </div>
 
         <div>
           <p class="copy-sub crate-bold " style="margin-bottom:0 ">Contact Center</p>
-<p class="crate-helvetica-roman copy-gr ">For questions and comments regarding your order or shopping experience, contact us through
-  <strong><a href="http://www.crateandbarrel.com/customer-service">www.crateandbarrel.com/customer-service.</a>
-  </strong>
+          <p class="crate-helvetica-roman copy-gr ">For questions and comments regarding your order or shopping experience, contact us through
+            <strong>
+              <a href="http://www.crateandbarrel.com/customer-service">www.crateandbarrel.com/customer-service.</a>
+            </strong>
           </p>
         </div>
       </div>
@@ -587,7 +605,8 @@ Font Sizes
         <div>
           <p class="crate-bold copy-sub ">Made in the U.S.A.</p>
           <p class="crate-helvetica-roman copy-gr ">Ninety-nine percent of Crate and Barrel brand&rsquo;s upholstory is made in the USA from domestic and imported
-            materials.</p>
+            materials.
+          </p>
         </div>
         <div>
           <p class="crate-bold copy-sub ">Global Reach</p>
@@ -660,8 +679,8 @@ Font Sizes
     </div>
     <!-- crate-story__img -->
     <div class="slide-in from-bottom ">
-      <div class="slide-in-content crate-story-text ">
-        <div>
+      <div class="slide-in-content crate-story-text">
+        <div class="story-text-first">
           <p class="crate-thin headline-small ">We&rsquo;ve been around the world for over 55 years.</p>
           <p class="crate-helvetica-roman copy-gr ">
             Founded by Gordon and Carole Segal in 1962, Crate and Barrel was born after a European honeymoon sparked the idea to bring
@@ -670,43 +689,44 @@ Font Sizes
             Today, we greet over 22 million customers in our stores each year and welcome more than 100 million visitors
             online. </p>
         </div>
-        <div style="margin-right:3%; ">
 
+        <div class="story-text-second">
+          <div style="display:flex;padding-bottom:2%;">
+            <div>
+              <p class="crate-bold copy-sub our-stores">Our Stores</p>
+              <p class="crate-helvetica-roman copy-gr padTB">
+                Crate and Barrel has 89 stores and 8 outlets across the U.S. and Canada with 15 international franchise locations that showcase
+                our celebrated housewares and extensive furniture collections. As a pioneer in experiential retail with vignettes
+                for every room in the home, our in-store events span wedding registry and charity events to design and entertainment
+                trends. We are a gifting destination and passionate about customer service, a combination
+              </p>
+            </div>
 
-          <p class="crate-bold copy-sub ">Our Stores</p>
-          <p class="crate-helvetica-roman copy-gr padTB">
-            Crate and Barrel has 89 stores and 8 outlets across the U.S. and Canada with 15 international franchise locations that showcase
-            our celebrated housewares and extensive furniture collections. As a pioneer in experiential retail with vignettes
-            for every room in the home, our in-store events span wedding registry and charity events to design and entertainment
-            trends. We are a gifting destination and passionate about customer service, a combination
-          </p>
+            <div>
+              <p class="crate-helvetica-roman copy-gr">
+                <br> that has brought more than 2 million couples to Crate and Barrel for wedding registry alone.
+              </p>
+
+              <p class="crate-helvetica-roman copy-gr">
+                In 2001, Crate and Barrel acquired The Land of Nod, a brand offering kids furniture and toys. In 2018, they became
+                <strong>Crate
+                  <span style="color:#2a9f9b;">&amp;kids</span>
+                </strong>, the newest (and tiniest) member of Crate and Barrel, providing customers the opportunity to shop with us
+                for even more of the moments that matter in their lives.
+              </p>
+            </div>
+          </div>
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/dLP_AboutUs_201805_CB?qlt=75 " alt="store front for CB2">
         </div>
 
-        <div class="third-div" style="margin-right:3%;">
-          <p class="crate-helvetica-roman copy-gr ">
-            that has brought more than 2 million couples to Crate and Barrel for wedding registry alone.
-          </p>
-
-          <p class="crate-helvetica-roman copy-gr ">
-            In 2001, Crate and Barrel acquired The Land of Nod, a brand offering kids furniture and toys. In 2018, they became
-            <strong>Crate
-              <span style="color:#2a9f9b; ">&amp;kids</span>
-            </strong>, the newest (and tiniest) member of Crate and Barrel, providing customers the opportunity to shop with us for
-            even more of the moments that matter in their lives.
-          </p>
-        </div>
-        <div>
-
-
+        <div class="story-text-third">
           <p class="crate-bold copy-sub ">CB2</p>
-<p class="crate-helvetica-roman copy-gr padTB">
+          <p class="crate-helvetica-roman copy-gr padTB">
             Established in 2002, CB2 is committed to high-quality, sophisticated design at an approachable price. Today, CB2 has 15 locations
             across the U.S. and in Canada. Its rapid expansion and reach is transforming the perception of home design for
             today&rsquo;s modern customer. A forward thinker in experiential design, CB2 engages customers through curated
             brand experiences, such as their music-focused event called After Hours and bold design collaborations that have
             brought design and retail elites into the fold.</p>
-          <img class="fullImg " style="width:95%; " src="https://images.crateandbarrel.com/is/image/Crate/dLP_AboutUs_201805_CB2?wid315&qlt=75 "
-            alt="store front for CB2 ">
         </div>
       </div>
       <!-- caption__text-container -->
@@ -720,6 +740,7 @@ Font Sizes
 
 </section>
 <!-- main-content -->
+
 
 <script>
   function runTheThings() {
