@@ -1,0 +1,329 @@
+<style type="text/css">
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero {
+    margin-bottom: 10%;
+    text-align: center;
+  }
+
+  .hero__img {
+    position: relative;
+  }
+
+  .hero__logo {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    right: 0;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .hero__text {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    top: 77%;
+    transform: translatey(-50%);
+  }
+
+  .lazyloading {
+    opacity: 0;
+  }
+
+  .lazyloaded {
+    opacity: 1;
+    transition: opacity 2s;
+  }
+
+  /*MAIN CSS*/
+
+  .fullWidth {
+    width: 100%;
+  }
+
+  .halfWidth {
+    width: 50%;
+  }
+
+  .bopsDiv {
+    padding: 6rem 0rem 4rem 0rem;
+  }
+
+  .topLeftText {
+    top: 3rem;
+    left: 2rem;
+  }
+
+  .bottomLeftText {
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .textDiv {
+    position: absolute;
+  }
+
+  .m-fullDiv {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .m-marginDiv {
+    width: 90%;
+    margin: 8% auto;
+    position: relative;
+  }
+
+  .tC {
+    text-align: center;
+  }
+
+  .greyBackground {
+    background-color: #f6f6f6;
+  }
+
+  .dypticText {
+    position: absolute;
+    bottom: 0%;
+    margin-left: 3%;
+    width: 50%;
+  }
+
+  .beddingCollections {
+    position: absolute;
+    right: 1rem;
+    bottom: 5rem;
+  }
+
+  /*TEXT POSITIONS*/
+
+  .orginalArt {
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .curtains {
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .vases {
+    bottom: 1rem;
+    left: 2rem;
+  }
+
+  .candleLight {
+    top: 2rem;
+    right: 3rem;
+  }
+
+  .trypticIntroDiv {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .trypticText {
+    float: right;
+    width: 46%;
+  }
+
+  .trypticImg {
+    float: left;
+    width: 50%;
+  }
+
+  .ctaText {
+    text-transform: uppercase;
+  }
+
+  .underImage {
+    padding-top: 2rem;
+  }
+
+  .pb5 {
+    padding-bottom: 5rem;
+  }
+
+  .flexContainer {
+    display: flex;
+  }
+
+  .flexItem {
+    margin: 1px;
+  }
+
+  .clothClay {
+    top: 2rem;
+    left: 2rem;
+  }
+
+  /*SLIDER*/
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: left;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #777 !important;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #fff !important;
+  }
+
+  /*FONTS*/
+
+  .m-XLheadline {
+    font-size: 95px;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .m-Lheadline {
+    font-size: 40px;
+    margin: 0;
+    line-height: .6;
+  }
+
+  .m-headline {
+    font-size: 25px;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .m-body {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  .m-cta {
+    font-size: 11px;
+    margin: 8px 0 0 0;
+  }
+
+  .m-eyebrow {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .blackFriday-int {
+    float: left;
+    padding-top: 30%;
+  }
+
+  .m-legal {
+    font-size: 8px;
+  }
+
+  /*--- 320px ---*/
+
+  @media only screen and (max-width: 320px) {
+    .m-XLheadline {
+      font-size: 80px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-Lheadline {
+      font-size: 35px;
+    }
+    .m-headline {
+      font-size: 21px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 12px;
+      margin-top: 6px;
+    }
+    .m-cta {
+      font-size: 10px;
+      margin: 6px 0 0 0;
+    }
+    .m-eyebrow {
+      font-size: 11px;
+      margin: 0;
+    }
+  }
+
+  /*--- 414px ---*/
+
+  @media only screen and (min-width: 414px) {
+    .m-XLheadline {
+      font-size: 120px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-Lheadline {
+      font-size: 50px;
+    }
+    .m-headline {
+      font-size: 27.5px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 15px;
+      margin-top: 12px;
+    }
+    .m-cta {
+      font-size: 12px;
+      margin: 12px 0 0 0;
+    }
+    .m-eyebrow {
+      font-size: 13px;
+      margin: 0;
+    }
+  }
+</style>
+
+<!--=============== New and Now Hero ===============-->
+<section class="hero m-fullDiv lazyload">
+  <div class="hero__img">
+    <a href="/whats-new/new-furniture/1">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mSC_20180612_NewHero?wid=768&qlt=75" alt="">
+      <div class="hero__logo">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mSC_20180612_NwNwLockup?wid=519&qlt=75&fmt=png-alpha"
+          alt="">
+      </div>
+      <!-- hero__logo -->
+      <!--       <div class="hero__text cmsWhite">
+        <p class="crate-roman m-body">
+          Glamorous curves, small space style and more.  
+        </p>
+        <p class="crate-roman m-cta">SHOP ALL NEW FURNITURE</p>
+      </div> -->
+      <!-- hero__text -->
+    </a>
+  </div>
+  <!-- hero__img -->
+</section>
