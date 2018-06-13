@@ -1,111 +1,446 @@
 <style>
-.landing-page-content {max-width:1680px;width:100%;margin:0 auto;min-width:1024px;}
-  .skilletDiv {position:absolute;top:8%;left:15%;}
-  .glassDiv {position:absolute;top:8%;left:6%;}
-  .iceDiv {position:absolute;top:8%;left:55%;}
-  .skilletDiv p:first-of-type, .glassDiv p:first-of-type, .iceDiv p:first-of-type {position:relative;margin-bottom:5%;}
+  .landing-page-content {
+    max-width: 1680px;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 1024px;
+  }
 
-  .skilletDiv p:first-of-type::before, .glassDiv p:first-of-type::before, .iceDiv p:first-of-type::before {content:'“';position:absolute;font-size: calc(60px + (90 - 78) * (100vw - 1024px) / (1680 - 1024));font-style:normal;} 
+  .skilletDiv {
+    position: absolute;
+    top: 8%;
+    left: 15%;
+  }
 
-  .skilletDiv p:first-of-type::before {left:-8%;top:10%;}
-  .glassDiv p:first-of-type::before {left:-12%;top:10%;}
-  .iceDiv p:first-of-type::before {left:-12%;top:10%;}
+  .glassDiv {
+    position: absolute;
+    top: 8%;
+    left: 6%;
+  }
+
+  .iceDiv {
+    position: absolute;
+    top: 8%;
+    left: 55%;
+  }
+
+  .skilletDiv p:first-of-type,
+  .glassDiv p:first-of-type,
+  .iceDiv p:first-of-type {
+    position: relative;
+    margin-bottom: 5%;
+  }
+
+  .skilletDiv p:first-of-type::before,
+  .glassDiv p:first-of-type::before,
+  .iceDiv p:first-of-type::before {
+    content: '“';
+    position: absolute;
+    font-size: calc(60px + (90 - 78) * (100vw - 1024px) / (1680 - 1024));
+    font-style: normal;
+  }
+
+  .skilletDiv p:first-of-type::before {
+    left: -8%;
+    top: 10%;
+  }
+
+  .glassDiv p:first-of-type::before {
+    left: -12%;
+    top: 10%;
+  }
+
+  .iceDiv p:first-of-type::before {
+    left: -12%;
+    top: 10%;
+  }
 
   /*Overlay*/
+
   .overlay {
-    background: rgba(255, 255, 255, 0.75);top: 0;bottom: 0;left: 0;right: 0;opacity: 0;position: absolute;transition: .4s ease;}
-  .overlay:hover {opacity: 1;}
-  .overlay div {text-align: center;top: 50%;position: absolute;left: 0;right: 0;transform: translateY(-50%);}
-  .overlay a {color: #222;}
-  .textPos {width: 60%;margin: 0 auto;}
+    background: rgba(255, 255, 255, 0.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    transition: .4s ease;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .overlay div {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .overlay a {
+    color: #222;
+  }
+
+  .textPos {
+    width: 60%;
+    margin: 0 auto;
+  }
 
   /*Breakouts and Fixes*/
 
-  .fullDiv {width: 100%;min-width: 1024px;max-width: 1680px;position: relative;overflow: hidden;}
-  .fullDiv p {margin:0;}
-  .fullDiv a {color: #222;text-decoration: none;}
-  .content-layout {max-width: 100% !important;}
-  .content {width: 100% !important;}
-  #topNavWrap {background: transparent;}
-  #topNavContainer {border: none;}
-  #footerContainer {float: none !important;margin: -1px auto 30px !important;}
+  .fullDiv {
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+  }
 
-  .grid__4Col {display:grid;grid-template-columns:repeat(4, 25%);grid-gap:6px;justify-content: space-evenly;margin-top:.3%;}
-  .grid__4Col > div {position:relative;background-color:#fff;}
-  .grid__4Col img {width:100%;}
+  .fullDiv p {
+    margin: 0;
+  }
 
-  .grid__3Col {display:grid;grid-template-columns:50.3% 25% 25%;grid-gap:6px;justify-content:space-evenly;margin-top:.3%;}
-  .grid__3Col > div, .grid__3Col-reverse > div {position:relative;background-color:#fff;}
-  .grid__3Col > img, .grid__3Col-reverse > img {width:100%;}
+  .fullDiv a {
+    color: #222;
+    text-decoration: none;
+  }
 
-  .grid__3Col-reverse {display:grid;grid-template-columns:25% 25% 50.3%;grid-gap:6px;justify-content:space-evenly;margin-top:.3%;}
+  .content-layout {
+    max-width: 100% !important;
+  }
 
-  .nav__container {background-color:#F4F5F6;width:100%;}
-  .nav__container__inner {display:grid;width:80%;margin:0 auto;grid-template-columns:1fr 10% 10% 10% 10% 10% 10%;justify-content:space-around;align-items: center;padding:1% 0;}
+  .content {
+    width: 100% !important;
+  }
 
-  .nav__container-test {background-color:#525456;width:100%;max-width:1680px;min-width:1024px;padding:2% 0;}
-  .nav__container__inner-test {display:grid;width:80%;margin:0 auto;grid-template-columns:repeat(6, 1fr);justify-content:space-around;align-items: center;padding:1% 0;grid-template-rows: repeat(2, auto);}
-  .nav__copy-test {grid-column:1/span 6;grid-row-start:1;grid-row-end:2;margin-bottom:2%;}
-  .nav__copy-test p {width:100%;text-align:center;margin-top:0;}
+  #topNavWrap {
+    background: transparent;
+  }
+
+  #topNavContainer {
+    border: none;
+  }
+
+  #footerContainer {
+    float: none !important;
+    margin: -1px auto 30px !important;
+  }
+
+  .grid__4Col {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-gap: 6px;
+    justify-content: space-evenly;
+    margin-top: .3%;
+  }
+
+  .grid__4Col>div {
+    position: relative;
+    background-color: #fff;
+  }
+
+  .grid__4Col img {
+    width: 100%;
+  }
+
+  .grid__3Col {
+    display: grid;
+    grid-template-columns: 50.3% 25% 25%;
+    grid-gap: 6px;
+    justify-content: space-evenly;
+    margin-top: .3%;
+  }
+
+  .grid__3Col>div,
+  .grid__3Col-reverse>div {
+    position: relative;
+    background-color: #fff;
+  }
+
+  .grid__3Col>img,
+  .grid__3Col-reverse>img {
+    width: 100%;
+  }
+
+  .grid__3Col-reverse {
+    display: grid;
+    grid-template-columns: 25% 25% 50.3%;
+    grid-gap: 6px;
+    justify-content: space-evenly;
+    margin-top: .3%;
+  }
+
+  .nav__container {
+    background-color: #F4F5F6;
+    width: 100%;
+  }
+
+  .nav__container__inner {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 10% 10% 10% 10% 10% 10%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 0;
+  }
+
+  .nav__container-test {
+    background-color: #525456;
+    width: 100%;
+    max-width: 1680px;
+    min-width: 1024px;
+    padding: 2% 0;
+  }
+
+  .nav__container__inner-test {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 0;
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .nav__copy-test {
+    grid-column: 1/span 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: 2%;
+  }
+
+  .nav__copy-test p {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
 
 
-  .nav__item-test > a {display: grid;grid-template-columns: 1fr;grid-template-rows: auto auto;justify-items: center;}
-  .nav__item-test p {text-align:center;color:#fff;}
-  .nav__item-test p:hover {font-weight:600 !important;}
+  .nav__item-test>a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+  }
 
-  .nav__copy {grid-column:1/span 1}
-  .nav__copy p {width:100%;text-align:center;font-size:19px;margin-top:0;margin-bottom:10%;}
-  .nav__item > a {display: grid;grid-template-columns: 1fr;grid-template-rows: auto auto;justify-items: center;}
-  .nav__item p {font-size:10px;text-align:center;}
-  .nav__item img {width:76.44%;border:1px solid transparent}
-  .nav__item img:hover {border: 1px solid #222;border-radius:50%;}
+  .nav__item-test p {
+    text-align: center;
+    color: #fff;
+  }
+
+  .nav__item-test p:hover {
+    font-weight: 600 !important;
+  }
+
+  .nav__copy {
+    grid-column: 1/span 1
+  }
+
+  .nav__copy p {
+    width: 100%;
+    text-align: center;
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 10%;
+  }
+
+  .nav__item>a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+  }
+
+  .nav__item p {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .nav__item img {
+    width: 76.44%;
+    border: 1px solid transparent
+  }
+
+  .nav__item img:hover {
+    border: 1px solid #222;
+    border-radius: 50%;
+  }
 
   /*Font Sizes*/
-  .bf-eyebrow {font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.1vw;word-spacing: -0.1vw;text-transform: uppercase;}
-  .bf-headline {font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.1vw;word-spacing: -0.1vw;}
-  .bf-copy {font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.1vw;word-spacing: -0.1vw;}
-  .headline-XL {font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));letter-spacing: -0.15vw;}
-  .headline-large {font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.1vw;word-spacing: -0.1vw;}
-  .headline-medium {font-size: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));line-height: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.1vw;word-spacing: -0.1vw;}
-  .headline-small {font-size: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));line-height: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));letter-spacing: -0.05vw;}
-  .copy-sub {font-size: calc(14px + (20 - 14) * (100vw - 1024px) / (1440 - 1024));line-height:calc(21px + (25 - 20) * (100vw - 1024px) / (1440 - 1024));margin:.8vw 0;}
-  .copy-gr {font-size: calc(14px + (16 - 14) * (100vw - 1024px) / (1440 - 1024));line-height: calc(13px + (16 - 14) * (100vw - 1024px) / (1440 - 1024));margin: 8px 0 !important;}
-  .copy-cta {font-size: calc(12px + (14 - 12) * (100vw - 1024px) / (1440 - 1024));line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));margin-top: calc(10px + (12 - 12) * (100vw - 1024px) / (1440 - 1024));text-transform: uppercase;}
 
-  .container__body {background-color:#F4F5F6;}
+  .bf-eyebrow {
+    font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+    text-transform: uppercase;
+  }
+
+  .bf-headline {
+    font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .bf-copy {
+    font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-XL {
+    font-size: calc(78px + (110 - 78) * (100vw - 1024px) / (1680 - 1024));
+    line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1680 - 1024));
+    letter-spacing: -0.15vw;
+  }
+
+  .headline-large {
+    font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-medium {
+    font-size: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(32px + (40 - 32) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-small {
+    font-size: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(24px + (31 - 24) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.05vw;
+  }
+
+  .copy-sub {
+    font-size: calc(14px + (20 - 14) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(21px + (25 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin: .8vw 0;
+  }
+
+  .copy-gr {
+    font-size: calc(14px + (16 - 14) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(13px + (16 - 14) * (100vw - 1024px) / (1440 - 1024));
+    margin: 8px 0 !important;
+  }
+
+  .copy-cta {
+    font-size: calc(12px + (14 - 12) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin-top: calc(10px + (12 - 12) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
+  }
+
+  .container__body {
+    background-color: #F4F5F6;
+  }
 
 
   /* 1024px */
+
   @media only screen and (max-width: 1024px) {
-    .bf-eyebrow {font-size:35px;line-height:35px;}
-    .bf-headline {font-size:76px;line-height:76px;}
-    .bf-copy {font-size:50px;line-height:50px;}
-    .headline-XL {font-size:78px;line-height:52px;letter-spacing:-1.54px;}
-    .headline-large {font-size:45px;line-height:45px;}
-    .headline-medium {font-size:32px;line-height:36px;}
-    .headline-small {font-size:24px;line-height:28px}
-    .copy-sub {font-size:14px;line-height:21px;}
-    .copy-gr {font-size:14px;line-height:13px;}
-    .copy-cta {font-size:10px;line-height:20px}
+    .bf-eyebrow {
+      font-size: 35px;
+      line-height: 35px;
+    }
+    .bf-headline {
+      font-size: 76px;
+      line-height: 76px;
+    }
+    .bf-copy {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    .headline-XL {
+      font-size: 78px;
+      line-height: 52px;
+      letter-spacing: -1.54px;
+    }
+    .headline-large {
+      font-size: 45px;
+      line-height: 45px;
+    }
+    .headline-medium {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    .headline-small {
+      font-size: 24px;
+      line-height: 28px
+    }
+    .copy-sub {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    .copy-gr {
+      font-size: 14px;
+      line-height: 13px;
+    }
+    .copy-cta {
+      font-size: 10px;
+      line-height: 20px
+    }
   }
 
   /*1440px*/
+
   @media only screen and (min-width: 1440px) {
-    .bf-eyebrow {font-size:50px;line-height:50px;}
-    .bf-headline {font-size:110px;line-height:110px;}
-    .bf-copy {font-size:70px;line-height:70px;}
-    .headline-XL {font-size:110px;line-height:68px;letter-spacing:-2.52px;}
-    .headline-large {font-size:63px;line-height:63px;}
-    .headline-medium {font-size:45px;line-height:40px;}
-    .headline-small {font-size:34px;line-height:31px;}
-    .copy-sub {font-size:20px;line-height:25px;}
-    .copy-gr {font-size:16px;line-height:16px;}
-    .copy-cta {font-size:14px;line-height:21px;}
-  } 
+    .bf-eyebrow {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    .bf-headline {
+      font-size: 110px;
+      line-height: 110px;
+    }
+    .bf-copy {
+      font-size: 70px;
+      line-height: 70px;
+    }
+    .headline-XL {
+      font-size: 110px;
+      line-height: 68px;
+      letter-spacing: -2.52px;
+    }
+    .headline-large {
+      font-size: 63px;
+      line-height: 63px;
+    }
+    .headline-medium {
+      font-size: 45px;
+      line-height: 40px;
+    }
+    .headline-small {
+      font-size: 34px;
+      line-height: 31px;
+    }
+    .copy-sub {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    .copy-gr {
+      font-size: 16px;
+      line-height: 16px;
+    }
+    .copy-cta {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
 </style>
 <div class="fullDiv">
 
-  <img style='width:100%;' src="//images.crateandbarrel.com/is/image/Crate/CB_DLP_20180401_EvrgrnGftGd_FathersDay_Hero2?width=1440&qlt=75"
+  <img style='width:100%;' src="//images.crateandbarrel.com/is/image/Crate/CB_DLP_20180401_EvrgrnGftGd_FathersDay_Hero4?wid=1440&qlt=75"
     alt=''>
   <div style="position:absolute;top:7%;left:8%;">
     <p class="crate-light copy-sub">FATHER’S DAY GIFT GUIDE</p>
@@ -118,6 +453,7 @@
 <div class="container__body fullDiv">
   <!-- ROW ONE -->
   <div class="fullDiv grid__3Col">
+    
     <!-- SKILLET -->
     <div>
       <img src="//images.crateandbarrel.com/is/image/Crate/CB_DLP_20180401_EvrgrnGftGd_FathersDay_Skllt" alt=''>
@@ -139,6 +475,7 @@
         </div>
       </a>
     </div>
+
     <!-- DECANTER -->
     <div>
       <img src="//images.crateandbarrel.com/is/image/Crate/CB_DLP_20180401_EvrgrnGftGd_FathersDay_Dcntr" alt=''>
@@ -151,6 +488,7 @@
         </div>
       </a>
     </div>
+
     <!-- KNIFE -->
     <div>
       <img src="//images.crateandbarrel.com/is/image/Crate/CB_DLP_20180401_EvrgrnGftGd_FathersDay_Knf1" alt=''>
@@ -168,6 +506,7 @@
 
   <!-- ROW TWO -->
   <div class="fullDiv grid__4Col">
+
     <!-- Blender -->
     <div>
       <img src="//images.crateandbarrel.com/is/image/Crate/CB_DLP_20180401_EvrgrnGftGd_FathersDay_Blndr" alt=''>
@@ -236,7 +575,7 @@
     <!-- WINE CELLAR -->
     <div>
       <img src="//images.crateandbarrel.com/is/image/Crate/CB_DLP_20180401_EvrgrnGftGd_FathersDay_WnClr" alt=''>
-      <a id="fD8Link" href="">
+      <a id="fD15Link" href="">
         <div class="overlay">
           <div class="textPos">
             <p id="fD15Name" class="crate-helvetica-bold copy-sub"></p>
@@ -349,7 +688,7 @@
     <!-- ESPRESSO MAKER -->
     <div>
       <img src="//images.crateandbarrel.com/is/image/Crate/CB_DLP_20180401_EvrgrnGftGd_FathersDay_Esprsso" alt=''>
-      <a id="fD15Link" href="">
+      <a id="fD18Link" href="">
         <div class="overlay">
           <div class="textPos">
             <p id="fD18Name" class="crate-helvetica-bold copy-sub"></p>
@@ -390,7 +729,7 @@
     <!-- CARVING KNIVES -->
     <div>
       <img src="//images.crateandbarrel.com/is/image/Crate/CB_DLP_20180401_EvrgrnGftGd_FathersDay_KnfSt" alt=''>
-      <a id="fD18Link" href="">
+      <a id="fD19Link" href="">
         <div class="overlay">
           <div class="textPos">
             <p id="fD19Name" class="crate-helvetica-bold copy-sub"></p>
@@ -402,7 +741,7 @@
     <!-- PIZZA GRILL -->
     <div>
       <img src="//images.crateandbarrel.com/is/image/Crate/CB_DLP_20180401_EvrgrnGftGd_FathersDay_PizzaGrill2" alt=''>
-      <a id="fD19Link" href="">
+      <a id="fD8Link" href="">
         <div class="overlay">
           <div class="textPos">
             <p id="fD8Name" class="crate-helvetica-bold copy-sub"></p>
@@ -478,16 +817,18 @@
   </div>
 </div>
 <script>
-function runMDGrabber(){
+  function runMDGrabber() {
     var getProductNavigateDetail = function (skuList) {
-      
+
       var postUrl = "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
-          imageURL = "//images.crateandbarrel.com/is/image/Crate/"
+        imageURL = "//images.crateandbarrel.com/is/image/Crate/"
 
       $.ajax({
         url: postUrl,
         type: "POST",
-        data: { skus: skuList },
+        data: {
+          skus: skuList
+        },
         dataType: "json",
         success: function (result) {
           if (result[0] != null) {
@@ -495,7 +836,7 @@ function runMDGrabber(){
             $("#fD0Price").html(result[0].FormattedPrice);
             $("#fD0Name").html(result[0].Name);
             $("#fD0Link").attr('href', result[0].NavigateUrl);
-    
+
             $("#fD1Price").html(result[1].FormattedPrice);
             $("#fD1Name").html(result[1].Name);
             $("#fD1Link").attr('href', result[1].NavigateUrl);
@@ -511,55 +852,55 @@ function runMDGrabber(){
             $("#fD4Price").html(result[4].FormattedPrice);
             $("#fD4Name").html(result[4].Name);
             $("#fD4Link").attr('href', result[4].NavigateUrl);
-            
+
             $("#fD5Price").html(result[5].FormattedPrice);
             $("#fD5Name").html(result[5].Name);
             $("#fD5Link").attr('href', result[5].NavigateUrl);
-            
+
             $("#fD6Price").html(result[6].FormattedPrice);
             $("#fD6Name").html(result[6].Name);
             $("#fD6Link").attr('href', result[6].NavigateUrl);
-            
+
             $("#fD7Price").html(result[7].FormattedPrice);
             $("#fD7Name").html(result[7].Name);
             $("#fD7Link").attr('href', result[7].NavigateUrl);
-            
+
             $("#fD8Price").html(result[8].FormattedPrice);
             $("#fD8Name").html(result[8].Name);
             $("#fD8Link").attr('href', result[8].NavigateUrl);
-            
+
             $("#fD9Price").html(result[9].FormattedPrice);
             $("#fD9Name").html(result[9].Name);
             $("#fD9Link").attr('href', result[9].NavigateUrl);
-            
+
             $("#fD10Price").html(result[10].FormattedPrice);
             $("#fD10Name").html(result[10].Name);
             $("#fD10Link").attr('href', result[10].NavigateUrl);
-            
+
             $("#fD11Price").html(result[11].FormattedPrice);
             $("#fD11Name").html(result[11].Name);
             $("#fD11Link").attr('href', result[11].NavigateUrl);
-            
+
             $("#fD12Price").html(result[12].FormattedPrice);
             $("#fD12Name").html(result[12].Name);
             $("#fD12Link").attr('href', result[12].NavigateUrl);
-            
+
             $("#fD13Price").html(result[13].FormattedPrice);
             $("#fD13Name").html(result[13].Name);
             $("#fD13Link").attr('href', result[13].NavigateUrl);
-            
+
             $("#fD14Price").html(result[14].FormattedPrice);
             $("#fD14Name").html(result[14].Name);
             $("#fD14Link").attr('href', result[14].NavigateUrl);
-            
+
             $("#fD15Price").html(result[15].FormattedPrice);
             $("#fD15Name").html(result[15].Name);
             $("#fD15Link").attr('href', result[15].NavigateUrl);
-            
+
             $("#fD16Price").html(result[16].FormattedPrice);
             $("#fD16Name").html(result[16].Name);
             $("#fD16Link").attr('href', result[16].NavigateUrl);
-            
+
             $("#fD17Price").html(result[17].FormattedPrice);
             $("#fD17Name").html(result[17].Name);
             $("#fD17Link").attr('href', result[17].NavigateUrl);
@@ -575,7 +916,7 @@ function runMDGrabber(){
             $("#fD20Price").html(result[20].FormattedPrice);
             $("#fD20Name").html(result[20].Name);
             $("#fD20Link").attr('href', result[20].NavigateUrl);
-            
+
           }
         },
         error: function (jqXhr, textStatus, errorThrown) {
@@ -583,19 +924,21 @@ function runMDGrabber(){
         }
       });
     }
-    getProductNavigateDetail("389562,210044,200588,563818,261973,379523,475520,410455,118228,330442,142532,262904,600327,115123,606880,171032,386413,233296,111792,551898,268474");
+    getProductNavigateDetail(
+      "389562,210044,200588,563818,261973,379523,475520,410455,118228,330442,142532,262904,600327,115123,606880,171032,386413,233296,111792,551898,268474"
+    );
 
   }
 
   function jQueryIsLoaded() {
-  if (window.jQuery) {
+    if (window.jQuery) {
       console.log("jQuery FD is loaded");
 
       runMDGrabber();
-  } else {
+    } else {
       setTimeout(jQueryIsLoaded, 50);
+    }
   }
-}
 
-jQueryIsLoaded();
+  jQueryIsLoaded();
 </script>
