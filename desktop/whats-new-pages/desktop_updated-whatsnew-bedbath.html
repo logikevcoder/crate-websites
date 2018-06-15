@@ -1,0 +1,1322 @@
+<style>
+  /*=======================================================
+Hero
+=======================================================*/
+.hero {
+  position: relative;
+  margin-bottom:5%;
+}
+
+.hero__logo {
+  width: 30%;
+  left: -3%;
+  position: absolute;
+  top: 0;
+}
+
+.hero__text {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 25%;
+  transform: translateY(-50%);
+}
+
+/*=======================================================
+Modern
+=======================================================*/
+.modern__container {
+  position: relative;
+  margin: 0 auto 3%;
+  width: 90%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.modern__img-container {
+  position: relative;
+}
+
+.modern__img {
+  width: 95%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.modern__header--2 {
+  position: absolute;
+  left: 47%;
+  top: 2%;
+}
+
+.modern__header {
+  position: absolute;
+  left: 47%;
+  top: 0%;
+}
+
+.modern__text {
+  text-align: right;
+  margin-right: 32%;
+}
+
+.modern-text {
+  position: absolute;
+}
+
+.modern-text--1 {
+  top: 77%;
+  left: 3%;
+  text-align: right;
+}
+
+.modern-text--2 {
+  top: 76%;
+  left: 10%;
+  text-align: right;
+}
+
+/*=======================================================
+Percale and Sateen Sheets
+=======================================================*/
+.percale {
+  display: inline-block;
+  position: relative;
+  margin-bottom:10%;
+}
+.percale__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.percale__block {
+  display: inline-block;
+  position: relative;
+  vertical-align: center;
+}
+.percale__text {
+  width: 20%;
+  padding: 0 1.5%;
+  text-align: right;
+}
+.percale__img-container {
+  width: 100%;
+  display:flex;
+}
+.percale__img {
+  position: relative;
+}
+.percale__gallery {
+  width: 38%;
+  display: inline-block;
+}
+.percale__gallery__item {
+  width: 32.6%;
+  display: inline-block;
+  position: relative;
+}
+.percale__gallery__item img {
+  width: 100%;
+}
+/*=======================================================
+Types of Towels
+=======================================================*/
+.img-trio {
+  margin-bottom:10%;
+}
+
+.img-trio__header {
+  text-align: center;
+}
+
+.img-trio__img-container {
+  width: 100%;
+}
+
+.img-trio__img {
+  width: 33%;
+  display: inline-block;
+  position: relative;
+}
+/*=======================================================
+Bath Accessories
+=======================================================*/
+.bath__container {
+  position: relative;
+  margin-bottom:1%;
+}
+.bath__body {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  text-align: left;
+}
+/*=======================================================
+Shop All Banner
+=======================================================*/
+.shopAll-banner {
+  background-color: #222;
+  height: 176px;
+  width: 100%;
+  margin-bottom: 5%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*=======================================================
+Top Borders and CTA Borders
+=======================================================*/
+
+.borderTop {
+  width: 50px;
+  border-top: 6px solid #000;
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.borderTop-right {
+  margin-left: auto;
+}
+
+.borderTop-left {
+  width: 50px;
+  margin-right: auto;
+}
+
+.borderTop-white {
+  width: 50px;
+  border-top: 6px solid #fff;
+}
+
+.cta-border {
+  padding: 6px;
+  width: 160px;
+  margin-top: 0;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.cta-border-white {
+  border: 1px solid #fff;
+  text-align: center;
+  padding: 6px;
+}
+
+/*=======================================================
+General Styling
+=======================================================*/
+
+
+/*=======================================================
+Gallery
+=======================================================*/
+
+.gallery {
+  width: 38%;
+  display: inline-block;
+}
+
+.gallery__item {
+  width: 32.5%;
+  display: inline-block;
+  position: relative;
+}
+
+.gallery__item img {
+  width: 100%;
+}
+
+/*=======================================================
+Overlay
+=======================================================*/
+
+.overlay {
+  background: rgba(255, 255, 255, 0.75);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  transition: 0.4s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay div {
+  text-align: center;
+  top: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.overlay a {
+  color: #222;
+}
+
+.textPos {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*=======================================================
+Slick Styling
+=======================================================*/
+
+.slick-prev:before,
+.slick-next:before {
+  color: #222 !important;
+}
+
+.slick-prev.slick-disabled::before,
+.slick-next.slick-disabled::before {
+  opacity: 0;
+}
+
+.slick-next.slick-disabled:before,
+.slick-prev.slick-disabled:before {
+  opacity: 0 !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 30px !important;
+  opacity: 1 !important;
+}
+
+.slick-next {
+  right: -0.7% !important;
+}
+
+.slick-prev {
+  left: -2.6% !important;
+}
+
+.slick-arrow {
+  z-index: 3;
+  top: 50% !important;
+}
+
+/*=======================================================
+Carousel Styling
+=======================================================*/
+
+.product-carousel {
+  height: 350px;
+  margin-bottom: 10%;
+}
+
+.carousel-wrapper {
+  width: 70%;
+  margin: 0 auto 10%;
+}
+
+.carousel-wrapper__right {
+  width: 70%;
+  margin: 0 1.5% 10% auto;
+}
+
+.product-carousel__header__right {
+  margin-left: 45.9%;
+}
+
+.carousel-wrapper__left {
+  width: 70%;
+  margin: 0 auto 10% 1.5%;
+}
+
+.product-carousel__header__left {
+  margin-left: 2%;
+}
+
+.carousel-wrapper::before {
+  content: none;
+}
+
+.carousel-wrapper::after {
+  content: none;
+}
+
+.product-carousel__header {
+  margin-left: 15%;
+}
+
+.carousel__container {
+  width: 100%;
+  padding-right: 1%;
+}
+
+.carousel__block {
+  width: 24%;
+  margin: 0 !important;
+  position: relative;
+  padding-right: 0.2%;
+}
+
+.carousel__block img {
+  width: 100%;
+}
+
+.gallery .textPos :last-child {
+  margin-top: 4% !important;
+}
+
+/*=======================================================
+Fade animation
+=======================================================*/
+
+.fade-in {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-out {
+  opacity: 0;
+  -webkit-transform: translateY(10%);
+  transform: translateY(10%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-down {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-up {
+  opacity: 0;
+  -webkit-transform: translateY(-20%);
+  transform: translateY(-20%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-left {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-right {
+  opacity: 0;
+  -webkit-transform: translateX(-20%);
+  transform: translateX(-20%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+/*=======================================================
+Breakouts and Fixes
+=======================================================*/
+
+.fullDiv {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1680px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fullDiv a {
+  color: #222;
+  text-decoration: none;
+}
+
+.marginDiv {
+  width: 95%;
+  min-width: 819px;
+  max-width: 1680px;
+  position: relative;
+  overflow: hidden;
+  margin: 2.5% auto;
+}
+
+.marginDiv a {
+  color: #222;
+}
+
+.content-layout {
+  max-width: 100% !important;
+}
+
+.content {
+  width: 100% !important;
+}
+
+.divMargins {
+  margin-bottom: 2% !important;
+}
+
+.fullImg {
+  width: 100%;
+  max-width: 1680px;
+}
+
+.cmsArrowR {
+  border-width: 0.4vw;
+}
+
+.ctaMargin {
+  margin: 1vw 0;
+}
+
+.subMargin {
+  margin: 1vw 0 0;
+}
+
+#topNavWrap {
+  background: transparent;
+}
+
+#topNavContainer {
+  border: none;
+}
+
+/*=======================================================
+Font Sizes
+=======================================================*/
+
+.headline-XL {
+  font-size: calc(62px + (68 - 52) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(42px + (50 - 42) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.15vw;
+}
+
+.headline-large {
+  font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.headline-medium {
+  font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.headline-small {
+  font-size: calc(28px + (32 - 24) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.05vw;
+}
+
+.copy-sub {
+  font-size: calc(14px + (18 - 14) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(21px + (22 - 20) * (100vw - 1024px) / (1440 - 1024));
+  margin: 0.8vw 0;
+}
+
+.copy-eyebrow {
+  text-transform: uppercase;
+  font-size: calc(13px + (14 - 13) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+}
+
+.copy-cta {
+  font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+  text-transform: uppercase;
+}
+
+/*--- 1024px ---*/
+
+@media only screen and (max-width: 1024px) {
+  .headline-XL {
+    font-size: 60px;
+    line-height: 42px;
+    letter-spacing: -1.54px;
+  }
+  .headline-large {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .headline-medium {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .headline-small {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .copy-eyebrow {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .copy-sub {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .copy-cta {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .upholster-text--1 {
+    top: 79%;
+    left: 7%;
+  }
+  .upholster-text--2 {
+    left: 12%;
+  }
+  .small-spaces__header {
+    margin-bottom: 24%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .modern-text--1 {
+    top: 77%;
+    left: 4%;
+  }
+  .dinnerware__body {
+    top: 2%;
+    right: -1%;
+  }
+  .upholster-text--2 {
+    top: 76%;
+    left: 12%;
+  }
+  .matte__body {
+    top: 3%;
+    right: 16%;
+  }
+  .green__header {
+    left: 25%;
+    top: 2%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .modern-text--1 {
+    top: 77%;
+    left: 5%;
+  }
+  .dinnerware__body {
+    top: 6%;
+    right: 0%;
+  }
+  .green__text {
+    top: 80%;
+    left: 68%;
+  }
+  .green__header {
+    left: 25%;
+    top: 3%;
+  }
+  .matte__body {
+    top: 6%;
+    right: 19%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .headline-XL {
+    font-size: 76px;
+    line-height: 55px;
+  }
+  .dinnerware__body {
+    top: 6%;
+    right: 4%;
+  }
+  .headline-small {
+    font-size: 32px;
+  }
+  .copy-sub {
+    font-size: 18px;
+  }
+  .copy-cta {
+    font-size: 14px;
+  }
+  .modern-text--1 {
+    top: 76.5%;
+    left: 7%;
+  }
+  .green__text {
+    top: 83%;
+    left: 68%;
+  }
+  .modern__header {
+    top: 4%;
+  }
+  .modern__header--2 {
+    top: 2%;
+  }
+  .matte__body {
+    top: 8%;
+    right: 21%;
+  }
+  .green__header {
+    left: 29%;
+    top: 4%;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  .upholster-text--1 {
+    left: 15%;
+    top: 84%;
+  }
+  .dinnerware__body {
+    top: 10%;
+    right: 6%;
+  }
+  .green__text {
+    top: 83%;
+    left: 68%;
+  }
+  .green__header {
+    left: 28%;
+    top: 3%;
+  }
+  .matte__body {
+    top: 9%;
+    right: 23%;
+  }
+}
+
+</style>
+
+<section class="fullDiv" style="margin: 0 auto;">
+
+  <!--=============== HERO ===============-->
+  <section class="hero fullDiv">
+    <a href="/all-new-bed-bath">
+      <div class="hero__img">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180604_BddngBnnr?wid=1440&qlt=75" alt="">
+        <div class="hero__logo">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180604_NwNwLockup_v2?wid=534&qlt=75&fmt=png-alpha"
+            alt="New and Now text image">
+        </div>
+        <!-- hero__logo -->
+
+        <div class="hero__text">
+          <p class="crate-italic copy-sub">
+            Your bedroom and bath should be your personal retreat—and
+            <br> these are the latest finds to make it happen.
+          </p>
+          <p class="crate-bold copy-cta" style="margin:0;">
+            Shop All
+          </p>
+        </div>
+        <!-- hero__text -->
+      </div>
+      <!-- hero img -->
+    </a>
+  </section>
+  <!-- hero -->
+
+  <!--=============== Modern Global ===============-->
+  <section class="modern fullDiv">
+    <div class="modern__container">
+      <a href="/bed-and-bath/all-bedding/1">
+        <div class="modern__header--2">
+          <p class="crate-helvetica-light copy-eyebrow">STATEMENT MAKERS</p>
+          <p class="crate-bold headline-small" style="margin: 5% 0;">
+            Modern global to wake
+            <br> up your world.
+          </p>
+          <p class="crate-bold copy-cta">Shop the Look</p>
+        </div>
+        <!-- grouped images header -->
+        <div class="modern__img">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180604_MdrnGlbl?wid=1360&qlt=75&fmt=png-alpha"
+            alt="three items grouped together, consisting of blue and white striped bedding">
+        </div>
+        <!-- modern__img img -->
+
+        <div class="modern-text modern-text--1">
+          <div class="borderTop borderTop-right"></div>
+          <p class="crate-bold copy-sub">
+            Shades of Blue
+          </p>
+          <p class="crate-italic copy-sub">
+            The deep indigo hues of our loom-woven,
+            <br> yarn-dyed Nagano bedding evoke
+            <br> naturally striking beauty.
+          </p>
+          <p class="crate-bold copy-cta cta-border" style="margin-left:auto;width:120px;">Shop Now</p>
+        </div>
+        <!-- modern-text__2 -->
+      </a>
+
+    </div>
+    <!-- modern__container -->
+  </section>
+  <!-- modern global -->
+
+  <!--=============== CAROUSEL ===============-->
+  <section class="product-carousel fullDiv">
+    <div class="product-carousel__container">
+      <div class="product-carousel__header">
+        <a href="/all-new-furniture">
+          <p class="crate-bold copy-sub" style="margin-bottom:1%;">
+            Shop Modern Global
+          </p>
+        </a>
+      </div>
+      <!-- carousel header-->
+
+      <div class="carousel-wrapper responsive crate-helvetica-roman">
+        <div class="carousel__block">
+          <a id="grabber0Link" href="">
+            <img id="grabber0Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber0Name" class="crate-bold copy-sub"></p>
+                <p class="crate-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber1Link" href="">
+            <img id="grabber1Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber1Name" class="crate-bold copy-sub"></p>
+                <p class="crate-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber2Link" href="">
+            <img id="grabber2Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber2Name" class="crate-bold copy-sub"></p>
+                <p class="crate-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber3Link" href="">
+            <img id="grabber3Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber3Name" class="crate-bold copy-sub"></p>
+                <p class="crate-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber4Link" href="">
+            <img id="grabber4Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber4Name" class="crate-bold copy-sub"></p>
+                <p class="crate-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber5Link" href="">
+            <img id="grabber5Image" src="" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber5Name" class="crate-bold copy-sub"></p>
+                <p class="crate-bold copy-cta">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+      </div>
+      <!-- carousel responsive -->
+    </div>
+    <!-- carousel container-->
+  </section>
+  <!-- product carousel -->
+
+  <!--=============== Percale & Sateen Sheets ===============-->
+  <section class="percale fullDiv">
+    <div class="percale__container">
+      <div class="percale__text">
+        <a href="/bed-and-bath/sheets-sheet-sets/1">
+          <div class="percale__text__header">
+            <p class="crate-bold copy-eyebrow">
+              The Luxury Bed
+            </p>
+            <p class="crate-bold headline-small">
+              Are you percale or are you sateen?
+            </p>
+          </div>
+          <div class="percale__text__body">
+            <div class="borderTop borderTop-right" style="margin:22% 0 5% auto;"></div>
+            <p class="crate-bold copy-sub">
+              Find Your Type
+            </p>
+            <p class="crate-roman copy-sub">
+              If you prefer a crisp, cool touch, go for percale. Looking for buttery and super-soft? Sateen it is.
+            </p>
+          </div>
+        </a>
+      </div>
+      <!-- percale-header -->
+      <div class="percale__img-container">
+        <div class="percale__img" style="margin-right:.4%;">
+          <a href="/bed-and-bath/sheets-sheet-sets/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180604_SheetsL?wid=674&qlt=75" alt="Stack of sheets">
+          </a>
+        </div>
+        <!-- percale-img -->
+
+        <div class="percale__img">
+          <a href="/bed-and-bath/sheets-sheet-sets/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180604_SheetsR?wid=674&qlt=75" alt="stack of sheets">
+          </a>
+        </div>
+        <!-- percale-img -->
+      </div>
+    </div>
+    <!-- percale-container -->
+  </section>
+  <!-- percale -->
+
+
+<!--=============== Types of Towels ===============-->
+<section class="img-trio fullDiv">
+  <a href="/bed-and-bath/bath-towels/1">
+    <div class="img-trio__header">
+      <p class="crate-helvetica-light copy-eyebrow">
+        Updated Essentials
+      </p>
+      <p class="crate-bold headline-small">
+        The perfect towels for your at-home spa.
+      </p>
+    </div>
+  </a>
+  <div class="img-trio__img-container">
+    <div class="img-trio__img">
+      <a href="/bed-and-bath/bath-towels/1">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180604_Towels1?wid=554&qlt=75" alt="hanging towels">
+        <div class="overlay">
+          <div class="textPos">
+            <p class="crate-bold copy-cta">
+              shop now
+            </p>
+          </div>
+          <!-- textPos -->
+        </div>
+        <!-- overlay -->
+      </a>
+    </div>
+    <div class="img-trio__img">
+      <a href="/bed-and-bath/bath-towels/1">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180604_Towels2?wid=554&qlt=75" alt="hanging towels">
+        <div class="overlay">
+          <div class="textPos">
+            <p class="crate-bold copy-cta">
+              shop now
+            </p>
+          </div>
+          <!-- textPos -->
+        </div>
+        <!-- overlay -->
+      </a>
+    </div>
+    <div class="img-trio__img">
+      <a href="/bed-and-bath/bath-towels/1">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180604_Towels3_v2?wid=554&qlt=75" alt="hanging towels">
+        <div class="overlay">
+          <div class="textPos">
+            <p class="crate-bold copy-cta">
+              shop now
+            </p>
+          </div>
+          <!-- textPos -->
+        </div>
+        <!-- overlay -->
+      </a>
+    </div>
+    <!-- img-trio__img -->
+  </div>
+  <!-- img-trio__img-container -->
+</section>
+<!-- Types of Towels -->
+
+<!--=============== Bath Accessories ===============-->
+<section class="bath fullDiv">
+  <div class="bath__container">
+    <a href="/bed-and-bath/bath-accessories/1">
+      <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180604_BathAccsrs?wid=1440&qlt=75" alt="Decorative summer plates with pears inside of a bowl">
+    </a>
+    <div class="bath__body">
+      <a href="/bed-and-bath/bath-accessories/1">
+        <div class="bath__header">
+          <p class="crate-helvetica-light copy-eyebrow">
+            Forever Favorites
+          </p>
+          <p class="crate-bold headline-small">
+            How the bath goes from
+            <br> boring to beautiful.
+          </p>
+        </div>
+
+        <div class="borderTop" style="margin-top:40px;"></div>
+        <p class="crate-italic copy-gr">
+          Create an oasis with plush towels, glass
+          <br> canisters and textural storage.
+        </p>
+        <p class="crate-bold copy-cta cta-border">
+          Shop New Bath
+        </p>
+      </a>
+    </div>
+    <!-- bath__body -->
+  </div>
+</section>
+<!-- Bath Accessories -->
+
+<!--=============== CAROUSEL ===============-->
+<section class="product-carousel fullDiv" style="margin-bottom:5%;">
+  <div class="product-carousel__container">
+    <a href="/all-new-tabletop">
+      <div class="product-carousel__header">
+        <p class="crate-bold copy-sub" style="margin-bottom:1%;">
+          Shop Bath Accessories
+        </p>
+      </div>
+      <!-- carousel header-->
+    </a>
+
+    <div class="carousel-wrapper responsive crate-helvetica-roman">
+
+      <div class="carousel__block">
+        <a id="grabber6Link" href="">
+          <img id="grabber6Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber6Name" class="crate-bold copy-sub"></p>
+              <p class="crate-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber7Link" href="">
+          <img id="grabber7Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber7Name" class="crate-bold copy-sub"></p>
+              <p class="crate-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber8Link" href="">
+          <img id="grabber8Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber8Name" class="crate-bold copy-sub"></p>
+              <p class="crate-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber9Link" href="">
+          <img id="grabber9Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber9Name" class="crate-bold copy-sub"></p>
+              <p class="crate-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber10Link" href="">
+          <img id="grabber10Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber10Name" class="crate-bold copy-sub"></p>
+              <p class="crate-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber11Link" href="">
+          <img id="grabber11Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber11Name" class="crate-bold copy-sub"></p>
+              <p class="crate-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber12Link" href="">
+          <img id="grabber12Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber12Name" class="crate-bold copy-sub"></p>
+              <p class="crate-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber13Link" href="">
+          <img id="grabber13Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber13Name" class="crate-bold copy-sub"></p>
+              <p class="crate-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- carousel block -->
+
+      <div class="carousel__block">
+        <a id="grabber14Link" href="">
+          <img id="grabber14Image" src="" alt="">
+          <div class="overlay">
+            <div class="textPos">
+              <p id="grabber14Name" class="crate-bold copy-sub"></p>
+              <p class="crate-bold copy-cta">
+                shop now
+              </p>
+            </div>
+            <!-- textPos -->
+          </div>
+          <!-- overlay -->
+        </a>
+      </div>
+      <!-- carousel block -->
+
+    </div>
+    <!-- carousel responsive -->
+  </div>
+  <!-- carousel container-->
+</section>
+<!-- product carousel -->
+
+<a href="/all-new-bed-bath">
+  <section class="shopAll-banner">
+    <div class="shopAll-banner__text">
+      <h2 class="crate-bold cmsWhite headline-small" style="padding:0;">Shop All New Bed &amp; Bath &#x25B8; </h2>
+    </div>
+  </section>
+</a>
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+<script>
+
+    // Function to run all of the JS code on load
+    function runTheThings() {
+      $(document).ready(function () {
+
+        // Slick JS carousel
+        $(".responsive").slick({
+          dots: false,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [{
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: false
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+
+        // Fade animation for each section
+        function fade() {
+          $(".fade-out").each(function (i) {
+            var bottom_of_object = $(this).offset().top;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_object) {
+              $(this).addClass("fade-in");
+              $(this).removeClass("fade-out");
+            } else {
+              $(this).removeClass("fade-in");
+              $(this).addClass("fade-out");
+            }
+          });
+        }
+
+        //when scrolling
+        window.addEventListener("scroll", function (event) {
+          fade();
+        });
+
+        //onload check
+        fade();
+
+        // Function to get the sku data from the API with AJAX
+        var getProductNavigateDetail = function (skuList) {
+          var postUrl =
+            "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+            imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+          $.ajax({
+            url: postUrl,
+            type: "POST",
+            data: {
+              skus: skuList
+            },
+            dataType: "json",
+            success: function (result) {
+              if (result[0] != null) { // as long as there is a result
+                for (let i = 0; i < result.length; i++) { // loop through the list of skus and assign them to HTML
+                  $("#grabber" + [i] + "Link").attr("href", result[i].NavigateUrl);
+                  $("#grabber" + [i] + "Image").attr(
+                    "src",
+                    imageURL + result[i].ImagePath
+                  );
+                  $("#grabber" + [i] + "Name").html(result[i].Name);
+                }
+              }
+            },
+            error: function (jqXhr, textStatus, errorThrown) {
+              console.log(textStatus, errorThrown);
+            }
+          });
+        };
+
+        // Call the function and plug in the skus
+        getProductNavigateDetail(
+ "610683,610465,609413,610573,609928,439612,607802,608281,607697,608447,607726,607780,607503,607708,609861");
+      });
+    }
+
+    $(window).on("load", runTheThings());
+
+    function jQueryIsLoaded() {
+      if (window.jQuery) {
+        console.log("jQuery is loaded");
+
+        runTheThings();
+      } else {
+        setTimeout(jQueryIsLoaded, 50);
+      }
+    }
+
+    jQueryIsLoaded();
+</script>
