@@ -2,350 +2,399 @@
   /*=======================================================
 Hero
 =======================================================*/
-.hero {
-  margin-bottom: 10%;
-  text-align: center;
-}
-.hero__img {
-  position: relative;
-}
-.hero__logo {
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  margin:0 auto;
-  width:70%;
-}
-.hero__text {
-  position: absolute;
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  top: 77%;
-  transform: translatey(-50%);
-}
-/*=======================================================
+
+  .hero {
+    margin-bottom: 10%;
+    text-align: center;
+  }
+
+  .hero__img {
+    position: relative;
+  }
+
+  .hero__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .hero__text {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    top: 77%;
+    transform: translatey(-50%);
+  }
+
+  /*=======================================================
 Studio Series
 =======================================================*/
-.single-img {
-  margin-bottom:10%;
-}
-.single-img__header {
-  text-align: center;
-  position: relative;
-}
-.single-img__text {
-  position: absolute;
-}
-.single-img__text--1 {
-  top: 6%;
-  left: 10%;
-}
-.single-img__text--2 {
-  top: 67%;
-  left: 11%;
-}
-.single-img__text--3 {
-  top: 3%;
-  left: 5%;
-}
 
-/*=======================================================
+  .single-img {
+    margin-bottom: 15%;
+  }
+
+  .single-img__header {
+    text-align: center;
+    position: relative;
+  }
+
+  .single-img__text {
+    position: absolute;
+  }
+
+  .single-img__text--1 {
+    top: 46%;
+    left: 5%;
+  }
+
+  .single-img__text--2 {
+    top: 67%;
+    left: 11%;
+  }
+
+  .single-img__text--3 {
+    top: 3%;
+    left: 5%;
+  }
+
+  /*=======================================================
 Shop All Banner
 =======================================================*/
-.shopAll-banner {
-  background-color: #222;
-  height:176px;
-  width:100%;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  display: flex;
-  justify-content: center;
-  align-items:center;
-}
 
-/*=======================================================
+  .shopAll-banner {
+    background-color: #222;
+    height: 176px;
+    width: 100%;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*=======================================================
 Slick Navigation Styling
 =======================================================*/
-.slick-dots {
-  bottom: -30px !important;
-  top: 102% !important;
-  width: 90px !important;
-}
-.slick-dots li button:before {
-  font-size: 21px !important;
-  line-height: 23px !important;
-  width: 15px !important;
-  height: 15px !important;
-  opacity: 1 !important;
-  color: #000 !important;
-}
-.slick-dots li {
-  width: 20px !important;
-  margin: 5px 5px !important;
-}
-.slick-dots li.slick-active button:before {
-  opacity: 0.75;
-  border: 2px solid #000 !important;
-  border-radius: 50% !important;
-  color: transparent !important;
-}
-/*=======================================================
+
+  .slick-dots {
+    bottom: -30px !important;
+    top: 102% !important;
+    width: 90px !important;
+  }
+
+  .slick-dots li button:before {
+    font-size: 21px !important;
+    line-height: 23px !important;
+    width: 15px !important;
+    height: 15px !important;
+    opacity: 1 !important;
+    color: #000 !important;
+  }
+
+  .slick-dots li {
+    width: 20px !important;
+    margin: 5px 5px !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    border: 2px solid #000 !important;
+    border-radius: 50% !important;
+    color: transparent !important;
+  }
+
+  /*=======================================================
 Carousel Styling
 =======================================================*/
-.product-carousel {
-  width: 90%;
-  margin: 0 auto;
-}
-.product-carousel__wrapper {
-  width: 100%;
-  margin: 0 auto;
-}
-.product-carousel__wrapper::before {
-  content: none;
-}
-.product-carousel__wrapper::after {
-  content: none;
-}
-.carousel__block {
-  width: 33%;
-  margin: 0 !important;
-}
-.carousel__block img {
-  width: 100%;
-}
-/*=======================================================
+
+  .product-carousel {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .product-carousel__wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product-carousel__wrapper::before {
+    content: none;
+  }
+
+  .product-carousel__wrapper::after {
+    content: none;
+  }
+
+  .carousel__block {
+    width: 33%;
+    margin: 0 !important;
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  /*=======================================================
 Image Gallery
 =======================================================*/
-.product-gallery {
-  margin-bottom:10%;
-}
-.img__gallery {
-  position: relative;
-  width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-}
-.img__gallery-container {
-  overflow-y: hidden;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-  position: relative;
-  margin-bottom: 2%;
-}
-.img__gallery__block {
-  width: 82%;
-  position: relative;
-  display: inline-block;
-  padding-right: 0.7%;
-  vertical-align: top;
-  white-space: normal;
-}
-.img__gallery__text {
-  margin-right: 4%;
-}
-.img__gallery__text-1 {
-  color: #000;
-  position: absolute;
-  left: 9%;
-  top: 5%;
-}
-/*=======================================================
+
+  .product-gallery {
+    margin-bottom: 10%;
+  }
+
+  .img__gallery {
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .img__gallery-container {
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    margin-bottom: 2%;
+  }
+
+  .img__gallery__block {
+    width: 82%;
+    position: relative;
+    display: inline-block;
+    padding-right: 0.7%;
+    vertical-align: top;
+    white-space: normal;
+  }
+
+  .img__gallery__text {
+    margin-right: 4%;
+  }
+
+  .img__gallery__text-1 {
+    color: #000;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+  }
+
+  /*=======================================================
 General Styling 
 =======================================================*/
-.m-fullDiv {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.m-fullImg {
-  width: 100%;
-}
-.m-marginDiv {
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
-}
-.m-insetDiv {
-  width: 90%;
-  margin: 5% auto;
-  position: relative;
-  overflow: hidden;
-}
-.m-insetDiv > a > .m-headline {
-  margin-top: 10px;
-}
-.m-fullDiv a,
-.m-insetDiv a {
-  text-decoration: none;
-  color: #222;
-}
-.m-fullImg {
-  width: 100%;
-}
-.m-zero-margin {
-  margin: 0 !important;
-}
-.mBottom4 {
-  margin-bottom: 4%;
-}
-.mBottom8 {
-  margin-bottom: 8%;
-}
-.mBottom12 {
-  margin-bottom: 12%;
-}
-.center-header {
-  width: 90%;
-  margin: 0 auto 3%;
-  text-align: center;
-}
-.left-header {
-  margin-left:5%;
-}
-body {
-  margin: 0 !important;
-}
-h2 {
-  color: #222;
-}
-a h2 {
-  padding: 0;
-}
-.flex-group {
-  display: flex;
-  position: relative;
-}
-.section-bg-style {
-  width: 50%;
-  height: 50%;
-  background-color: #212121;
-}
 
-.section-bg-style--tan {
-  background-color: #f1dfbf;
-  position: absolute;
-  width: 47%;
-  height: 90%;
-  z-index: -5;
-  right: 0;
-  left: 0;
-}
+  .m-fullDiv {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
 
-.section-bg-style--dark {
-  background-color: #3b434c;
-  position: absolute;
-  width: 47%;
-  height: 90%;
-  z-index: -5;
-  right: 0;
-  top: 0;
-}
+  .m-fullImg {
+    width: 100%;
+  }
 
-.section-bg-style--dark2 {
-  position: absolute;
-  width: 47%;
-  height: 90%;
-  z-index: -5;
-  left: 0;
-  top: 0;
-  background-color: #46443e;
-}
-.center-heading {
-  text-align: center;
-  margin: 10% auto 5%;
-}
-/*=======================================================
+  .m-marginDiv {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .m-insetDiv {
+    width: 90%;
+    margin: 5% auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-insetDiv>a>.m-headline {
+    margin-top: 10px;
+  }
+
+  .m-fullDiv a,
+  .m-insetDiv a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .center-header {
+    width: 90%;
+    margin: 0 auto 3%;
+    text-align: center;
+  }
+
+  .left-header {
+    margin-left: 5%;
+  }
+
+  body {
+    margin: 0 !important;
+  }
+
+  h2 {
+    color: #222;
+  }
+
+  a h2 {
+    padding: 0;
+  }
+
+  .flex-group {
+    display: flex;
+    position: relative;
+  }
+
+  .section-bg-style {
+    width: 50%;
+    height: 50%;
+    background-color: #212121;
+  }
+
+  .section-bg-style--tan {
+    background-color: #f1dfbf;
+    position: absolute;
+    width: 47%;
+    height: 90%;
+    z-index: -5;
+    right: 0;
+    left: 0;
+  }
+
+  .section-bg-style--dark {
+    background-color: #3b434c;
+    position: absolute;
+    width: 47%;
+    height: 90%;
+    z-index: -5;
+    right: 0;
+    top: 0;
+  }
+
+  .section-bg-style--dark2 {
+    position: absolute;
+    width: 47%;
+    height: 90%;
+    z-index: -5;
+    left: 0;
+    top: 0;
+    background-color: #46443e;
+  }
+
+  .center-heading {
+    text-align: center;
+    margin: 10% auto 5%;
+  }
+
+  .mBottom20 {
+    margin-bottom: 20%;
+  }
+
+  /*=======================================================
 Fonts 
 =======================================================*/
-.m-head-large {
-  font-size: 24px;
-  line-height: 1;
-}
-.m-head-medium {
-  font-size: 19px;
-  line-height: 1;
-  margin: 8px 0;
-}
-.m-body {
-  font-size: 15px;
-  line-height: 1.2;
-  margin: 5px 0;
-}
-.m-eyebrow {
-  text-transform:uppercase;
-  font-size: 13px;
-  margin: 8px 0;
-}
-.m-cta {
-  text-transform: uppercase;
-  font-size: 12px;
-  margin: 10px 0;
-}
 
-/*=======================================================
+  .m-head-large {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .m-head-medium {
+    font-size: 19px;
+    line-height: 1;
+    margin: 8px 0;
+  }
+
+  .m-body {
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 5px 0;
+  }
+
+  .m-eyebrow {
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 8px 0;
+  }
+
+  .m-cta {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  /*=======================================================
 Media Queries 
 =======================================================*/
-@media only screen and (max-width: 340px) {
-  .m-XLheadline {
-    font-size: 80px;
-    margin: 0;
-    line-height: 1;
-  }
-  .m-head-large {
-    font-size: 19px;
-  }
-  .m-head-medium {
-    font-size: 16px;
-    margin: 0;
-  }
-  .m-body {
-    font-size: 14px;
-    margin-top: 8px;
-  }
-  .m-eyebrow {
-    font-size: 12px;
-    margin: 0;
-  }
-  .m-cta {
-    font-size: 10px;
-    margin: 5px 0 0 0;
-  }
-  .b2bminus:after {
-    top: 5px;
-  }
-  .b2bplus:after {
-    top: 5px;
-  }
-}
-@media only screen and (max-width: 413px) {
-}
-@media only screen and (min-width: 414px) {
-  .m-XLheadline {
-    font-size: 120px;
-    margin: 0;
-    line-height: 1;
-  }
-  .m-head-large {
-    font-size: 26px;
-  }
-  .m-head-medium {
-    font-size: 21px;
-    margin: 0;
-  }
-  .m-body {
-    font-size: 17px;
-    margin-top: 14px;
-  }
-  .m-eyebrow {
-    font-size: 16px;
-  }
-}
 
+  @media only screen and (max-width: 340px) {
+    .m-XLheadline {
+      font-size: 80px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 19px;
+    }
+    .m-head-medium {
+      font-size: 16px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .m-eyebrow {
+      font-size: 12px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 10px;
+      margin: 5px 0 0 0;
+    }
+    .b2bminus:after {
+      top: 5px;
+    }
+    .b2bplus:after {
+      top: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 413px) {}
+
+  @media only screen and (min-width: 414px) {
+    .m-XLheadline {
+      font-size: 120px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 26px;
+    }
+    .m-head-medium {
+      font-size: 21px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 17px;
+      margin-top: 14px;
+    }
+    .m-eyebrow {
+      font-size: 16px;
+    }
+  }
 </style>
 
 <!--=============== New and Now Hero ===============-->
@@ -362,7 +411,7 @@ Media Queries
         <p class="crate-roman m-body">
           Glamorous curves, small space style and more.
         </p>
-        <p class="crate-roman m-cta">SHOP ALL NEW FURNITURE</p>
+        <p class="crate-bold m-cta">SHOP ALL NEW FURNITURE</p>
       </div>
       <!-- hero__text -->
     </a>
@@ -372,9 +421,12 @@ Media Queries
 <!-- New and Now Hero -->
 
 <!--=============== Modern Global ===============-->
-<section class="m-fullDiv">
+<section class="m-fullDiv mbottom20">
   <a href="/bed-and-bath/all-bedding/1">
     <div class="center-header">
+      <p class="crate-roman m-eyebrow" style="margin:5px 0;">
+        STATEMENT MAKERS
+      </p>
       <p class="crate-bold m-head-medium" style="margin:5px 0;">
         Next-level statement seating.
       </p>
@@ -463,7 +515,7 @@ Media Queries
 <section class="product-gallery m-fullDiv">
   <div class="img__gallery">
     <div class="img__gallery-container">
-      <div class="img__gallery__block img__gallery__block-2" style="width:85%;">
+      <div class="img__gallery__block img__gallery__block-2" style="width:100%;">
         <a href="/bed-and-bath/sheets-sheet-sets/1">
           <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180604_Prcl" alt="stack of percale sheets on top of each other">
           <div class="img__gallery__text-1">
@@ -480,103 +532,6 @@ Media Queries
         </a>
       </div>
 
-      <!--img__gallery__block -->
-      <div class="img__gallery__block">
-        <a id="grabber8Link" href="">
-          <img id="grabber8Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber8Name" class="crate-bold m-body"></p>
-            <p id="grabber8Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber9Link" href="">
-          <img id="grabber9Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber9Name" class="crate-bold m-body"></p>
-            <p id="grabber9Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber10Link" href="">
-          <img id="grabber10Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber10Name" class="crate-bold m-body"></p>
-            <p id="grabber10Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber11Link" href="">
-          <img id="grabber11Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber11Name" class="crate-bold m-body"></p>
-            <p id="grabber11Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber12Link" href="">
-          <img id="grabber12Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber12Name" class="crate-bold m-body"></p>
-            <p id="grabber12Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber13Link" href="">
-          <img id="grabber13Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber13Name" class="crate-bold m-body"></p>
-            <p id="grabber13Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber14Link" href="">
-          <img id="grabber14Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber14Name" class="crate-bold m-body"></p>
-            <p id="grabber14Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber15Link" href="">
-          <img id="grabber15Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber15Name" class="crate-bold m-body"></p>
-            <p id="grabber15Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
     </div>
     <!-- img__gallery-container -->
   </div>
@@ -588,7 +543,7 @@ Media Queries
 <section class="product-gallery">
   <div class="img__gallery m-fullDiv">
     <div class="img__gallery-container">
-      <div class="img__gallery__block img__gallery__block-2" style="width:85%;">
+      <div class="img__gallery__block img__gallery__block-2" style="width:100%;">
         <a href="/bed-and-bath/sheets-sheet-sets/1">
           <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180604_SheetsR" alt="stack of sateen sheets on top of each other">
           <div class="img__gallery__text-1">
@@ -605,103 +560,6 @@ Media Queries
         </a>
       </div>
 
-      <!--img__gallery__block -->
-      <div class="img__gallery__block">
-        <a id="grabber8Link" href="">
-          <img id="grabber8Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber8Name" class="crate-bold m-body"></p>
-            <p id="grabber8Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber9Link" href="">
-          <img id="grabber9Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber9Name" class="crate-bold m-body"></p>
-            <p id="grabber9Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber10Link" href="">
-          <img id="grabber10Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber10Name" class="crate-bold m-body"></p>
-            <p id="grabber10Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber11Link" href="">
-          <img id="grabber11Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber11Name" class="crate-bold m-body"></p>
-            <p id="grabber11Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber12Link" href="">
-          <img id="grabber12Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber12Name" class="crate-bold m-body"></p>
-            <p id="grabber12Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber13Link" href="">
-          <img id="grabber13Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber13Name" class="crate-bold m-body"></p>
-            <p id="grabber13Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber14Link" href="">
-          <img id="grabber14Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber14Name" class="crate-bold m-body"></p>
-            <p id="grabber14Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
-      <div class="img__gallery__block">
-        <a id="grabber15Link" href="">
-          <img id="grabber15Image" src="" alt=''>
-          <div class="img__gallery__text">
-            <p id="grabber15Name" class="crate-bold m-body"></p>
-            <p id="grabber15Price" class="crate-bold m-body"></p>
-          </div>
-          <!-- img__gallery__text -->
-        </a>
-      </div>
-      <!--img__gallery__block -->
-
     </div>
     <!-- img__gallery-container -->
   </div>
@@ -711,13 +569,14 @@ Media Queries
 
 <!--========== Image Gallery Header Text ==========-->
 <section class="mix-mats m-fullDiv">
-  <a href="/special-features/how-we-create-natural-mix/1">
+  <a href="/bed-and-bath/bath-towels/1">
     <div class="left-header">
       <p class="crate-thin m-eyebrow">
-        Trend Report
+        Updated Essentials
       </p>
       <p class="crate-bold m-head-medium" style="margin:5px 0;">
-        A mix of materials, an amazing room.
+        The perfect towels for your <br>
+        at-home spa.
       </p>
       <p class="crate-bold m-cta">
         SHOP NOW
@@ -731,11 +590,11 @@ Media Queries
       <div class="img__gallery-container">
 
         <div class="img__gallery__block" style="width:50%;">
-          <a id="grabber16Link" href="">
+          <a href="/ribbed-bath-towels/f77965">
             <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180604_Towels_Ribbed" alt="stack of towels on top of each other">
             <div class="img__gallery__text">
-              <p id="grabber16Name" class="crate-bold m-body"></p>
-              <p id="grabber16Price" class="crate-bold m-body"></p>
+              <p class="crate-roman m-body">Ribbed Bath Towels</p>
+              <p class="crate-bold m-body">$4.95 - $34.95</p>
             </div>
             <!-- img__gallery__text -->
           </a>
@@ -743,11 +602,11 @@ Media Queries
         <!--img__gallery__block -->
 
         <div class="img__gallery__block" style="width:50%;">
-          <a id="grabber17Link" href="">
+          <a href="/turkish-cotton-800-gram-bath-towels/f75299">
             <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180604_Towels_Turkish" alt="stack of towels on top of each other">
             <div class="img__gallery__text">
-              <p id="grabber17Name" class="crate-bold m-body"></p>
-              <p id="grabber17Price" class="crate-bold m-body"></p>
+              <p class="crate-roman m-body">Turkish Cotton 800-Gram Bath Towels</p>
+              <p class="crate-bold m-body">$7.95 - $49.95</p>
             </div>
             <!-- img__gallery__text -->
           </a>
@@ -755,11 +614,11 @@ Media Queries
         <!--img__gallery__block -->
 
         <div class="img__gallery__block" style="width:50%;">
-          <a id="grabber18Link" href="">
+          <a href="/zero-twist-quick-dry-bath-towels/f77857">
             <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180604_Towels_ZeroTwist" alt="stack of towels on top of each other">
             <div class="img__gallery__text">
-              <p id="grabber18Name" class="crate-bold m-body"></p>
-              <p id="grabber18Price" class="crate-bold m-body"></p>
+              <p class="crate-roman m-body">Zero Twist Quick Dry Bath Towels</p>
+              <p class="crate-bold m-body">$7.95 - $49.95</p>
             </div>
             <!-- img__gallery__text -->
           </a>
@@ -767,11 +626,11 @@ Media Queries
         <!--img__gallery__block -->
 
         <div class="img__gallery__block" style="width:50%;">
-          <a id="grabber19Link" href="">
+          <a href="/octave-bath-towels/f77570">
             <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180604_TowelsOctave" alt="stack of towels on top of each other">
             <div class="img__gallery__text">
-              <p id="grabber19Name" class="crate-bold m-body"></p>
-              <p id="grabber19Price" class="crate-bold m-body"></p>
+              <p class="crate-roman m-body">Octave Bath Towels</p>
+              <p class="crate-bold m-body">$9.95 - $49.95</p>
             </div>
             <!-- img__gallery__text -->
           </a>
@@ -779,11 +638,11 @@ Media Queries
         <!--img__gallery__block -->
 
         <div class="img__gallery__block" style="width:50%;">
-          <a id="grabber20Link" href="">
+          <a href="/rowan-bath-towels/f77942">
             <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180604_TowelsRowen" alt="stack of towels on top of each other">
             <div class="img__gallery__text">
-              <p id="grabber20Name" class="crate-bold m-body"></p>
-              <p id="grabber20Price" class="crate-bold m-body"></p>
+              <p class="crate-roman m-body">Rowan Bath Towels</p>
+              <p class="crate-bold m-body">$9.95 - $49.95</p>
             </div>
             <!-- img__gallery__text -->
           </a>
@@ -791,11 +650,11 @@ Media Queries
         <!--img__gallery__block -->
 
         <div class="img__gallery__block" style="width:50%;">
-          <a id="grabber21Link" href="">
+          <a href="/egyptian-cotton-white-bath-towels/f62076">
             <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180604_TowelsEgyptian" alt="stack of towels on top of each other">
             <div class="img__gallery__text">
-              <p id="grabber21Name" class="crate-bold m-body"></p>
-              <p id="grabber21Price" class="crate-bold m-body"></p>
+              <p class="crate-roman m-body">Egyptian Cotton White Bath Towels</p>
+              <p class="crate-bold m-body">$7.95 - $49.95</p>
             </div>
             <!-- img__gallery__text -->
           </a>
@@ -811,22 +670,25 @@ Media Queries
 
 </section>
 
-<!--========== Studio Series ==========-->
+<!--========== Bath Accessories ==========-->
 <section class="single-img m-fullDiv">
 
   <div class="single-img__img">
-    <a href="/living-room-collections/single-img-series-customizable-sofa-collection/">
+    <a href="/bed-and-bath/bath-accessories/1">
       <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180604_BthAccsrs" alt="bathroom styled with decorations">
       <!-- single-img header img -->
       <div class="single-img__text single-img__text--1">
         <p class="crate-thin m-eyebrow">
-          What's Your Look?
+          Forever Favorites
         </p>
         <p class="crate-bold m-head-medium">
-          Introducing our Studio Series.
+          How the bath goes from
+          <br> boring to beautiful.
         </p>
         <p class="crate-roman m-body">
-          Pick a length, an arm, a fabric, a leg.
+          Create an oasis with plush <br>
+          towels, glass canisters <br>
+          and textural storage.
         </p>
         <p class="crate-bold m-cta">SHOP NOW</p>
       </div>
@@ -838,7 +700,7 @@ Media Queries
 
 <!--=============== Shop all banner ===============-->
 <a href="/all-new-bed-bath" style="text-decoration:none;color:#222;">
-  <section class="shopAll-banner">
+  <section class="shopAll-banner mBottom20">
     <div class="shopAll-banner__text">
       <h2 class="crate-bold cmsWhite m-head-medium" style="padding:0;">Shop All New Bed and Bath &#x25B8; </h2>
     </div>
@@ -847,33 +709,36 @@ Media Queries
 
 <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
 
 <script>
-function runTheThings(){
-  $( document ).ready(function() {
-  
-    $('.responsive').slick({
-      dots: true,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-    });
+  function runTheThings() {
+    $(document).ready(function () {
 
-     var getProductNavigateDetail = function (skuList) {
+      $('.responsive').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      });
+
+      var getProductNavigateDetail = function (skuList) {
 
         var postUrl = "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
-            imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+          imageURL = "//images.crateandbarrel.com/is/image/Crate/";
 
         $.ajax({
           url: postUrl,
           type: "POST",
-          data: { skus: skuList },
+          data: {
+            skus: skuList
+          },
           dataType: "json",
           success: function (result) {
             if (result[0] != null) {
-              
+
               for (var i = 0; i < result.length; i++) {
                 $('#grabber' + [i] + 'Link').attr('href', result[i].NavigateUrl);
                 $('#grabber' + [i] + 'Image').attr('src', imageURL + result[i].ImagePath);
@@ -887,19 +752,19 @@ function runTheThings(){
           }
         });
       };
-    getProductNavigateDetail('');
-  });
-}
-                      
- function jQueryIsLoaded() {
-   if (window.jQuery) {
-     console.log("jQuery is loaded");
+      getProductNavigateDetail('610683,610465,609413,610573,609928,439612,77965,75299,77857,77570,77942,62076');
+    });
+  }
 
-     runTheThings();
-   } else {
-     setTimeout(jQueryIsLoaded, 50);
-   }
- }
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
 
- jQueryIsLoaded();
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
 </script>
