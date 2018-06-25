@@ -1,65 +1,164 @@
 <style>
     /*=======================================================
-  Hero
+  Hero / Footer
   =======================================================*/
+  
   .hero {
-    text-align: center;
-  }
-  .hero__img {
     position: relative;
+    margin-bottom: 5%;
   }
+  
   .hero__text {
     position: absolute;
-    color: #fff;
-    text-align: center;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  }
+  .hero-top-text {
+    margin-left: -27px;
+  }
+  
+  /*=======================================================
+  Carmelo, Nagono, Kiyomi
+  =======================================================*/
+  
+  .img-cluster__container {
+    width: 100%;
+    position: relative;
+  }
+  
+  .img-cluster__container div:first-child {
     
   }
+  .product__container--left {
+    position: absolute;
+    width: 70%;
+    bottom:0;
+    top: -13%;
+    z-index:20;
+  }
+  .img-cluster__container__last-img {
+    width: 70%;
+    margin-top: -5%;
+  }
+  
+  .img-cluster--right {
+    right: 0;
+    margin-left: auto;
+    position: absolute;
+    width: 70%;
+    top: -13%;
+    z-index:20;
+  }
+  
+  .img-cluster__container__text {
+    position: absolute;
+    right: 8%;
+    bottom: 10%;
+    width: 20%;
+  }
+  
+  .img-cluster__container__text--left {
+    position: absolute;
+    left: 5%;
+    bottom: 8%;
+    width: 20%;
+  }
+  
   /*=======================================================
-  Image Text Cluster 
+  Product Gallery
   =======================================================*/
-  .img-text-cluster {
-    position: relative;
-    padding-top:20%;
-  }
-  .img-text-cluster__img{
+  
+  .product {
     width: 80%;
-    position: absolute;
-    top: 0%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    margin: 5% 0;
   }
-  .img-text-cluster__text{
+  
+  .product__container {
+    display: flex;
+    width: 75%;
+  }
+  
+  .product__container--right {
+    margin-left: auto;
+  }
+  
+  .product__container__img:not(:last-child) {
+    margin-right: 0.8%;
+  }
+  .product__container div:first-child {
+    transition-delay: 0.25s;
+  }
+  .product__container div:nth-child(2) {
+    transition-delay: 0.5s;
+  }
+  .product__container div:last-child {
+    transition-delay: 0.75s;
+  }
+  
+  /*=======================================================
+  General Styling
+  =======================================================*/
+  
+  body {
+    margin: 0;
+  }
+  
+  h2 {
+    margin: 0;
+    padding: 0 !important;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .center-heading {
+    margin-bottom: 15%;
     text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    width: 80%;
-    position: absolute;
-    bottom: 43%;
+  }
+  
+  /*=======================================================
+  Overlay
+  =======================================================*/
+  
+  .overlay {
+    background: rgba(255, 255, 255, 0.75);
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
+    opacity: 0;
+    position: absolute;
+    transition: 0.4s ease;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+  }
+  
+  .overlay div {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  
+  .overlay a {
+    color: #222;
+  }
+  
+  .textPos {
+    width: 80%;
     margin: 0 auto;
   }
-  .img-text-cluster__grouped-imgs {
-    display:flex;
-    width:97%;
-    flex-wrap:wrap;
-    margin: 25% 2% 0 2%;
-  }
-  .img-text-cluster__grouped-imgs div {
-    width:48%;
-  }
-  .img-text-cluster__grouped-imgs div:nth-child(odd) {
-    padding-right:3%;
-    padding-bottom:3%;
-  }
+  
   /*=======================================================
   Fade animation
   =======================================================*/
+  
   .fade-in {
     opacity: 1;
     -webkit-transform: translateY(0%);
@@ -67,449 +166,534 @@
     -webkit-transition: all 2s;
     transition: all 2s;
   }
+  
   .fade-out {
-    opacity: 0;
+    opacity: .7;
     -webkit-transform: translateY(10%);
     transform: translateY(10%);
     -webkit-transition: all 2s;
     transition: all 2s;
   }
-  
-  .fade-down {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+  /*=======================================================
+  Expand Box Animation
+  =======================================================*/
+  .expanded-box.empty-box {
+    width: 0%;
     -webkit-transition: all 2s;
     transition: all 2s;
   }
-  .fade-up {
-    opacity: 0;
-    -webkit-transform: translateY(-20%);
-    transform: translateY(-20%);
+  .expanded-box {
+    width: 100%;
+    height:100%;
     -webkit-transition: all 2s;
     transition: all 2s;
   }
-  .fade-left {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-transition: all 2s;
-    transition: all 2s;
+  .section-bg-style {
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    transition: width 1s ease;
   }
-  
-  .fade-right {
-    opacity: 0;
-    -webkit-transform: translateX(-20%);
-    transform: translateX(-20%);
-    -webkit-transition: all 2s;
-    transition: all 2s;
+  .section-bg-style--left {
+    left: 0;
+  }
+  .section-bg-style--right {
+    right: 0;
   }
   /*=======================================================
-  General Styling 
+  Breakouts and Fixes
   =======================================================*/
-  .m-fullDiv {
-    position: relative;
+  
+  .fullDiv {
     width: 100%;
-    overflow: hidden;
-  }
-  .m-fullImg {
-    width: 100%;
-  }
-  .m-marginDiv {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-  }
-  .m-insetDiv {
-    width: 90%;
-    margin: 5% auto;
+    min-width: 1024px;
+    max-width: 1680px;
     position: relative;
     overflow: hidden;
   }
-  .m-insetDiv > a > .m-headline {
-    margin-top: 10px;
-  }
-  .m-fullDiv a,
-  .m-insetDiv a {
+  
+  .fullDiv a {
+    color: #222;
     text-decoration: none;
-    color: #222;
   }
-  .m-fullImg {
-    width: 100%;
-  }
-  .center-header {
-    width: 90%;
-    margin: 0 auto 3%;
-    text-align: center;
-  }
-  .left-header {
-    margin-left:5%;
-  }
-  body {
-    margin: 0 !important;
-  }
-  h2 {
-    color: #222;
-    padding: 0;
-    margin: 0;
-  }
-  a h2 {
-    padding: 0;
-  }
-  .flex-group {
-    display: flex;
+  
+  .marginDiv {
+    width: 95%;
+    min-width: 819px;
+    max-width: 1680px;
     position: relative;
+    overflow: hidden;
+    margin: 2.5% auto;
   }
-  .center-heading {
-    text-align: center;
-    margin: 10% auto 5%;
+  
+  .marginDiv a {
+    color: #222;
   }
-  .mBottom10 {
-    margin-bottom:10%;
+  
+  .content-layout {
+    max-width: 100% !important;
   }
-  /*=======================================================
-  Fonts 
-  =======================================================*/
-  .m-head-XL {
-    font-size: 60px;
-    line-height: 1;
+  
+  .content {
+    width: 100% !important;
   }
-  .m-head-large {
-    font-size: 32px;
-    line-height: 1;
+  
+  .divMargins {
+    margin-bottom: 2% !important;
   }
-  .m-head-medium {
+  
+  .fullImg {
+    width: 100%;
+    max-width: 1680px;
+  }
+  
+  .cmsArrowR {
+    border-width: 0.4vw;
+  }
+  
+  .ctaMargin {
+    margin: 1vw 0;
+  }
+  
+  .subMargin {
+    margin: 1vw 0 0;
+  }
+  
+  #topNavWrap {
+    background: transparent;
+  }
+  
+  #topNavContainer {
+    border: none;
+  }
+  .footer-text {
     font-size: 30px;
-    line-height: 1;
-  }
-  .m-body {
-    font-size: 12px;
-    line-height: 1.2;
-    margin: 5px 0;
-  }
-  .m-eyebrow {
-    text-transform:uppercase;
-    font-size: 13px;
-    margin: 8px 0;
-  }
-  .m-cta {
-    text-transform: uppercase;
-    font-size: 10px;
   }
   /*=======================================================
-  Media Queries 
+  Font Sizes
   =======================================================*/
-  @media only screen and (max-width: 340px) {
-    .m-head-XL {
-      font-size: 55px;
-      margin: 0;
-      line-height: 1;
+  
+  .headline-XL {
+    font-size: calc(72px + (78 - 52) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(42px + (50 - 42) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.15vw;
+  }
+  
+  .headline-large {
+    font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+  
+  .headline-medium {
+    font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+  
+  .headline-small {
+    font-size: calc(32px + (42 - 24) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.05vw;
+  }
+  
+  .copy-sub {
+    font-size: calc(14px + (18 - 14) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(21px + (22 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin: 0.8vw 0;
+  }
+  
+  .copy-eyebrow {
+    text-transform: uppercase;
+    font-size: calc(13px + (14 - 13) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+  }
+  
+  .copy-cta {
+    font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
+  }
+  
+  /*--- 1024px ---*/
+  
+  @media only screen and (max-width: 1024px) {
+    .headline-XL {
+      font-size: 78px;
+      line-height: 42px;
+      letter-spacing: -1.54px;
     }
-    .m-head-large {
-      font-size: 28px;
+    .headline-large {
+      font-size: 45px;
+      line-height: 45px;
     }
-    .m-head-medium {
-      font-size: 28px;
-      margin: 0;
+    .headline-medium {
+      font-size: 30px;
+      line-height: 36px;
     }
-    .m-body {
+    .headline-small {
+      font-size: 42px;
+      line-height: 28px;
+    }
+    .copy-eyebrow {
+      font-size: 13px;
+      line-height: 13px;
+    }
+    .copy-sub {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .copy-cta {
       font-size: 10px;
+      line-height: 20px;
     }
-    .m-eyebrow {
-      font-size: 12px;
-      margin: 0;
-    }
-    .m-cta {
-      font-size: 10px;
-      margin: 5px 0 0 0;
+    .footer-text {
+      font-size: 25px;
     }
   }
-  @media only screen and (min-width: 411px) {
-    .m-head-XL {
-      font-size: 60px;
-      line-height: 1;
+  
+  @media only screen and (min-width: 1025px) {
+  }
+  
+  @media only screen and (min-width: 1250px) {
+  }
+  
+  @media only screen and (min-width: 1440px) {
+    .headline-XL {
+      font-size: 110px;
+      line-height: 30px;
+      margin: 36px 0 27px 0 !important;
     }
-    .m-head-large {
-      font-size: 30px;
+    .headline-large {
+      font-size: 63px;
+      line-height: 53px;
     }
-    .m-head-medium {
-      font-size: 28px;
-      margin: 0;
+    .headline-medium {
+      font-size: 52px;
+      line-height: 40px;
     }
-    .m-body {
-      font-size: 12px;
+    .headline-small {
+      font-size: 49px;
     }
-    .m-eyebrow {
-      font-size: 16px;
+    .copy-sub {
+      font-size: 18px;
+    }
+    .copy-cta {
+      font-size: 14px;
+    }
+    .hero-top-text {
+      margin-left: -27px;
+    }
+    .footer-text {
+      font-size: 35px;
     }
   }
   
   </style>
   
-  <!--=============== New and Now Hero ===============-->
-  <section class="hero m-fullDiv mBottom10">
-    <div class="hero__img">
-      <a href="/bed-and-bath/all-bedding/1">
-        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGHero?wid=768&qlt=75" alt="">
-        <div class="hero__logo">
+  <section class="fullDiv" style="margin: 0 auto;">
   
+    <!--=============== HERO ===============-->
+    <section class="hero fullDiv">
+      <a href="/bed-and-bath/all-bedding/1" class="cmsWhite">
+        <div class="hero__img">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGHero?wid=1440&qlt=75" alt="">
+  
+          <div class="hero__text cmsWhite">
+            <h2 class="crate-thin headline-medium cmsWhite hero-top-text">
+              modern
+            </h2>
+            <h2 class="crate-thin headline-XL cmsWhite" style="margin:10px 0 5px 0;">
+              Global
+            </h2>
+            <p class="crate-bold copy-cta" style="text-align:center;letter-spacing: 5px;">
+              Wake Up Your World
+            </p>
+          </div>
+          <!-- hero__text -->
         </div>
-        <!-- hero__logo -->
-        <div class="hero__text cmsWhite">
-          <h2 class="crate-thin m-head-medium cmsWhite" style="margin-left:-55px;">modern</h2>
-          <h2 class="crate-thin m-head-XL cmsWhite" style="margin-right:-60px;">Global</h2>
-          <p class="crate-roman m-body" style="margin-right:-60px;letter-spacing: 1px;">
-            WAKE UP YOUR WORLD
-          </p>
-        </div>
-        <!-- hero__text -->
+        <!-- hero img -->
       </a>
-    </div>
-    <!-- hero__img -->
-  </section>
-  <!-- Hero -->
+    </section>
+    <!-- hero -->
   
-  <!--=============== Carmelo ===============-->
-  <section class="m-fullDiv mBottom10 fade-out">
-    <a href="/shop-by-room/carmelo-bedroom/1">
-      <div class="center-header">
-        <h2 class="crate-thin m-head-large">
-          Carmelo
-        </h2>
-        <p class="crate-roman m-body">
-          Our handwoven Carmelo bedding celebrates the timeless allure of traditional ikat patterns.
-        </p>
-      </div>
-      <!-- nat-text header -->
-  
-  
-      <div class="m-fullWid img-text-cluster">
-        <div class="img-text-cluster__img fade-out">
-          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGCarmelo1?wid=640&qlt=75" alt="assorted bedroom decor consisting of bed and bedding, white rug, potted plants and other decor">
-        </div>
-        <!-- img-text-cluster__img -->
-  
-        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGCarmelo2?wid=768&qlt=75" alt="">
-        <div class="img-text-cluster__text fade-out">
-          <h2 class="crate-thin m-head-large">Why we love it</h2>
-          <p class="crate-roman m-body">
-            Designed by Genevieve Bennett, Carmelo features a softly blurred pattern in a soothing palette of grey, blue and cream. Pretty
-            as a picture and endlessly cozy.
-          </p>
-          <p class="copy-bold m-cta">Shop this room</p>
-        </div>
-        <!-- img-text-cluster__text -->
-  
-        <div class="img-text-cluster__grouped-imgs fade-out">
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGCarmelo_Bddng?wid=364&qlt=75"
-              alt="grey and white patterned bedding">
-          </div>
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGCarmelo_Vases?wid=364&qlt=75"
-              alt="white and beige decor">
-          </div>
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGCarmelo_SdTbl?wid=364&qlt=75"
-              alt="end table decor with beaded necklace">
-          </div>
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGCarmelo_Bskt?wid=364&qlt=75"
-              alt="woven basket with a grey throw blanket hanging off of it">
-          </div>
-        </div>
-        <!-- img-text-cluster__grouped-imgs -->
-  
-      </div>
-      <!-- img-text-cluster -->
-    </a>
-  </section>
-  <!-- Carmelo -->
-  
-  <!--=============== Nagano ===============-->
-  <section class="m-fullDiv mBottom10 fade-out">
-    <a href="/shop-by-room/nagano-bedroom/1">
-      <div class="center-header">
-        <h2 class="crate-thin m-head-large">
-          Nagano
-        </h2>
-        <p class="crate-roman m-body">
-          The deep indigo hues of our Nagano bedding evoke natural warmth and striking beauty.
-        </p>
-      </div>
-      <!-- nat-text header -->
-  
-  
-      <div class="m-fullWid img-text-cluster">
-        <div class="img-text-cluster__img fade-out">
-          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGNagano1?wid=640&qlt=75" alt="blue and white patterned bedding with a brown bag, camera, and passport on top">
-        </div>
-        <!-- img-text-cluster__img -->
-  
-        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGNagano2?wid=768&qlt=75" alt="">
-        <div class="img-text-cluster__text fade-out">
-          <h2 class="crate-thin m-head-large">Why we love it</h2>
-          <p class="crate-roman m-body">
-            Inspired by Japan’s early 20th-century folk art movement, this collection is made of lightweight voile that reinvigorates
-            time-honored Asian weaving techniques for the modern home.
-          </p>
-          <p class="copy-bold m-cta">Shop this room</p>
-        </div>
-        <!-- img-text-cluster__text -->
-  
-        <div class="img-text-cluster__grouped-imgs fade-out">
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGNagano_Bddng?wid=364&qlt=75"
-              alt="blue and white patterned bedding">
-          </div>
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGNagano_Vases?wid=364&qlt=75"
-              alt="tabletop decor with vases and a bowl, and other various items">
-          </div>
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGNagano_Blnkt?wid=364&qlt=75"
-              alt="blue and white patterned throw blanket hanging on a ladder">
-          </div>
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGNagano_Pf?wid=364&qlt=75"
-              alt="white pouf with a book on top">
-          </div>
-        </div>
-        <!-- img-text-cluster__grouped-imgs -->
-  
-      </div>
-      <!-- img-text-cluster -->
-    </a>
-  </section>
-  <!-- Nagano -->
-  
-  <!--=============== Kiyomi ===============-->
-  <section class="m-fullDiv mBottom10 fade-out">
-    <a href="/shop-by-room/kiyomi-bedroom/1">
-      <div class="center-header">
-        <h2 class="crate-thin m-head-large">
-          Kiyomi
-        </h2>
-        <p class="crate-roman m-body">
-          Delicately woven textures give our Kiyomi bedding a blissfully soft touch and clean look.
-        </p>
-      </div>
-      <!-- nat-text header -->
-  
-  
-      <div class="m-fullWid img-text-cluster fade-out">
-        <div class="img-text-cluster__img">
-          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGKiyomi1?wid=640&qlt=75" alt="brown and grey bedding and bed with a modern look">
-        </div>
-        <!-- img-text-cluster__img -->
-  
-        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGKiyomi2?wid=768&qlt=75" alt="">
-        <div class="img-text-cluster__text fade-out">
-          <h2 class="crate-thin m-head-large">Why we love it</h2>
-          <p class="crate-roman m-body">
-            The delicate waffle weaves layer iron grey on crisp white, echoing the tone and pattern found in grey marble. Serenely stylish
-            and utterly calming.
-          </p>
-          <p class="copy-bold m-cta">Shop this room</p>
-        </div>
-        <!-- img-text-cluster__text -->
-  
-        <div class="img-text-cluster__grouped-imgs fade-out">
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGKiyomi_Bddng?wid=364&qlt=75"
-              alt="grey and white patterned bedding">
-          </div>
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGKiyomi_Mirror?wid=364&qlt=75"
-              alt="tall standing mirror">
-          </div>
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGKiyomi_AccntTbl?wid=364&qlt=75"
-              alt="wooden night stand with a lamp and other decor on top">
-          </div>
-          <div>
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGKiyomi_EntrywyTbl?wid=364&qlt=75"
-              alt="wooden tabletop with various decor on top and underneath">
-          </div>
-        </div>
-        <!-- img-text-cluster__grouped-imgs -->
-  
-      </div>
-      <!-- img-text-cluster -->
-    </a>
-  </section>
-  <!-- Kiyomi -->
-  
-  <section class="hero m-fullDiv fade-out">
-    <div class="hero__img">
-      <a href="/bed-and-bath/all-bedding/1">
-        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_mLP_20180606_MGShpAll?wid=768&qlt=75" alt="">
-        <div class="hero__logo">
-  
-        </div>
-        <!-- hero__logo -->
-        <div class="hero__text">
-          <p class="crate-roman m-body">
-            SHOP ALL BEDDING
+    <!--=============== Carmelo ===============-->
+    <section class="img-cluster fullDiv">
+      <a href="/shop-by-room/carmelo-bedroom/1">
+        <div class="center-heading fade-out">
+          <h2 class="crate-thin headline-large">
+            Carmelo
+          </h2>
+          <p class="crate-roman copy-sub">
+            Our handwoven Carmelo bedding celebrates the timeless allure of traditional ikat patterns.
           </p>
         </div>
-        <!-- hero__text -->
+        <!-- center-heading -->
       </a>
-    </div>
-    <!-- hero__img -->
-  </section>
-  <!-- Hero -->
+      <div class="img-cluster__container">
+        <a href="/bed-and-bath/all-bedding/1">
+          <div class="img-cluster--right fade-out">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGCarmelo1?wid=1120&qlt=75" alt="assorted bedroom decor consisting of bed and bedding, white rug, potted plants and other decor">
+          </div>
+          <div class="fullWid">
+            <div class="section-bg-style section-bg-style--right expanded-box"></div>
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGCarmelo2?wid=1120&qlt=75" alt="">
+          </div>
+          <div class="img-cluster__container__last-img fade-out">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGCarmelo3?wid=1120&qlt=75" alt="grey and white patterned bedding">
+          </div>
+          <div class="img-cluster__container__text">
+            <h2 class="crate-thin headline-medium">
+              Why we love it
+            </h2>
+            <p class="crate-roman copy-sub">
+              Designed by Genevieve Bennett, Carmelo features a softly blurred pattern in a soothing palette of grey, blue and cream. Pretty
+              as a picture and endlessly cozy.
+            </p>
+            <p class="crate-bold copy-cta">
+              Shop this room
+            </p>
+          </div>
+          <!-- img-cluster__container__text -->
+        </a>
   
-  <p style="margin:4% auto;width:95%;text-align:center;">
-    From the master bedroom to the baby’s nursery, highlight any bed with intricately-designed global bedding. Inspired by cultures
-    from around the world, abstract geometric patterns fuse effortlessly with radiant colors to create the quintessential comforter
-    set. With materials such as linen, silk and cotton, global bedding offers a comfortable and cozy night’s sleep. Turn your
-    child’s room into an internationally-inspired decorative haven with jungle print bed sheets. Opt for boldly-colored quilts
-    featuring globally-inspired motifs to add a bit of Asian flair to your bedroom. For the perfect finishing touch, complement
-    your global bedding pillows with adventurous teal or gold throw pillows.
-  </p>
+      </div>
+      <!-- img-cluster__container -->
+    </section>
+    <!-- Carmelo -->
+  
+    <!--=============== Product Images ===============-->
+    <section class="product fullDiv">
+      <div class="product__container product__container--right">
+        <div class="product__container__img fade-out">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGCarmelo_Vases?wid=410&qlt=75"
+            alt="white and beige decor">
+        </div>
+        <div class="product__container__img fade-out">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGCarmelo_SdTbl?wid=410&qlt=75"
+            alt="end table decor with beaded necklace">
+        </div>
+        <div class="product__container__img fade-out">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGCarmelo_Bskt?wid=410&qlt=75"
+            alt="woven basket with a grey throw blanket hanging off of it">
+        </div>
+      </div>
+    </section>
+    <!-- product carousel -->
+  
+    <!--=============== Nagano ===============-->
+    <section class="img-cluster fullDiv">
+      <a href="/shop-by-room/nagano-bedroom/1">
+        <div class="center-heading fade-out">
+          <h2 class="crate-thin headline-large">
+            Nagano
+          </h2>
+          <p class="crate-roman copy-sub">
+            The deep indigo hues of our Nagano bedding evoke natural warmth and striking beauty.
+          </p>
+        </div>
+        <!-- center-heading -->
+      </a>
+  
+      <div class="img-cluster__container">
+        <a href="/bed-and-bath/all-bedding/1">
+          <div class="fade-out product__container--left">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGNagano1?wid=1120&qlt=75" alt="blue and white patterned bedding with a brown bag, camera, and passport on top">
+          </div>
+          <div>
+            <div class="section-bg-style section-bg-style--right expanded-box"></div>
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGNagano2?wid=1440&qlt=75" alt="">
+          </div>
+          <div class="img-cluster__container__last-img img-cluster--left fade-out" style="margin-left:auto;">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGNagano3?wid=1120&qlt=75" alt="blue and white patterned bedding">
+          </div>
+          <div class="img-cluster__container__text--left">
+            <h2 class="crate-thin headline-medium">
+              Why we love it
+            </h2>
+            <p class="crate-roman copy-sub">
+              Designed by Genevieve Bennett, Carmelo features a softly blurred pattern in a soothing palette of grey, blue and cream. Pretty
+              as a picture and endlessly cozy.
+            </p>
+            <p class="crate-bold copy-cta">
+              Shop this room
+            </p>
+          </div>
+          <!-- img-cluster__container__text -->
+        </a>
+  
+      </div>
+      <!-- img-cluster -->
+    </section>
+    <!-- nagano -->
+  
+    <!--=============== Nagano Product Images ===============-->
+    <section class="product fullDiv">
+      <div class="product__container">
+        <div class="product__container__img fade-out">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGNagano_Pf?wid=410&qlt=75" alt="white pouf with a book on top">
+        </div>
+        <div class="product__container__img fade-out">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGNagano_Blnkt?wid=410&qlt=75"
+            alt="grey patterned throw blanket hanging on a ladder">
+        </div>
+        <div class="product__container__img fade-out">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGNagano_Vases?wid=410&qlt=75"
+            alt="tabletop decor with vases and a bowl, and other various items">
+        </div>
+      </div>
+    </section>
+    <!-- product carousel -->
+  
+    <!--=============== Kiyomi ===============-->
+    <section class="img-cluster fullDiv">
+      <a href="/shop-by-room/kiyomi-bedroom/1">
+        <div class="center-heading fade-out">
+          <h2 class="crate-thin headline-large">
+            Kiyomi
+          </h2>
+          <p class="crate-roman copy-sub">
+            Delicately woven textures give our Kiyomi bedding a blissfully soft touch and clean look.
+          </p>
+        </div>
+        <!-- center-heading -->
+      </a>
+      <div class="img-cluster__container">
+        <a href="/bed-and-bath/all-bedding/1">
+          <div class="img-cluster--right fade-out">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGKiyomi1?wid=1120&qlt=75" alt="brown and grey bedding and bed with a modern look">
+          </div>
+          <div>
+            <div class="section-bg-style section-bg-style--right expanded-box"></div>
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGKiyomi2?wid=1440&qlt=75" alt="">
+          </div>
+          <div class="img-cluster__container__last-img fade-out">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGKiyomi3?wid=1120&qlt=75" alt="grey and white patterned bedding">
+          </div>
+          <div class="img-cluster__container__text">
+            <h2 class="crate-thin headline-medium">
+              Why we love it
+            </h2>
+            <p class="crate-roman copy-sub">
+              Designed by Genevieve Bennett, Carmelo features a softly blurred pattern in a soothing palette of grey, blue and cream. Pretty
+              as a picture and endlessly cozy.
+            </p>
+            <p class="crate-bold copy-cta">
+              Shop this room
+            </p>
+          </div>
+          <!-- img-cluster__container__text -->
+        </a>
+  
+      </div>
+      <!-- modern__container -->
+    </section>
+    <!-- kiyomi -->
+  
+    <!--=============== Kiyomi Product Images ===============-->
+    <section class="product product--right fullDiv">
+      <div class="product__container product__container--right">
+        <div class="product__container__img fade-out">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGKiyomi_AccntTbl?wid=410&qlt=75"
+            alt="wooden night stand with a lamp and other decor on top">
+        </div>
+        <div class="product__container__img fade-out">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGKiyomi_Mirror?wid=410&qlt=75"
+            alt="tall standing mirror">
+        </div>
+        <div class="product__container__img fade-out">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGKiyomi_EntryWyTbl?wid=410&qlt=75"
+            alt="wooden tabletop with various decor on top and underneath">
+        </div>
+      </div>
+    </section>
+    <!-- product carousel -->
+  
+    <!--=============== Footer ===============-->
+    <section class="hero fullDiv fade-out" style="margin-bottom:0;">
+      <a href="/bed-and-bath/all-bedding/1">
+        <div class="hero__img">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180606_MGShpAll?wid=1440&qlt=75" alt="">
+  
+          <div class="hero__text">
+            <h2 class="crate-bold cmsWhite footer-text">
+              SHOP ALL BEDDING
+            </h2>
+          </div>
+          <!-- hero__text -->
+        </div>
+        <!-- hero img -->
+      </a>
+    </section>
+    <!-- hero -->
+    <p style="margin:2% auto;width:95%;text-align:center;">
+      From the master bedroom to the baby’s nursery, highlight any bed with intricately-designed global bedding. Inspired by cultures
+      from around the world, abstract geometric patterns fuse effortlessly with radiant colors to create the quintessential
+      comforter set. With materials such as linen, silk and cotton, global bedding offers a comfortable and cozy night’s sleep.
+      Turn your child’s room into an internationally-inspired decorative haven with jungle print bed sheets. Opt for boldly-colored
+      quilts featuring globally-inspired motifs to add a bit of Asian flair to your bedroom. For the perfect finishing touch,
+      complement your global bedding pillows with adventurous teal or gold throw pillows.
+    </p>
+  
+  </section>
   
   <script>
     // Function to run all of the JS code on load
-      function runTheThings() {
-        $(document).ready(function () {
-  
-          // Fade animation for each section
-          function fade() {
-            $(".fade-out").each(function (i) {
-              var bottom_of_object = $(this).offset().top;
-              var bottom_of_window = $(window).scrollTop() + $(window).height();
-              if (bottom_of_window > bottom_of_object) {
-                $(this).addClass("fade-in");
-                $(this).removeClass("fade-out");
-              } else {
-                $(this).removeClass("fade-in");
-                $(this).addClass("fade-out");
-              }
-            });
+  function runTheThings() {
+    $(document).ready(function() {
+      function boxOpen() {
+        $(".expanded-box, .empty-box-right").each(function(i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass("empty-box");
+          } else {
+            $(this).removeClass("empty-box");
           }
-  
-          //when scrolling
-          window.addEventListener("scroll", function (event) {
-            fade();
-          });
-  
-          //onload check
-          fade();
         });
       }
   
-      $(window).on("load", runTheThings());
-  
-      function jQueryIsLoaded() {
-        if (window.jQuery) {
-          console.log("jQuery is loaded");
-  
-          runTheThings();
-        } else {
-          setTimeout(jQueryIsLoaded, 50);
-        }
+      // Fade animation for each section
+      function fade() {
+        $(".fade-out").each(function(i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass("fade-in");
+            $(this).removeClass("fade-out");
+          } else {
+            $(this).removeClass("fade-in");
+            $(this).addClass("fade-out");
+          }
+        });
       }
   
-      jQueryIsLoaded();
+      //when scrolling
+      window.addEventListener("scroll", function(event) {
+        fade();
+        boxOpen();
+      });
+  
+      //onload check
+      fade();
+      boxOpen();
+    });
+  }
+  
+  $(window).on("load", runTheThings());
+  
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+  
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+  
+  jQueryIsLoaded();
+  
   </script>
