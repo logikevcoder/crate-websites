@@ -1,0 +1,620 @@
+<style>
+    /*=======================================================
+Main Content
+=======================================================*/
+.main-content {
+  min-width: 1024px;
+  margin: 0 auto;
+}
+/*=======================================================
+Headlines
+=======================================================*/
+.product-heading {
+  position: absolute;
+}
+.hero__text {
+  top:5%;
+  left:40%;
+}
+.pillows__header {
+  top:0;
+  right:5%;
+}
+.pillows__header p:first-child {
+  margin-left:-100px;
+}
+.living__header {
+  bottom:10%;
+  right:15%;
+}
+
+.kitchenAid__header {
+  margin:15% auto 10%;
+  text-align:center;
+  width:100%
+}
+.kitchenAid__header p:first-child {
+  margin-left:-20%;
+}
+.dinnerware__header {
+  padding-top:5%;
+}
+.endcap__header {
+  text-align:center;
+  width:100%;
+}
+/*=======================================================
+Hero
+=======================================================*/
+.hero {
+  margin-bottom: 3%;
+}
+
+/*=======================================================
+Pillows
+=======================================================*/
+.pillows {
+  position:relative;
+  width:95%;
+  margin: 0 auto;
+}
+.group-imgs div:not(:last-child) {
+  padding-right:5px;
+}
+.group-imgs__image2 {
+  margin-top:10%;
+}
+.group-imgs__image3 {
+  margin-top:20%;
+}
+/*=======================================================
+Couch Living Silo
+=======================================================*/
+.couch-living__image-couch {
+  position:absolute;
+  width:50%;
+  z-index:10;
+  bottom:0;
+  left:0;
+}
+.couch-living__image-living {
+  width:65%;
+  margin-left:auto;
+  padding-bottom:20%;
+}
+/*=======================================================
+Bedding 
+=======================================================*/
+.bedding__image {
+  width:90%;
+  padding:5% 0;
+  margin: 0 auto;
+}
+
+/*=======================================================
+Kitchen Silo
+=======================================================*/
+/*=======================================================
+kitchenAid - LeCreuset
+=======================================================*/
+.group-imgs__mixer {
+  margin-right:2.5%;
+}
+.group-imgs__bakeware {
+  margin-left:2.5%;
+}
+/*=======================================================
+Dinnerware Silo
+=======================================================*/
+/*=======================================================
+End Cap
+=======================================================*/
+.encap-btn {
+  padding:10px 100px;
+  margin:2% 0 5%;
+  border-radius:5px;
+  background-color:#456741; 
+}
+/*=======================================================
+Fade animation
+=======================================================*/
+.fade-in {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-out {
+  opacity: 0;
+  -webkit-transform: translateY(10%);
+  transform: translateY(10%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-down {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-up {
+  opacity: 0;
+  -webkit-transform: translateY(-20%);
+  transform: translateY(-20%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-left {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.fade-right {
+  opacity: 0;
+  -webkit-transform: translateX(-20%);
+  transform: translateX(-20%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+/*=======================================================
+Sliding Background Animation
+=======================================================*/
+.empty-box {
+  width: 0%;
+  height: 100%;
+}
+.empty-box.expanded-box {
+  width: 67%;
+  height: 90%;
+  margin: 5% 0 0 10%;
+}
+.empty-box--2 {
+  width: 0%;
+  height: 100%;
+}
+.empty-box--2.expanded-box {
+  width: 80%;
+  height: 100%;
+}
+.empty-box--3 {
+  width:0%;
+}
+.empty-box--3.expanded-box {
+  top:4%;
+  width:50%;
+  height: 76%;
+}
+.section-bg-style {
+  position: absolute;
+  z-index: -5;
+  background-color: #69907e;
+  transition: width 1s ease;
+  left:0;
+}
+
+/*=======================================================
+General Styling
+=======================================================*/
+.mBot5 {
+  margin-bottom: 5%;
+}
+.mBot10 {
+  margin-bottom: 10%;
+}
+.flex-group {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  position:relative;
+}
+/*=======================================================
+Breakout and Fixes
+=======================================================*/
+.fullDiv {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1680px;
+  position: relative;
+  overflow: hidden;
+}
+.fullDiv a {
+  color: #222;
+  text-decoration: none;
+}
+#pageWrap {
+  border-top: 2px solid #222;
+  max-width: 1680px;
+  min-width: 1024px;
+  width: 100%;
+  margin: 0 auto !important;
+  float: none !important;
+  clear: left;
+}
+.content-layout {
+  max-width:1680px !important;
+}
+.content {
+  width: 100% !important;
+}
+#bodyWrap {
+  padding: 0;
+}
+#jsExpand1 {
+  margin: 0 !important;
+}
+.fullImg {
+  width: 100%;
+  max-width: 1680px;
+}
+.main-content h2 {
+  color: #222;
+  margin:0;
+  padding:0;
+}
+.main-content a h2 {
+  padding: 0;
+}
+.main-content p {
+  margin:0;
+}
+/*=======================================================
+Font Sizes
+=======================================================*/
+.headline-XL {
+  font-size: calc(62px + (105 - 62) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(42px + (50 - 42) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.15vw;
+}
+
+.headline-large {
+  font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.headline-medium {
+  font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+
+.headline-small {
+  font-size: calc(24px + (26 - 24) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.05vw;
+}
+
+.copy-sub {
+  font-size: calc(14px + (18 - 14) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(21px + (22 - 20) * (100vw - 1024px) / (1440 - 1024));
+  margin: 0.8vw 0;
+}
+
+.copy-eyebrow {
+  font-size: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+}
+
+.copy-cta {
+  font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+  text-transform: uppercase;
+}
+
+/*--- 1024px ---*/
+@media only screen and (max-width: 1024px) {
+  .headline-XL {
+    font-size: 60px;
+    line-height: 42px;
+    letter-spacing: -1.54px;
+  }
+  .headline-large {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .headline-medium {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .headline-small {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .copy-eyebrow {
+    font-size: 13px;
+    line-height: 13px;
+  }
+  .copy-sub {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .copy-cta {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  
+  .headline-XL {
+    font-size:76px;
+    line-height:55px;
+  }
+  .headline-small {
+    font-size:30px;
+  }
+  .copy-sub {
+    font-size:18px;
+  }
+  .copy-cta {
+    font-size:14px;
+  }
+}
+</style>
+
+<section class="main-content fullDiv">
+
+        <!--=============== Green HERO ===============-->
+        <section class="hero fullDiv mBot10">
+          <div class="hero__img">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_IntroImg?wid=1440&qlt=75" alt="">
+          </div>
+          <div class="hero__text product-heading">
+            <h2 class="crate-thin headline-medium cmsWhite">GREEN</h2>
+            <h2 class="crate-thin headline-medium cmsWhite">MEANS</h2>
+            <h2 class="crate-bold headline-XL cmsWhite">GO</h2>
+          </div>
+          <!-- hero__img -->
+        </section>
+      
+        <!--=============== Pillows, Rugs, and Vases===============-->
+        <section class="pillows">
+          <div class="section-bg-style section-bg-style--1 empty-box">
+          </div>
+          <a href="/special-features/green-furniture-decor/1">
+            <div class="pillows__header product-heading">
+              <p class="crate-italic headline-medium">Layer on the bold,</p>
+              <h2 class="crate-bold headline-large">beautiful hue...</h2>
+            </div>
+            <!-- pillows__header -->
+            <div class="group-imgs flex-group mBot5">
+              <div class="group-imgs__image1">
+                <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_TrptchPillow?wid=501&qlt=75" alt="three green and striped pillows">
+              </div>
+              <!-- group-imgs__image -->
+              <div class="group-imgs__image2">
+                <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_TrptchRug?wid=501&qlt=75" alt="green and grey patterned rug">
+              </div>
+              <!-- group-imgs__image -->
+              <div class="group-imgs__image3">
+                <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_TrptchVase?wid=501&qlt=75" alt="green vases">
+              </div>
+              <!-- group-imgs__image -->
+            </div>
+            <!-- group-imgs -->
+          </a>
+        </section>
+        <!-- pillows Curated -->
+      
+        <!--=============== Couch Silo ===============-->
+        <section class="couch-living fullDiv mBot5">
+          <div class="couch-living__image-couch">
+            <a href="/special-features/green-furniture-decor/1">
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_SofaSilo?wid=1004&qlt=75&fmt=png-alpha" alt="green curved couch">
+            </a>
+          </div>
+          <!-- couch__image -->
+          <div class="couch-living__image-living">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_LvngRm?wid=1062&qlt=75" alt="assortment of living room items including chairs tv and plants">
+          </div>
+          <a href="/special-features/green-furniture-decor/1">
+            <div class="living__header product-heading">
+              <p class="crate-thin headline-medium">...that sparks</p>
+              <p class="crate-thin headline-medium">energy and</p>
+              <h2 class="crate-thin headline-large">fresh ideas.</h2>
+            </div>
+            <!-- living__header -->
+          </a>
+        </section>
+        <!-- couch -->
+      
+        <!--=============== Bedding ===============-->
+        <section class="bedding fullDiv mBot10">
+          <div class="section-bg-style section-bg-style--2 empty-box--2"></div>
+          <div class="bedding__image">
+            <a href="https://www.crateandbarrel.com/shop-by-room/green-and-brown-bedroom/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_Bdrm?wid=1440&qlt=75" alt="bedding with green pillow and blanket">
+            </a>
+          </div>
+          <!-- bedding__image -->
+        </section>
+        <!-- Bedding -->
+      
+        <!--=============== Kitchen Silo ===============-->
+        <section class="kitchen fullDiv mBot5">
+      <!--     <div class="kitchen__header">
+            <p class="crate-thin headline-medium">Layer on the bold,</p>
+            <h2 class="crate-thin headline-large">beautiful hue...</h2>
+          </div> -->
+          <!-- kitchen__header -->
+          <div class="kitchen__image">
+            <a href="/kitchen-and-food/artisan-green-kitchen/1">
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_KtchnSilo?wid=1440&qlt=75" alt="Assortment of green kitchen dinnerware and serving trays">
+            </a>
+          </div>
+          <!-- kitchen__image -->
+        </section>
+        <!-- Bottom Bar -->
+      
+        <!--=============== kitchenAid - LeCreuset ===============-->
+        <section class="kitchenAid fullDiv mBot10">
+          <div class="section-bg-style section-bg-style--3 empty-box--3"></div>
+          <div class="group-imgs flex-group">
+            <div class="group-imgs__mixer">
+              <a href="/kitchenaid-artisan-green-apple-stand-mixer/s652379">
+                <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_KtchAid?wid=666&qlt=75" alt="green kitchenAid mixer">
+              </a>
+            </div>
+            <div class="group-imgs__bakeware">
+              <div class="kitchenAid__header">
+                <p class="crate-thin headline-medium">Go big, go bold,</p>
+                <h2 class="crate-bold headline-XL">go bright...</h2>
+              </div>
+              <!-- kitchen__header -->
+              <a href="/le-creuset-spinach">
+                <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_Ckwr?wid=930&qlt=75" alt="green bakeware">
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- KitchenAid - LeCreuset Section -->
+      
+        <!--=============== Dinnerware Silo ===============-->
+        <section class="dinnerware fullDiv mBot5">
+          <a href="/special-features/green-tableware/1">
+            <div class="group-imgs flex-group">
+              <div class="dinnerware__image">
+                <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_Dnnrwr?wid=1137&qlt=75" alt="green bowls plates and mugs">
+              </div>
+              <div class="dinnerware__header">
+                <p class="crate-thin headline-medium">...or keep it</p>
+                <p class="crate-thin headline-medium">low-key,</p>
+                <h2 class="crate-bold headline-large">subtle and simple.</h2>
+              </div>
+              <!-- dinnerware__header -->
+            </div>
+          </a>
+        </section>
+        <!-- Dinnerware -->
+        
+          <!--=============== Endcap Section ===============-->
+        <section class="endcap fullDiv">
+          <div class="endcap__header">
+            <p class="crate-roman headline-medium">
+              Ready to go for it? Get in on the green <br>
+              trend and find your perfect shade.
+            </p>
+            <button class="encap-btn copy-cta cmsWhite">
+              Shop All Green
+            </button>
+          </div>
+          <!-- endcap__header -->
+        </section>
+        <!-- endcap -->
+        <p style="width:90%;margin: 0 auto;text-align:center;">
+          Enhance your living space with green home decor. Decorative pieces such as ornate stoneware vases for your dining table or dreamlike, abstract wall art hung over a sofa enhance any living space. In the bedroom, layer various shades of green throw pillows on the bed to bring a hint of nature into the space. Bring the outdoors in with exotic plants and succulents fit for any vase in your living room. Accessorize an empty bookcase with a watercolor glass bowl to perfectly capture the spirit of the sea in the comfort of your home office. Add subtle hints of the green outdoors by adding intricately embroidered vine placemats or leafy ceramic serving bowl to your dining room table. In the entryway, entice guests by hanging a life-like olive garland over your door to spruce up and enliven the hallway.
+        </p>
+      
+      </section>
+      <!-- main-content -->
+
+      <script>
+          function runTheThings() {
+  $(document).ready(function() {
+    
+    function boxOpen() {
+      $(".empty-box, .empty-box--2, .empty-box--3").each(function(i) {
+        var bottom_of_object = $(this).offset().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if (bottom_of_window > bottom_of_object) {
+          $(this).addClass('expanded-box');
+        }
+      });
+    }
+    
+    function fade() {
+      
+      
+      $(".fade-out").each(function(i) {
+        var bottom_of_object = $(this).offset().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if (bottom_of_window > bottom_of_object) {
+          $(this).addClass("fade-in");
+          $(this).removeClass("fade-out");
+        } else {
+          $(this).removeClass("fade-in");
+          $(this).addClass("fade-out");
+        }
+      });
+
+    }
+
+    //when scrolling
+    window.addEventListener("scroll", function(event) {
+      fade();
+      boxOpen();
+    });
+
+    //onload check
+    fade();
+    boxOpen();
+
+    $(".responsive").slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      prevArrow: '<svg id="leftArr"><polygon class="st0" points="1.4,58 56.6,113.1 58,111.7 2.8,56.6 58,1.4 56.6,0 1.4,55.2 0,56.6 "/></svg>',
+      nextArrow: '<svg id="rightArr"><polygon class="st0" points="56.6,55.2 1.4,0 0,1.4 55.2,56.6 0,111.7 1.4,113.1 56.6,58 58,56.6 "/></svg>'
+    });
+
+    var getProductNavigateDetail = function(skuList) {
+      var postUrl =
+          "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+        imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+      $.ajax({
+        url: postUrl,
+        type: "POST",
+        data: { skus: skuList },
+        dataType: "json",
+        success: function(result) {
+          if (result[0] != null) {
+            var str = '';
+            for (let i = 0; i < result.length; i++) {
+              str += '<li id=\'li' + i + '\'><p>Hello world</p></li>';
+              // $('.carousel__block').append('<a id="grabber"
+              //                              + i + "Link" href=""><img id="grabber" 
+              //                              + i +"Image" src=""></>');
+              $("#grabber" + [i] + "Link").attr("href", result[i].NavigateUrl);
+              $("#grabber" + [i] + "Image").attr("src",imageURL + result[i].ImagePath);
+              $("#grabber" + [i] + "Name").html(result[i].Name);
+            } 
+            $('.carousel__block').append(str);
+          }
+        },
+        error: function(jqXhr, textStatus, errorThrown) {
+          console.log(textStatus, errorThrown);
+        }
+      });
+    };
+    getProductNavigateDetail(
+ "115885, 116816, 127368, 117378, 117482, 118360, 117786, 117703, 128661, 117800 ,122546,122555,122930,123061,123495,123159,123128,122305,122906,123138,124111,124076,124082,124012,122952,123737,123324,123746,123051,123761"
+    );
+  });
+}
+
+function jQueryIsLoaded() {
+  if (window.jQuery) {
+    console.log("jQuery is loaded");
+
+    runTheThings();
+  } else {
+    setTimeout(jQueryIsLoaded, 50);
+  }
+}
+jQueryIsLoaded();
+
+      </script>
