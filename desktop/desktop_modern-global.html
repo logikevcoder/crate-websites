@@ -1,342 +1,287 @@
 <style>
   .main-content {
-    margin: 0 auto;
-  }
-
-  .main-content h2 {
-    color: #222;
-    margin: 0;
-    padding: 0 !important;
-  }
-
-  /*=======================================================
+  margin: 0 auto;
+}
+.main-content h2 {
+  color: #222;
+  margin: 0;
+  padding: 0 !important;
+}
+/*=======================================================
   Hero / Footer
   =======================================================*/
-
-  .hero {
-    position: relative;
-    margin-bottom: 5%;
-  }
-
-  .hero__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .main-content .hero-top-text {
-    margin-left: -27px;
-  }
-
-  .footer-text {
-    font-size: 25px;
-  }
-
-  /*=======================================================
+.hero {
+  position: relative;
+  margin-bottom: 5%;
+}
+.hero__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-content .hero-top-text {
+  margin-left: -27px;
+}
+.footer-text {
+  font-size: 25px;
+}
+/*=======================================================
   Carmelo, Nagono, Kiyomi
   =======================================================*/
-
-  .img-cluster__container {
-    width: 100%;
-    position: relative;
-  }
-
-  .img-cluster__container div:first-child {}
-
-  .product__container--left {
-    position: absolute;
-    width: 70%;
-    bottom: 0;
-    top: -13%;
-    z-index: 20;
-  }
-
-  .img-cluster__container__last-img {
-    width: 70%;
-    margin-top: -5%;
-  }
-
-  .img-cluster--right {
-    right: 0;
-    margin-left: auto;
-    position: absolute;
-    width: 70%;
-    top: -13%;
-    z-index: 20;
-  }
-
-  .img-cluster__container__text {
-    position: absolute;
-    right: 3%;
-    bottom: 10%;
-    width: 25%;
-    z-index: 20;
-  }
-
-  .img-cluster__container__text--left {
-    position: absolute;
-    left: 5%;
-    bottom: 8%;
-    width: 22%;
-
-  }
-
-  /*=======================================================
+.img-cluster__container {
+  width: 100%;
+  position: relative;
+}
+.img-cluster__container div:first-child {
+}
+.product__container--left {
+  position: absolute;
+  width: 70%;
+  bottom: 0;
+  top: -13%;
+  z-index: 20;
+}
+.img-cluster__container__last-img {
+  width: 70%;
+  margin-top: -5%;
+}
+.img-cluster--right {
+  right: 0;
+  margin-left: auto;
+  position: absolute;
+  width: 70%;
+  top: -13%;
+  z-index: 20;
+}
+.img-cluster__container__text {
+  position: absolute;
+  right: 3%;
+  bottom: 10%;
+  width: 25%;
+  z-index:20;
+}
+.img-cluster__container__text--left {
+  position: absolute;
+  left: 5%;
+  bottom: 8%;
+  width: 22%;
+ 
+}
+/*=======================================================
   Product Gallery
   =======================================================*/
-
-  .product {
-    width: 80%;
-    margin: 5% 0;
-  }
-
-  .product__container {
-    display: flex;
-    width: 75%;
-  }
-
-  .product__container--right {
-    margin-left: auto;
-  }
-
-  .product__container__img:not(:last-child) {
-    margin-right: 0.8%;
-  }
-
-  .product__container div:first-child {
-    transition-delay: 0.25s;
-  }
-
-  .product__container div:nth-child(2) {
-    transition-delay: 0.5s;
-  }
-
-  .product__container div:last-child {
-    transition-delay: 0.75s;
-  }
-
-  /*=======================================================
+.product {
+  width: 80%;
+  margin: 5% 0;
+}
+.product__container {
+  display: flex;
+  width: 75%;
+}
+.product__container--right {
+  margin-left: auto;
+}
+.product__container__img:not(:last-child) {
+  margin-right: 0.8%;
+}
+.product__container div:first-child {
+  transition-delay: 0.25s;
+}
+.product__container div:nth-child(2) {
+  transition-delay: 0.5s;
+}
+.product__container div:last-child {
+  transition-delay: 0.75s;
+}
+/*=======================================================
   General Styling
   =======================================================*/
-
-  .center-heading {
-    margin-bottom: 15%;
-    text-align: center;
-  }
-
-  /*=======================================================
+.center-heading {
+  margin-bottom: 15%;
+  text-align: center;
+}
+/*=======================================================
   Overlay
   =======================================================*/
-
-  .overlay {
-    background: rgba(255, 255, 255, 0.75);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    position: absolute;
-    transition: 0.4s ease;
-  }
-
-  .overlay:hover {
-    opacity: 1;
-  }
-
-  .overlay div {
-    text-align: center;
-    top: 50%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-  }
-
-  .overlay a {
-    color: #222;
-  }
-
-  .textPos {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  /*=======================================================
+.overlay {
+  background: rgba(255, 255, 255, 0.75);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  transition: 0.4s ease;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.overlay div {
+  text-align: center;
+  top: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+.overlay a {
+  color: #222;
+}
+.textPos {
+  width: 80%;
+  margin: 0 auto;
+}
+/*=======================================================
   Fade animation
   =======================================================*/
-
-  .fade-in {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%);
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
-
-  .fade-out {
-    opacity: 0.7;
-    -webkit-transform: translateY(10%);
-    transform: translateY(10%);
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
-
-  /*=======================================================
+.fade-in {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+.fade-out {
+  opacity: 0.7;
+  -webkit-transform: translateY(10%);
+  transform: translateY(10%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+/*=======================================================
   Expand Box Animation
   =======================================================*/
-
-  .expanded-box.empty-box {
-    width: 0%;
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
-
-  .expanded-box {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
-
-  .section-bg-style {
-    position: absolute;
-    z-index: 10;
-    background-color: #fff;
-    transition: width 1s ease;
-  }
-
-  .section-bg-style--left {
-    left: 0;
-  }
-
-  .section-bg-style--right {
-    right: 0;
-  }
-
-  /*=======================================================
+.expanded-box.empty-box {
+  width: 0%;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+.expanded-box {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+.section-bg-style {
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  transition: width 1s ease;
+}
+.section-bg-style--left {
+  left: 0;
+}
+.section-bg-style--right {
+  right: 0;
+}
+/*=======================================================
   Breakouts and Fixes
   =======================================================*/
-
-  .fullDiv {
-    width: 100%;
-    min-width: 1024px;
-    max-width: 1680px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .fullDiv a {
-    color: #222;
-    text-decoration: none;
-  }
-
-  .marginDiv {
-    width: 95%;
-    min-width: 819px;
-    max-width: 1680px;
-    position: relative;
-    overflow: hidden;
-    margin: 2.5% auto;
-  }
-
-  .marginDiv a {
-    color: #222;
-  }
-
-  .content-layout {
-    max-width: 100% !important;
-  }
-
-  .content {
-    width: 100% !important;
-  }
-
-  .divMargins {
-    margin-bottom: 2% !important;
-  }
-
-  .fullImg {
-    width: 100%;
-    max-width: 1680px;
-  }
-
-  /*=======================================================
+.fullDiv {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1680px;
+  position: relative;
+  overflow: hidden;
+}
+.fullDiv a {
+  color: #222;
+  text-decoration: none;
+}
+.marginDiv {
+  width: 95%;
+  min-width: 819px;
+  max-width: 1680px;
+  position: relative;
+  overflow: hidden;
+  margin: 2.5% auto;
+}
+.marginDiv a {
+  color: #222;
+}
+.content-layout {
+  max-width: 100% !important;
+}
+.content {
+  width: 100% !important;
+}
+.divMargins {
+  margin-bottom: 2% !important;
+}
+.fullImg {
+  width: 100%;
+  max-width: 1680px;
+}
+/*=======================================================
   Font Sizes
   =======================================================*/
+.headline-XL {
+  font-size: calc(72px + (95 - 72) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.15vw;
+}
+.headline-large {
+  font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+.headline-medium {
+  font-size: calc(32px + (48 - 32) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(36px + (40 - 36) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.1vw;
+  word-spacing: -0.1vw;
+}
+.headline-small {
+  font-size: calc(32px + (49 - 32) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.05vw;
+}
+.copy-sub {
+  font-size: calc(14px + (18 - 14) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(16px + (22 - 16) * (100vw - 1024px) / (1440 - 1024));
+  margin: 0.8vw 0;
+}
+.copy-eyebrow {
+  text-transform: uppercase;
+  font-size: calc(13px + (14 - 13) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+}
 
+.copy-cta {
+  font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+  text-transform: uppercase;
+}
+
+/*--- 1440px ---*/
+@media only screen and (min-width: 1440px) {
   .headline-XL {
-    font-size: calc(72px + (95 - 72) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(52px + (68 - 52) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.15vw;
+    margin: 16px 0 -5px 0 !important;
   }
-
-  .headline-large {
-    font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
+  .main-content .hero-top-text {
+    margin-left: -40px;
   }
-
-  .headline-medium {
-    font-size: calc(32px + (48 - 32) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(36px + (40 - 36) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
+  .footer-text {
+    font-size: 30px;
   }
-
-  .headline-small {
-    font-size: calc(32px + (49 - 32) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.05vw;
+}
+/*--- 1680px ---*/
+@media only screen and (min-width: 1680px) {
+  .headline-XL {
+    margin: 15px 0 -15px 0 !important;
   }
-
-  .copy-sub {
-    font-size: calc(14px + (18 - 14) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(16px + (22 - 16) * (100vw - 1024px) / (1440 - 1024));
-    margin: 0.8vw 0;
+  .main-content .hero-top-text {
+    margin-left: -50px;
   }
+}
 
-  .copy-eyebrow {
-    text-transform: uppercase;
-    font-size: calc(13px + (14 - 13) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
-  }
-
-  .copy-cta {
-    font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
-    text-transform: uppercase;
-  }
-
-  /*--- 1440px ---*/
-
-  @media only screen and (min-width: 1440px) {
-    .headline-XL {
-      margin: 16px 0 -5px 0 !important;
-    }
-    .main-content .hero-top-text {
-      margin-left: -40px;
-    }
-    .footer-text {
-      font-size: 30px;
-    }
-  }
-
-  /*--- 1680px ---*/
-
-  @media only screen and (min-width: 1680px) {
-    .headline-XL {
-      margin: 15px 0 -15px 0 !important;
-    }
-    .main-content .hero-top-text {
-      margin-left: -50px;
-    }
-  }
 </style>
 
 <section class="main-content fullDiv">
 
+<<<<<<< HEAD
   <!--=============== HERO ===============-->
   <section class="hero fullDiv">
     <a href="/bed-and-bath/all-bedding/1" class="cmsWhite">
