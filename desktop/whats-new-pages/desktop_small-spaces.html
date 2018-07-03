@@ -672,6 +672,7 @@
       font-size: 10px;
       line-height: 20px;
     }
+  }
   
   @media only screen and (min-width: 1025px) {
     .catagories__container a {
@@ -694,7 +695,6 @@
       width: 22.8%;
     }
   }
-  
   
   </style>
   
@@ -1361,6 +1361,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
   
   <script>
+
     function runTheThings() {
     $(document).ready(function() {
       $(".hideOnLoad").hide();
@@ -1471,7 +1472,7 @@
                 );
                 $("#grabber" + [i] + "Name").html(result[i].Name);
               }
-              $(".carousel__block").append(str);
+             
             }
           },
           error: function(jqXhr, textStatus, errorThrown) {
@@ -1481,8 +1482,7 @@
       };
   
       getProductNavigateDetail(
-        "568623,671248,459990,369993,663558,634847,645632,586208,213395"
-      );
+"568623,671248,459990,369993,663558,634847,645632,586208,213395");
     });
   }
   
