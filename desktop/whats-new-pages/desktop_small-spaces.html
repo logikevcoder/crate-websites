@@ -1,0 +1,1666 @@
+<style>
+  /*=======================================================
+  Main Content
+  =======================================================*/
+
+  a:focus .copy-cta {
+    border-bottom: 3px solid;
+    display: inline-block;
+  }
+
+  a:focus .border-cta {
+    color: #fff;
+    background-color: #222;
+  }
+
+  .fullDiv:focus-within,
+  .insetDiv:focus-within,
+  .detailsQuad:focus-within,
+  .quarterContent:focus-within {
+    outline: 4px solid rgb(125, 173, 217);
+  }
+
+  .main-content {
+    min-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .hero__text {
+    position: absolute;
+    text-align: center;
+    width: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .parallax {
+    background-image: url("https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcHeader?wid=1680&qlt=75");
+    width: 100%;
+    /* Set a specific height */
+    min-height: 100%;
+    height: 100vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /*=======================================================
+  Shop By Room
+  =======================================================*/
+
+  .sbr {
+    position: relative;
+    width: 90%;
+    margin: 0 auto 5%;
+    border: 5px solid #222;
+  }
+
+  .group-imgs .flex-group {
+    width: 100%;
+    margin: 4% auto;
+  }
+
+  .group-imgs .flex-group .group-imgs__image {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  .group-imgs .flex-group .group-imgs__image:first-child {
+    margin-bottom: 0.5%;
+  }
+
+  .group-imgs .flex-group a.group-imgs__cta {
+    width: 100%;
+    text-align: center;
+    margin: 3% 2.5% 0 2.5%;
+    padding: 10px;
+    border: 1px solid #222;
+  }
+
+  .main-content a .group-imgs__cta {}
+
+  /*=======================================================
+  Daybed
+  =======================================================*/
+
+  .daybed {
+    background-color: #f0efed;
+  }
+
+  .group-imgs {
+    display: flex;
+  }
+
+  .daybed__hero {
+    width: 100%;
+    margin: 4% 0;
+  }
+
+  .daybed__headshot-mov {
+    width: 90%;
+    padding: 0 5%;
+    margin: 5% auto;
+  }
+
+  .daybed__headshot-mov__headshot {
+    display: flex;
+  }
+
+  .daybed__headshot-mov__headshot__text {
+    width: 50%;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+  }
+
+  .daybed__headshot-mov__headshot__image {
+    width: 50%;
+  }
+
+  .daybed__headshot-mov__mov {
+    width: 100%;
+    margin-top: 14%;
+  }
+
+  .daybed__headshot-mov__text {
+    position: relative;
+  }
+
+  .daybed__headshot-mov__text p {
+    position: absolute;
+  }
+
+  .daybed__headshot-mov__text p:first-child {
+    bottom: 0;
+    left: 0;
+  }
+
+  .daybed__headshot-mov__text p:last-child {
+    right: 0;
+    bottom: 0;
+  }
+
+  /*=======================================================
+  Catagories
+  =======================================================*/
+
+  .catagories {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #f0efed;
+    text-align: center;
+  }
+
+  .catagories__header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .catagories__header p {
+    padding-bottom: 3%;
+  }
+
+  .group-imgs--2 {
+    padding: 3% 0 5% 2.5%;
+  }
+
+  .catagories__container a {
+    width: 22.2%;
+  }
+
+  .catagories__container a:not(:nth-child(4)) {
+    margin-right: 1%;
+  }
+
+  .catagories__container a:not(:last-child) {
+    margin-right: 1%;
+  }
+
+  .catagories__container a {
+    margin-bottom: 1%;
+  }
+
+  .group-imgs--2__image {
+    display: flex;
+    position: relative;
+  }
+
+  .group-imgs--2__image>div {
+    width: 50%;
+  }
+
+  .group-imgs--2__image>div:last-child {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*=======================================================
+  Catagories Hover Animation
+  =======================================================*/
+
+  .group-imgs--2__image::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    transform-origin: right;
+    transition: width 0.5s ease;
+  }
+
+  .group-imgs--2__image:hover div:last-child h2 {
+    color: #fff;
+    z-index: 5;
+  }
+
+  .group-imgs--2__image:hover::after {
+    width: 100%;
+  }
+
+  /*=======================================================
+  Design Studio
+  =======================================================*/
+
+  .design-studio {
+    position: relative;
+  }
+
+  .design-studio__header {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+  }
+
+  .design-studio__logo {
+    position: absolute;
+    width: 15%;
+    left: 50%;
+    transform: translatex(-50%);
+    top: 20%;
+  }
+
+  .design-studio__header .border-cta:hover {
+    color: #fff;
+    background-color: #222;
+  }
+
+  /*=======================================================
+  Triptych
+  =======================================================*/
+
+  .triptych {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .triptych .group-imgs {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+  }
+
+  .triptych .group-imgs__img {
+    width: 33%;
+  }
+
+  .triptych .group-imgs .group-imgs__img:not(:last-child) {
+    margin-right: 0.5%;
+  }
+
+  .triptych .group-imgs__img p:nth-child(2) {
+    margin: 20px 0 30px;
+  }
+
+  .group-imgs__text {
+    padding: 30px 60px 50px 50px;
+    height: 25%;
+    background-color: #f0efed;
+  }
+
+  /*======= border animation ======*/
+
+  .group-imgs__img a .group-imgs__text:before {
+    display: block;
+    content: "";
+    border-bottom: solid 3px #333;
+    margin-bottom: 15px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .group-imgs__img a .group-imgs__text:hover:before {
+    transform: scaleX(1);
+  }
+
+  .group-imgs__img a .group-imgs__text.fromLeft:before {
+    transform-origin: 0% 50%;
+  }
+
+  /*=======================================================
+  Footer
+  =======================================================*/
+
+  .main-content .footer {
+    position: relative;
+  }
+
+  .footer__text {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  }
+
+  /*=======================================================
+  Fade animation
+  =======================================================*/
+
+  .fade-in {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+
+  .fade-out {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+
+  /*=======================================================
+  General Styling
+  =======================================================*/
+
+  .mBot5 {
+    margin-bottom: 5%;
+  }
+
+  .mBot10 {
+    margin-bottom: 10%;
+  }
+
+  .flex-group {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    flex-wrap: wrap;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    position: relative;
+  }
+
+  .main-content .border-cta {
+    padding: 5px 5px;
+    width: 80%;
+    border: 1px solid #222;
+    margin: 0 auto;
+  }
+
+  .text-rating {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+  }
+
+  /*=======================================================
+  Bottom Border Animation
+  =======================================================*/
+
+  h2 {
+    color: #666;
+    display: inline-block;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  h2:after {
+    display: block;
+    content: "";
+    border-bottom: solid 3px;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+  }
+
+  h2.expand:after {
+    transform: scaleX(1);
+  }
+
+  h2.shrink:after {
+    transform: scaleX(0);
+  }
+
+  h2.fromLeft:after {
+    transform-origin: 0% 50%;
+  }
+
+  /*=======================================================
+  Dropdowns
+  =======================================================*/
+
+  .dropdown-container {
+    position: absolute;
+    overflow: visible;
+    visibility: visible;
+    clear: both;
+    top: 0;
+    width: 35%;
+  }
+
+  .dropdown-container--left {
+    left: 0%;
+  }
+
+  .dropdown-container-right {
+    right: 2%;
+  }
+
+  .collapsible {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    cursor: pointer;
+    padding: 18px 0 18px 18px;
+    bottom: 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+  }
+
+  .collapsible p {
+    padding-left: 20px;
+  }
+
+  .active,
+  .collapsible:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .main-content .content {
+    padding-left: 18px;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .content a,
+  p {
+    padding-right: 15px;
+  }
+
+  .main-content .content a:not(:first-child) {
+    margin-bottom: 20px;
+  }
+
+  .fadein,
+  .fadeout {
+    opacity: 0;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  .fadein {
+    opacity: 1;
+  }
+
+  /*=====================================================
+  Arrow Styling
+  ===================================================== */
+
+  .catagory-title {
+    position: relative;
+  }
+
+  .hero-arrow {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 10%;
+  }
+
+  p.hero-arrow i {
+    padding: 20px;
+  }
+
+  .collapsible p:last-child {
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translatey(-50%);
+  }
+
+  i {
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 8px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+
+  .arrow {
+    z-index: 0;
+  }
+
+  /*=======================================================
+  Carousel
+  =======================================================*/
+
+  .product-carousel {
+    width: 100%;
+    margin: 5% 0 10%;
+  }
+
+  .product-carousel__header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .carousel-wrapper {
+    width: 100%;
+  }
+
+  .product-carousel__container {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .carousel__block {
+    width: 95% !important;
+    position: relative;
+  }
+
+  .carousel__block div {
+    padding: 1%;
+    background-color: #fff;
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  /*=======================================================
+  Slick Navigation Styling
+  =======================================================*/
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-family: slick;
+    font-size: 25px !important;
+    line-height: 1;
+    opacity: 1 !important;
+    color: #000 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-prev {
+    left: -15px !important;
+    z-index: 10 !important;
+  }
+
+  .slick-next {
+    right: 8px !important;
+  }
+
+  /*=======================================================
+  Overlay
+  =======================================================*/
+
+  .overlay {
+    background: rgba(255, 255, 255, 0.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    transition: 0.4s ease;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .overlay div {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .overlay a {
+    color: #222;
+  }
+
+  .textPos {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
+  Breakout and Fixes
+  =======================================================*/
+
+  .fullDiv {
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fullDiv a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  #pageWrap {
+    border-top: 2px solid #222;
+    max-width: 1680px;
+    min-width: 1024px;
+    width: 100%;
+    margin: 0 auto !important;
+    float: none !important;
+    clear: left;
+  }
+
+  .content-layout {
+    max-width: 1680px !important;
+  }
+
+  .content {
+    width: 100% !important;
+  }
+
+  #bodyWrap {
+    padding: 0;
+  }
+
+  #jsExpand1 {
+    margin: 0 !important;
+  }
+
+  .fullImg {
+    width: 100%;
+    max-width: 1680px;
+  }
+
+  .main-content a h2 {
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-content a h2 {
+    padding: 0;
+  }
+
+  .main-content p {
+    margin: 0;
+  }
+
+  .main-content .copy-cta {
+    margin: 0;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .clearfix:after {
+    clear: both;
+  }
+
+  .clearfix {
+    zoom: 1;
+  }
+
+  /* IE < 8 */
+
+  .main-content .copy-sub {
+    margin: 0;
+  }
+
+  /*=======================================================
+  Font Sizes
+  =======================================================*/
+
+  .headline-XL {
+    font-size: calc(62px + (105 - 62) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(42px + (50 - 42) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.15vw;
+  }
+
+  .headline-large {
+    font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-medium {
+    font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-small {
+    font-size: calc(24px + (26 - 24) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.05vw;
+  }
+
+  .copy-sub {
+    font-size: calc(14px + (18 - 14) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(21px + (22 - 20) * (100vw - 1024px) / (1440 - 1024));
+  }
+
+  .copy-eyebrow {
+    font-size: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
+  }
+
+  .copy-cta {
+    font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
+  }
+
+  /*--- 1024px ---*/
+
+  @media only screen and (max-width: 1024px) {
+    .headline-XL {
+      font-size: 60px;
+      line-height: 42px;
+      letter-spacing: -1.54px;
+    }
+    .headline-large {
+      font-size: 45px;
+      line-height: 45px;
+    }
+    .headline-medium {
+      font-size: 30px;
+      line-height: 36px;
+    }
+    .headline-small {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .copy-eyebrow {
+      font-size: 13px;
+      line-height: 13px;
+    }
+    .copy-sub {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .copy-cta {
+      font-size: 10px;
+      line-height: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .catagories__container a {
+      width: 22.2%;
+    }
+  }
+
+  @media only screen and (min-width: 1250px) {
+    .catagories__container a {
+      width: 22.4%;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .catagories__container a {
+      width: 22.6%;
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .catagories__container a {
+      width: 22.8%;
+    }
+  }
+</style>
+
+<style href="https://www.crateandbarrel.com/bundles/Styles/common.xs.css">
+
+</style>
+
+<section class="main-content fullDiv">
+
+  <!--=============== Green HERO ===============-->
+  <section class="hero fullDiv mBot10">
+    <div class="hero__img parallax">
+
+    </div>
+    <div class="hero__text">
+      <p class="crate-thin headline-small cmsWhite">
+        <strong>Small Space Style.</strong> Incredible homes can come in small packages.
+        <br> All it takes is smart room planning and furniture that works for you.
+      </p>
+    </div>
+
+    <p>
+      <i class="arrow down hero-arrow cmsWhite"></i>
+    </p>
+    <!-- hero__img -->
+  </section>
+
+  <!--=============== Shop By Room===============-->
+  <section class="sbr">
+
+    <div class="group-imgs">
+      <div class="flex-group">
+        <div class="group-imgs__image">
+          <div style="padding: 0 .5% 0 5%;">
+
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcStorage?wid=634&qlt=75" alt="">
+
+          </div>
+          <div class="dropdown-container dropdown-container--left">
+            <div class="catagory-title collapsible">
+
+              <h2 class="crate-roman copy-sub cmsWhite fromLeft">Entryway</h2>
+              <div class="border"></div>
+
+              <p>
+                <i class="arrow down"></i>
+              </p>
+            </div>
+            <div class="content">
+              <p class="crate-bold copy-sub">Design Tip</p>
+              <p class="crate-thin copy-sub">
+                Create a landing space for keys and everyday essentials.
+              </p>
+              <a href="/davis-48-zinc-wall-shelf/s679150" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Davis 48" Zinc Wall Shelf
+                </p>
+              </a>
+              <a href="/rigby-55-small-floating-media-console/s669995" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Rigby Natural 55" Small Floating Media Console
+                </p>
+              </a>
+              <a href="/zoey-leather-swivel-ottoman/s616861" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Zoey Leather Swivel Ottoman
+                </p>
+              </a>
+              <a href=" /geo-tall-light-burnt-oak-bunching-table/s589107" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Geo Low Burnt Oak Bunching Table
+                </p>
+              </a>
+            </div>
+            <!-- content -->
+          </div>
+          <!-- dropdown container -->
+        </div>
+        <div class="group-imgs__image">
+          <div style="padding: 0 5% 0 .5%;">
+
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcDining?wid=634&qlt=75" alt="">
+
+          </div>
+          <div class="dropdown-container dropdown-container-right">
+
+            <div class="catagory-title collapsible">
+              <a href="/shop-by-room/marble-dining-table">
+                <h2 class="crate-roman copy-sub cmsWhite fromLeft">Dining Room</h2>
+              </a>
+              <p>
+                <i class="arrow down"></i>
+              </p>
+            </div>
+            <div class="content">
+              <p class="crate-bold copy-sub">Design Tip</p>
+              <p class="crate-thin copy-sub">
+                Opt for space-saving dining table as a verstile base for your room.
+              </p>
+              <a href="/nero-48-white-marble-dining-table/s596652" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Nero 48" White Marble Dining Table
+                </p>
+              </a>
+              <a href="/camille-anthracite-italian-dining-chair/s585299" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Camille Antracite Italian Dining Chair
+                </p>
+              </a>
+              <a href="/oxford-wide-black-wood-bookcase/s603757" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Oxford Wide Black Wood Bookcase
+                </p>
+              </a>
+              <a href="/hayes-acacia-sideboard/s586097" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Hayes Acacia Sideboard
+                </p>
+              </a>
+            </div>
+            <!-- content -->
+
+          </div>
+          <!-- dropdown container -->
+        </div>
+        <div class="group-imgs__image">
+          <div style="padding: 0 .5% 0 5%;">
+
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcLiving?wid=634&qlt=75" alt="">
+
+          </div>
+          <div class="dropdown-container dropdown-container--left">
+            <div class="catagory-title collapsible">
+              <a href="/shop-by-room/small-space-living-room">
+                <h2 class="crate-roman copy-sub cmsWhite fromLeft">Living Room</h2>
+              </a>
+              <p>
+                <i class="arrow down"></i>
+              </p>
+            </div>
+            <div class="content">
+              <p class="crate-bold copy-sub">Design Tip</p>
+              <p class="crate-thin copy-sub">
+                Sleeper sofas are ideal solutions for hosting overnight guests when you're sans a spare bedroom.
+              </p>
+              <a href="/wink-sleeper/s617054" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Wink Sleeper
+                </p>
+              </a>
+              <a href="/spoke-marble-end-table/s481295" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Spoke Marble End Table
+                </p>
+              </a>
+              <a href="/spoke-glass-coffee-table/s481272" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Spoke Glass Coffee Table
+                </p>
+              </a>
+            </div>
+            <!-- content -->
+          </div>
+          <!-- dropdown container -->
+        </div>
+        <div class="group-imgs__image">
+          <div style="padding: 0 5% 0 .5%;">
+
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcBedroom_fpo?wid=634&qlt=75"
+              alt="">
+
+          </div>
+          <div class="dropdown-container dropdown-container-right">
+            <div class="catagory-title collapsible">
+              <a href="/shop-by-room/grey-white-bedroom">
+                <h2 class="crate-roman copy-sub cmsWhite fromLeft">Bedroom</h2>
+              </a>
+              <p>
+                <i class="arrow down"></i>
+              </p>
+            </div>
+            <div class="content">
+              <p class="crate-bold copy-sub">Design Tip</p>
+              <p class="crate-thin copy-sub">
+                A stylish storage bed is perfect for organizing off-season clothing and bedding essentials.
+              </p>
+              <a href="/flynn-modern-queen-bed/s622387" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Flynn Modern Queen Bed
+                </p>
+              </a>
+              <a href="/flynn-modern-nightstand/s622101" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Flynn Modern Nightstand
+                </p>
+              </a>
+              <a href="/flynn-5-drawer-modern-chest/s622091" class="cmsWhite">
+                <p class="crate-thin copy-sub">
+                  Flynn Modern 5-Drawer Modern Chest
+                </p>
+              </a>
+            </div>
+            <!-- content -->
+          </div>
+          <!-- dropdown container -->
+        </div>
+
+        <a href="/shop-by-room/small-space-inspiration" class="group-imgs__cta fade-out">
+          <div class="group-imgs__cta crate-bold copy-cta">
+            More Small Spaces
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- group-imgs -->
+
+  </section>
+  <!-- Shop By Room -->
+
+  <!--=============== Daybed ===============-->
+  <section class="daybed fullDiv mBot10">
+    <div class="group-imgs">
+      <div class="daybed__hero">
+        <a href="/eclipse-sleeper-daybed/s469698">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcEclipse_fpo?wid=834&qlt=75"
+            alt="">
+        </a>
+      </div>
+      <!-- daybed__hero -->
+
+      <div class="daybed__headshot-mov">
+        <div class="daybed__headshot-mov__headshot">
+          <div class="daybed__headshot-mov__headshot__text">
+            <p>Lorem ipsum display test whajt asl to for wht lorem ipsum. Lorem ipsum display test whajt asl to for wht lorem
+              ipsum. Lorem ipsum display test whajt asl to for wht lorem ipsum</p>
+            <p></p>
+          </div>
+          <div class="daybed__headshot-mov__headshot__image">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcEclipseMotion_fpo?wid=300&qlt=75&fmt=png-alpha"
+              alt="">
+          </div>
+          <!-- daybed__headshot-mov__headshot -->
+        </div>
+
+        <div class="daybed__headshot-mov__mov">
+          <video class="loopedVid" width="100%" poster="http://s7d5.scene7.com/is/image/Crate/cb_d_LP_201807_SmlSpcEclipseMotion_fpo?"
+            autoplay muted loop>
+            <source width="100%" src="http://s7d5.scene7.com/is/content/Crate/LandingPages/Small Space Style/cb_d_LP_201807_SmlSpcEclipseMotion.mp4"
+              type="video/mp4">
+          </video>
+          <!--           <div id="vidText" style="color:#fff;position:absolute;top:50%;left:0;right:0;text-align:center;transform:translateY(-50%);">
+              <div id="playBtn"></div>
+              <div id="replayBtn"></div>
+            </div> -->
+
+        </div>
+        <!-- daybed__headshot-mov__mov -->
+        <div class="daybed__headshot-mov__text">
+
+          <p class="crate-bold copy-cta">
+            <a href="/eclipse-sleeper-daybed/s469698">Eclipse Sleeper Daybed</a>
+          </p>
+
+          <p class="crate-bold copy-cta">
+            <a href="/furniture/sleeper-sofas/1">Shop All Sleepers </a>
+          </p>
+
+        </div>
+
+      </div>
+      <!-- daybed__headshot-mov -->
+    </div>
+    <!-- imgs-container -->
+  </section>
+  <!-- daybed -->
+
+  <!--=============== CAROUSEL ===============-->
+  <section class="product-carousel fullDiv">
+    <div class="product-carousel__container">
+      <div class="product-carousel__header crate-roman headline-small">
+        Shop Small Space Furniture
+      </div>
+
+      <div class="carousel-wrapper responsive crate-helvetica-roman">
+
+        <div class="carousel__block">
+          <a id="grabber0Link" href="">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcFeaturedCasement?qlt=75" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber0Name" class="crate-bold copy-sub"></p>
+                <p class="copy-cta crate-bold">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber1Link" href="">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcFeaturedLowe?qlt=75" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber1Name" class="crate-bold copy-sub"></p>
+                <p class="copy-cta crate-bold">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber2Link" href="">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcFeaturedOrigami?qlt=75" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber2Name" class="crate-bold copy-sub"></p>
+                <p class="copy-cta crate-bold">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber3Link" href="">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcFeaturedSpin?qlt=75" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber3Name" class="crate-bold copy-sub"></p>
+                <p class="copy-cta crate-bold">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber4Link" href="">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcFeaturedBlair?qlt=75" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber4Name" class="crate-bold copy-sub"></p>
+                <p class="copy-cta crate-bold">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber5Link" href="">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcFeaturedMargot?qlt=75" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber5Name" class="crate-bold copy-sub"></p>
+                <p class="copy-cta crate-bold">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber6Link" href="">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcFeaturedMix?qlt=75" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber6Name" class="crate-bold copy-sub"></p>
+                <p class="copy-cta crate-bold">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber7Link" href="">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcFeaturedNoir?qlt=75" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber7Name" class="crate-bold copy-sub"></p>
+                <p class="copy-cta crate-bold">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+        <div class="carousel__block">
+          <a id="grabber8Link" href="">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcFeaturedSawyer?qlt=75" alt="">
+            <div class="overlay">
+              <div class="textPos">
+                <p id="grabber8Name" class="crate-bold copy-sub"></p>
+                <p class="copy-cta crate-bold">Shop Now</p>
+              </div>
+              <!-- textPos-->
+            </div>
+            <!-- overlay-->
+          </a>
+        </div>
+        <!-- carousel block-->
+
+      </div>
+      <!-- carousel responsive -->
+    </div>
+    <!-- carousel container-->
+  </section>
+  <!-- product carousel -->
+
+  <!--=============== catagories ===============-->
+  <section class="catagories">
+
+    <div class="group-imgs--2 mBot10">
+      <a href="/special-features/small-room-ideas" class="catagories__header">
+        <div>
+          <p class="crate-bold copy-sub" style="margin: -20px;">All Small Space Catagories</p>
+        </div>
+      </a>
+
+      <div class="catagories__container flex-group">
+        <a href="/special-features/small-living-room-furniture">
+          <div class="group-imgs--2__image image1">
+
+            <div>
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcShopLiving?wid=149&qlt=75"
+                alt="">
+            </div>
+
+            <div>
+              <h2 class="crate-bold copy-sub">Living</h2>
+            </div>
+
+          </div>
+        </a>
+
+        <a href="/special-features/small-bedroom-furniture">
+          <div class="group-imgs--2__image image2">
+
+            <div>
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcShopBedroom?wid=149&qlt=75"
+                alt="">
+            </div>
+
+            <div class="group-imgs--2__image__text">
+              <h2 class="crate-bold copy-sub">Bedroom</h2>
+            </div>
+
+          </div>
+        </a>
+
+        <a href="/special-features/small-storage-furniture">
+          <div class="group-imgs--2__image image3">
+
+            <div>
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcShopStorage?wid=149&qlt=75"
+                alt="">
+            </div>
+
+            <div>
+              <h2 class="crate-bold copy-sub">Storage</h2>
+            </div>
+
+          </div>
+        </a>
+
+        <a href="/special-features/small-kitchen-furniture">
+          <div class="group-imgs--2__image image4">
+
+            <div>
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcShopKitchen?wid=149&qlt=75"
+                alt="">
+            </div>
+
+            <div>
+              <h2 class="crate-bold copy-sub">Kitchen</h2>
+            </div>
+
+          </div>
+        </a>
+
+        <a href="/special-features/small-dining-room-furniture">
+          <div class="group-imgs--2__image image5">
+
+            <div>
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcShopDining?wid=149&qlt=75"
+                alt="">
+            </div>
+
+            <div>
+              <h2 class="crate-bold copy-sub">Dining Room</h2>
+            </div>
+
+          </div>
+        </a>
+
+        <a href="/special-features/small-entryway-furniture">
+          <div class="group-imgs--2__image image6">
+
+            <div>
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcShopAccentTbls?wid=149&qlt=75"
+                alt="">
+            </div>
+
+            <div>
+              <h2 class="crate-bold copy-sub">Entryway</h2>
+            </div>
+
+          </div>
+        </a>
+
+        <a href="/special-features/small-home-office-furniture">
+          <div class="group-imgs--2__image image7">
+
+            <div>
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcShopWorkspace?wid=149&qlt=75"
+                alt="">
+            </div>
+
+            <div>
+              <h2 class="crate-bold copy-sub">Workspace</h2>
+            </div>
+
+          </div>
+        </a>
+
+        <a href="/special-features/small-kids-room-furniture">
+          <div class="group-imgs--2__image image8">
+
+            <div>
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcShopKids?wid=149&qlt=75"
+                alt="">
+            </div>
+
+            <div>
+              <h2 class="crate-bold copy-sub">Kids</h2>
+            </div>
+
+          </div>
+        </a>
+
+      </div>
+      <!-- group-imgs -->
+    </div>
+
+  </section>
+  <!-- Catagories -->
+
+  <!--=============== Crate Design Studio ===============-->
+  <section class="design-studio fullDiv mBot10">
+
+    <div class="design-studio__image">
+      <a href="/design-studio-questionnaire">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_CDS_SmlSpc?wid=1440&qlt=75" alt="">
+        <div class="design-studio__logo">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_CDS_SmlSpcLockUp?wid=220&qlt=80&fmt=png-alpha"
+            alt="">
+        </div>
+        <div class="design-studio__header">
+          <h2 class="crate-roman headline-small fade-out" style="margin:20px 0;">
+            Free small space design help.
+          </h2>
+          <p class="border-cta">
+            Ask Our Design Experts
+          </p>
+        </div>
+        <!-- design-studio__header -->
+      </a>
+    </div>
+    <!-- design-studio__image -->
+  </section>
+  <!-- Bottom Bar -->
+
+  <!--=============== Small Space Triptych ===============-->
+  <section class="triptych">
+    <div class="group-imgs">
+
+      <div class="group-imgs__img">
+        <a href="/special-features/top-rated-small-space-furniture/1">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180703_SSTopRated
+  ?wid=472&qlt=75" alt="">
+
+          <div class="group-imgs__text fromLeft">
+            <h2 class="crate-roman headline-small">
+              Top-Rated Small
+              <br> Space Solutions
+            </h2>
+            <p class="crate-roman copy-sub">
+              A selection of our top customer rated furniture, lighting and more.
+            </p>
+            <div class="text-rating">
+              <p class="crate-bold copy-cta" style="padding-right:10px;">
+                Shop Top Rated
+              </p>
+              <div style="width:30%;margin-top:-2px;">
+                <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180307_RvwsStrs?fmt=png-alpha&qlt=80"
+                  alt="">
+              </div>
+            </div>
+          </div>
+          <!-- group-imgs__text -->
+        </a>
+      </div>
+      <!-- group-imgs__img -->
+
+      <div class="group-imgs__img">
+        <a href="/blog/bay-window-styling/">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_dLP_20180529_SSBlog_v2?wid=472&qlt=75" alt="">
+
+          <div class="group-imgs__text fromLeft">
+            <h2 class="crate-roman headline-small">
+              Styling a Small
+              <br> Living Room
+            </h2>
+            <p class="crate-roman copy-sub">
+              Our favorite design tips for maximizing style in a small living room.
+            </p>
+            <p>
+
+            </p>
+          </div>
+          <!-- group-imgs__text -->
+        </a>
+
+      </div>
+      <!-- group-imgs__img -->
+
+      <div class="group-imgs__img">
+        <a href="/ideas-and-advice/furniture-for-small-spaces">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcIdeasAdviceTaj?wid=472&qlt=75"
+            alt="">
+
+          <div class="group-imgs__text fromLeft">
+            <h2 class="crate-roman headline-small">
+              How to Choose Furniture
+              <br> for Small Spaces
+            </h2>
+            <p class="crate-roman copy-sub">
+              Expert advice on choosing the furniture that works for your space, your style and your lifestyle.
+            </p>
+            <p>
+
+            </p>
+          </div>
+          <!-- group-imgs__text -->
+        </a>
+
+      </div>
+      <!-- group-imgs__img -->
+
+    </div>
+    <!-- imgs-container -->
+  </section>
+  <!-- daybed -->
+
+  <section class="footer fullDiv fade-out">
+    <a href="/custom-design-furniture">
+      <div class="footer__img">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/cb_d_LP_201807_SmlSpcCustomBanner?wid=1440&qlt=75"
+          alt="">
+      </div>
+      <div class="footer__text cmsWhite">
+        <p class="crate-thin copy-eyebrow" style="margin-bottom: 20px;">Create Your Own</p>
+        <p class="crate-bold headline-small">
+          Now you can customize furnings to fit your
+          <br> space. It's exactly what you're looking for</p>
+      </div>
+      <!-- footer__img -->
+    </a>
+  </section>
+
+</section>
+<!-- main-content -->
+
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+/>
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+      $(".hideOnLoad").hide();
+
+      $(".catagory-title").click(function (e) {
+        var nextDiv = $(this).next("div");
+        $(this)
+          .find("h2")
+          .addClass("expand");
+        $(".catagory-title")
+          .find(".arrow")
+          .addClass("down");
+        $(".catagory-title")
+          .find(".arrow")
+          .removeClass("up");
+        if (nextDiv.css("display") == "none") {
+          e.preventDefault();
+          $(".left-containers").slideUp("slow");
+          nextDiv.slideDown("slow");
+          $(this)
+            .find(".arrow")
+            .addClass("up");
+        } else {
+          nextDiv.slideUp("slow");
+          $(this)
+            .find("h2")
+            .removeClass("expand");
+        }
+      });
+
+      function fade() {
+        $(".fade-out").each(function (i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass("fade-in");
+            $(this).removeClass("fade-out");
+          } else {
+            $(this).removeClass("fade-in");
+            $(this).addClass("fade-out");
+          }
+        });
+      }
+
+      //when scrolling
+      window.addEventListener("scroll", function (event) {
+        fade();
+      });
+
+      //onload check
+      fade();
+
+      $(".responsive").slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+
+      var getProductNavigateDetail = function (skuList) {
+        var postUrl =
+          "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+          imageURL = "//images.crateandbarrel.com/is/image/Crate/";
+
+        $.ajax({
+          url: postUrl,
+          type: "POST",
+          data: {
+            skus: skuList
+          },
+          dataType: "json",
+          success: function (result) {
+            if (result[0] != null) {
+              var str = "";
+              for (let i = 0; i < result.length; i++) {
+                $("#grabber" + [i] + "Link").attr("href", result[i].NavigateUrl);
+                $("#grabber" + [i] + "Image").attr(
+                  "src",
+                  imageURL + result[i].ImagePath
+                );
+                $("#grabber" + [i] + "Name").html(result[i].Name);
+              }
+
+            }
+          },
+          error: function (jqXhr, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+          }
+        });
+      };
+
+      getProductNavigateDetail(
+        "568623,671248,459990,369993,663558,634847,645632,586208,213395");
+    });
+  }
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+</script>
