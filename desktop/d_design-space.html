@@ -1,458 +1,597 @@
 <style>
-
-/*=======================================================
+  /*=======================================================
 Main Content
 =======================================================*/
-.main-content {
-  min-width: 1024px;
-  margin: 0 auto;
-}
-/*=======================================================
+
+  .main-content {
+    min-width: 1024px;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
 Hero
 =======================================================*/
-.hero {
-  margin-bottom: 3%;
-}
-.hero__logo {
-  position: absolute;
-  width: 36%;
-  height: 81%;
-  top: 5%;
-  left: 3%;
-  background-color: #212121;
-  text-align: center;
-}
-.hero__logo div:first-child {
-  width: 50%;
-  max-width: 310px;
-  margin: 15% auto 5%;
-}
-.hero__logo div:last-child {
-  width: 80%;
-  margin: 0 auto;
-}
-/*=======================================================
+
+  .hero {
+    margin-bottom: 3%;
+  }
+
+  .hero__logo {
+    position: absolute;
+    width: 36%;
+    height: 81%;
+    top: 5%;
+    left: 3%;
+    background-color: #212121;
+    text-align: center;
+  }
+
+  .hero__logo div:first-child {
+    width: 50%;
+    max-width: 310px;
+    margin: 15% auto 5%;
+  }
+
+  .hero__logo div:last-child {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
 Specialty Curated
 =======================================================*/
-.specialty {
-  display: flex;
-  margin-bottom: 5%;
-}
-.specialty-left {
-  width: 50%;
-}
-.specialty-left__img {
-  margin: 7% -10% -7% 10%;
-}
-.specialty-right {
-  width: 50%;
-}
-.specialty-right__text {
-  margin: 10% 15% 15% 22%;
-}
-.specialty-right__img {
-  margin-left: 15%;
-}
-/*=======================================================
+
+  .specialty {
+    display: flex;
+    margin-bottom: 5%;
+  }
+
+  .specialty-left {
+    width: 50%;
+  }
+
+  .specialty-left__img {
+    margin: 7% -10% -7% 10%;
+  }
+
+  .specialty-right {
+    width: 50%;
+  }
+
+  .specialty-right__text {
+    margin: 10% 15% 15% 22%;
+  }
+
+  .specialty-right__img {
+    margin-left: 15%;
+  }
+
+  /*=======================================================
 Uniquely Crafted
 =======================================================*/
-.unique {
-  margin-bottom: 5%;
-}
-.unique-left {
-  width: 50%;
-  display: flex;
-  margin-top: 5%;
-}
 
-.unique-left__img {
-  margin-top: 25%;
-  width: 90%;
-}
-.unique-left__text-img__text {
-  width: 80%;
-}
-.unique-left__text-img__img {
-  margin-left: 30%;
-  width: 60%;
-}
+  .unique {
+    margin-bottom: 5%;
+  }
 
-.unique-right {
-  width: 50%;
-}
-.unique-right__img {
-  margin-left: -10%;
-  margin-top: -3%;
-  padding-bottom: 8%;
-}
-/*=======================================================
+  .unique-left {
+    width: 50%;
+    display: flex;
+    margin-top: 5%;
+  }
+
+  .unique-left__img {
+    margin-top: 25%;
+    width: 90%;
+  }
+
+  .unique-left__text-img__text {
+    width: 80%;
+  }
+
+  .unique-left__text-img__img {
+    margin-left: 30%;
+    width: 60%;
+  }
+
+  .unique-right {
+    width: 50%;
+  }
+
+  .unique-right__img {
+    margin-left: -10%;
+    margin-top: -3%;
+    padding-bottom: 8%;
+  }
+
+  /*=======================================================
 Completely Crushworthy
 =======================================================*/
-.crush {
-  margin-bottom: 5%;
-}
-.crush-left {
-  width: 53%;
-  position: relative;
-  z-index: 10;
-}
-.crush-left__img-group {
-  display: flex;
-  width: 100%;
-  margin-top: 14%;
-}
 
-.crush-right {
-  width: 50%;
-}
+  .crush {
+    margin-bottom: 5%;
+  }
 
-.crush-right__text {
-  width: 45%;
-  margin: 3% 0 5% 17%;
-}
-.crush-right__img {
-  margin-right: -5%;
-  margin-left: 5%;
-}
-/*=======================================================
+  .crush-left {
+    width: 53%;
+    position: relative;
+    z-index: 10;
+  }
+
+  .crush-left__img-group {
+    display: flex;
+    width: 100%;
+    margin-top: 14%;
+  }
+
+  .crush-right {
+    width: 50%;
+  }
+
+  .crush-right__text {
+    width: 45%;
+    margin: 3% 0 5% 17%;
+  }
+
+  .crush-right__img {
+    margin-right: -5%;
+    margin-left: 5%;
+  }
+
+  /*=======================================================
 Bottom Bar
 =======================================================*/
-.BB__logo {
-  position: absolute;
-  width: 36%;
-  height: 81%;
-  top: 50%;
-  transform: translatey(-50%);
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  text-align: center;
-}
-.BB__logo div {
-  width: 50%;
-  margin: 0 auto;
-}
-/*=======================================================
+
+  .BB__logo {
+    position: absolute;
+    width: 36%;
+    height: 81%;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .BB__logo div {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
 Slick Navigation Styling
 =======================================================*/
-.slick-prev:before, .slick-next:before {
-  content: "\2039" !important;
-  color: #222 !important;
-  font-size: 150px !important;
-  opacity:1 !important;
-}
-.slick-next:before {
-  content: "\203A" !important;
-  font-weight:100 !important;
-  color: #222 !important;
-  font-size: 150px !important;
-  opacity:1 !important;
-}
-.slick-prev.slick-disabled::before, .slick-next.slick-disabled::before {
-  opacity: 0;
-}
-.slick-next.slick-disabled:before, .slick-prev.slick-disabled:before {
-  opacity: 0 !important;
-}
-.slick-next {
-  right:-3% !important;
-}
-.slick-prev {
-  left: -5% !important;
-}
-.slick-arrow {
-  z-index: 3;
-  position: absolute;
-  width: 8%;
-  top: 27% !important;
-}
-#leftArr {
-  left:-7%;
-}
-#rightArr {
-  right:-10%;
-}
-/*=======================================================
+
+  .slick-prev:before,
+  .slick-next:before {
+    content: "\2039" !important;
+    color: #222 !important;
+    font-size: 150px !important;
+    opacity: 1 !important;
+  }
+
+  .slick-next:before {
+    content: "\203A" !important;
+    font-weight: 100 !important;
+    color: #222 !important;
+    font-size: 150px !important;
+    opacity: 1 !important;
+  }
+
+  .slick-prev.slick-disabled::before,
+  .slick-next.slick-disabled::before {
+    opacity: 0;
+  }
+
+  .slick-next.slick-disabled:before,
+  .slick-prev.slick-disabled:before {
+    opacity: 0 !important;
+  }
+
+  .slick-next {
+    right: -3% !important;
+  }
+
+  .slick-prev {
+    left: -5% !important;
+  }
+
+  .slick-arrow {
+    z-index: 3;
+    position: absolute;
+    width: 8%;
+    top: 27% !important;
+  }
+
+  #leftArr {
+    left: -7%;
+  }
+
+  #rightArr {
+    right: -10%;
+  }
+
+  /*=======================================================
 Overlay
 =======================================================*/
-.overlay{background: rgba(255, 255, 255, 0.75);top:0;bottom:0;left:0;right:0;opacity:0;position:absolute;transition:.4s ease;}
-.overlay:hover {opacity: 1;}
-.overlay div {text-align: center;top: 50%;position: absolute;left: 0;right: 0;transform: translateY(-50%);}
-.overlay a {color:#222;}
-.textPos{width:60%; margin: 0 auto;}
-/*=======================================================
+
+  .overlay {
+    background: rgba(255, 255, 255, 0.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    position: absolute;
+    transition: .4s ease;
+  }
+
+  .overlay:hover {
+    opacity: 1;
+  }
+
+  .overlay div {
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .overlay a {
+    color: #222;
+  }
+
+  .textPos {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
 Carousel
 =======================================================*/
-.product-carousel {margin:5% 0;}
-.carousel-wrapper{width: 85%;margin:0 auto 10%;}
-.carousel-wrapper__right {width:70%;margin:0 1.5% 10% auto;}
-.product-carousel__header__right {margin-left:45.9%;}
-.carousel-wrapper__left {width:70%;margin:0 auto 10% 1.5%;}
-.product-carousel__header__left {margin-left:2%;}
-.carousel-wrapper::before {content:none;}
-.carousel-wrapper::after {content:none;}
-.product-carousel__header {margin-left:15%;}
-.carousel__container {width:100%;padding-right:1%;}
-.carousel__block {width: 24%;margin:0 !important; position:relative;padding-right:.2%}
-.carousel__block img {width: 100%;}
-/*=======================================================
+
+  .product-carousel {
+    margin: 5% 0;
+  }
+
+  .carousel-wrapper {
+    width: 85%;
+    margin: 0 auto 10%;
+  }
+
+  .carousel-wrapper__right {
+    width: 70%;
+    margin: 0 1.5% 10% auto;
+  }
+
+  .product-carousel__header__right {
+    margin-left: 45.9%;
+  }
+
+  .carousel-wrapper__left {
+    width: 70%;
+    margin: 0 auto 10% 1.5%;
+  }
+
+  .product-carousel__header__left {
+    margin-left: 2%;
+  }
+
+  .carousel-wrapper::before {
+    content: none;
+  }
+
+  .carousel-wrapper::after {
+    content: none;
+  }
+
+  .product-carousel__header {
+    margin-left: 15%;
+  }
+
+  .carousel__container {
+    width: 100%;
+    padding-right: 1%;
+  }
+
+  .carousel__block {
+    width: 24%;
+    margin: 0 !important;
+    position: relative;
+    padding-right: .2%
+  }
+
+  .carousel__block img {
+    width: 100%;
+  }
+
+  /*=======================================================
 Fade animation
 =======================================================*/
-.fade-in {
-  opacity: 1;
-  -webkit-transform: translateY(0%);
-  transform: translateY(0%);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
 
-.fade-out {
-  opacity: 0;
-  -webkit-transform: translateY(10%);
-  transform: translateY(10%);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
+  .fade-in {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
 
-.fade-down {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
+  .fade-out {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
 
-.fade-up {
-  opacity: 0;
-  -webkit-transform: translateY(-20%);
-  transform: translateY(-20%);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
+  .fade-down {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
 
-.fade-left {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
+  .fade-up {
+    opacity: 0;
+    -webkit-transform: translateY(-20%);
+    transform: translateY(-20%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
 
-.fade-right {
-  opacity: 0;
-  -webkit-transform: translateX(-20%);
-  transform: translateX(-20%);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-/*=======================================================
+  .fade-left {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+
+  .fade-right {
+    opacity: 0;
+    -webkit-transform: translateX(-20%);
+    transform: translateX(-20%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+
+  /*=======================================================
 Breakout and Fixes
 =======================================================*/
-.fullDiv {
-  width: 100%;
-  min-width: 1024px;
-  max-width: 1680px;
-  position: relative;
-  overflow: hidden;
-}
-.fullDiv a {
-  color: #222;
-  text-decoration: none;
-}
-#pageWrap {
-  border-top: 2px solid #222;
-  max-width: 1680px;
-  min-width: 1024px;
-  width: 100%;
-  margin: 0 auto !important;
-  float: none !important;
-  clear: left;
-}
-.content-layout {
-  max-width:1680px !important;
-}
-.content {
-  width: 100% !important;
-}
-#bodyWrap {
-  padding: 0;
-}
-#jsExpand1 {
-  margin: 0 !important;
-}
-.new-marginDiv {
-  width: 80%;
-  min-width: 964px;
-  max-width: 1344px;
-  position: relative;
-  overflow: hidden;
-  margin: 10% auto;
-}
-.new-marginDiv a {
-  color: #222;
-}
-.divMargins {
-  margin-bottom: 2% !important;
-}
-.fullImg {
-  width: 100%;
-  max-width: 1680px;
-}
-.cmsArrowR {
-  border-width: 0.4vw;
-}
-.whtArrw {
-  border-left-color: white;
-}
-#topNavWrap {
-  background: transparent;
-}
-#topNavContainer {
-  border: none;
-}
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-h2 {
-  color: #222;
-}
-a h2 {
-  padding: 0;
-}
-.flex-group {
-  display: flex;
-  position:relative;
-}
 
-.empty-box {
-  width: 0%;
-  height: 90%;
-}
-.empty-box.expanded-box {
-  width: 47%;
-  height: 90%;
-}
+  .fullDiv {
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+  }
 
-.section-bg-style-hero {
-  background-color: #212121;
-}
+  .fullDiv a {
+    color: #222;
+    text-decoration: none;
+  }
 
-.section-bg-style {
-  position: absolute;
-  z-index: -5;
-  
-  transition: width 1s ease;
-}
-.section-bg-style--tan {
-  background-color: #f1dfbf;
-  left:0;
-}
+  #pageWrap {
+    border-top: 2px solid #222;
+    max-width: 1680px;
+    min-width: 1024px;
+    width: 100%;
+    margin: 0 auto !important;
+    float: none !important;
+    clear: left;
+  }
 
-.section-bg-style--dark {
-  background-color: #3b434c;
-  right:0;
-}
+  .content-layout {
+    max-width: 1680px !important;
+  }
 
-.section-bg-style--dark2 {
-  background-color: #46443e;
-  left:0;
-}
+  .content {
+    width: 100% !important;
+  }
 
-/*=======================================================
+  #bodyWrap {
+    padding: 0;
+  }
+
+  #jsExpand1 {
+    margin: 0 !important;
+  }
+
+  .new-marginDiv {
+    width: 80%;
+    min-width: 964px;
+    max-width: 1344px;
+    position: relative;
+    overflow: hidden;
+    margin: 10% auto;
+  }
+
+  .new-marginDiv a {
+    color: #222;
+  }
+
+  .divMargins {
+    margin-bottom: 2% !important;
+  }
+
+  .fullImg {
+    width: 100%;
+    max-width: 1680px;
+  }
+
+  .cmsArrowR {
+    border-width: 0.4vw;
+  }
+
+  .whtArrw {
+    border-left-color: white;
+  }
+
+  #topNavWrap {
+    background: transparent;
+  }
+
+  #topNavContainer {
+    border: none;
+  }
+
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  h2 {
+    color: #222;
+  }
+
+  a h2 {
+    padding: 0;
+  }
+
+  .flex-group {
+    display: flex;
+    position: relative;
+  }
+
+  .empty-box {
+    width: 0%;
+    height: 90%;
+  }
+
+  .empty-box.expanded-box {
+    width: 47%;
+    height: 90%;
+  }
+
+  .section-bg-style-hero {
+    background-color: #212121;
+  }
+
+  .section-bg-style {
+    position: absolute;
+    z-index: -5;
+
+    transition: width 1s ease;
+  }
+
+  .section-bg-style--tan {
+    background-color: #f1dfbf;
+    left: 0;
+  }
+
+  .section-bg-style--dark {
+    background-color: #3b434c;
+    right: 0;
+  }
+
+  .section-bg-style--dark2 {
+    background-color: #46443e;
+    left: 0;
+  }
+
+  /*=======================================================
 Font Sizes
 =======================================================*/
-.headline-XL {
-  font-size: calc(62px + (68 - 52) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(42px + (50 - 42) * (100vw - 1024px) / (1440 - 1024));
-  letter-spacing: -0.15vw;
-}
 
-.headline-large {
-  font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
-  letter-spacing: -0.1vw;
-  word-spacing: -0.1vw;
-}
-
-.headline-medium {
-  font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
-  letter-spacing: -0.1vw;
-  word-spacing: -0.1vw;
-}
-
-.headline-small {
-  font-size: calc(24px + (26 - 24) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
-  letter-spacing: -0.05vw;
-}
-
-.copy-sub {
-  font-size: calc(14px + (18 - 14) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(21px + (22 - 20) * (100vw - 1024px) / (1440 - 1024));
-  margin: 0.8vw 0;
-}
-
-.copy-eyebrow {
-  font-size: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
-}
-
-.copy-cta {
-  font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
-  text-transform: uppercase;
-}
-
-/*--- 1024px ---*/
-@media only screen and (max-width: 1024px) {
   .headline-XL {
-    font-size: 60px;
-    line-height: 42px;
-    letter-spacing: -1.54px;
+    font-size: calc(62px + (68 - 52) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(42px + (50 - 42) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.15vw;
   }
+
   .headline-large {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(45px + (63 - 45) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
   }
+
   .headline-medium {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: calc(32px + (45 - 32) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(36px + (40 - 34) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.1vw;
+    word-spacing: -0.1vw;
   }
+
   .headline-small {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: calc(24px + (26 - 24) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.05vw;
   }
+
+  .copy-sub {
+    font-size: calc(14px + (18 - 14) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(21px + (22 - 20) * (100vw - 1024px) / (1440 - 1024));
+    margin: 0.8vw 0;
+  }
+
   .copy-eyebrow {
-    font-size: 13px;
-    line-height: 13px;
+    font-size: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
   }
-  .copy-sub {
-    font-size: 14px;
-    line-height: 16px;
-  }
+
   .copy-cta {
-    font-size: 10px;
-    line-height: 20px;
+    font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
   }
-}
-@media only screen and (min-width: 1440px) {
-  
-  .headline-XL {
-    font-size:76px;
-    line-height:55px;
+
+  /*--- 1024px ---*/
+
+  @media only screen and (max-width: 1024px) {
+    .headline-XL {
+      font-size: 60px;
+      line-height: 42px;
+      letter-spacing: -1.54px;
+    }
+    .headline-large {
+      font-size: 45px;
+      line-height: 45px;
+    }
+    .headline-medium {
+      font-size: 30px;
+      line-height: 36px;
+    }
+    .headline-small {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .copy-eyebrow {
+      font-size: 13px;
+      line-height: 13px;
+    }
+    .copy-sub {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .copy-cta {
+      font-size: 10px;
+      line-height: 20px;
+    }
   }
-  .headline-small {
-    font-size:30px;
+
+  @media only screen and (min-width: 1440px) {
+
+    .headline-XL {
+      font-size: 76px;
+      line-height: 55px;
+    }
+    .headline-small {
+      font-size: 30px;
+    }
+    .copy-sub {
+      font-size: 18px;
+    }
+    .copy-cta {
+      font-size: 14px;
+    }
   }
-  .copy-sub {
-    font-size:18px;
-  }
-  .copy-cta {
-    font-size:14px;
-  }
-}
 </style>
 
 <section class="main-content fullDiv">
@@ -469,7 +608,8 @@ Font Sizes
 
         <div>
           <p class="crate-italic headline-small cmsWhite">
-            We&rsquo;re always exploring what&rsquo;s new. This bold new collection is filled with pieces that are inspiring us right now.
+            We&rsquo;re always exploring what&rsquo;s new. This bold new collection is filled with pieces that are inspiring us right
+            now.
           </p>
           <p class="crate-roman copy-sub cmsWhite">
             And we can&rsquo;t wait for you to explore,
@@ -522,16 +662,16 @@ Font Sizes
   </section>
   <!-- Specialty Curated -->
 
-<!--=============== CAROUSEL ===============-->
-<section class="product-carousel fade-out fullDiv">
-  <div class="product-carousel__container">
+  <!--=============== CAROUSEL ===============-->
+  <section class="product-carousel fade-out fullDiv">
+    <div class="product-carousel__container">
 
-    <div class="carousel-wrapper responsive crate-helvetica-roman">
+      <div class="carousel-wrapper responsive crate-helvetica-roman">
 
-      <div class="carousel__block">
-        <a id="grabber0Link" href="">
-          <img id="grabber0Image" src="" alt="">
-          <div class="overlay">
+        <div class="carousel__block">
+          <a id="grabber0Link" href="">
+            <img id="grabber0Image" src="" alt="">
+            <div class="overlay">
               <div class="textPos">
                 <p id="grabber0Name" class="crate-bold copy-sub"></p>
                 <p class="copy-cta crate-bold">Shop Now</p>
@@ -539,14 +679,14 @@ Font Sizes
               <!-- textPos-->
             </div>
             <!-- overlay-->
-        </a>
-      </div>
-      <!-- carousel block-->
+          </a>
+        </div>
+        <!-- carousel block-->
 
-      <div class="carousel__block">
-        <a id="grabber1Link" href="">
-          <img id="grabber1Image" src="" alt="">
-          <div class="overlay">
+        <div class="carousel__block">
+          <a id="grabber1Link" href="">
+            <img id="grabber1Image" src="" alt="">
+            <div class="overlay">
               <div class="textPos">
                 <p id="grabber1Name" class="crate-bold copy-sub"></p>
                 <p class="copy-cta crate-bold">Shop Now</p>
@@ -554,14 +694,14 @@ Font Sizes
               <!-- textPos-->
             </div>
             <!-- overlay-->
-        </a>
-      </div>
-      <!-- carousel block-->
+          </a>
+        </div>
+        <!-- carousel block-->
 
-      <div class="carousel__block">
-        <a id="grabber2Link" href="">
-          <img id="grabber2Image" src="" alt="">
-          <div class="overlay">
+        <div class="carousel__block">
+          <a id="grabber2Link" href="">
+            <img id="grabber2Image" src="" alt="">
+            <div class="overlay">
               <div class="textPos">
                 <p id="grabber2Name" class="crate-bold copy-sub"></p>
                 <p class="copy-cta crate-bold">Shop Now</p>
@@ -569,14 +709,14 @@ Font Sizes
               <!-- textPos-->
             </div>
             <!-- overlay-->
-        </a>
-      </div>
-      <!-- carousel block-->
+          </a>
+        </div>
+        <!-- carousel block-->
 
-      <div class="carousel__block">
-        <a id="grabber3Link" href="">
-          <img id="grabber3Image" src="" alt="">
-          <div class="overlay">
+        <div class="carousel__block">
+          <a id="grabber3Link" href="">
+            <img id="grabber3Image" src="" alt="">
+            <div class="overlay">
               <div class="textPos">
                 <p id="grabber3Name" class="crate-bold copy-sub"></p>
                 <p class="copy-cta crate-bold">Shop Now</p>
@@ -584,14 +724,14 @@ Font Sizes
               <!-- textPos-->
             </div>
             <!-- overlay-->
-        </a>
-      </div>
-      <!-- carousel block-->
+          </a>
+        </div>
+        <!-- carousel block-->
 
-      <div class="carousel__block">
-        <a id="grabber4Link" href="">
-          <img id="grabber4Image" src="" alt="">
-          <div class="overlay">
+        <div class="carousel__block">
+          <a id="grabber4Link" href="">
+            <img id="grabber4Image" src="" alt="">
+            <div class="overlay">
               <div class="textPos">
                 <p id="grabber4Name" class="crate-bold copy-sub"></p>
                 <p class="copy-cta crate-bold">Shop Now</p>
@@ -599,14 +739,14 @@ Font Sizes
               <!-- textPos-->
             </div>
             <!-- overlay-->
-        </a>
-      </div>
-      <!-- carousel block-->
+          </a>
+        </div>
+        <!-- carousel block-->
 
-      <div class="carousel__block">
-        <a id="grabber5Link" href="">
-          <img id="grabber5Image" src="" alt="">
-          <div class="overlay">
+        <div class="carousel__block">
+          <a id="grabber5Link" href="">
+            <img id="grabber5Image" src="" alt="">
+            <div class="overlay">
               <div class="textPos">
                 <p id="grabber5Name" class="crate-bold copy-sub"></p>
                 <p class="copy-cta crate-bold">Shop Now</p>
@@ -614,14 +754,14 @@ Font Sizes
               <!-- textPos-->
             </div>
             <!-- overlay-->
-        </a>
-      </div>
-      <!-- carousel block-->
+          </a>
+        </div>
+        <!-- carousel block-->
 
-      <div class="carousel__block">
-        <a id="grabber6Link" href="">
-          <img id="grabber6Image" src="" alt="">
-          <div class="overlay">
+        <div class="carousel__block">
+          <a id="grabber6Link" href="">
+            <img id="grabber6Image" src="" alt="">
+            <div class="overlay">
               <div class="textPos">
                 <p id="grabber6Name" class="crate-bold copy-sub"></p>
                 <p class="copy-cta crate-bold">Shop Now</p>
@@ -629,14 +769,14 @@ Font Sizes
               <!-- textPos-->
             </div>
             <!-- overlay-->
-        </a>
-      </div>
-      <!-- carousel block-->
+          </a>
+        </div>
+        <!-- carousel block-->
 
-      <div class="carousel__block">
-        <a id="grabber7Link" href="">
-          <img id="grabber7Image" src="" alt="">
-          <div class="overlay">
+        <div class="carousel__block">
+          <a id="grabber7Link" href="">
+            <img id="grabber7Image" src="" alt="">
+            <div class="overlay">
               <div class="textPos">
                 <p id="grabber7Name" class="crate-bold copy-sub"></p>
                 <p class="copy-cta crate-bold">Shop Now</p>
@@ -644,14 +784,14 @@ Font Sizes
               <!-- textPos-->
             </div>
             <!-- overlay-->
-        </a>
-      </div>
-      <!-- carousel block-->
+          </a>
+        </div>
+        <!-- carousel block-->
 
-      <div class="carousel__block">
-        <a id="grabber8Link" href="">
-          <img id="grabber8Image" src="" alt="">
-          <div class="overlay">
+        <div class="carousel__block">
+          <a id="grabber8Link" href="">
+            <img id="grabber8Image" src="" alt="">
+            <div class="overlay">
               <div class="textPos">
                 <p id="grabber8Name" class="crate-bold copy-sub"></p>
                 <p class="copy-cta crate-bold">Shop Now</p>
@@ -659,14 +799,14 @@ Font Sizes
               <!-- textPos-->
             </div>
             <!-- overlay-->
-        </a>
-      </div>
-      <!-- carousel block-->
+          </a>
+        </div>
+        <!-- carousel block-->
 
-      <div class="carousel__block">
-        <a id="grabber9Link" href="">
-          <img id="grabber9Image" src="" alt="">
-          <div class="overlay">
+        <div class="carousel__block">
+          <a id="grabber9Link" href="">
+            <img id="grabber9Image" src="" alt="">
+            <div class="overlay">
               <div class="textPos">
                 <p id="grabber9Name" class="crate-bold copy-sub"></p>
                 <p class="copy-cta crate-bold">Shop Now</p>
@@ -674,16 +814,16 @@ Font Sizes
               <!-- textPos-->
             </div>
             <!-- overlay-->
-        </a>
-      </div>
-      <!-- carousel block-->
+          </a>
+        </div>
+        <!-- carousel block-->
 
+      </div>
+      <!-- carousel responsive -->
     </div>
-    <!-- carousel responsive -->
-  </div>
-  <!-- carousel container-->
-</section>
-<!-- product carousel -->
+    <!-- carousel container-->
+  </section>
+  <!-- product carousel -->
 
   <!--=============== Uniquely Crafted ===============-->
   <section class="unique fullDiv fade-out">
@@ -1125,6 +1265,16 @@ Font Sizes
   </section>
   <!-- Bottom Bar -->
 
+  <p style="margin-top: 2%;margin-bottom: 2%;">
+    Explore a collection of modern home furnishings at the cutting edge of contemporary. Blending trend-forward forms with striking
+    fabrics and finishes, these exclusive products bring bold style to any room. Arrange modern armchairs and tufted sofas
+    around a coffee table for chic seating. Fit a circular nesting table between seats and, for a mod look, contrast clean-lined
+    decor with the curvilinear furniture. Rest a geometric vase on the curved table, or display a table lamp with a striking
+    silhouette here. An overhead chandelier brings on-trend elegance to the space. Think mixed-material lighting that incorporates
+    exposed glass bulbs and brassy metallics, or opt for darker metals for a dash of industrial flair. Finish the space with
+    distinctly modern wall art, such as a graphic photograph in black and white, or a minimalist watercolor. Look through
+    our collection of modern home furnishings that speak to your sense of style.</p>
+
   <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
@@ -1137,100 +1287,102 @@ Font Sizes
 
 
 <script>
-function runTheThings() {
-  $(document).ready(function() {
-    
-    function boxOpen() {
-      $(".empty-box, .empty-box-right").each(function(i) {
-        var bottom_of_object = $(this).offset().top;
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if (bottom_of_window > bottom_of_object) {
-          $(this).addClass('expanded-box');
-        } else {
-          $(this).removeClass("expanded-box");
-        }
-      });
-    }
-    
-    function fade() {
-      
-      
-      $(".fade-out").each(function(i) {
-        var bottom_of_object = $(this).offset().top;
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if (bottom_of_window > bottom_of_object) {
-          $(this).addClass("fade-in");
-          $(this).removeClass("fade-out");
-        } else {
-          $(this).removeClass("fade-in");
-          $(this).addClass("fade-out");
-        }
+  function runTheThings() {
+    $(document).ready(function () {
+
+      function boxOpen() {
+        $(".empty-box, .empty-box-right").each(function (i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass('expanded-box');
+          } else {
+            $(this).removeClass("expanded-box");
+          }
+        });
+      }
+
+      function fade() {
+
+
+        $(".fade-out").each(function (i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass("fade-in");
+            $(this).removeClass("fade-out");
+          } else {
+            $(this).removeClass("fade-in");
+            $(this).addClass("fade-out");
+          }
+        });
+
+      }
+
+      //when scrolling
+      window.addEventListener("scroll", function (event) {
+        fade();
+        boxOpen();
       });
 
-    }
-
-    //when scrolling
-    window.addEventListener("scroll", function(event) {
+      //onload check
       fade();
       boxOpen();
-    });
 
-    //onload check
-    fade();
-    boxOpen();
-
-    $(".responsive").slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      prevArrow: '<svg id="leftArr"><polygon class="st0" points="1.4,58 56.6,113.1 58,111.7 2.8,56.6 58,1.4 56.6,0 1.4,55.2 0,56.6 "/></svg>',
-      nextArrow: '<svg id="rightArr"><polygon class="st0" points="56.6,55.2 1.4,0 0,1.4 55.2,56.6 0,111.7 1.4,113.1 56.6,58 58,56.6 "/></svg>'
-    });
-
-    var getProductNavigateDetail = function(skuList) {
-      var postUrl =
-          "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
-        imageURL = "//images.crateandbarrel.com/is/image/Crate/";
-
-      $.ajax({
-        url: postUrl,
-        type: "POST",
-        data: { skus: skuList },
-        dataType: "json",
-        success: function(result) {
-          if (result[0] != null) {
-            for (let i = 0; i < result.length; i++) {
-              $("#grabber" + [i] + "Link").attr("href", result[i].NavigateUrl);
-              $("#grabber" + [i] + "Image").attr(
-                "src",
-                imageURL + result[i].ImagePath
-              );
-              $("#grabber" + [i] + "Name").html(result[i].Name);
-            }
-          }
-        },
-        error: function(jqXhr, textStatus, errorThrown) {
-          console.log(textStatus, errorThrown);
-        }
+      $(".responsive").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        prevArrow: '<svg id="leftArr"><polygon class="st0" points="1.4,58 56.6,113.1 58,111.7 2.8,56.6 58,1.4 56.6,0 1.4,55.2 0,56.6 "/></svg>',
+        nextArrow: '<svg id="rightArr"><polygon class="st0" points="56.6,55.2 1.4,0 0,1.4 55.2,56.6 0,111.7 1.4,113.1 56.6,58 58,56.6 "/></svg>'
       });
-    };
-    getProductNavigateDetail(
- "115885, 116816, 127368, 117378, 117482, 118360, 117786, 117703, 128661, 117800 ,122546,122555,122930,123061,123495,123159,123128,122305,122906,123138,124111,124076,124082,124012,122952,123737,123324,123746,123051,123761"
-    );
-  });
-}
 
-function jQueryIsLoaded() {
-  if (window.jQuery) {
-    console.log("jQuery is loaded");
+      var getProductNavigateDetail = function (skuList) {
+        var postUrl =
+          "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
+          imageURL = "//images.crateandbarrel.com/is/image/Crate/";
 
-    runTheThings();
-  } else {
-    setTimeout(jQueryIsLoaded, 50);
+        $.ajax({
+          url: postUrl,
+          type: "POST",
+          data: {
+            skus: skuList
+          },
+          dataType: "json",
+          success: function (result) {
+            if (result[0] != null) {
+              for (let i = 0; i < result.length; i++) {
+                $("#grabber" + [i] + "Link").attr("href", result[i].NavigateUrl);
+                $("#grabber" + [i] + "Image").attr(
+                  "src",
+                  imageURL + result[i].ImagePath
+                );
+                $("#grabber" + [i] + "Name").html(result[i].Name);
+              }
+            }
+          },
+          error: function (jqXhr, textStatus, errorThrown) {
+            console.log(textStatus, errorThrown);
+          }
+        });
+      };
+      getProductNavigateDetail(
+        "115885, 116816, 127368, 117378, 117482, 118360, 117786, 117703, 128661, 117800 ,122546,122555,122930,123061,123495,123159,123128,122305,122906,123138,124111,124076,124082,124012,122952,123737,123324,123746,122982,123761"
+      );
+    });
   }
-}
 
-jQueryIsLoaded();
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
 </script>
