@@ -1,1085 +1,1397 @@
 <style>
-  .main-container {
-    margin: 0 auto;
-  }
-
+    .main-container {
+      margin: 0 auto;
+    }
+  
+    /*=======================================================
+  Hero
+  =======================================================*/
+  
+    .hero__text {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      height: 48%;
+      position: absolute;
+      top: 24%;
+      left: 14.7%;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+  
+    /* Style the navbar */
+  
   /*=======================================================
-Hero
-=======================================================*/
-
-  .hero__text {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    height: 48%;
-    position: absolute;
-    top: 24%;
-    left: 14.7%;
-    background-color: rgba(255, 255, 255, 0.7);
-  }
-
-  /* Style the navbar */
-
-/*=======================================================
-navbar
-=======================================================*/
-
-  #navbar {
-    overflow: hidden;
-    background-color: #333;
-    z-index: 50;
-    min-width: 1024px;
-    max-width: 1680px;
-  }
-
-  #navbar ul {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    margin: 0 !important;
-  }
-
-  /* Navbar links */
-
-  .nav li {
-    margin: 8px 8px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-
-  .nav li a {
-    padding: 0 5px !important;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    padding: 2px 10px !important;
-  }
-
-  .nav li a:hover,
-  .nav li a:focus,
-  #navbar > ul > li.active {
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background-color: transparent;
-  }
-
-  .nav li a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .nav>li>a {
-    display: inline;
-  }
-
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-
-  .stickyNav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-
-  .stickyNav+#LL {
-    padding-top: 10px;
-  }
-
-  /*=======================================================
-Live & Lounge
-=======================================================*/
-
-  .LL__top,
-  .LL__bottom {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .LL__header {
-    position: absolute;
-    margin-left: -24.5%;
-    margin-top: 4%;
-  }
-
-  .LL__header p {
-    margin-left: 25%;
-    margin-top: 2%;
-  }
-
-  .LL__top__img {
-    width: 70%;
-    position: relative;
-  }
-
-  .LL__top__img-group {
-    width: 33%;
-  }
-
-  .LL__top__img-group>div {
-    position: relative;
-  }
-
-  .LL__bottom__img-group {
-    width: 20%;
-    position: absolute;
-  }
-
-  .LL__bottom__img {
-    width: 82%;
-    margin-left: auto;
-    padding-top: 5%;
-  }
-
-  .LL__bottom__img-group>div {
-    position: relative;
-  }
-
-  /*=======================================================
-Wine & Dine
-=======================================================*/
-
-  .WD {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .WD__header {
-    width: 100%;
-    position: absolute;
-    top: 8%;
-    left: 36%;
-    z-index: 10;
-  }
-
-  .WD__header p {
-    margin-left: 2%;
-    margin-top: 1%;
-  }
-
-  .WD__left {
-    width: 58%;
-  }
-
-  .WD__left__img {
-    margin-right: 8%;
-  }
-
-  .WD__right {
-    margin-top: 3%;
-    width: 50%;
-  }
-
-  .WD__right__img-group {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 48%;
-  }
-
-  .WD__right__img-group>div {
-    position: relative;
-  }
-
-  /*=======================================================
-Rest & Refresh
-=======================================================*/
-
-  .RR {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .RR__col-left {
-    width: 50%;
-  }
-
-  .RR__col-mid {
-    width: 50%;
-    margin: 10% 0 0 4%;
-  }
-
-  .RR__col-right {
-    width: 17%;
-  }
-
-  .RR__header {
-    width: 100%;
-    position: absolute;
-    top: 2%;
-    left: 27%;
-  }
-
-  .RR__header p {
-    margin-left: 14%;
-    margin-top: 1%;
-  }
-
-  /*=======================================================
-Work & Manage
-=======================================================*/
-
-  .WM {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .WM__header {
-    width: 100%;
-    margin-left: 38%;
-  }
-
-  .WM__header p {
-    margin-left: 10%;
-    margin-top: 2%;
-  }
-
-  .WM__left {
-    margin-right: 5%;
-    width: 30%;
-  }
-
-  .WM__left__img {
-    margin-top: 38%;
-  }
-
-  .WM__left__img-group {
-    position: absolute;
-  }
-
-  .WM__left__img-group>div {
-    position: relative;
-  }
-
-  .WM__right {
-    width: 68%;
-  }
-
-  .WM__right__img-group {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    left: 31%;
-  }
-
-  .WM__right__img-group>div {
-    position: relative;
-  }
-
-  /*=======================================================
-Sleep & Playtime
-=======================================================*/
-
-  .sleep-play__header {
-    position: absolute;
-    left: 46.3%;
-    top: 3%;
-    z-index: 10;
-  }
-
-  .sleep-play__header p {
-    margin-left: -18%;
-    margin-top: 2%;
-  }
-
-  .sleep-play__left-right-content {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .sleep-play__left {
-    width: 63%;
-  }
-
-  .sleep-play__left__img {
-    margin-top: 15%;
-  }
-
-  .sleep-play__right {
-    width: 37%;
-    margin-left: auto;
-    margin-top: 6%;
-  }
-
-  .sleep-play__right__img {
-    margin-left: 9%;
-  }
-
-  .sleep-play__bottom-images {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 88%;
-  }
-
-  .sleep-play__bottom-images>div {
-    position: relative;
-  }
-
-  /*=======================================================
-Al Fresco
-=======================================================*/
-
-  .al-fresco {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding-bottom: 2%;
-  }
-
-  .al-fresco__header {
-    position: absolute;
-    top: 0%;
-    left: 23%;
-    z-index: 10;
-  }
-
-  .al-fresco__header p {
-    margin-left: -50%;
-    margin-top: 2%;
-  }
-
-  .al-fresco__left {
-    margin: 10% 4% 2% 0;
-    width: 31%;
-  }
-
-  .al-fresco__left__img-group {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .al-fresco__left__img-group>div {
-    position: relative;
-  }
-
-  .al-fresco__right {
-    width: 65%;
-  }
-
-  .al-fresco__right__img-group {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    position: absolute;
-    bottom: -6%;
-    right: -30%;
-  }
-
-  .al-fresco__right__img-group>div {
-    position: relative;
-    width: 17%;
-  }
-
-  /*=======================================================
-Design Studio
-=======================================================*/
-
-  .design-studio {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 6%;
-  }
-
-  .design-studio__header {
-    position: absolute;
-    left: 34.1%;
-    top: 5%;
-    width: 100%;
-    z-index: 10;
-  }
-
-  .design-studio__header p {
-    margin: 8px 12.3%;
-  }
-
-  .design-studio__left-img {
-    width: 88%;
-  }
-
-  .design-studio__right-img {
-    margin-top: 15%;
-  }
-
-  /*=======================================================
-Crate Blog
-=======================================================*/
-
-  .crate-blog__text {
-    position: absolute;
-    top: 41%;
-    left: 4.5%;
-    color: #fff !important;
-  }
-
-  /*=======================================================
-Curalate Div
-=======================================================*/
-
-  #curalate-fan-reel-wrapper {
-    width: 70%;
-    overflow: auto;
-    margin: 1% auto;
-  }
-
-  .curalateText {
-    display: block;
-    margin: 0 auto;
-    padding-top: 5%;
-  }
-
-  .curalateMargins {
-    min-width: 824px;
-    max-width: 1176px;
-    position: relative;
-  }
-
-  .curalateDiv {
-    width: 100%;
-    min-width: 1024px;
-    background-color: #f0f0f0;
-    padding-bottom: 6%;
-    margin-top: 3%;
-  }
-
-
-  /*=======================================================
-General Styling
-=======================================================*/
-
-  h2 {
-    color: #222;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  .zero-margin {
-    margin: 0 !important;
-  }
-
-  .borderTop-right {
-    width: 50px;
-    border-top: 6px solid #000;
-    margin: 20px 0 20px auto;
-  }
-
-  .borderTop-left {
-    width: 50px;
-    border-top: 6px solid #000;
-    margin: 20px auto 20px 0;
-  }
-
-  .borderTop {
-    border-top: 5px solid black;
-    width: 60px;
-  }
-
-  .mBottom10 {
-    margin-bottom: 10%;
-  }
-
-  .mBottom8 {
-    margin-bottom: 8%;
-  }
-
-  .mBottom4 {
-    margin-bottom: 4%;
-  }
-
-  .mBottom2 {
-    margin-bottom: 2%;
-  }
-
-  /*=======================================================
-Overlay
-=======================================================*/
-
-  .overlay {
-    background: rgba(255, 255, 255, 0.75);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    position: absolute;
-    transition: 0.4s ease;
-  }
-
-  .overlay:hover {
-    opacity: 1;
-  }
-
-  .overlaydiv {
-    text-align: center;
-    top: 50%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-    text-align: center;
-  }
-
-  .overlaya {
-    color: #222;
-  }
-
-  .textPos {
-    width: 70%;
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    -webkit-transform: translatey(-50%);
-    transform: translatey(-50%);
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-  }
-
-  /*=======================================================
-Fade animation
-=======================================================*/
-
-  .fade-in {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%);
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
-
-  .fade-out {
-    opacity: 0;
-    -webkit-transform: translateY(10%);
-    transform: translateY(10%);
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
-
-  .fade-down {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
-
-  .fade-up {
-    opacity: 0;
-    -webkit-transform: translateY(-20%);
-    transform: translateY(-20%);
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
-
-  .fade-left {
-    opacity: 1;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
-
-  .fade-right {
-    opacity: 0;
-    -webkit-transform: translateX(-20%);
-    transform: translateX(-20%);
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
-
-  /*=======================================================
-Pulsating button
-=======================================================*/
-
-  .alert-ring {
-    position: absolute;
-  }
-
-  .alert-ring__text {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 270px;
-    height: 100px;
-    margin-top: 110px;
-    margin-left: 20px;
-    display: none;
-  }
-
-  .alert-ring__text__container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    transform: translatey(-50%);
-  }
-
-  .show-text {
-    display: 1;
-  }
-
-  .alert-ring__text p {
-    width: 90%;
-    line-height: 18px;
-  }
-
-  .alert-ring__item {
-    margin: 0px;
-    background-color: #fff;
-    border: 2px solid #fff;
-    -webkit-border-radius: 50%;
-    height: 15px;
-    width: 15px;
-    left: 2%;
-    position: absolute;
-    top: 50%;
-  }
-
-  .active-ring:hover {
-    opacity: 0;
-  }
-
-  .active-ring {
-    -webkit-animation: 3s ease-out;
-    -webkit-animation-iteration-count: infinite;
-    opacity: 1;
-  }
-
-  .active-ring:before {
-    content: "";
-    display: block;
-    border: 6px solid #fff;
-    -webkit-border-radius: 50%;
-    height: 16px;
-    width: 16px;
-    position: absolute;
-    left: -6px;
-    top: -6px;
-    -webkit-animation: pulsate 3s ease-out;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-delay: 0.1s;
-    opacity: 0;
-  }
-
-  .active-ring:after {
-    content: "";
-    display: block;
-    border: 2px solid #fff;
-    -webkit-border-radius: 50%;
-    height: 32px;
-    width: 32px;
-    position: absolute;
-    left: -10px;
-    top: -10px;
-    -webkit-animation: pulsate 3s ease-out;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-delay: 0.2s;
-    opacity: 0;
-  }
-
-  @-webkit-keyframes pulsate {
-    0% {
-      -webkit-transform: scale(0.1, 0.1);
-      opacity: 0;
-      /*     border-color: #00fc00; */
+  navbar
+  =======================================================*/
+  
+    #navbar {
+      overflow: hidden;
+      background-color: #333;
+      z-index: 50;
+      min-width: 1024px;
+      max-width: 1680px;
     }
-    50% {
-      opacity: 1;
-      /*     border-color: #00fc00; */
+  
+    #navbar ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style-type: none;
+      margin: 0 !important;
     }
-    100% {
-      -webkit-transform: scale(1.2, 1.2);
-      opacity: 0;
-      /*     border-color: #00a600; */
+  
+    /* Navbar links */
+  
+    .nav li {
+      margin: 8px 8px;
+      text-decoration: none;
+      border-radius: 5px;
     }
-  }
-
-  @keyframes pulsate {
-    0% {
-      -webkit-transform: scale(0.1, 0.1);
-      opacity: 0;
-      /*     border-color: #00fc00; */
+  
+    .nav li a {
+      padding: 0 5px !important;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      padding: 2px 10px !important;
     }
-    50% {
-      opacity: 1;
-      /*     border-color: #00fc00; */
+  
+    .nav li a:hover,
+    .nav li a:focus,
+    #navbar > ul > li.active {
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      background-color: transparent;
     }
-    100% {
-      -webkit-transform: scale(1.2, 1.2);
-      opacity: 0;
-      /*     border-color: #00a600; */
+  
+    .nav li a {
+      color: #fff;
+      text-decoration: none;
     }
-  }
-
-  /*=======================================================
-Rotating Images
-=======================================================*/
-
-  .cycle {
-    width: 100% !important;
-  }
-
-  .cycled-table {
-    width: 19% !important;
-  }
-
-  /*=======================================================
-Breakouts and Fixes
-=======================================================*/
-
-  .fullDiv {
-    width: 100%;
-    min-width: 1024px;
-    max-width: 1680px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .fullDiv a {
-    color: #222;
-    text-decoration: none;
-  }
-
-  .marginDiv {
-    width: 95%;
-    min-width: 819px;
-    max-width: 1680px;
-    position: relative;
-    overflow: hidden;
-    margin: 2.5% auto;
-  }
-
-  .marginDiv a {
-    color: #222;
-  }
-
-  .content-layout {
-    max-width: 100% !important;
-  }
-
-  .content {
-    width: 100% !important;
-  }
-
-  .divMargins {
-    margin-bottom: 2% !important;
-  }
-
-  .fullImg {
-    width: 100%;
-    max-width: 1680px;
-  }
-
-  .cmsArrowR {
-    border-width: 0.4vw;
-  }
-
-  .ctaMargin {
-    margin: 1vw 0;
-  }
-
-  .subMargin {
-    margin: 1vw 0 0;
-  }
-
-  #topNavWrap {
-    background: transparent;
-  }
-
-  #topNavContainer {
-    border: none;
-  }
-
-  #footerContainer {
-    float: none !important;
-    margin: -1px auto 30px !important;
-  }
-
-  p,
-  h1 {
-    color: #222;
-  }
-
-  .fullDiv a {
-    padding: 0 !important;
-  }
-
-  /*=======================================================
-Font Sizes
-=======================================================*/
-
-  .bf-eyebrow {
-    font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
-    text-transform: uppercase;
-  }
-
-  .bf-headline {
-    font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
-  }
-
-  .bf-copy {
-    font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
-  }
-
-  .headline-XL {
-    font-size: calc(55px + (73 - 55) * (100vw - 1024px) / (1680 - 1024));
-    line-height: calc(52px + (68 - 55) * (100vw - 1024px) / (1680 - 1024));
-    letter-spacing: -0.15vw;
-  }
-
-  .headline-large {
-    font-size: calc(40px + (63 - 40) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(40px + (63 - 40) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
-  }
-
-  .headline-medium {
-    font-size: calc(35px + (45 - 35) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(36px + (40 - 35) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.1vw;
-    word-spacing: -0.1vw;
-  }
-
-  .headline-small {
-    font-size: calc(24px + (34 - 24) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(30px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.05vw;
-  }
-
-  .copy-sub {
-    font-size: calc(16px + (20 - 14) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(15px + (25 - 20) * (100vw - 1024px) / (1440 - 1024));
-    margin: 0.5vw 0;
-  }
-
-  .copy-gr {
-    font-size: calc(14px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
-  }
-
-  .copy-cta {
-    font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
-    margin: 1vw 0;
-    text-transform: uppercase;
-  }
-
-  /*--- 1024px ---*/
-
-  @media only screen and (max-width: 1024px) {
-    .bf-eyebrow {
-      font-size: 35px;
-      line-height: 35px;
+  
+    .nav>li>a {
+      display: inline;
     }
-    .bf-headline {
-      font-size: 76px;
-      line-height: 76px;
+  
+    /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  
+    .stickyNav {
+      position: fixed;
+      top: 0;
+      width: 100%;
     }
-    .bf-copy {
-      font-size: 50px;
-      line-height: 50px;
+  
+    /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  
+    .stickyNav+#LL {
+      padding-top: 10px;
     }
-    .headline-XL {
-      font-size: 55px;
-      line-height: 52px;
-      letter-spacing: -1.54px;
+  
+    /*=======================================================
+  Live & Lounge
+  =======================================================*/
+  
+    .LL__top,
+    .LL__bottom {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
     }
-    .headline-large {
-      font-size: 43px;
-      line-height: 43px;
-    }
-    .headline-medium {
-      font-size: 30px;
-      line-height: 36px;
-    }
-    .headline-small {
-      font-size: 24px;
-      line-height: 28px;
-    }
-    .copy-gr {
-      font-size: 14px;
-      line-height: 13px;
-    }
-    .copy-sub {
-      font-size: 14px;
-      line-height: 21px;
-    }
-    .copy-cta {
-      font-size: 10px;
-      line-height: 20px;
-    }
-
-    .sleep-play__header {
-      top: 3%;
-    }
-    .sleep-play__header p {
-      margin-left: -26%;
-    }
-    .design-studio__header {
-      top: 7%;
-    }
-    .WM__header {
-      margin-left: 30%;
-    }
-  }
-
-  @media only screen and (min-width: 1025px) {
-    .sleep-play__header {
-      top: 3.5%;
-    }
-    .sleep-play__header p {
-      margin-left: -35%;
-    }
-    .design-studio__header {
-      top: 7%;
-    }
-    .WM__header {
-      margin-left: 7%;
-      margin-top: 3%;
-    }
-  }
-
-  @media only screen and (min-width: 1230px) {
-    .LL-light {
+  
+    .LL__header {
+      position: absolute;
+      margin-left: -24.5%;
       margin-top: 4%;
     }
-    .sleep-play__header {
-      top: 4.6%;
+  
+    .LL__header p {
+      margin-left: 25%;
+      margin-top: 2%;
     }
-    .design-studio__header {
-      top: 7%;
+  
+    .LL__top__img {
+      width: 70%;
+      position: relative;
     }
+  
+    .LL__top__img-group {
+      width: 33%;
+    }
+  
+    .LL__top__img-group>div {
+      position: relative;
+    }
+  
+    .LL__bottom__img-group {
+      width: 20%;
+      position: absolute;
+    }
+  
+    .LL__bottom__img {
+      width: 82%;
+      margin-left: auto;
+      padding-top: 5%;
+    }
+  
+    .LL__bottom__img-group>div {
+      position: relative;
+    }
+  
+    /*=======================================================
+  Wine & Dine
+  =======================================================*/
+  
+    .WD {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  
+    .WD__header {
+      width: 100%;
+      position: absolute;
+      top: 8%;
+      left: 36%;
+      z-index: 10;
+    }
+  
+    .WD__header p {
+      margin-left: 2%;
+      margin-top: 1%;
+    }
+  
+    .WD__left {
+      width: 58%;
+    }
+  
+    .WD__left__img {
+      margin-right: 8%;
+    }
+  
+    .WD__right {
+      margin-top: 3%;
+      width: 50%;
+    }
+  
+    .WD__right__img-group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 48%;
+    }
+  
+    .WD__right__img-group>div {
+      position: relative;
+    }
+  
+    /*=======================================================
+  Rest & Refresh
+  =======================================================*/
+  
+    .RR {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  
+    .RR__col-left {
+      width: 50%;
+    }
+  
+    .RR__col-mid {
+      width: 50%;
+      margin: 10% 0 0 4%;
+    }
+  
+    .RR__col-right {
+      width: 17%;
+    }
+  
+    .RR__header {
+      width: 100%;
+      position: absolute;
+      top: 2%;
+      left: 27%;
+    }
+  
+    .RR__header p {
+      margin-left: 14%;
+      margin-top: 1%;
+    }
+  
+    /*=======================================================
+  Work & Manage
+  =======================================================*/
+  
+    .WM {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  
     .WM__header {
-      margin-left: 28%;
+      width: 100%;
+      margin-left: 38%;
     }
-  }
-
-  @media only screen and (min-width: 1680px) {
-    .LL-light {
-      margin-top: 1.5%;
+  
+    .WM__header p {
+      margin-left: 10%;
+      margin-top: 2%;
     }
+  
+    .WM__left {
+      margin-right: 5%;
+      width: 30%;
+    }
+  
+    .WM__left__img {
+      margin-top: 38%;
+    }
+  
+    .WM__left__img-group {
+      position: absolute;
+    }
+  
+    .WM__left__img-group>div {
+      position: relative;
+    }
+  
+    .WM__right {
+      width: 68%;
+    }
+  
+    .WM__right__img-group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 31%;
+    }
+  
+    .WM__right__img-group>div {
+      position: relative;
+    }
+  
+    /*=======================================================
+  Sleep & Playtime
+  =======================================================*/
+  
+    .sleep-play__header {
+      position: absolute;
+      left: 46.3%;
+      top: 3%;
+      z-index: 10;
+    }
+  
+    .sleep-play__header p {
+      margin-left: -18%;
+      margin-top: 2%;
+    }
+  
+    .sleep-play__left-right-content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  
+    .sleep-play__left {
+      width: 63%;
+    }
+  
+    .sleep-play__left__img {
+      margin-top: 15%;
+    }
+  
+    .sleep-play__right {
+      width: 37%;
+      margin-left: auto;
+      margin-top: 6%;
+    }
+  
+    .sleep-play__right__img {
+      margin-left: 9%;
+    }
+  
+    .sleep-play__bottom-images {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 88%;
+    }
+  
+    .sleep-play__bottom-images>div {
+      position: relative;
+    }
+  
+    /*=======================================================
+  Al Fresco
+  =======================================================*/
+  
+    .al-fresco {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding-bottom: 2%;
+    }
+  
+    .al-fresco__header {
+      position: absolute;
+      top: 0%;
+      left: 23%;
+      z-index: 10;
+    }
+  
+    .al-fresco__header p {
+      margin-left: -50%;
+      margin-top: 2%;
+    }
+  
+    .al-fresco__left {
+      margin: 10% 4% 2% 0;
+      width: 31%;
+    }
+  
+    .al-fresco__left__img-group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  
+    .al-fresco__left__img-group>div {
+      position: relative;
+    }
+  
+    .al-fresco__right {
+      width: 65%;
+    }
+  
+    .al-fresco__right__img-group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      position: absolute;
+      bottom: -6%;
+      right: -30%;
+    }
+  
+    .al-fresco__right__img-group>div {
+      position: relative;
+      width: 17%;
+    }
+  
+    /*=======================================================
+  Design Studio
+  =======================================================*/
+  
+    .design-studio {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding-top: 6%;
+    }
+  
+    .design-studio__header {
+      position: absolute;
+      left: 34.1%;
+      top: 5%;
+      width: 100%;
+      z-index: 10;
+    }
+  
+    .design-studio__header p {
+      margin: 8px 12.3%;
+    }
+  
+    .design-studio__left-img {
+      width: 88%;
+    }
+  
+    .design-studio__right-img {
+      margin-top: 15%;
+    }
+  
+    /*=======================================================
+  Crate Blog
+  =======================================================*/
+  
+    .crate-blog__text {
+      position: absolute;
+      top: 41%;
+      left: 4.5%;
+      color: #fff !important;
+    }
+  
+    /*=======================================================
+  Curalate Div
+  =======================================================*/
+  
+    #curalate-fan-reel-wrapper {
+      width: 70%;
+      overflow: auto;
+      margin: 1% auto;
+    }
+  
+    .curalateText {
+      display: block;
+      margin: 0 auto;
+      padding-top: 5%;
+    }
+  
+    .curalateMargins {
+      min-width: 824px;
+      max-width: 1176px;
+      position: relative;
+    }
+  
+    .curalateDiv {
+      width: 100%;
+      min-width: 1024px;
+      background-color: #f0f0f0;
+      padding-bottom: 6%;
+      margin-top: 3%;
+    }
+  
+  
+    /*=======================================================
+  General Styling
+  =======================================================*/
+  
+    h2 {
+      color: #222;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  
+    .zero-margin {
+      margin: 0 !important;
+    }
+  
+    .borderTop-right {
+      width: 50px;
+      border-top: 6px solid #000;
+      margin: 20px 0 20px auto;
+    }
+  
+    .borderTop-left {
+      width: 50px;
+      border-top: 6px solid #000;
+      margin: 20px auto 20px 0;
+    }
+  
+    .borderTop {
+      border-top: 5px solid black;
+      width: 60px;
+    }
+  
+    .mBottom10 {
+      margin-bottom: 10%;
+    }
+  
+    .mBottom8 {
+      margin-bottom: 8%;
+    }
+  
+    .mBottom4 {
+      margin-bottom: 4%;
+    }
+  
+    .mBottom2 {
+      margin-bottom: 2%;
+    }
+  
+    /*=======================================================
+  Overlay
+  =======================================================*/
+  
+    .overlay {
+      background: rgba(255, 255, 255, 0.75);
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      position: absolute;
+      transition: 0.4s ease;
+    }
+  
+    .overlay:hover {
+      opacity: 1;
+    }
+  
+    .overlaydiv {
+      text-align: center;
+      top: 50%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+  
+    .overlaya {
+      color: #222;
+    }
+  
+    .textPos {
+      width: 70%;
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      -webkit-transform: translatey(-50%);
+      transform: translatey(-50%);
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+  
+    /*=======================================================
+  Fade animation
+  =======================================================*/
+  
+    .fade-in {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+      transform: translateY(0%);
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+  
+    .fade-out {
+      opacity: 0;
+      -webkit-transform: translateY(10%);
+      transform: translateY(10%);
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+  
+    .fade-down {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+  
+    .fade-up {
+      opacity: 0;
+      -webkit-transform: translateY(-20%);
+      transform: translateY(-20%);
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+  
+    .fade-left {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+  
+    .fade-right {
+      opacity: 0;
+      -webkit-transform: translateX(-20%);
+      transform: translateX(-20%);
+      -webkit-transition: all 2s;
+      transition: all 2s;
+    }
+  
+    /*=======================================================
+  Pulsating button
+  =======================================================*/
+  
+    .alert-ring {
+      position: absolute;
+    }
+  
+    .alert-ring__text {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.8);
+      width: 270px;
+      height: 100px;
+      margin-top: 110px;
+      margin-left: 20px;
+      display: none;
+    }
+  
+    .alert-ring__text__container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      transform: translatey(-50%);
+    }
+  
+    .show-text {
+      display: 1;
+    }
+  
+    .alert-ring__text p {
+      width: 90%;
+      line-height: 18px;
+    }
+  
+    .alert-ring__item {
+      margin: 0px;
+      background-color: #fff;
+      border: 2px solid #fff;
+      -webkit-border-radius: 50%;
+      height: 15px;
+      width: 15px;
+      left: 2%;
+      position: absolute;
+      top: 50%;
+    }
+  
+    .active-ring:hover {
+      opacity: 0;
+    }
+  
+    .active-ring {
+      -webkit-animation: 3s ease-out;
+      -webkit-animation-iteration-count: infinite;
+      opacity: 1;
+    }
+  
+    .active-ring:before {
+      content: "";
+      display: block;
+      border: 6px solid #fff;
+      -webkit-border-radius: 50%;
+      height: 16px;
+      width: 16px;
+      position: absolute;
+      left: -6px;
+      top: -6px;
+      -webkit-animation: pulsate 3s ease-out;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-delay: 0.1s;
+      opacity: 0;
+    }
+  
+    .active-ring:after {
+      content: "";
+      display: block;
+      border: 2px solid #fff;
+      -webkit-border-radius: 50%;
+      height: 32px;
+      width: 32px;
+      position: absolute;
+      left: -10px;
+      top: -10px;
+      -webkit-animation: pulsate 3s ease-out;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-delay: 0.2s;
+      opacity: 0;
+    }
+  
+    @-webkit-keyframes pulsate {
+      0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0;
+        /*     border-color: #00fc00; */
+      }
+      50% {
+        opacity: 1;
+        /*     border-color: #00fc00; */
+      }
+      100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0;
+        /*     border-color: #00a600; */
+      }
+    }
+  
+    @keyframes pulsate {
+      0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0;
+        /*     border-color: #00fc00; */
+      }
+      50% {
+        opacity: 1;
+        /*     border-color: #00fc00; */
+      }
+      100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0;
+        /*     border-color: #00a600; */
+      }
+    }
+  
+    /*=======================================================
+  Rotating Images
+  =======================================================*/
+  
+    .cycle {
+      width: 100% !important;
+    }
+  
+    .cycled-table {
+      width: 19% !important;
+    }
+  
+    /*=======================================================
+  Breakouts and Fixes
+  =======================================================*/
+  
+    .fullDiv {
+      width: 100%;
+      min-width: 1024px;
+      max-width: 1680px;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .fullDiv a {
+      color: #222;
+      text-decoration: none;
+    }
+  
+    .marginDiv {
+      width: 95%;
+      min-width: 819px;
+      max-width: 1680px;
+      position: relative;
+      overflow: hidden;
+      margin: 2.5% auto;
+    }
+  
+    .marginDiv a {
+      color: #222;
+    }
+  
+    .content-layout {
+      max-width: 100% !important;
+    }
+  
+    .content {
+      width: 100% !important;
+    }
+  
+    .divMargins {
+      margin-bottom: 2% !important;
+    }
+  
+    .fullImg {
+      width: 100%;
+      max-width: 1680px;
+    }
+  
+    .cmsArrowR {
+      border-width: 0.4vw;
+    }
+  
+    .ctaMargin {
+      margin: 1vw 0;
+    }
+  
+    .subMargin {
+      margin: 1vw 0 0;
+    }
+  
+    #topNavWrap {
+      background: transparent;
+    }
+  
+    #topNavContainer {
+      border: none;
+    }
+  
+    #footerContainer {
+      float: none !important;
+      margin: -1px auto 30px !important;
+    }
+  .main-container p, h1 {
+      color: #222;
+    }
+  
+    .fullDiv a {
+      padding: 0 !important;
+    }
+  
+    /*=======================================================
+  Font Sizes
+  =======================================================*/
+  
+    .bf-eyebrow {
+      font-size: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+      line-height: calc(35px + (50 - 35) * (100vw - 1024px) / (1440 - 1024));
+      letter-spacing: -0.1vw;
+      word-spacing: -0.1vw;
+      text-transform: uppercase;
+    }
+  
+    .bf-headline {
+      font-size: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+      line-height: calc(76px + (110 - 76) * (100vw - 1024px) / (1440 - 1024));
+      letter-spacing: -0.1vw;
+      word-spacing: -0.1vw;
+    }
+  
+    .bf-copy {
+      font-size: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+      line-height: calc(50px + (70 - 50) * (100vw - 1024px) / (1440 - 1024));
+      letter-spacing: -0.1vw;
+      word-spacing: -0.1vw;
+    }
+  
+    .headline-XL {
+      font-size: calc(55px + (73 - 55) * (100vw - 1024px) / (1680 - 1024));
+      line-height: calc(52px + (68 - 55) * (100vw - 1024px) / (1680 - 1024));
+      letter-spacing: -0.15vw;
+    }
+  
     .headline-large {
-      font-size: 70px;
+      font-size: calc(40px + (63 - 40) * (100vw - 1024px) / (1440 - 1024));
+      line-height: calc(40px + (63 - 40) * (100vw - 1024px) / (1440 - 1024));
+      letter-spacing: -0.1vw;
+      word-spacing: -0.1vw;
     }
+  
+    .headline-medium {
+      font-size: calc(35px + (45 - 35) * (100vw - 1024px) / (1440 - 1024));
+      line-height: calc(36px + (40 - 35) * (100vw - 1024px) / (1440 - 1024));
+      letter-spacing: -0.1vw;
+      word-spacing: -0.1vw;
+    }
+  
+    .headline-small {
+      font-size: calc(24px + (34 - 24) * (100vw - 1024px) / (1440 - 1024));
+      line-height: calc(30px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+      letter-spacing: -0.05vw;
+    }
+  
+    .copy-sub {
+      font-size: calc(16px + (20 - 14) * (100vw - 1024px) / (1440 - 1024));
+      line-height: calc(15px + (25 - 20) * (100vw - 1024px) / (1440 - 1024));
+      margin: 0.5vw 0;
+    }
+  
     .copy-gr {
-      font-size: 20px;
+      font-size: calc(14px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+      line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
     }
-
-  }
-</style>
-
-
-<section class="main-container fullDiv">
-  <!--=============== HERO ===============-->
-  <section class="hero fullDiv">
-    <div class="hero__img" style="margin-bottom:-4px;">
-      <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_Hero?wid=1440&qlt=75"
-        alt="Outdoor Living area with table, wicker chairs and hanging lamps">
+  
+    .copy-cta {
+      font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+      line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+      margin: 1vw 0;
+      text-transform: uppercase;
+    }
+  
+    /*--- 1024px ---*/
+  
+    @media only screen and (max-width: 1024px) {
+      .bf-eyebrow {
+        font-size: 35px;
+        line-height: 35px;
+      }
+      .bf-headline {
+        font-size: 76px;
+        line-height: 76px;
+      }
+      .bf-copy {
+        font-size: 50px;
+        line-height: 50px;
+      }
+      .headline-XL {
+        font-size: 55px;
+        line-height: 52px;
+        letter-spacing: -1.54px;
+      }
+      .headline-large {
+        font-size: 43px;
+        line-height: 43px;
+      }
+      .headline-medium {
+        font-size: 30px;
+        line-height: 36px;
+      }
+      .headline-small {
+        font-size: 24px;
+        line-height: 28px;
+      }
+      .copy-gr {
+        font-size: 14px;
+        line-height: 13px;
+      }
+      .copy-sub {
+        font-size: 14px;
+        line-height: 21px;
+      }
+      .copy-cta {
+        font-size: 10px;
+        line-height: 20px;
+      }
+  
+      .sleep-play__header {
+        top: 3%;
+      }
+      .sleep-play__header p {
+        margin-left: -26%;
+      }
+      .design-studio__header {
+        top: 7%;
+      }
+      .WM__header {
+        margin-left: 30%;
+      }
+    }
+  
+    @media only screen and (min-width: 1025px) {
+      .sleep-play__header {
+        top: 3.5%;
+      }
+      .sleep-play__header p {
+        margin-left: -35%;
+      }
+      .design-studio__header {
+        top: 7%;
+      }
+      .WM__header {
+        margin-left: 7%;
+        margin-top: 3%;
+      }
+    }
+  
+    @media only screen and (min-width: 1230px) {
+      .LL-light {
+        margin-top: 4%;
+      }
+      .sleep-play__header {
+        top: 4.6%;
+      }
+      .design-studio__header {
+        top: 7%;
+      }
+      .WM__header {
+        margin-left: 28%;
+      }
+    }
+  
+    @media only screen and (min-width: 1680px) {
+      .LL-light {
+        margin-top: 1.5%;
+      }
+      .headline-large {
+        font-size: 70px;
+      }
+      .copy-gr {
+        font-size: 20px;
+      }
+  
+    }
+  </style>
+  
+  
+  <section class="main-container fullDiv">
+    <!--=============== HERO ===============-->
+    <section class="hero fullDiv">
+      <div class="hero__img" style="margin-bottom:-4px;">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_Hero?wid=1440&qlt=75"
+          alt="Outdoor Living area with table, wicker chairs and hanging lamps">
+      </div>
+      <!-- hero__img -->
+      <div class="hero__text">
+        <h2 style="padding:5%;" class="crate-bold headline-large">
+          Welcome
+          <br> to Your
+          <br> New Home
+        </h2>
+      </div>
+      <!-- hero__text -->
+    </section>
+    <!-- hero -->
+  
+    <!--=============== Navbar ===============-->
+    <div id="navbar" class="crate-roman">
+      <ul class="nav crate-bold cmsWhite">
+        <li>
+          <a href="#LL">Live &amp; Lounge</a>
+        </li>
+        <li>
+          <a href="#WD">Wine &amp; Dine</a>
+        </li>
+        <li>
+          <a href="#RR">Rest &amp; Refresh</a>
+        </li>
+        <li>
+          <a href="#WM">Work &amp; Manage</a>
+        </li>
+        <li>
+          <a href="#SP">Sleep &amp; Play</a>
+        </li>
+        <li>
+          <a href="#AF">Al Fresco</a>
+        </li>
+        <li>
+          <a href="#DS">Design Studio</a>
+        </li>
+        <li>
+          <a href="#CB">Crate Blog</a>
+        </li>
+      </ul>
     </div>
-    <!-- hero__img -->
-    <div class="hero__text">
-      <h2 style="padding:5%;" class="crate-bold headline-large">
-        Welcome
-        <br> to Your
-        <br> New Home
-      </h2>
-    </div>
-    <!-- hero__text -->
-  </section>
-  <!-- hero -->
-
-  <!--=============== Navbar ===============-->
-  <div id="navbar" class="crate-roman">
-    <ul class="nav crate-bold cmsWhite">
-      <li>
-        <a href="#LL">Live &amp; Lounge</a>
-      </li>
-      <li>
-        <a href="#WD">Wine &amp; Dine</a>
-      </li>
-      <li>
-        <a href="#RR">Rest &amp; Refresh</a>
-      </li>
-      <li>
-        <a href="#WM">Work &amp; Manage</a>
-      </li>
-      <li>
-        <a href="#SP">Sleep &amp; Play</a>
-      </li>
-      <li>
-        <a href="#AF">Al Fresco</a>
-      </li>
-      <li>
-        <a href="#DS">Design Studio</a>
-      </li>
-      <li>
-        <a href="#CB">Crate Blog</a>
-      </li>
-    </ul>
-  </div>
-
-  <!--=============== Live & Lounge ===============-->
-  <section id="LL" class="LL fullDiv mBottom8" style="margin-top:8%;">
-
-    <div class="LL__top fullDiv">
-      <div class="LL__top__img">
-        <a href="/furniture/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_1" alt="colorful room with 2 couches, hanging lamp, coffee table and 2 end tables in front of a stone wall">
+  
+    <!--=============== Live & Lounge ===============-->
+    <section id="LL" class="LL fullDiv mBottom8" style="margin-top:8%;">
+  
+      <div class="LL__top fullDiv">
+        <div class="LL__top__img">
+          <a href="/furniture/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_1" alt="colorful room with 2 couches, hanging lamp, coffee table and 2 end tables in front of a stone wall">
+          </a>
+  
+          <div class="alert-ring" style="left:25%;top:58%;">
+            <div class="alert-ring__item">
+              <div class="active-ring"></div>
+            </div>
+            <!-- alert-ring__item -->
+            <div class="alert-ring__text" style="margin-top:-173px;margin-left:-100px;">
+              <div class="alert-ring__text__container">
+                <p class="crate-bold copy-gr">
+                  Start by finding the perfect spot for your sofa and have the room design flow from there.
+                </p>
+              </div>
+              <!-- alert-ring__text__container -->
+            </div>
+            <!-- alert-ring__text -->
+          </div>
+          <!-- alert-ring -->
+  
+        </div>
+        <!-- LL__top__img -->
+  
+        <div class="LL__top__img-group">
+  
+          <div class="LL__header">
+            <a href="/furniture/">
+              <h2 class="crate-bold headline-XL">
+                Live &amp; Lounge
+              </h2>
+              <p class="crate-roman copy-gr">
+                The rooms that welcome us home.
+              </p>
+            </a>
+          </div>
+  
+          <!-- LL__top__group__header -->
+  
+          <div class="fade-out" style="margin-left: 12%;margin-top:6%;width:100%;z-index:5;">
+            <a href="/living-room-collections/">
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_Sofa" alt="white sofa">
+              <div class="overlay">
+                <div class="textPos">
+                  <p class="crate-bold copy-cta">
+                    shop Sofas and Sectionals
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </a>
+          </div>
+          <!-- LL__top__group__img -->
+  
+          <div class="fade-out" style="position:absolute;width:13%;
+      margin:-2% 0 0 -2%;">
+            <a href="/furniture/all-occasional-tables/1">
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_Table?fmt=png-alpha"
+                alt="brown table with white top">
+              <div class="overlay">
+                <div class="textPos">
+                  <p class="crate-bold copy-cta">
+                    Shop Accent Tables
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </a>
+          </div>
+          <!-- LL__top__group__img -->
+  
+          <div class="fade-out" style="margin: 4% 0 5% 32%;
+      width: 67%;">
+            <a href="/rugs/all-rugs/1">
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_Rugs" alt="green striped rug">
+              <div class="overlay">
+                <div class="textPos">
+                  <p class="crate-bold copy-cta">
+                    Shop Rugs
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </a>
+          </div>
+          <!-- LL__top__group__img -->
+        </div>
+        <!-- LL__top__img-group -->
+      </div>
+      <!-- LL__top -->
+  
+      <div class="LL__bottom fullDiv" style="margin-top:-6%;">
+        <div class="LL__bottom__img-group">
+  
+          <div class="fade-up LL-light" style="width:63%;">
+            <a href="/lighting/">
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_Light?fmt=png-alpha"
+                alt="hanging lamp">
+              <div class="overlay">
+                <div class="textPos" style="top:69%;left:-25%">
+                  <p class="crate-bold copy-cta">
+                    Shop Lighting
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </a>
+          </div>
+          <!-- LL__bottom__img-group__img -->
+  
+          <div style="width:85%;margin-left:20%;">
+            <a href="/decorating-and-accessories/">
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_Pillow?fmt=png-alpha"
+                alt="red and white patterned pillow">
+              <div class="overlay">
+                <div class="textPos">
+                  <p class="crate-bold copy-cta">
+                    Shop Pillows and Decor
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </a>
+          </div>
+          <!-- LL__bottom__img-group__img -->
+  
+        </div>
+        <!-- LL__bottom__img-group -->
+  
+        <div class="LL__bottom__img">
+          <a href="/furniture/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_2" alt="living room furniture with a couch, a beige chair, an arching lamp, a coffee table with flowers on top, and a shelf behind the couch">
+          </a>
+  
+          <div class="alert-ring" style="left:53%;top:47%;">
+            <div class="alert-ring__item">
+              <div class="active-ring"></div>
+            </div>
+            <div class="alert-ring__text" style="margin-top:-123px;margin-left:15px;">
+              <div class="alert-ring__text__container">
+                <p class="crate-bold copy-gr">Keep the room neutral, then layer in color through textiles and accent pieces
+                </p>
+              </div>
+              <!-- alert-ring__text__container -->
+            </div>
+            <!-- alert-ring__text -->
+          </div>
+          <!-- alert-ring -->
+        </div>
+        <!-- LL__bottom__img -->
+      </div>
+      <!-- LL__bottom -->
+    </section>
+    <!-- Live & Lounge -->
+  
+    <!--=============== Wine & Dine ===============-->
+    <section id="WD" class="WD fullDiv mBottom10">
+      <div class="WD__left ">
+        <div class="fade-right" style="width:55%;position:relative;">
+          <a href="/dining-room-collections/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_Table" alt="brown wooden table">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Dining Collections
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+  
+        <div class="WD__header">
+          <a href="/dining-room-collections/">
+            <h2 class="crate-bold headline-XL">
+              Wine &amp; Dine
+            </h2>
+            <p class="crate-roman copy-gr">
+              The heart of your home.
+            </p>
+          </a>
+        </div>
+        <!-- LL__top__group__header -->
+  
+  
+        <div class="WD__left__img">
+          <a href="/dining-and-entertaining/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_1" alt="kitchen area with island, a stool, hanging pots and pans in the background">
+          </a>
+  
+          <div class="alert-ring" style="left:10%;top:66%;">
+            <div class="alert-ring__item">
+              <div class="active-ring"></div>
+            </div>
+            <div class="alert-ring__text" style="margin-top:37px;margin-left:-48px;">
+              <div class="alert-ring__text__container">
+                <p class="crate-bold copy-gr">
+                  Make a quick plan of where items will go before setting up the kitchen.
+                </p>
+              </div>
+              <!-- alert-ring__text__container -->
+            </div>
+            <!-- alert-ring__text -->
+          </div>
+          <!-- alert-ring -->
+  
+          <div class="alert-ring" style="right:66%;top:34%;">
+            <div class="alert-ring__item">
+              <div class="active-ring"></div>
+            </div>
+            <div class="alert-ring__text" style="margin-top:-40px;margin-left:-296px;">
+              <div class="alert-ring__text__container">
+                <p class="crate-bold copy-gr">
+                  For easy access, keep cooking tools near the food prep area.
+                </p>
+              </div>
+              <!-- alert-ring__text__container -->
+            </div>
+            <!-- alert-ring__text -->
+          </div>
+          <!-- alert-ring -->
+  
+        </div>
+        <!-- WD__left__img-2 -->
+      </div>
+      <!-- WD__left -->
+  
+      <div class="WD__right">
+        <div class="WD__right__img">
+          <a href="/dining-and-entertaining/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_2" alt="a dining room furniture set with 4 white chairs and a wooden table">
+          </a>
+  
+          <div class="alert-ring" style="right:5.5%;top:33.5%;">
+            <div class="alert-ring__item">
+              <div class="active-ring"></div>
+            </div>
+            <div class="alert-ring__text" style="margin-top: 38px;margin-left:-199px;">
+              <div class="alert-ring__text__container">
+                <p class="crate-bold copy-gr">
+                  White and neutral dishes are perfect for every occasion, they can be dressed up or down.
+                </p>
+              </div>
+              <!-- alert-ring__text__container -->
+            </div>
+            <!-- alert-ring__text -->
+          </div>
+          <!-- alert-ring -->
+  
+        </div>
+        <!-- WD__right__img -->
+      </div>
+      <!-- WD__right -->
+      <div class="WD__right__img-group fade-out">
+  
+        <div class="WD__right__img-2__group__block">
+          <a href="/dinnerware-collections/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_Dishes?fmt=png-alpha"
+              alt="white dining ware next to silverware">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Dinnerware Collections
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div>
+          <a href="/furniture/dining-kitchen-storage/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_Island?fmt=png-alpha"
+              alt="kitchen island">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Kitchen Islands
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div>
+          <a href="/kitchen-and-food/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_Storage?fmt=png-alpha"
+              alt="storage containers">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Kitchen Essentials
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+      </div>
+      <!-- WD__right__img-2 -->
+    </section>
+  
+    <!--=============== Rest & Refresh ===============-->
+    <section id="RR" class="RR fullDiv mBottom10">
+      <div class="RR__col-left  fade-out">
+        <a href="/bed-and-bath/">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_1" alt="bedroom set including a bed and bedframe, night stand with a lamp and plant on top">
         </a>
-
-        <div class="alert-ring" style="left:25%;top:58%;">
+        <div class="alert-ring" style="top:46%;left:62%;">
           <div class="alert-ring__item">
             <div class="active-ring"></div>
           </div>
-          <!-- alert-ring__item -->
           <div class="alert-ring__text" style="margin-top:-173px;margin-left:-100px;">
             <div class="alert-ring__text__container">
               <p class="crate-bold copy-gr">
-                Start by finding the perfect spot for your sofa and have the room design flow from there.
+                Start with the bed, the room&rsquo;s anchor. Your headboard and frame will drive the style of the room.
               </p>
             </div>
             <!-- alert-ring__text__container -->
@@ -1087,89 +1399,492 @@ Font Sizes
           <!-- alert-ring__text -->
         </div>
         <!-- alert-ring -->
-
+  
+        <div class="alert-ring" style="top:62%;left:76%;">
+          <div class="alert-ring__item">
+            <div class="active-ring"></div>
+          </div>
+          <div class="alert-ring__text" style="margin-top:37px;margin-left:-170px;">
+            <div class="alert-ring__text__container">
+              <p class="crate-bold copy-gr">
+                For a beautifully layered bed start with crisp sheets that feel great to the touch then add a luxe duvet and throw.
+              </p>
+            </div>
+            <!-- alert-ring__text__container -->
+          </div>
+          <!-- alert-ring__text -->
+        </div>
+        <!-- alert-ring -->
+  
       </div>
-      <!-- LL__top__img -->
-
-      <div class="LL__top__img-group">
-
-        <div class="LL__header">
-          <a href="/furniture/">
-            <h2 class="crate-bold headline-XL">
-              Live &amp; Lounge
-            </h2>
-            <p class="crate-roman copy-gr">
-              The rooms that welcome us home.
-            </p>
-          </a>
-        </div>
-
-        <!-- LL__top__group__header -->
-
-        <div class="fade-out" style="margin-left: 12%;margin-top:6%;width:100%;z-index:5;">
-          <a href="/living-room-collections/">
-            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_Sofa" alt="white sofa">
-            <div class="overlay">
-              <div class="textPos">
-                <p class="crate-bold copy-cta">
-                  shop Sofas and Sectionals
-                </p>
-              </div>
-              <!-- textPos -->
-            </div>
-            <!-- overlay -->
-          </a>
-        </div>
-        <!-- LL__top__group__img -->
-
-        <div class="fade-out" style="position:absolute;width:13%;
-    margin:-2% 0 0 -2%;">
-          <a href="/furniture/all-occasional-tables/1">
-            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_Table?fmt=png-alpha"
-              alt="brown table with white top">
-            <div class="overlay">
-              <div class="textPos">
-                <p class="crate-bold copy-cta">
-                  Shop Accent Tables
-                </p>
-              </div>
-              <!-- textPos -->
-            </div>
-            <!-- overlay -->
-          </a>
-        </div>
-        <!-- LL__top__group__img -->
-
-        <div class="fade-out" style="margin: 4% 0 5% 32%;
-    width: 67%;">
-          <a href="/rugs/all-rugs/1">
-            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_Rugs" alt="green striped rug">
-            <div class="overlay">
-              <div class="textPos">
-                <p class="crate-bold copy-cta">
-                  Shop Rugs
-                </p>
-              </div>
-              <!-- textPos -->
-            </div>
-            <!-- overlay -->
-          </a>
-        </div>
-        <!-- LL__top__group__img -->
+  
+  
+      <div class="RR__header">
+        <a href="/bed-and-bath/">
+          <h2 class="crate-bold headline-XL">
+            Rest &amp; Refresh
+          </h2>
+          <p class="crate-roman copy-gr">
+            These areas of your home are all about you.
+          </p>
+        </a>
       </div>
-      <!-- LL__top__img-group -->
-    </div>
-    <!-- LL__top -->
-
-    <div class="LL__bottom fullDiv" style="margin-top:-6%;">
-      <div class="LL__bottom__img-group">
-
-        <div class="fade-up LL-light" style="width:63%;">
-          <a href="/lighting/">
-            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_Light?fmt=png-alpha"
-              alt="hanging lamp">
+      <!-- LL__top__group__header -->
+  
+  
+      <div class="RR__col-mid fade-out">
+        <a href="/bed-and-bath/">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_2" alt="bathroom with a white tub and curtain, with various bathroom decorations on the bathroom sink area">
+        </a>
+  
+        <div class="alert-ring" style="bottom: 18%;left: 6%;">
+          <div class="alert-ring__item">
+            <div class="active-ring"></div>
+          </div>
+          <div class="alert-ring__text" style="margin-top:-172px;margin-left:63px;">
+            <div class="alert-ring__text__container">
+              <p class="crate-bold copy-gr">
+                For a spa-like bathroom: use a minimal decor scheme and indulge in the softest towels and luxurious accents.
+              </p>
+            </div>
+            <!-- alert-ring__text__container -->
+          </div>
+          <!-- alert-ring__text -->
+        </div>
+        <!-- alert-ring -->
+  
+      </div>
+      <div class="RR__col-right">
+  
+        <a href="/furniture/bedroom-furniture/">
+          <div class="cycle" style="margin-top: 10%;">
+            <div class="cycle__img-block">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bed1" alt="white bed and pillows on a dark brown bed frame"
+                class="fullImg img1" />
+              <div class="overlay">
+                <div class="textPos">
+                  <p class="crate-bold copy-cta">
+                    shop furniture
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </div>
+  
+            <div class="cycle__img-block">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bed2" alt="white bed and pillows on a dark brown bed frame"
+                class="fullImg img2" />
+              <div class="overlay">
+                <div class="textPos">
+                  <p class="crate-bold copy-cta">
+                    shop furniture
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </div>
+  
+            <div class="cycle__img-block">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bed3" alt="white bed and pillows on a dark brown bed frame"
+                class="fullImg img3" />
+              <div class="overlay">
+                <div class="textPos">
+                  <p class="crate-bold copy-cta">
+                    shop furniture
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </div>
+  
+            <div class="cycle__img-block">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bed2" alt="white bed and pillows on a dark brown bed frame"
+                class="fullImg img4" />
+              <div class="overlay">
+                <div class="textPos">
+                  <p class="crate-bold copy-cta">
+                    shop furniture
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </div>
+  
+            <div class="cycle__img-block">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bed1" alt="white bed and pillows on a dark brown bed frame"
+                class="fullImg img5" />
+              <div class="overlay">
+                <div class="textPos">
+                  <p class="crate-bold copy-cta">
+                    shop furniture
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </div>
+          </div>
+        </a>
+  
+        <div style="position:relative;">
+          <a href="/bed-and-bath/all-bedding/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bedding?fmt=png-alpha"
+              alt="light colored sheets">
             <div class="overlay">
-              <div class="textPos" style="top:69%;left:-25%">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Bedding
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div style="position:relative;">
+          <a href="/bed-and-bath/bath/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Storage?fmt=png-alpha"
+              alt="storage containers">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Bath Essentials
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div style="margin-left:-5%;position:relative;">
+          <a href="/bed-and-bath/bath-towels/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Towels?fmt=png-alpha"
+              alt="beige bath towels">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Bath Towels
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+      </div>
+    </section>
+  
+    <!--=============== Work & Manage ===============-->
+    <section id="WM" class="WM fullDiv mBottom8">
+      <div class="WM__left ">
+        <div class="WM__left__img-group">
+  
+          <div class="WM__header">
+            <a href="/furniture/home-office-furniture/">
+              <h2 class="crate-bold headline-XL">
+                Work &amp; Manage
+              </h2>
+              <p class="crate-roman copy-gr">
+                Mix functionality with personal style.
+              </p>
+            </a>
+          </div>
+          <!-- LL__top__group__header -->
+  
+  
+        </div>
+        <!-- WM__left__img-1 -->
+  
+        <div class="WM__left__img">
+          <a href="/furniture/home-office-furniture/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_1" alt="book shelf with various books and decorations on top">
+          </a>
+  
+          <div class="alert-ring" style="top:43.5%;left:11.5%;">
+            <div class="alert-ring__item">
+              <div class="active-ring"></div>
+            </div>
+            <div class="alert-ring__text" style="margin-top:35px;margin-left:-100px;">
+              <div class="alert-ring__text__container">
+                <p class="crate-bold copy-gr">
+                  Go vertical with at-home work storage using modular shelving you can customize to fit your space.
+                </p>
+              </div>
+              <!-- alert-ring__text__container -->
+            </div>
+            <!-- alert-ring__text -->
+          </div>
+          <!-- alert-ring -->
+  
+        </div>
+        <!-- WM__left__img-2 -->
+      </div>
+      <!-- WM__left -->
+  
+      <div class="WM__right">
+        <div class="WM__right__img">
+          <a href="/furniture/home-office-furniture/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_2" alt="work area with desk and decorations on top, desk chair, tables, a plant to side with paints on the wall">
+          </a>
+  
+          <div class="alert-ring" style="top:38%;left:73%;">
+            <div class="alert-ring__item">
+              <div class="active-ring"></div>
+            </div>
+            <div class="alert-ring__text" style="margin-top:-103px;margin-left:-280px;">
+              <div class="alert-ring__text__container">
+                <p class="crate-bold copy-gr">
+                  Comfort is key to productivity. Invest in an ergonomic chair and task lamp.
+                </p>
+              </div>
+              <!-- alert-ring__text__container -->
+            </div>
+            <!-- alert-ring__text -->
+          </div>
+          <!-- alert-ring -->
+  
+          <div class="alert-ring" style="top:20%;left:95%;">
+            <div class="alert-ring__item">
+              <div class="active-ring"></div>
+            </div>
+            <div class="alert-ring__text" style="margin-top:-110px;margin-left:-210px;">
+              <div class="alert-ring__text__container">
+                <p class="crate-bold copy-gr">
+                  Consider adding a workstation to a quiet corner of a living area or under a window with a view.
+                </p>
+              </div>
+              <!-- alert-ring__text__container -->
+            </div>
+            <!-- alert-ring__text -->
+          </div>
+          <!-- alert-ring -->
+  
+        </div>
+        <!-- WM__right__img -->
+      </div>
+      <!-- WM__right -->
+      <div class="WM__right__img-group fade-out">
+  
+        <div class="WM__right__img-2__group__block">
+          <a href="/furniture/desks/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_Desk?fmt=png-alpha"
+              alt="brown modern work desk">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Desks
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div>
+          <a href="/furniture/bookcases-cabinets/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_Shelf?fmt=png-alpha"
+              alt="dark brown bookcase">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Bookcases
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div>
+          <a href="/furniture/office-chairs/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_Chair?fmt=png-alpha"
+              alt="leather office chair">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Office Chairs
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div>
+          <a href="/lighting/table-desk-lamps/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_Lamp?fmt=png-alpha"
+              alt="silver skinny table lamp">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Table Lamps
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+      </div>
+      <!-- WM__right__img-2 -->
+  
+    </section>
+  
+    <!--=============== Sleep & Playtime ===============-->
+    <section id="SP" class="sleep-play fullDiv mBottom10">
+      <div class="sleep-play__left-right-content fullDiv">
+        <div class="sleep-play__left ">
+  
+  
+          <div class="sleep-play__header">
+            <a href="/kids/">
+              <h2 class="crate-bold headline-XL">
+                Sleep &amp; Playtime
+              </h2>
+              <p class="crate-roman copy-gr">
+                An inspiring space for little minds to learn and grow.
+              </p>
+            </a>
+          </div>
+          <!-- LL__top__group__header -->
+  
+  
+          <div class="sleep-play__left__img">
+            <a href="/kids/">
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_1" alt="toddler room wihth a kids bed, brown night stand with lamp, and a plushed animal toy on the floor">
+            </a>
+  
+            <div class="alert-ring" style="top:32%;left:43%;">
+              <div class="alert-ring__item">
+                <div class="active-ring"></div>
+              </div>
+              <div class="alert-ring__text" style="margin-top:-63px;margin-left:-308px;">
+                <div class="alert-ring__text__container">
+                  <p class="crate-bold copy-gr">
+                    For younger kids: let them help choose where to put toys and books.
+                  </p>
+                </div>
+                <!-- alert-ring__text__container -->
+              </div>
+              <!-- alert-ring__text -->
+            </div>
+            <!-- alert-ring -->
+  
+            <div class="alert-ring" style="bottom:17%;left:34%;">
+              <div class="alert-ring__item">
+                <div class="active-ring"></div>
+              </div>
+              <div class="alert-ring__text" style="margin-top:-13px;margin-left:40px;">
+                <div class="alert-ring__text__container">
+                  <p class="crate-bold copy-gr">
+                    For older kids: let them help decorate with paint, artwork and bedding.
+                  </p>
+                </div>
+                <!-- alert-ring__text__container -->
+              </div>
+              <!-- alert-ring__text -->
+            </div>
+            <!-- alert-ring -->
+  
+          </div>
+          <!-- sleep-play__left__img -->
+        </div>
+        <!-- sleep-play__left -->
+  
+        <div class="sleep-play__right">
+          <div class="sleep-play__right__img">
+            <a href="/kids/">
+              <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_2" alt="baby room with a crib, dresser with a lamp and toy on top, and various decorations on the wall">
+            </a>
+  
+            <div class="alert-ring" style="top:58%;left:89%;">
+              <div class="alert-ring__item">
+                <div class="active-ring"></div>
+              </div>
+              <div class="alert-ring__text" style="margin-top:35px;margin-left:-172px;">
+                <div class="alert-ring__text__container">
+                  <p class="crate-bold copy-gr">
+                    Unpack kids&rsquo; rooms first. This will create a calm and comforting space amid the chaos of unpacking.
+                  </p>
+                </div>
+                <!-- alert-ring__text__container -->
+              </div>
+              <!-- alert-ring__text -->
+            </div>
+            <!-- alert-ring -->
+  
+          </div>
+          <!-- sleep-play__right__img -->
+        </div>
+        <!-- sleep-play__right -->
+      </div>
+  
+      <div class="sleep-play__bottom-images">
+  
+        <div class="sleep-play__right__img-2__group__block">
+          <a href="/kids/cribs-bassinets/1">
+            <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_Crib?fmt=png-alpha"
+              alt="brown baby crib">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Cribs
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div>
+          <a href="/kids/beds/1">
+            <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_Bed?fmt=png-alpha"
+              alt="white bed on top of a silver bed frame">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Kids Beds
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div>
+          <a href="/kids/bedding/">
+            <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_Bedding?fmt=png-alpha"
+              alt="blanket with animals printed on top">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Kids Bedding
+                </p>
+              </div>
+              <!-- textPos -->
+            </div>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div>
+          <a href="/kids/lighting/">
+            <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_Lighting?fmt=png-alpha"
+              alt="elephant shaped lamp">
+            <div class="overlay">
+              <div class="textPos">
                 <p class="crate-bold copy-cta">
                   Shop Lighting
                 </p>
@@ -1179,16 +1894,15 @@ Font Sizes
             <!-- overlay -->
           </a>
         </div>
-        <!-- LL__bottom__img-group__img -->
-
-        <div style="width:85%;margin-left:20%;">
-          <a href="/decorating-and-accessories/">
-            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_Pillow?fmt=png-alpha"
-              alt="red and white patterned pillow">
+  
+        <div>
+          <a href="/kids/wall-art-decor/1">
+            <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_Pillows?fmt=png-alpha"
+              alt="animal shaped plush toys">
             <div class="overlay">
               <div class="textPos">
                 <p class="crate-bold copy-cta">
-                  Shop Pillows and Decor
+                  Shop Wall Art and Decor
                 </p>
               </div>
               <!-- textPos -->
@@ -1196,584 +1910,41 @@ Font Sizes
             <!-- overlay -->
           </a>
         </div>
-        <!-- LL__bottom__img-group__img -->
-
+  
       </div>
-      <!-- LL__bottom__img-group -->
-
-      <div class="LL__bottom__img">
-        <a href="/furniture/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_LvLng_2" alt="living room furniture with a couch, a beige chair, an arching lamp, a coffee table with flowers on top, and a shelf behind the couch">
-        </a>
-
-        <div class="alert-ring" style="left:53%;top:47%;">
-          <div class="alert-ring__item">
-            <div class="active-ring"></div>
-          </div>
-          <div class="alert-ring__text" style="margin-top:-123px;margin-left:15px;">
-            <div class="alert-ring__text__container">
-              <p class="crate-bold copy-gr">Keep the room neutral, then layer in color through textiles and accent pieces
-              </p>
-            </div>
-            <!-- alert-ring__text__container -->
-          </div>
-          <!-- alert-ring__text -->
-        </div>
-        <!-- alert-ring -->
-      </div>
-      <!-- LL__bottom__img -->
-    </div>
-    <!-- LL__bottom -->
-  </section>
-  <!-- Live & Lounge -->
-
-  <!--=============== Wine & Dine ===============-->
-  <section id="WD" class="WD fullDiv mBottom10">
-    <div class="WD__left ">
-      <div class="fade-right" style="width:55%;position:relative;">
-        <a href="/dining-room-collections/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_Table" alt="brown wooden table">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Dining Collections
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-
-      <div class="WD__header">
-        <a href="/dining-room-collections/">
-          <h2 class="crate-bold headline-XL">
-            Wine &amp; Dine
-          </h2>
-          <p class="crate-roman copy-gr">
-            The heart of your home.
-          </p>
-        </a>
-      </div>
-      <!-- LL__top__group__header -->
-
-
-      <div class="WD__left__img">
-        <a href="/dining-and-entertaining/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_1" alt="kitchen area with island, a stool, hanging pots and pans in the background">
-        </a>
-
-        <div class="alert-ring" style="left:10%;top:66%;">
-          <div class="alert-ring__item">
-            <div class="active-ring"></div>
-          </div>
-          <div class="alert-ring__text" style="margin-top:37px;margin-left:-48px;">
-            <div class="alert-ring__text__container">
-              <p class="crate-bold copy-gr">
-                Make a quick plan of where items will go before setting up the kitchen.
-              </p>
-            </div>
-            <!-- alert-ring__text__container -->
-          </div>
-          <!-- alert-ring__text -->
-        </div>
-        <!-- alert-ring -->
-
-        <div class="alert-ring" style="right:66%;top:34%;">
-          <div class="alert-ring__item">
-            <div class="active-ring"></div>
-          </div>
-          <div class="alert-ring__text" style="margin-top:-40px;margin-left:-296px;">
-            <div class="alert-ring__text__container">
-              <p class="crate-bold copy-gr">
-                For easy access, keep cooking tools near the food prep area.
-              </p>
-            </div>
-            <!-- alert-ring__text__container -->
-          </div>
-          <!-- alert-ring__text -->
-        </div>
-        <!-- alert-ring -->
-
-      </div>
-      <!-- WD__left__img-2 -->
-    </div>
-    <!-- WD__left -->
-
-    <div class="WD__right">
-      <div class="WD__right__img">
-        <a href="/dining-and-entertaining/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_2" alt="a dining room furniture set with 4 white chairs and a wooden table">
-        </a>
-
-        <div class="alert-ring" style="right:5.5%;top:33.5%;">
-          <div class="alert-ring__item">
-            <div class="active-ring"></div>
-          </div>
-          <div class="alert-ring__text" style="margin-top: 38px;margin-left:-199px;">
-            <div class="alert-ring__text__container">
-              <p class="crate-bold copy-gr">
-                White and neutral dishes are perfect for every occasion, they can be dressed up or down.
-              </p>
-            </div>
-            <!-- alert-ring__text__container -->
-          </div>
-          <!-- alert-ring__text -->
-        </div>
-        <!-- alert-ring -->
-
-      </div>
-      <!-- WD__right__img -->
-    </div>
-    <!-- WD__right -->
-    <div class="WD__right__img-group fade-out">
-
-      <div class="WD__right__img-2__group__block">
-        <a href="/dinnerware-collections/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_Dishes?fmt=png-alpha"
-            alt="white dining ware next to silverware">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Dinnerware Collections
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div>
-        <a href="/furniture/dining-kitchen-storage/1">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_Island?fmt=png-alpha"
-            alt="kitchen island">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Kitchen Islands
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div>
-        <a href="/kitchen-and-food/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WnDn_Storage?fmt=png-alpha"
-            alt="storage containers">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Kitchen Essentials
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-    </div>
-    <!-- WD__right__img-2 -->
-  </section>
-
-  <!--=============== Rest & Refresh ===============-->
-  <section id="RR" class="RR fullDiv mBottom10">
-    <div class="RR__col-left  fade-out">
-      <a href="/bed-and-bath/">
-        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_1" alt="bedroom set including a bed and bedframe, night stand with a lamp and plant on top">
-      </a>
-      <div class="alert-ring" style="top:46%;left:62%;">
-        <div class="alert-ring__item">
-          <div class="active-ring"></div>
-        </div>
-        <div class="alert-ring__text" style="margin-top:-173px;margin-left:-100px;">
-          <div class="alert-ring__text__container">
-            <p class="crate-bold copy-gr">
-              Start with the bed, the room&rsquo;s anchor. Your headboard and frame will drive the style of the room.
-            </p>
-          </div>
-          <!-- alert-ring__text__container -->
-        </div>
-        <!-- alert-ring__text -->
-      </div>
-      <!-- alert-ring -->
-
-      <div class="alert-ring" style="top:62%;left:76%;">
-        <div class="alert-ring__item">
-          <div class="active-ring"></div>
-        </div>
-        <div class="alert-ring__text" style="margin-top:37px;margin-left:-170px;">
-          <div class="alert-ring__text__container">
-            <p class="crate-bold copy-gr">
-              For a beautifully layered bed start with crisp sheets that feel great to the touch then add a luxe duvet and throw.
-            </p>
-          </div>
-          <!-- alert-ring__text__container -->
-        </div>
-        <!-- alert-ring__text -->
-      </div>
-      <!-- alert-ring -->
-
-    </div>
-
-
-    <div class="RR__header">
-      <a href="/bed-and-bath/">
-        <h2 class="crate-bold headline-XL">
-          Rest &amp; Refresh
-        </h2>
-        <p class="crate-roman copy-gr">
-          These areas of your home are all about you.
-        </p>
-      </a>
-    </div>
-    <!-- LL__top__group__header -->
-
-
-    <div class="RR__col-mid fade-out">
-      <a href="/bed-and-bath/">
-        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_2" alt="bathroom with a white tub and curtain, with various bathroom decorations on the bathroom sink area">
-      </a>
-
-      <div class="alert-ring" style="bottom: 18%;left: 6%;">
-        <div class="alert-ring__item">
-          <div class="active-ring"></div>
-        </div>
-        <div class="alert-ring__text" style="margin-top:-172px;margin-left:63px;">
-          <div class="alert-ring__text__container">
-            <p class="crate-bold copy-gr">
-              For a spa-like bathroom: use a minimal decor scheme and indulge in the softest towels and luxurious accents.
-            </p>
-          </div>
-          <!-- alert-ring__text__container -->
-        </div>
-        <!-- alert-ring__text -->
-      </div>
-      <!-- alert-ring -->
-
-    </div>
-    <div class="RR__col-right">
-
-      <a href="/furniture/bedroom-furniture/">
-        <div class="cycle" style="margin-top: 10%;">
-          <div class="cycle__img-block">
-            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bed1" alt="white bed and pillows on a dark brown bed frame"
-              class="fullImg img1" />
-            <div class="overlay">
-              <div class="textPos">
-                <p class="crate-bold copy-cta">
-                  shop furniture
-                </p>
-              </div>
-              <!-- textPos -->
-            </div>
-            <!-- overlay -->
-          </div>
-
-          <div class="cycle__img-block">
-            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bed2" alt="white bed and pillows on a dark brown bed frame"
-              class="fullImg img2" />
-            <div class="overlay">
-              <div class="textPos">
-                <p class="crate-bold copy-cta">
-                  shop furniture
-                </p>
-              </div>
-              <!-- textPos -->
-            </div>
-            <!-- overlay -->
-          </div>
-
-          <div class="cycle__img-block">
-            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bed3" alt="white bed and pillows on a dark brown bed frame"
-              class="fullImg img3" />
-            <div class="overlay">
-              <div class="textPos">
-                <p class="crate-bold copy-cta">
-                  shop furniture
-                </p>
-              </div>
-              <!-- textPos -->
-            </div>
-            <!-- overlay -->
-          </div>
-
-          <div class="cycle__img-block">
-            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bed2" alt="white bed and pillows on a dark brown bed frame"
-              class="fullImg img4" />
-            <div class="overlay">
-              <div class="textPos">
-                <p class="crate-bold copy-cta">
-                  shop furniture
-                </p>
-              </div>
-              <!-- textPos -->
-            </div>
-            <!-- overlay -->
-          </div>
-
-          <div class="cycle__img-block">
-            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bed1" alt="white bed and pillows on a dark brown bed frame"
-              class="fullImg img5" />
-            <div class="overlay">
-              <div class="textPos">
-                <p class="crate-bold copy-cta">
-                  shop furniture
-                </p>
-              </div>
-              <!-- textPos -->
-            </div>
-            <!-- overlay -->
-          </div>
-        </div>
-      </a>
-
-      <div style="position:relative;">
-        <a href="/bed-and-bath/all-bedding/1">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Bedding?fmt=png-alpha"
-            alt="light colored sheets">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Bedding
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div style="position:relative;">
-        <a href="/bed-and-bath/bath/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Storage?fmt=png-alpha"
-            alt="storage containers">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Bath Essentials
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div style="margin-left:-5%;position:relative;">
-        <a href="/bed-and-bath/bath-towels/1">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_RstRfrsh_Towels?fmt=png-alpha"
-            alt="beige bath towels">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Bath Towels
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!--=============== Work & Manage ===============-->
-  <section id="WM" class="WM fullDiv mBottom8">
-    <div class="WM__left ">
-      <div class="WM__left__img-group">
-
-        <div class="WM__header">
-          <a href="/furniture/home-office-furniture/">
+      <!-- sleep-play__right__img-2 -->
+    </section>
+  
+    <!--=============== Al Fresco ===============-->
+    <section id="AF" class="al-fresco fullDiv mBottom4">
+      <div class="al-fresco__left ">
+  
+        <div class="al-fresco__header">
+          <a href="/outdoor-furniture/">
             <h2 class="crate-bold headline-XL">
-              Work &amp; Manage
+              Al Fresco
             </h2>
             <p class="crate-roman copy-gr">
-              Mix functionality with personal style.
+              The perfect space to relax and unwind.
             </p>
           </a>
         </div>
         <!-- LL__top__group__header -->
-
-
-      </div>
-      <!-- WM__left__img-1 -->
-
-      <div class="WM__left__img">
-        <a href="/furniture/home-office-furniture/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_1" alt="book shelf with various books and decorations on top">
-        </a>
-
-        <div class="alert-ring" style="top:43.5%;left:11.5%;">
-          <div class="alert-ring__item">
-            <div class="active-ring"></div>
-          </div>
-          <div class="alert-ring__text" style="margin-top:35px;margin-left:-100px;">
-            <div class="alert-ring__text__container">
-              <p class="crate-bold copy-gr">
-                Go vertical with at-home work storage using modular shelving you can customize to fit your space.
-              </p>
-            </div>
-            <!-- alert-ring__text__container -->
-          </div>
-          <!-- alert-ring__text -->
-        </div>
-        <!-- alert-ring -->
-
-      </div>
-      <!-- WM__left__img-2 -->
-    </div>
-    <!-- WM__left -->
-
-    <div class="WM__right">
-      <div class="WM__right__img">
-        <a href="/furniture/home-office-furniture/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_2" alt="work area with desk and decorations on top, desk chair, tables, a plant to side with paints on the wall">
-        </a>
-
-        <div class="alert-ring" style="top:38%;left:73%;">
-          <div class="alert-ring__item">
-            <div class="active-ring"></div>
-          </div>
-          <div class="alert-ring__text" style="margin-top:-103px;margin-left:-280px;">
-            <div class="alert-ring__text__container">
-              <p class="crate-bold copy-gr">
-                Comfort is key to productivity. Invest in an ergonomic chair and task lamp.
-              </p>
-            </div>
-            <!-- alert-ring__text__container -->
-          </div>
-          <!-- alert-ring__text -->
-        </div>
-        <!-- alert-ring -->
-
-        <div class="alert-ring" style="top:20%;left:95%;">
-          <div class="alert-ring__item">
-            <div class="active-ring"></div>
-          </div>
-          <div class="alert-ring__text" style="margin-top:-110px;margin-left:-210px;">
-            <div class="alert-ring__text__container">
-              <p class="crate-bold copy-gr">
-                Consider adding a workstation to a quiet corner of a living area or under a window with a view.
-              </p>
-            </div>
-            <!-- alert-ring__text__container -->
-          </div>
-          <!-- alert-ring__text -->
-        </div>
-        <!-- alert-ring -->
-
-      </div>
-      <!-- WM__right__img -->
-    </div>
-    <!-- WM__right -->
-    <div class="WM__right__img-group fade-out">
-
-      <div class="WM__right__img-2__group__block">
-        <a href="/furniture/desks/1">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_Desk?fmt=png-alpha"
-            alt="brown modern work desk">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Desks
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div>
-        <a href="/furniture/bookcases-cabinets/1">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_Shelf?fmt=png-alpha"
-            alt="dark brown bookcase">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Bookcases
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div>
-        <a href="/furniture/office-chairs/1">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_Chair?fmt=png-alpha"
-            alt="leather office chair">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Office Chairs
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div>
-        <a href="/lighting/table-desk-lamps/1">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_WrkMng_Lamp?fmt=png-alpha"
-            alt="silver skinny table lamp">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Table Lamps
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-    </div>
-    <!-- WM__right__img-2 -->
-
-  </section>
-
-  <!--=============== Sleep & Playtime ===============-->
-  <section id="SP" class="sleep-play fullDiv mBottom10">
-    <div class="sleep-play__left-right-content fullDiv">
-      <div class="sleep-play__left ">
-
-
-        <div class="sleep-play__header">
-          <a href="/kids/">
-            <h2 class="crate-bold headline-XL">
-              Sleep &amp; Playtime
-            </h2>
-            <p class="crate-roman copy-gr">
-              An inspiring space for little minds to learn and grow.
-            </p>
+  
+  
+        <div class="al-fresco__left__img fade-out">
+          <a href="/outdoor-furniture/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_1" alt="outdoor furniture with a patio couch, table, and hanging plant">
           </a>
-        </div>
-        <!-- LL__top__group__header -->
-
-
-        <div class="sleep-play__left__img">
-          <a href="/kids/">
-            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_1" alt="toddler room wihth a kids bed, brown night stand with lamp, and a plushed animal toy on the floor">
-          </a>
-
-          <div class="alert-ring" style="top:32%;left:43%;">
+  
+          <div class="alert-ring" style="top: 56%;left:64%;">
             <div class="alert-ring__item">
               <div class="active-ring"></div>
             </div>
-            <div class="alert-ring__text" style="margin-top:-63px;margin-left:-308px;">
+            <div class="alert-ring__text" style="margin-top: -153px; margin-left: -194px; display: none;">
               <div class="alert-ring__text__container">
                 <p class="crate-bold copy-gr">
-                  For younger kids: let them help choose where to put toys and books.
+                  Add instant cozy to any patio with outdoor pillows and throws.
                 </p>
               </div>
               <!-- alert-ring__text__container -->
@@ -1781,42 +1952,26 @@ Font Sizes
             <!-- alert-ring__text -->
           </div>
           <!-- alert-ring -->
-
-          <div class="alert-ring" style="bottom:17%;left:34%;">
-            <div class="alert-ring__item">
-              <div class="active-ring"></div>
-            </div>
-            <div class="alert-ring__text" style="margin-top:-13px;margin-left:40px;">
-              <div class="alert-ring__text__container">
-                <p class="crate-bold copy-gr">
-                  For older kids: let them help decorate with paint, artwork and bedding.
-                </p>
-              </div>
-              <!-- alert-ring__text__container -->
-            </div>
-            <!-- alert-ring__text -->
-          </div>
-          <!-- alert-ring -->
-
+  
         </div>
-        <!-- sleep-play__left__img -->
+        <!-- al-fresco__left__img-2 -->
       </div>
-      <!-- sleep-play__left -->
-
-      <div class="sleep-play__right">
-        <div class="sleep-play__right__img">
-          <a href="/kids/">
-            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_2" alt="baby room with a crib, dresser with a lamp and toy on top, and various decorations on the wall">
+      <!-- al-fresco__left -->
+  
+      <div class="al-fresco__right">
+        <div class="al-fresco__right__img fade-out">
+          <a href="/outdoor-furniture/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_2" alt="outdoor wrap around couch with tables on top of a white and beige patterned rug">
           </a>
-
-          <div class="alert-ring" style="top:58%;left:89%;">
+  
+          <div class="alert-ring" style="bottom: 15%;left: 45%;">
             <div class="alert-ring__item">
               <div class="active-ring"></div>
             </div>
-            <div class="alert-ring__text" style="margin-top:35px;margin-left:-172px;">
+            <div class="alert-ring__text" style="margin-top: -30px; margin-left: 75px;display: none;">
               <div class="alert-ring__text__container">
                 <p class="crate-bold copy-gr">
-                  Unpack kids&rsquo; rooms first. This will create a calm and comforting space amid the chaos of unpacking.
+                  Planters, an outdoor rug and pretty lights are an easy way to add miles of style.
                 </p>
               </div>
               <!-- alert-ring__text__container -->
@@ -1824,526 +1979,369 @@ Font Sizes
             <!-- alert-ring__text -->
           </div>
           <!-- alert-ring -->
-
+  
+          <div class="alert-ring" style="top: 63%;left: 17%;">
+            <div class="alert-ring__item">
+              <div class="active-ring"></div>
+            </div>
+            <div class="alert-ring__text" style="margin-top: -173px; margin-left: -97px; width:280px; height:120px;display: none;">
+              <div class="alert-ring__text__container">
+                <p class="crate-bold copy-gr">
+                  Al fresco dinner parties, casual yard hangs or serious lounge time? Choose furniture that fits your lifestyle.
+                </p>
+              </div>
+              <!-- alert-ring__text__container -->
+            </div>
+            <!-- alert-ring__text -->
+          </div>
+          <!-- alert-ring -->
+  
         </div>
-        <!-- sleep-play__right__img -->
+        <!-- al-fresco__right__img -->
       </div>
-      <!-- sleep-play__right -->
-    </div>
-
-    <div class="sleep-play__bottom-images">
-
-      <div class="sleep-play__right__img-2__group__block">
-        <a href="/kids/cribs-bassinets/1">
-          <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_Crib?fmt=png-alpha"
-            alt="brown baby crib">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Cribs
-              </p>
+      <!-- al-fresco__right -->
+      <div class="al-fresco__right__img-group">
+  
+        <div class="al-fresco__right__img-2__group__block">
+          <a href="/outdoor-furniture/outdoor-accessories/">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_Planters?fmt=png-alpha"
+              alt="potted plant">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Outdoor Accessories
+                </p>
+              </div>
+              <!-- textPos -->
             </div>
-            <!-- textPos -->
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div class="cycle cycled-table">
+  
+          <div class="cycle__img-block">
+            <a href="/outdoor-furniture/outdoor-patio-dining-furniture/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_Table1" alt="brown patio table"
+                class="fullImg img1" />
+              <div class="overlay">
+                <div class="textPos">
+                  <p class="crate-bold copy-cta">
+                    Shop Dining Furniture
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </a>
           </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div>
-        <a href="/kids/beds/1">
-          <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_Bed?fmt=png-alpha"
-            alt="white bed on top of a silver bed frame">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Kids Beds
-              </p>
+  
+          <div class="cycle__img-block">
+            <a href="">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_Table2" alt="brown patio table"
+                class="fullImg img2" />
+              <div class="overlay">
+                <div class="textPos">
+                  <p class="crate-bold copy-cta">
+                    Shop Dining Furniture
+                  </p>
+                </div>
+                <!-- textPos -->
+              </div>
+              <!-- overlay -->
+            </a>
+          </div>
+  
+        </div>
+  
+  
+  
+        <div>
+          <a href="/outdoor-furniture/barbecue-and-grilling/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_Grill?fmt=png-alpha"
+              alt="outdoor grill">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Barbecue and Grilling
+                </p>
+              </div>
+              <!-- textPos -->
             </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div>
-        <a href="/kids/bedding/">
-          <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_Bedding?fmt=png-alpha"
-            alt="blanket with animals printed on top">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Kids Bedding
-              </p>
+            <!-- overlay -->
+          </a>
+        </div>
+  
+        <div>
+          <a href="/outdoor-furniture/outdoor-patio-lounge-furniture/1">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_Furniture?fmt=png-alpha"
+              alt="white patio couch">
+            <div class="overlay">
+              <div class="textPos">
+                <p class="crate-bold copy-cta">
+                  Shop Lounge Furniture
+                </p>
+              </div>
+              <!-- textPos -->
             </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
+            <!-- overlay -->
+          </a>
+        </div>
+  
       </div>
-
-      <div>
-        <a href="/kids/lighting/">
-          <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_Lighting?fmt=png-alpha"
-            alt="elephant shaped lamp">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Lighting
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div>
-        <a href="/kids/wall-art-decor/1">
-          <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_SlpPlytm_Pillows?fmt=png-alpha"
-            alt="animal shaped plush toys">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Wall Art and Decor
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-    </div>
-    <!-- sleep-play__right__img-2 -->
-  </section>
-
-  <!--=============== Al Fresco ===============-->
-  <section id="AF" class="al-fresco fullDiv mBottom4">
-    <div class="al-fresco__left ">
-
-      <div class="al-fresco__header">
-        <a href="/outdoor-furniture/">
+      <!-- al-fresco__right__img-2 -->
+    </section>
+  
+    <!--=============== Design Studio ===============-->
+    <section id="DS" class="design-studio fullDiv mBottom10">
+  
+      <div class="design-studio__header">
+        <a href="/interior-design">
           <h2 class="crate-bold headline-XL">
-            Al Fresco
+            Design Studio
           </h2>
           <p class="crate-roman copy-gr">
-            The perfect space to relax and unwind.
+            Our Design Experts are happy to help with design solutions big and
+            <br> small, from finding the perfect sofa to planning your dream home.
+          </p>
+          <p class="crate-bold copy-cta">
+            LEARN MORE
           </p>
         </a>
       </div>
       <!-- LL__top__group__header -->
-
-
-      <div class="al-fresco__left__img fade-out">
-        <a href="/outdoor-furniture/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_1" alt="outdoor furniture with a patio couch, table, and hanging plant">
-        </a>
-
-        <div class="alert-ring" style="top: 56%;left:64%;">
-          <div class="alert-ring__item">
-            <div class="active-ring"></div>
-          </div>
-          <div class="alert-ring__text" style="margin-top: -153px; margin-left: -194px; display: none;">
-            <div class="alert-ring__text__container">
-              <p class="crate-bold copy-gr">
-                Add instant cozy to any patio with outdoor pillows and throws.
-              </p>
-            </div>
-            <!-- alert-ring__text__container -->
-          </div>
-          <!-- alert-ring__text -->
-        </div>
-        <!-- alert-ring -->
-
-      </div>
-      <!-- al-fresco__left__img-2 -->
-    </div>
-    <!-- al-fresco__left -->
-
-    <div class="al-fresco__right">
-      <div class="al-fresco__right__img fade-out">
-        <a href="/outdoor-furniture/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_2" alt="outdoor wrap around couch with tables on top of a white and beige patterned rug">
-        </a>
-
-        <div class="alert-ring" style="bottom: 15%;left: 45%;">
-          <div class="alert-ring__item">
-            <div class="active-ring"></div>
-          </div>
-          <div class="alert-ring__text" style="margin-top: -30px; margin-left: 75px;display: none;">
-            <div class="alert-ring__text__container">
-              <p class="crate-bold copy-gr">
-                Planters, an outdoor rug and pretty lights are an easy way to add miles of style.
-              </p>
-            </div>
-            <!-- alert-ring__text__container -->
-          </div>
-          <!-- alert-ring__text -->
-        </div>
-        <!-- alert-ring -->
-
-        <div class="alert-ring" style="top: 63%;left: 17%;">
-          <div class="alert-ring__item">
-            <div class="active-ring"></div>
-          </div>
-          <div class="alert-ring__text" style="margin-top: -173px; margin-left: -97px; width:280px; height:120px;display: none;">
-            <div class="alert-ring__text__container">
-              <p class="crate-bold copy-gr">
-                Al fresco dinner parties, casual yard hangs or serious lounge time? Choose furniture that fits your lifestyle.
-              </p>
-            </div>
-            <!-- alert-ring__text__container -->
-          </div>
-          <!-- alert-ring__text -->
-        </div>
-        <!-- alert-ring -->
-
-      </div>
-      <!-- al-fresco__right__img -->
-    </div>
-    <!-- al-fresco__right -->
-    <div class="al-fresco__right__img-group">
-
-      <div class="al-fresco__right__img-2__group__block">
-        <a href="/outdoor-furniture/outdoor-accessories/">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_Planters?fmt=png-alpha"
-            alt="potted plant">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Outdoor Accessories
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div class="cycle cycled-table">
-
-        <div class="cycle__img-block">
-          <a href="/outdoor-furniture/outdoor-patio-dining-furniture/1">
-            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_Table1" alt="brown patio table"
-              class="fullImg img1" />
-            <div class="overlay">
-              <div class="textPos">
-                <p class="crate-bold copy-cta">
-                  Shop Dining Furniture
-                </p>
-              </div>
-              <!-- textPos -->
-            </div>
-            <!-- overlay -->
+      <div>
+        <div class="design-studio__left-img">
+          <a href="/interior-design">
+            <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_DS1" alt="studio tools and work related items such as rulers, pencils, paper, and color swatches arranged neatly on a table">
           </a>
         </div>
-
-        <div class="cycle__img-block">
-          <a href="">
-            <img src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_Table2" alt="brown patio table"
-              class="fullImg img2" />
-            <div class="overlay">
-              <div class="textPos">
-                <p class="crate-bold copy-cta">
-                  Shop Dining Furniture
-                </p>
-              </div>
-              <!-- textPos -->
-            </div>
-            <!-- overlay -->
+        <!-- design-studio__left__img-2 -->
+      </div>
+      <div>
+        <div class="design-studio__right-img fade-out">
+          <a href="/interior-design">
+            <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_DS2" alt="two people collaborating over a table">
           </a>
         </div>
-
+        <!-- design-studio__left__img-2 -->
       </div>
-
-
-
-      <div>
-        <a href="/outdoor-furniture/barbecue-and-grilling/1">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_Grill?fmt=png-alpha"
-            alt="outdoor grill">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Barbecue and Grilling
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-      <div>
-        <a href="/outdoor-furniture/outdoor-patio-lounge-furniture/1">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_AlFrsc_Furniture?fmt=png-alpha"
-            alt="white patio couch">
-          <div class="overlay">
-            <div class="textPos">
-              <p class="crate-bold copy-cta">
-                Shop Lounge Furniture
-              </p>
-            </div>
-            <!-- textPos -->
-          </div>
-          <!-- overlay -->
-        </a>
-      </div>
-
-    </div>
-    <!-- al-fresco__right__img-2 -->
-  </section>
-
-  <!--=============== Design Studio ===============-->
-  <section id="DS" class="design-studio fullDiv mBottom10">
-
-    <div class="design-studio__header">
-      <a href="/interior-design">
-        <h2 class="crate-bold headline-XL">
-          Design Studio
-        </h2>
-        <p class="crate-roman copy-gr">
-          Our Design Experts are happy to help with design solutions big and
-          <br> small, from finding the perfect sofa to planning your dream home.
-        </p>
-        <p class="crate-bold copy-cta">
-          LEARN MORE
-        </p>
+    </section>
+  
+    <!--=============== Crate Blog ===============-->
+    <section id="CB" class="crate-blog fullDiv mBottom8" style="padding-top:1.7%;">
+      <a href="www.crateandbarrel.com/blog">
+        <div class="crate-blog__img">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_Blog?wid=1440&qlt=75"
+            alt="a plate standing upwright and a food serving bowl and tray with food on top">
+        </div>
+        <!-- crate-blog__img -->
+        <div class="crate-blog__text">
+          <h2 class="cmsWhite crate-roman headline-medium" style="color: #fff;">
+            Love to Entertain?
+          </h2>
+          <p class="cmsWhite crate-light copy-sub" style="color: #fff;">Get inspired with tips and
+            <br>ideas from our blog.
+          </p>
+          <p class="cmsWhite crate-bold copy-cta" style="margin-top:0;color: #fff;">CRATE BLOG</p>
+  
+        </div>
+        <!-- crate-blog__text -->
       </a>
-    </div>
-    <!-- LL__top__group__header -->
-    <div>
-      <div class="design-studio__left-img">
-        <a href="/interior-design">
-          <img class="fullImg fade-out" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_DS1" alt="studio tools and work related items such as rulers, pencils, paper, and color swatches arranged neatly on a table">
-        </a>
-      </div>
-      <!-- design-studio__left__img-2 -->
-    </div>
-    <div>
-      <div class="design-studio__right-img fade-out">
-        <a href="/interior-design">
-          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_DS2" alt="two people collaborating over a table">
-        </a>
-      </div>
-      <!-- design-studio__left__img-2 -->
-    </div>
-  </section>
-
-  <!--=============== Crate Blog ===============-->
-  <section id="CB" class="crate-blog fullDiv mBottom8" style="padding-top:1.7%;">
-    <a href="www.crateandbarrel.com/blog">
-      <div class="crate-blog__img">
-        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_DLP_201803_NewMovers_Blog?wid=1440&qlt=75"
-          alt="a plate standing upwright and a food serving bowl and tray with food on top">
-      </div>
-      <!-- crate-blog__img -->
-      <div class="crate-blog__text">
-        <h2 class="cmsWhite crate-roman headline-medium" style="color: #fff;">
-          Love to Entertain?
-        </h2>
-        <p class="cmsWhite crate-light copy-sub" style="color: #fff;">Get inspired with tips and
-          <br>ideas from our blog.
+    </section>
+  
+    <!-- crate-blog -->
+    <div class="curalateDiv">
+      <div class="curalateText">
+        <p class="crate-light headline-small" style="text-align:center">#Crate<strong>Style</strong>
         </p>
-        <p class="cmsWhite crate-bold copy-cta" style="margin-top:0;color: #fff;">CRATE BLOG</p>
-
+        <p class="copy-sub crate-roman" style="text-align:center;">
+          <a href="/Cratestyle">Share photos,</a> shop photos and get inspired.
+          <br>Follow Us on Instagram @crateandbarrel</p>
       </div>
-      <!-- crate-blog__text -->
-    </a>
-  </section>
-
-  <!-- crate-blog -->
-  <div class="curalateDiv">
-    <div class="curalateText">
-      <p class="crate-light headline-small" style="text-align:center">#Crate<strong>Style</strong>
-      </p>
-      <p class="copy-sub crate-roman" style="text-align:center;">
-        <a href="/Cratestyle">Share photos,</a> shop photos and get inspired.
-        <br>Follow Us on Instagram @crateandbarrel</p>
+      <div id="curalate-fan-reel-wrapper" class="curalateMargins"></div>
     </div>
-    <div id="curalate-fan-reel-wrapper" class="curalateMargins"></div>
-  </div>
-
-</section>
-<script type="text/javascript" src="//d116tqlcqfmz3v.cloudfront.net/crateandbarrel-288/gallery.js"></script>
-<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-/>
-
-<script>
-  function runTheThings() {
-    $(document).ready(function () {
-      $(".alert-ring__item").hover(function () {
-        $(this)
-          .siblings(".alert-ring__text")
-          .toggle();
-      });
-
-      var offSet = 0;
-
-      function fade() {
-        $(".fade-out").each(function (i) {
-          var bottom_of_object = $(this).offset().top;
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
-          if (bottom_of_window > bottom_of_object) {
-            $(this).addClass("fade-in");
-            $(this).removeClass("fade-out");
-          } else {
-            $(this).removeClass("fade-in");
-            $(this).addClass("fade-out");
-          }
+  
+  </section>
+  <script type="text/javascript" src="//d116tqlcqfmz3v.cloudfront.net/crateandbarrel-288/gallery.js"></script>
+  <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+  />
+  
+  <script>
+    function runTheThings() {
+      $(document).ready(function () {
+        $(".alert-ring__item").hover(function () {
+          $(this)
+            .siblings(".alert-ring__text")
+            .toggle();
         });
-
-        $(".fade-up").each(function (i) {
-          var bottom_of_object2 = $(this).offset().top;
-          var bottom_of_window2 = $(window).scrollTop() + $(window).height();
-          if (bottom_of_window2 > bottom_of_object2) {
-            $(this).addClass("fade-down");
-            $(this).removeClass("fade-up");
-          } else {
-            $(this).removeClass("fade-up");
-            $(this).addClass("fade-down");
-          }
+  
+        var offSet = 0;
+  
+        function fade() {
+          $(".fade-out").each(function (i) {
+            var bottom_of_object = $(this).offset().top;
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_object) {
+              $(this).addClass("fade-in");
+              $(this).removeClass("fade-out");
+            } else {
+              $(this).removeClass("fade-in");
+              $(this).addClass("fade-out");
+            }
+          });
+  
+          $(".fade-up").each(function (i) {
+            var bottom_of_object2 = $(this).offset().top;
+            var bottom_of_window2 = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window2 > bottom_of_object2) {
+              $(this).addClass("fade-down");
+              $(this).removeClass("fade-up");
+            } else {
+              $(this).removeClass("fade-up");
+              $(this).addClass("fade-down");
+            }
+          });
+  
+          $(".fade-right").each(function (i) {
+            var bottom_of_object2 = $(this).offset().top;
+            var bottom_of_window2 = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window2 > bottom_of_object2) {
+              $(this).addClass("fade-left");
+              $(this).removeClass("fade-right");
+            } else {
+              $(this).removeClass("fade-left");
+              $(this).addClass("fade-right");
+            }
+          });
+        }
+  
+        offSet = offSet + 200;
+        //when scrolling
+        window.addEventListener("scroll", function (event) {
+          fade();
         });
-
-        $(".fade-right").each(function (i) {
-          var bottom_of_object2 = $(this).offset().top;
-          var bottom_of_window2 = $(window).scrollTop() + $(window).height();
-          if (bottom_of_window2 > bottom_of_object2) {
-            $(this).addClass("fade-left");
-            $(this).removeClass("fade-right");
-          } else {
-            $(this).removeClass("fade-left");
-            $(this).addClass("fade-right");
-          }
-        });
-      }
-
-      offSet = offSet + 200;
-      //when scrolling
-      window.addEventListener("scroll", function (event) {
+  
+        //onload check
         fade();
-      });
-
-      //onload check
-      fade();
-
-      var navbar = $("#navbar");
-      stickyNav = "stickyNav";
-      hero = $('.hero').height() + 160;
-
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > hero) {
-          navbar.addClass(stickyNav);
-        } else {
-          navbar.removeClass(stickyNav);
-        }
-      });
-
-      $(".nav").on("click", "a", function (event) {
-        event.preventDefault();
-        var elAttr = $(this).attr("href");
-        var offset = $(this).attr("data-offset") ?
-          $(this).attr("data-offset") :
-          0;
-        var fixedTop = $("#navbar.secondSticky");
-        if (fixedTop && fixedTop.length) {
-          offset = fixedTop.outerHeight();
-        }
-        $("body,html").animate({
-            scrollTop: $(elAttr).offset().top - offset
-          },
-          3000
-        );
-      });
-
-      $(window).on("scroll", function () {
-        var currentPos = $(window).scrollTop();
-
-        $(".nav li a").each(function () {
-          var sectionLink = $(this);
-          // capture the height of the navbar
-          var navHeight = $("#navbar").outerHeight() + 10;
-          var section = $(sectionLink.attr("href"));
-
-          // subtract the navbar height from the top of the section
-          if (
-            section.position().top - navHeight <= currentPos &&
-            sectionLink.offset().top + section.height() > currentPos
-          ) {
-            $(".nav li").removeClass("active");
-            sectionLink.parent().addClass("active");
+  
+        var navbar = $("#navbar");
+        stickyNav = "stickyNav";
+        hero = $('.hero').height() + 160;
+  
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > hero) {
+            navbar.addClass(stickyNav);
           } else {
-            sectionLink.parent().removeClass("active");
+            navbar.removeClass(stickyNav);
           }
         });
+  
+        $(".nav").on("click", "a", function (event) {
+          event.preventDefault();
+          var elAttr = $(this).attr("href");
+          var offset = $(this).attr("data-offset") ?
+            $(this).attr("data-offset") :
+            0;
+          var fixedTop = $("#navbar.secondSticky");
+          if (fixedTop && fixedTop.length) {
+            offset = fixedTop.outerHeight();
+          }
+          $("body,html").animate({
+              scrollTop: $(elAttr).offset().top - offset
+            },
+            3000
+          );
+        });
+  
+        $(window).on("scroll", function () {
+          var currentPos = $(window).scrollTop();
+  
+          $(".nav li a").each(function () {
+            var sectionLink = $(this);
+            // capture the height of the navbar
+            var navHeight = $("#navbar").outerHeight() + 10;
+            var section = $(sectionLink.attr("href"));
+  
+            // subtract the navbar height from the top of the section
+            if (
+              section.position().top - navHeight <= currentPos &&
+              sectionLink.offset().top + section.height() > currentPos
+            ) {
+              $(".nav li").removeClass("active");
+              sectionLink.parent().addClass("active");
+            } else {
+              sectionLink.parent().removeClass("active");
+            }
+          });
+        });
+  
+        // Slick code to rotate the bed and table images
+        $(".cycle").slick({
+          dots: false,
+          arrows: false,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          fade: true,
+          pauseOnHover: true,
+          cssEase: "linear"
+        });
       });
-
-      // Slick code to rotate the bed and table images
-      $(".cycle").slick({
-        dots: false,
-        arrows: false,
-        infinite: true,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        fade: true,
-        pauseOnHover: true,
-        cssEase: "linear"
-      });
-    });
-  }
-
-  function jQueryIsLoaded() {
-    if (window.jQuery) {
-      console.log("jQuery is loaded");
-
-      runTheThings();
-    } else {
-      setTimeout(jQueryIsLoaded, 50);
     }
-  }
-
-  jQueryIsLoaded();
-
-  function runCuralate() {
-    var $window = $(window),
-      pageTop = $window.scrollTop(),
-      curTop = $(".curalateDiv").offset().top,
-      curalateDiv = $(".curalateDiv").height();
-
-    $(window).on("load resize scroll", function (e) {
+  
+    function jQueryIsLoaded() {
+      if (window.jQuery) {
+        console.log("jQuery is loaded");
+  
+        runTheThings();
+      } else {
+        setTimeout(jQueryIsLoaded, 50);
+      }
+    }
+  
+    jQueryIsLoaded();
+  
+    function runCuralate() {
       var $window = $(window),
         pageTop = $window.scrollTop(),
         curTop = $(".curalateDiv").offset().top,
         curalateDiv = $(".curalateDiv").height();
-
-      $(".curalateDiv").each(function () {
-        if ($(this).hasClass("curalate-visible")) {} else {
-          if (pageTop > curTop - curalateDiv * 2) {
-            Curalate.FanReels.Gallery.init({
-              code: "crateandbarrel",
-              filters: {
-                tags: "homepage"
-              }
-            });
-            $(this).addClass("curalate-visible");
-            console.log("Curalate loaded");
+  
+      $(window).on("load resize scroll", function (e) {
+        var $window = $(window),
+          pageTop = $window.scrollTop(),
+          curTop = $(".curalateDiv").offset().top,
+          curalateDiv = $(".curalateDiv").height();
+  
+        $(".curalateDiv").each(function () {
+          if ($(this).hasClass("curalate-visible")) {} else {
+            if (pageTop > curTop - curalateDiv * 2) {
+              Curalate.FanReels.Gallery.init({
+                code: "crateandbarrel",
+                filters: {
+                  tags: "homepage"
+                }
+              });
+              $(this).addClass("curalate-visible");
+              console.log("Curalate loaded");
+            }
           }
-        }
+        });
       });
-    });
-  }
-
-  function curalateIsLoaded() {
-    if (window.jQuery) {
-      console.log("Curalate is loaded");
-
-      runCuralate();
-    } else {
-      setTimeout(curalateIsLoaded, 50);
     }
-  }
-
-  curalateIsLoaded();
-</script>
+  
+    function curalateIsLoaded() {
+      if (window.jQuery) {
+        console.log("Curalate is loaded");
+  
+        runCuralate();
+      } else {
+        setTimeout(curalateIsLoaded, 50);
+      }
+    }
+  
+    curalateIsLoaded();
+  </script>
