@@ -6,6 +6,15 @@ Main Content
   min-width: 1024px;
   margin: 0 auto;
 }
+.hero__text h2:first-child {
+  margin-left: -100px;
+}
+.hero__text h2:nth-child(2){
+  margin: -5px -20px 20px 0;
+}
+.hero__text h2:last-child {
+  margin-left: -150px;
+}
 /*=======================================================
 Headlines
 =======================================================*/
@@ -44,13 +53,6 @@ Headlines
   width:100%;
 }
 /*=======================================================
-Hero
-=======================================================*/
-.hero {
-  margin-bottom: 3%;
-}
-
-/*=======================================================
 Pillows
 =======================================================*/
 .pillows {
@@ -61,26 +63,30 @@ Pillows
 .group-imgs div:not(:last-child) {
   padding-right:5px;
 }
-.group-imgs__image2 {
+.group-imgs .group-imgs__image2 {
   margin-top:10%;
+  transition-delay: .4s;
 }
-.group-imgs__image3 {
+.group-imgs .group-imgs__image3 {
   margin-top:20%;
+ transition-delay: .8s;
 }
 /*=======================================================
 Couch Living Silo
 =======================================================*/
-.couch-living__image-couch {
+.couch-living .couch-living__image-couch {
   position:absolute;
   width:50%;
   z-index:10;
   bottom:0;
   left:0;
+  transition-delay: .4s;
 }
-.couch-living__image-living {
+.couch-living .couch-living__image-living {
   width:65%;
   margin-left:auto;
   padding-bottom:20%;
+ transition-delay: .8s;
 }
 /*=======================================================
 Bedding 
@@ -90,30 +96,25 @@ Bedding
   padding:5% 0;
   margin: 0 auto;
 }
-
-/*=======================================================
-Kitchen Silo
-=======================================================*/
 /*=======================================================
 kitchenAid - LeCreuset
 =======================================================*/
-.group-imgs__mixer {
+.group-imgs .group-imgs__mixer {
   margin-right:2.5%;
+  transition-delay: .4s;
 }
-.group-imgs__bakeware {
+.group-imgs .group-imgs__bakeware {
   margin-left:2.5%;
+  transition-delay: .8s;
 }
-/*=======================================================
-Dinnerware Silo
-=======================================================*/
 /*=======================================================
 End Cap
 =======================================================*/
-.encap-btn {
-  padding:10px 100px;
-  margin:2% 0 5%;
-  border-radius:5px;
-  background-color:#456741; 
+.endcap .encap-btn {
+  padding: 10px 90px;
+  margin: 2% auto;
+  border-radius: 5px;
+  background-color: #456741;
 }
 /*=======================================================
 Fade animation
@@ -271,7 +272,7 @@ Breakout and Fixes
 Font Sizes
 =======================================================*/
 .headline-XL {
-  font-size: calc(62px + (105 - 62) * (100vw - 1024px) / (1440 - 1024));
+  font-size: calc(62px + (110 - 62) * (100vw - 1024px) / (1440 - 1024));
   line-height: calc(42px + (50 - 42) * (100vw - 1024px) / (1440 - 1024));
   letter-spacing: -0.15vw;
 }
@@ -291,8 +292,8 @@ Font Sizes
 }
 
 .headline-small {
-  font-size: calc(24px + (26 - 24) * (100vw - 1024px) / (1440 - 1024));
-  line-height: calc(28px + (31 - 28) * (100vw - 1024px) / (1440 - 1024));
+  font-size: calc(24px + (30 - 24) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(28px + (30 - 24) * (100vw - 1024px) / (1440 - 1024));
   letter-spacing: -0.05vw;
 }
 
@@ -344,21 +345,23 @@ Font Sizes
     font-size: 10px;
     line-height: 20px;
   }
+  .endcap .encap-btn {
+    width: 100px;
+  }
 }
-@media only screen and (min-width: 1440px) {
-  
-  .headline-XL {
-    font-size:76px;
-    line-height:55px;
+@media only screen and (min-width: 1025px) {
+  .endcap .encap-btn {
+    width: 110px;
   }
-  .headline-small {
-    font-size:30px;
+}
+@media only screen and (min-width: 1250px) {
+  .endcap .encap-btn {
+    width: 120px;
   }
-  .copy-sub {
-    font-size:18px;
-  }
-  .copy-cta {
-    font-size:14px;
+}
+@media only screen and (min-width: 1440) {
+  .endcap .encap-btn {
+    width: 140px;
   }
 }
 </style>
@@ -371,8 +374,8 @@ Font Sizes
             <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_IntroImg?wid=1440&qlt=75" alt="">
           </div>
           <div class="hero__text product-heading">
-            <h2 class="crate-thin headline-medium cmsWhite">GREEN</h2>
-            <h2 class="crate-thin headline-medium cmsWhite">MEANS</h2>
+            <h2 class="crate-thin headline-large cmsWhite">GREEN</h2>
+            <h2 class="crate-thin headline-large cmsWhite">MEANS</h2>
             <h2 class="crate-bold headline-XL cmsWhite">GO</h2>
           </div>
           <!-- hero__img -->
@@ -384,20 +387,20 @@ Font Sizes
           </div>
           <a href="/special-features/green-furniture-decor/1">
             <div class="pillows__header product-heading">
-              <p class="crate-italic headline-medium">Layer on the bold,</p>
+              <p class="crate-thin headline-medium">Layer on the bold,</p>
               <h2 class="crate-bold headline-large">beautiful hue...</h2>
             </div>
             <!-- pillows__header -->
             <div class="group-imgs flex-group mBot5">
-              <div class="group-imgs__image1">
+              <div class="group-imgs__image1 fade-out">
                 <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_TrptchPillow?wid=501&qlt=75" alt="three green and striped pillows">
               </div>
               <!-- group-imgs__image -->
-              <div class="group-imgs__image2">
+              <div class="group-imgs__image2 fade-out">
                 <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_TrptchRug?wid=501&qlt=75" alt="green and grey patterned rug">
               </div>
               <!-- group-imgs__image -->
-              <div class="group-imgs__image3">
+              <div class="group-imgs__image3 fade-out">
                 <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_TrptchVase?wid=501&qlt=75" alt="green vases">
               </div>
               <!-- group-imgs__image -->
@@ -409,20 +412,20 @@ Font Sizes
       
         <!--=============== Couch Silo ===============-->
         <section class="couch-living fullDiv mBot5">
-          <div class="couch-living__image-couch">
+          <div class="couch-living__image-couch fade-out">
             <a href="/special-features/green-furniture-decor/1">
               <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_SofaSilo?wid=1004&qlt=75&fmt=png-alpha" alt="green curved couch">
             </a>
           </div>
           <!-- couch__image -->
-          <div class="couch-living__image-living">
+          <div class="couch-living__image-living fade-out">
             <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_LvngRm?wid=1062&qlt=75" alt="assortment of living room items including chairs tv and plants">
           </div>
           <a href="/special-features/green-furniture-decor/1">
             <div class="living__header product-heading">
               <p class="crate-thin headline-medium">...that sparks</p>
               <p class="crate-thin headline-medium">energy and</p>
-              <h2 class="crate-thin headline-large">fresh ideas.</h2>
+              <h2 class="crate-bold headline-large">fresh ideas.</h2>
             </div>
             <!-- living__header -->
           </a>
@@ -432,7 +435,7 @@ Font Sizes
         <!--=============== Bedding ===============-->
         <section class="bedding fullDiv mBot10">
           <div class="section-bg-style section-bg-style--2 empty-box--2"></div>
-          <div class="bedding__image">
+          <div class="bedding__image fade-out">
             <a href="https://www.crateandbarrel.com/shop-by-room/green-and-brown-bedroom/1">
             <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_Bdrm?wid=1440&qlt=75" alt="bedding with green pillow and blanket">
             </a>
@@ -448,7 +451,7 @@ Font Sizes
             <h2 class="crate-thin headline-large">beautiful hue...</h2>
           </div> -->
           <!-- kitchen__header -->
-          <div class="kitchen__image">
+          <div class="kitchen__image fade-out">
             <a href="/kitchen-and-food/artisan-green-kitchen/1">
               <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_KtchnSilo?wid=1440&qlt=75" alt="Assortment of green kitchen dinnerware and serving trays">
             </a>
@@ -461,15 +464,15 @@ Font Sizes
         <section class="kitchenAid fullDiv mBot10">
           <div class="section-bg-style section-bg-style--3 empty-box--3"></div>
           <div class="group-imgs flex-group">
-            <div class="group-imgs__mixer">
+            <div class="group-imgs__mixer fade-out">
               <a href="/kitchenaid-artisan-green-apple-stand-mixer/s652379">
                 <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_KtchAid?wid=666&qlt=75" alt="green kitchenAid mixer">
               </a>
             </div>
-            <div class="group-imgs__bakeware">
+            <div class="group-imgs__bakeware fade-out">
               <div class="kitchenAid__header">
                 <p class="crate-thin headline-medium">Go big, go bold,</p>
-                <h2 class="crate-bold headline-XL">go bright...</h2>
+                <h2 class="crate-bold headline-large">go bright...</h2>
               </div>
               <!-- kitchen__header -->
               <a href="/le-creuset-spinach">
@@ -481,7 +484,7 @@ Font Sizes
         <!-- KitchenAid - LeCreuset Section -->
       
         <!--=============== Dinnerware Silo ===============-->
-        <section class="dinnerware fullDiv mBot5">
+        <section class="dinnerware fullDiv mBot5 fade-out">
           <a href="/special-features/green-tableware/1">
             <div class="group-imgs flex-group">
               <div class="dinnerware__image">
@@ -500,19 +503,21 @@ Font Sizes
         
           <!--=============== Endcap Section ===============-->
         <section class="endcap fullDiv">
-          <div class="endcap__header">
+          <div class="endcap__header fade-out">
             <p class="crate-roman headline-medium">
               Ready to go for it? Get in on the green <br>
               trend and find your perfect shade.
             </p>
-            <button class="encap-btn copy-cta cmsWhite">
-              Shop All Green
-            </button>
           </div>
           <!-- endcap__header -->
+          <a href="/special-features/green-furniture-decor/1">
+            <p class="encap-btn crate-bold copy-cta cmsWhite">
+              Shop All Green
+            </p>
+          </a>
         </section>
         <!-- endcap -->
-        <p style="width:90%;margin: 0 auto;text-align:center;">
+        <p style="width:90%;margin: 0 auto 2%;text-align:center;">
           Enhance your living space with green home decor. Decorative pieces such as ornate stoneware vases for your dining table or dreamlike, abstract wall art hung over a sofa enhance any living space. In the bedroom, layer various shades of green throw pillows on the bed to bring a hint of nature into the space. Bring the outdoors in with exotic plants and succulents fit for any vase in your living room. Accessorize an empty bookcase with a watercolor glass bowl to perfectly capture the spirit of the sea in the comfort of your home office. Add subtle hints of the green outdoors by adding intricately embroidered vine placemats or leafy ceramic serving bowl to your dining room table. In the entryway, entice guests by hanging a life-like olive garland over your door to spruce up and enliven the hallway.
         </p>
       
@@ -559,50 +564,6 @@ Font Sizes
     //onload check
     fade();
     boxOpen();
-
-    $(".responsive").slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      prevArrow: '<svg id="leftArr"><polygon class="st0" points="1.4,58 56.6,113.1 58,111.7 2.8,56.6 58,1.4 56.6,0 1.4,55.2 0,56.6 "/></svg>',
-      nextArrow: '<svg id="rightArr"><polygon class="st0" points="56.6,55.2 1.4,0 0,1.4 55.2,56.6 0,111.7 1.4,113.1 56.6,58 58,56.6 "/></svg>'
-    });
-
-    var getProductNavigateDetail = function(skuList) {
-      var postUrl =
-          "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
-        imageURL = "//images.crateandbarrel.com/is/image/Crate/";
-
-      $.ajax({
-        url: postUrl,
-        type: "POST",
-        data: { skus: skuList },
-        dataType: "json",
-        success: function(result) {
-          if (result[0] != null) {
-            var str = '';
-            for (let i = 0; i < result.length; i++) {
-              str += '<li id=\'li' + i + '\'><p>Hello world</p></li>';
-              // $('.carousel__block').append('<a id="grabber"
-              //                              + i + "Link" href=""><img id="grabber" 
-              //                              + i +"Image" src=""></>');
-              $("#grabber" + [i] + "Link").attr("href", result[i].NavigateUrl);
-              $("#grabber" + [i] + "Image").attr("src",imageURL + result[i].ImagePath);
-              $("#grabber" + [i] + "Name").html(result[i].Name);
-            } 
-            $('.carousel__block').append(str);
-          }
-        },
-        error: function(jqXhr, textStatus, errorThrown) {
-          console.log(textStatus, errorThrown);
-        }
-      });
-    };
-    getProductNavigateDetail(
- "115885, 116816, 127368, 117378, 117482, 118360, 117786, 117703, 128661, 117800 ,122546,122555,122930,123061,123495,123159,123128,122305,122906,123138,124111,124076,124082,124012,122952,123737,123324,123746,123051,123761"
-    );
   });
 }
 
