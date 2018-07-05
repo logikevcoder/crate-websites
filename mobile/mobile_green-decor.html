@@ -105,7 +105,7 @@ End Cap
 }
 .encap-btn {
   padding: 10px 60px;
-  margin: 5% auto;
+  margin: 2% auto;
   border-radius: 5px;
   background-color: #456741;
 }
@@ -490,7 +490,7 @@ Media Queries
       </a>
     </section>
     <!-- endcap -->
-    <p style="width:90%;margin: 0 auto;text-align:center;">
+    <p style="width:90%;margin: 0 auto 2%;text-align:center;">
       Enhance your living space with green home decor. Decorative pieces such as ornate stoneware vases for your dining table or dreamlike, abstract wall art hung over a sofa enhance any living space. In the bedroom, layer various shades of green throw pillows on the bed to bring a hint of nature into the space. Bring the outdoors in with exotic plants and succulents fit for any vase in your living room. Accessorize an empty bookcase with a watercolor glass bowl to perfectly capture the spirit of the sea in the comfort of your home office. Add subtle hints of the green outdoors by adding intricately embroidered vine placemats or leafy ceramic serving bowl to your dining room table. In the entryway, entice guests by hanging a life-like olive garland over your door to spruce up and enliven the hallway.
     </p>
   
@@ -512,7 +512,6 @@ Media Queries
     }
     
     function fade() {
-      
       
       $(".fade-out").each(function(i) {
         var bottom_of_object = $(this).offset().top;
@@ -538,49 +537,6 @@ Media Queries
     fade();
     boxOpen();
 
-    $(".responsive").slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 5,
-      slidesToScroll: 5,
-      prevArrow: '<svg id="leftArr"><polygon class="st0" points="1.4,58 56.6,113.1 58,111.7 2.8,56.6 58,1.4 56.6,0 1.4,55.2 0,56.6 "/></svg>',
-      nextArrow: '<svg id="rightArr"><polygon class="st0" points="56.6,55.2 1.4,0 0,1.4 55.2,56.6 0,111.7 1.4,113.1 56.6,58 58,56.6 "/></svg>'
-    });
-
-    var getProductNavigateDetail = function(skuList) {
-      var postUrl =
-          "/Browse/ProductDynamicComponent/GetProductNavigateDetailJson",
-        imageURL = "//images.crateandbarrel.com/is/image/Crate/";
-
-      $.ajax({
-        url: postUrl,
-        type: "POST",
-        data: { skus: skuList },
-        dataType: "json",
-        success: function(result) {
-          if (result[0] != null) {
-            var str = '';
-            for (let i = 0; i < result.length; i++) {
-              str += '<li id=\'li' + i + '\'><p>Hello world</p></li>';
-              // $('.carousel__block').append('<a id="grabber"
-              //                              + i + "Link" href=""><img id="grabber" 
-              //                              + i +"Image" src=""></>');
-              $("#grabber" + [i] + "Link").attr("href", result[i].NavigateUrl);
-              $("#grabber" + [i] + "Image").attr("src",imageURL + result[i].ImagePath);
-              $("#grabber" + [i] + "Name").html(result[i].Name);
-            } 
-            $('.carousel__block').append(str);
-          }
-        },
-        error: function(jqXhr, textStatus, errorThrown) {
-          console.log(textStatus, errorThrown);
-        }
-      });
-    };
-    getProductNavigateDetail(
- "115885, 116816, 127368, 117378, 117482, 118360, 117786, 117703, 128661, 117800 ,122546,122555,122930,123061,123495,123159,123128,122305,122906,123138,124111,124076,124082,124012,122952,123737,123324,123746,123051,123761"
-    );
   });
 }
 
