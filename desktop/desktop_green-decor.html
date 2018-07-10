@@ -19,8 +19,8 @@ Headlines
 
   .hero__text {
     position: absolute;
-    top: 1%;
-    left: 26%;
+    top: 6%;
+    left: 22%;
     width: 30%;
   }
 
@@ -400,7 +400,7 @@ Font Sizes
     font-size: calc(61px + (100 - 61) * (100vw - 1024px) / (1680 - 1024));
     line-height: 1;
     letter-spacing: -3px;
-    word-spacing: -.1vw;
+    word-spacing: -0.1vw;
     text-transform: uppercase;
     font-style: italic !important;
   }
@@ -409,7 +409,7 @@ Font Sizes
     font-size: calc(43px + (70 - 43) * (100vw - 1024px) / (1680 - 1024));
     line-height: 1;
     letter-spacing: -1px;
-    word-spacing: -.1vw;
+    word-spacing: -0.1vw;
     font-style: italic !important;
   }
 
@@ -421,7 +421,6 @@ Font Sizes
 
   .copy-sub {
     font-size: calc(19px + (28 - 19) * (100vw - 1024px) / (1680 - 1024));
-    ;
     line-height: 1.2;
   }
 
@@ -446,15 +445,12 @@ Font Sizes
     }
     .headline-large {
       font-size: 61px;
-
     }
     .headline-medium {
       font-size: 43px;
-
     }
     .headline-small {
       font-size: 24px;
-
     }
     .copy-cta {
       font-size: 10px;
@@ -482,8 +478,8 @@ Font Sizes
       height: 70%;
       width: 51.4%;
     }
-
   }
+
   @media only screen and (min-width: 1440px) {
     .endcap .encap-btn {
       width: 143px;
@@ -539,7 +535,7 @@ Font Sizes
             <div class="group-imgs__text1">
               <p class="crate-roman copy-sub">
                 Bring your world to life in shades of
-                <br> green, from soft to super saturated.
+                <br> green, from soft to super-saturated.
               </p>
             </div>
           </div>
@@ -573,7 +569,8 @@ Font Sizes
     <!-- couch__image -->
     <div class="couch-living__image-living fade-out">
       <div class="daybed__headshot-mov__mov">
-        <video class="loopedVid" width="100%" poster="http://s7d5.scene7.com/is/image/Crate/CB_dLP_Green_20180701_LvngRm?" autoplay muted>
+        <video class="loopedVid" width="100%" poster="http://s7d5.scene7.com/is/image/Crate/CB_dLP_Green_20180701_LvngRm?" autoplay
+          muted>
           <source width="100%" src="http://s7d5.scene7.com/is/content/Crate/LandingPages/Green Trend 2018/CB_dLP_Green_20180701_LvngRm_Tablet_Autox480p_1400k.mp4"
             type="video/mp4">
         </video>
@@ -602,7 +599,7 @@ Font Sizes
   <section class="bedding fullDiv mBot10">
     <div class="section-bg-style section-bg-style--2 empty-box--2"></div>
     <div class="bedding__header product-heading">
-      <div class="crate-thin headline-medium" style="margin-right:9%;">It's a hue that says</div>
+      <div class="crate-thin headline-medium" style="margin-right:9%;">It&rsquo;s a hue that says</div>
       <div class="crate-bold headline-large">follow your dreams...</div>
     </div>
     <div class="bedding__image fade-out">
@@ -646,7 +643,7 @@ Font Sizes
           <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_KtchAid?wid=666&qlt=75"
             alt="green kitchenAid mixer">
           <div class="kitchenAid__text crate-roman copy-sub">
-            KitchenAid and Le Creuset get happy in shades of Apple and Spinach.
+            KitchenAid and Le Creuset get happy in shades of Green Apple and Spinach.
           </div>
         </a>
       </div>
@@ -721,20 +718,17 @@ Font Sizes
 <script>
   function runTheThings() {
     $(document).ready(function () {
-
       function boxOpen() {
         $(".empty-box, .empty-box--2, .empty-box--3").each(function (i) {
           var bottom_of_object = $(this).offset().top;
           var bottom_of_window = $(window).scrollTop() + $(window).height();
           if (bottom_of_window > bottom_of_object) {
-            $(this).addClass('expanded-box');
+            $(this).addClass("expanded-box");
           }
         });
       }
 
       function fade() {
-
-
         $(".fade-out").each(function (i) {
           var bottom_of_object = $(this).offset().top;
           var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -746,7 +740,6 @@ Font Sizes
             $(this).addClass("fade-out");
           }
         });
-
       }
 
       //when scrolling
