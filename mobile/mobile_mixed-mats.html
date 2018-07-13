@@ -1,0 +1,641 @@
+<style>
+  /*=======================================================
+Main Content
+=======================================================*/
+
+  body {
+    margin: 0;
+  }
+
+  .main-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
+Hero
+=======================================================*/
+
+  .hero__img__text {
+    position: absolute;
+    top: 41%;
+    right: 3%;
+  }
+
+  .main-content .hero__img__text p:nth-child(2) {
+    margin: 8px 0 8px 45px;
+  }
+
+  /*=======================================================
+Section Styling
+=======================================================*/
+
+  .section__heading {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-content .section__heading p {
+    margin: 1% 0 8%;
+  }
+
+  .section__hero {
+    margin-bottom: 5%;
+  }
+
+  .section__body {}
+
+  /*=======================================================
+End Cap
+=======================================================*/
+
+  .shopAll {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  /*=======================================================
+Fade animation
+=======================================================*/
+
+  .fade-in {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+
+  .fade-out {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+
+  /*=======================================================
+General Styling
+=======================================================*/
+
+  .mBot5 {
+    margin-bottom: 5%;
+  }
+
+  .mBot10 {
+    margin-bottom: 10%;
+  }
+
+  .section__body>div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+  }
+
+  /*=======================================================
+Breakouts
+=======================================================*/
+
+  .m-fullDiv {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-insetDiv {
+    width: 90%;
+    margin: 5% auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-fullDiv a,
+  .m-insetDiv a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .main-content h2,
+  p {
+    color: #222;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-content a h2 {
+    padding: 0;
+  }
+
+  /*=======================================================
+Fonts 
+=======================================================*/
+
+  .m-head-XL {
+    font-size: 64px;
+    line-height: 1;
+  }
+
+  .m-head-large {
+    font-size: 35px;
+    line-height: 1;
+  }
+
+  .m-head-medium {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .m-head-small {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .m-body {
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  .m-eyebrow {
+    font-size: 13px;
+  }
+
+  .m-cta {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  /*=======================================================
+Media Queries 
+=======================================================*/
+
+  @media only screen and (max-width: 340px) {
+    .m-XLheadline {
+      font-size: 54px;
+    }
+    .m-head-large {
+      font-size: 29px;
+    }
+    .m-head-medium {
+      font-size: 21px;
+    }
+    .m-head-small {
+      font-size: 13px;
+    }
+    .m-body {
+      font-size: 12px;
+    }
+    .m-eyebrow {
+      font-size: 12px;
+    }
+    .m-cta {
+      font-size: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 410px) {
+    .m-head-XL {
+      font-size: 70px;
+    }
+    .m-head-large {
+      font-size: 38px;
+    }
+    .m-head-medium {
+      font-size: 23px;
+    }
+    .m-head-small {
+      font-size: 16px;
+    }
+    .m-body {
+      font-size: 14px;
+    }
+    .m-eyebrow {
+      font-size: 15px;
+    }
+  }
+</style>
+
+<section class="main-content m-fullDiv">
+
+  <!--=============== HERO ===============-->
+  <section class="hero m-fullDiv mBot10">
+
+    <div class="hero__img">
+      <a href="/special-features/gramercy-bedoom/1">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mlp_Mix_201807_IntroHero?wid=768&qlt=75" alt="">
+        <div class="hero__img__text">
+          <p class="crate-italic m-head-small">We’re elevating mixed materials </p>
+          <p class="crate-italic m-head-small">(and styles) to an art by blending</p>
+          <p class="crate-italic m-head-small">wood, metal, ceramic and more.</p>
+        </div>
+      </a>
+    </div>
+    <!-- hero__img -->
+
+  </section>
+
+  <!--=============== Living Room ===============-->
+  <section class="living m-fullDiv mBot10">
+    <a href="/special-features/gramercy-bedoom/1">
+      <div class="section__heading">
+        <h2 class="crate-italic m-head-medium">
+          <strong>Casual&amp;Sophisticated</strong>
+        </h2>
+        <p class="crate-roman m-body">
+          Unexpected pairings for an elevated yet casual living room.
+        </p>
+      </div>
+      <!-- section__heading -->
+    </a>
+
+    <div class="section__hero">
+      <a href="/special-features/gramercy-bedoom/1">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_LvngRmHero?wid=768&qlt=75" alt="">
+      </a>
+    </div>
+    <!-- section__hero -->
+
+    <div class="section__body">
+      <div class="section__body__row-1">
+        <div>
+          <a href="/fawn-print/s320830">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_LvngRm1?wid=252&qlt=75" alt="">
+          </a>
+        </div>
+
+        <div>
+          <a href="/ivory-sheepskin-throw-rug/f66622">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_LvngRm2?wid=252&qlt=75" alt="">
+          </a>
+        </div>
+
+        <div>
+          <a href="/element-metal-vases/f74863">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_LvngRm3?wid=252&qlt=75" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- section__body__row-1 -->
+
+      <div class="section__body__row-2">
+        <div>
+          <a href="/lighting/table-desk-lamps/1">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/H1079_4AdLP_Mix_201807_LvngRmLmps?wid=504&qlt=75"
+              alt="">
+          </a>
+        </div>
+
+        <div>
+
+          <div>
+            <a href="/milo-baughman-leather-chair/s479504">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_LvngRm4?wid=252&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/dez-grey-cowhide-rug/f69279">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_LvngRm5?wid=252&qlt=75" alt="">
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <!-- section__body__row-2 -->
+
+      <div class="section__body__row-3">
+
+        <div>
+          <div>
+            <a href="/geo-bunching-accent-tables/f83641">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_LvngRm6?wid=252&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/vespa-silk-pillow-18/f83883">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_LvngRm7?wid=252&qlt=75" alt="">
+            </a>
+          </div>
+
+        </div>
+
+        <div>
+          <a href="/cuomo-pillow-arrangement/f84883">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/H1079_56B_V1dLP_Mix_201807_LvngRmPllws?wid=504&qlt=75"
+              alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- section__body__row-3 -->
+
+    </div>
+    <!-- section__body -->
+
+  </section>
+  <!-- Living -->
+
+  <!--=============== Dining Room ===============-->
+  <section class="dining m-fullDiv mBot10">
+    <a href="/special-features/gramercy-bedoom/1">
+      <div class="section__heading">
+        <h2 class="crate-italic m-head-medium">
+          <strong>Sparkle&amp;Serve</strong>
+        </h2>
+        <p class="crate-roman m-body">
+          A twist of gold, a dash of brass, and
+          <br> the beauty of mixed metallics.
+        </p>
+      </div>
+      <!-- section__heading -->
+    </a>
+
+    <div class="section__hero">
+      <a href="/special-features/gramercy-bedoom/1">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_DngRmHero?wid=768&qlt=75" alt="">
+      </a>
+    </div>
+    <!-- section__hero -->
+
+    <div class="section__body">
+
+      <div class="section__body__row-1">
+
+        <div>
+          <a href="/shop-by-room/mixed-material-dining-room/1">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_DngRmTable?wid=504&qlt=75" alt="">
+          </a>
+        </div>
+
+        <div>
+
+          <div>
+            <a href="/lunette-smoke-wine-glasses/f83929">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_DngRm1?wid=252&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/marbled-grey-metallic-table-runner/f83918">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_DngRm2?wid=252&qlt=75" alt="">
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- section__body__row-1 -->
+
+      <div class="section__body__row-2">
+
+        <div>
+          <a href="/gwen-metal-serving-tray/s440937">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_DngRm3?wid=252&qlt=75" alt="">
+          </a>
+        </div>
+
+        <div>
+          <a href="/sona-glass-hurricane-candle-holders/f84570">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_DngRm4?wid=252&qlt=75" alt="">
+          </a>
+        </div>
+
+        <div>
+          <a href="/elara-metal-globe-pendant-light/s613242">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_DngRm5?wid=252&qlt=75" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- section__body__row-2 -->
+
+      <div class="section__body__row-3">
+
+        <div>
+          <div>
+            <a href="/french-kitchen-marble-gold-trivet/s454565">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_DngRm6?wid=252&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/reverse-brass-bronze-pillar-holder/f84070">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_DngRm7?wid=252&qlt=75" alt="">
+            </a>
+          </div>
+
+        </div>
+
+        <div>
+          <a href="/dinnerware-collections/caspian-dinnerware/">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_DngRmPlates?wid=504&qlt=75" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- section__body__row-3 -->
+
+    </div>
+    <!-- section__body -->
+
+  </section>
+  <!-- Dining -->
+
+  <!--=============== Bedroom ===============-->
+  <section class="bedroom m-fullDiv mBot10">
+
+    <a href="/special-features/gramercy-bedoom/1">
+      <div class="section__heading">
+        <h2 class="crate-italic m-head-medium">
+          <strong>Rise&amp;Shine</strong>
+        </h2>
+        <p class="crate-roman m-body">
+          Luxe textiles and warm wood tones
+          <br> bring any bedroom together.
+        </p>
+      </div>
+      <!-- section__heading -->
+    </a>
+
+    <div class="section__hero">
+      <a href="/special-features/gramercy-bedoom/1">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_BedRmHero?wid=768&qlt=75" alt="">
+      </a>
+    </div>
+    <!-- section__hero -->
+
+    <div class="section__body">
+      <div class="section__body__row-1">
+        <div>
+          <a href="/oxford-black-2-drawer-nightstand/s322373">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_BedRm1?wid=252&qlt=75" alt="">
+          </a>
+        </div>
+
+        <div>
+          <a href="/white-marble-bookends-set-of-2/s600794">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_BedRm2?wid=252&qlt=75" alt="">
+          </a>
+        </div>
+
+        <div>
+          <a href="">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_BedRm3?wid=252&qlt=75" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- section__body__row-1 -->
+
+      <div class="section__body__row-2">
+        <div>
+          <a href="/special-features/contemporary-furniture-decor-lighting/1">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_BedRm_Lmps?wid=504&qlt=75" alt="">
+          </a>
+        </div>
+
+        <div>
+
+          <div>
+            <a href="/libations-bar-cart/s303224">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_BedRm4?wid=252&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/ostin-printed-duvet-covers-and-pillow-shams/f83581">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_BedRm5?wid=252&qlt=75" alt="">
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <!-- section__body__row-2 -->
+
+      <div class="section__body__row-3">
+
+        <div>
+          <div>
+            <a href="/addison-brass-cylinder-pendant-light/s631428">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_BedRm6?wid=252&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/pelliccia-mongolian-sheepskin-pillows/f85039">
+              <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_BedRm7?wid=252&qlt=75&fmt=png-alpha"
+                alt="">
+            </a>
+          </div>
+
+        </div>
+
+        <div>
+          <a href="/furniture/oxford-collection/">
+            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/mLP_Mix_201807_BedRm_Hdbrd?qlt=75" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- section__body__row-3 -->
+
+    </div>
+    <!-- section__body -->
+
+  </section>
+  <!-- Bottom Bar -->
+
+
+
+  <!--=============== Shop All Banner ===============-->
+  <section class="shopAll m-fullDiv">
+    <a href="/special-features/gramercy-bedoom/1">
+      <h2 class="m-head-medium">
+        <span class="crate-italic">
+          <strong>Shop All Mixed Material Products</strong>
+        </span>
+        <span style="font-size: 20px;">&#9654;</span>
+      </h2>
+    </a>
+  </section>
+
+  <p style="width:90%;margin: 0 auto;text-align:center;">
+    Integrate mixed material decor into your home for a contemporary take on classic ideas. In your dining room, showcase your
+    dinner set on an industrial shelf. Merging black metal frames with wooden shelves, mixed material bookcases highlight
+    any decorative display. Illuminate your hallway or entryway with table lamps that combine metal, porcelain and other
+    materials in unexpected ways. On your patio, pair an outdoor dining table featuring an edgy mix of glass and stainless
+    steel with crochet decorative pillows for the perfect balance of warmth and minimalism. Trying to blend old with new?
+    In the bedroom, opt for a post-modern wooden dresser with a chic stainless steel frame to update your clothing storage.
+  </p>
+
+</section>
+<!-- main-content -->
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+
+      function fadeDown() {
+        $(".fade-up").each(function (i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass("fade-down");
+            $(this).removeClass("fade-up");
+          } else {
+            $(this).removeClass("fade-down");
+            $(this).addClass("fade-up");
+          }
+        });
+      }
+
+      function fadeIn() {
+        $(".fade-out").each(function (i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass("fade-in");
+            $(this).removeClass("fade-out");
+          } else {
+            $(this).removeClass("fade-in");
+            $(this).addClass("fade-out");
+          }
+        });
+      }
+
+      //when scrolling
+      window.addEventListener("scroll", function (event) {
+        fadeDown();
+        fadeIn();
+      });
+
+      //onload check
+      fadeDown();
+      fadeIn();
+    });
+  }
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+</script>

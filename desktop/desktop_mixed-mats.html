@@ -1,0 +1,918 @@
+<style>
+  /*=======================================================
+Main Content
+=======================================================*/
+
+  body {
+    margin: 0;
+  }
+
+  .main-content {
+    min-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .hero-col__container-1 {
+    margin-top: 3%;
+    width: 38%;
+  }
+
+  .hero-col__container-1>.flex-column:not(:last-child) {
+    padding-right: 5px;
+  }
+
+  .hero-col__container-1>.flex-column>:not(:last-child) {
+    padding-bottom: 5px;
+  }
+
+  .hero-col__container-1>div:first-child {
+    margin-top: 43%;
+  }
+
+  .hero-col__container-1>div:nth-child(2) {
+    margin-top: 21%;
+  }
+
+  .hero-col__container-1>div:nth-child(3) {
+    margin-top: 28%;
+  }
+
+  .hero-col__container-1>div:nth-child(4) {
+    margin-top: 7%;
+  }
+
+  .hero-col__container-1>div:nth-child(5) {
+    margin-top: 14%;
+  }
+
+  .hero-col__container-1>div:nth-child(6) {
+    margin-top: 35%;
+  }
+
+  .hero-col__container-1>div:last-child {
+    margin-top: 28%;
+  }
+
+  .hero-col__container-2 {
+    width: 48%;
+    margin: 1% 1% 0 auto;
+  }
+
+  .hero-col__container-3 {
+    position: absolute;
+    width: 25%;
+    left: 50%;
+    top: 51%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero-col__container-3>div {
+    position: relative;
+  }
+
+  .hero-col__container-3__text {
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    left: 57%;
+    transform: translatex(-50%);
+  }
+
+  .main-content .hero-col__container-3__text p:nth-child(2) {
+    margin: 10px 0 10px 40px;
+  }
+
+  /*=======================================================
+Differnt Section Stylings
+=======================================================*/
+
+  .section-heading {
+    width: 100%;
+    text-align: center;
+    margin: 10% 0 2%;
+  }
+
+  .main-content .section-heading h2 {
+    margin-bottom: .5%;
+  }
+
+  .section-hero {
+    margin: 1%;
+    position: relative;
+  }
+
+  .section-hero__text {
+    position: absolute;
+    right: 0;
+    bottom: 3%;
+  }
+
+  .main-content .section-hero__text>p {
+    color: #fff;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .section-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*=======================================================
+shopAll
+=======================================================*/
+
+  .shopAll {
+    text-align: center;
+    margin: 5% 0;
+  }
+
+  /*=======================================================
+Fade animation
+=======================================================*/
+
+  .fade-down {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    width: 100%;
+  }
+
+  .fade-up {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    width: 100%;
+  }
+
+  .fade-out {
+    opacity: 0;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+
+  .fade-in {
+    opacity: 1;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
+
+  /*=======================================================
+General Styling
+=======================================================*/
+
+  .mBot5 {
+    margin-bottom: 5%;
+  }
+
+  .mBot10 {
+    margin-bottom: 10%;
+  }
+
+  .flex-group {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    position: relative;
+  }
+
+  /*=======================================================
+Breakout and Fixes
+=======================================================*/
+
+  .fullDiv {
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1680px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .fullDiv a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  #pageWrap {
+    border-top: 2px solid #222;
+    max-width: 1680px;
+    min-width: 1024px;
+    width: 100%;
+    margin: 0 auto !important;
+    float: none !important;
+    clear: left;
+  }
+
+  .content-layout {
+    max-width: 1680px !important;
+  }
+
+  .content {
+    width: 100% !important;
+  }
+
+  #bodyWrap {
+    padding: 0;
+  }
+
+  #jsExpand1 {
+    margin: 0 !important;
+  }
+
+  .fullImg {
+    width: 100%;
+    max-width: 1680px;
+  }
+
+  .main-content h2 {
+    color: #222;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-content a h2 {
+    padding: 0;
+  }
+
+  .main-content p {
+    margin: 0;
+  }
+
+  /*=======================================================
+Font Sizes
+=======================================================*/
+
+  .headline-XL {
+    font-size: calc(62px + (110 - 62) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(42px + (50 - 42) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: -0.15vw;
+  }
+
+  .headline-large {
+    font-size: calc(61px + (100 - 61) * (100vw - 1024px) / (1440 - 1024));
+    line-height: 1;
+    letter-spacing: -3px;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-medium {
+    font-size: calc(43px + (55 - 43) * (100vw - 1024px) / (1440 - 1024));
+    line-height: 1;
+    letter-spacing: -1px;
+    word-spacing: -0.1vw;
+  }
+
+  .headline-small {
+    font-size: calc(24px + (30 - 24) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(28px + (30 - 24) * (100vw - 1024px) / (1440 - 1024));
+    letter-spacing: 0.15vw;
+  }
+
+  .copy-sub {
+    font-size: calc(12px + (15 - 12) * (100vw - 1024px) / (1440 - 1024));
+    line-height: 1.2;
+  }
+
+  .copy-eyebrow {
+    font-size: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+  }
+
+  .copy-cta {
+    font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+    text-transform: uppercase;
+  }
+
+  /*--- 1024px ---*/
+
+  @media only screen and (max-width: 1024px) {
+    .headline-XL {
+      font-size: 60px;
+      line-height: 42px;
+      letter-spacing: -1.54px;
+    }
+    .headline-large {
+      font-size: 61px;
+    }
+    .headline-medium {
+      font-size: 43px;
+    }
+    .headline-small {
+      font-size: 24px;
+    }
+    .copy-sub {
+      font-size: 12px;
+    }
+    .copy-cta {
+      font-size: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {}
+
+  @media only screen and (min-width: 1250px) {}
+
+  @media only screen and (min-width: 1440px) {
+    .hero-col__container-3__text {
+      top: 71%;
+      left: 62%;
+    }
+  }
+
+  @media only screen and (min-width: 1680px) {}
+</style>
+
+<section class="main-content fullDiv">
+
+  <!--=============== HERO ===============-->
+  <section class="hero fullDiv">
+    <div class="hero-col flex-group">
+      <div class="hero-col__container-1 fade-out flex-group" style="transition-delay:1.5s;">
+        <div class="flex-column">
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro1?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro2?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-column">
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro3?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro4?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro5?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro6?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-column">
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro7?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro8?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-column">
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro9?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro10?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro11?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro12?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-column">
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro13?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro14?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro15?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro16?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-column">
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro17?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro18?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="flex-column">
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro19?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro20?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro21?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+
+          <div>
+            <a href="/special-features/gramercy-bedoom/1">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_Intro22?wid=88&qlt=75" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-col__container-2 fade-out" style="transition-delay:.5s;">
+        <a href="/special-features/gramercy-bedoom/1">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_IntroHero2?wid=808&qlt=75" alt="">
+        </a>
+      </div>
+
+      <div class="hero-col__container-3 fade-out" style="transition-delay:1s;">
+        <a href="/special-features/gramercy-bedoom/1">
+          <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_IntroLogo?qlt=75" alt="">
+          <div>
+            <div class=" crate-italic copy-sub hero-col__container-3__text">
+              <p>We’re elevating mixed materials</p>
+              <p>(and styles) to an art by blending</p>
+              <p>wood, metal, ceramic and more.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- hero-col -->
+  </section>
+
+  <!--=============== Living Room ===============-->
+  <section class="living fullDiv">
+    <div class="section-heading">
+      <h2 class="crate-italic headline-small">
+        <strong>Casual&amp;Sophisticated</strong>
+      </h2>
+      <p class="crate-italic copy-sub">
+        Unexpected pairings for an elevated yet casual living room.
+      </p>
+    </div>
+    <!-- section-heading -->
+
+    <div class="section-hero fade-up" style="width: 98.5%;margin: 1% auto;">
+      <a href="/special-features/gramercy-bedoom/1">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_LvngRmdLP_Mix_201807_LvngRmHero?wid=1440&qlt=75"
+          alt="">
+
+        <div class="section-hero__text">
+          <p class="crate-light copy-sub">
+            Warm wood + light textiles =
+            <br> A well balanced living room.
+          </p>
+        </div>
+        <!-- section-hero__text -->
+      </a>
+
+    </div>
+    <!-- section-hero -->
+
+    <div class="flex-group">
+      <div class="section-col section-col__left">
+        <div class="flex-group">
+          <div class="fade-up">
+            <a href="/fawn-print/s320830">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_LvngRm1?qlt=75" alt="">
+            </a>
+          </div>
+
+          <div class="fade-up">
+            <a href="/ivory-sheepskin-throw-rug/f66622">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_LvngRm2?qlt=75" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="fade-up">
+          <a href="/lighting/table-desk-lamps/1">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/H1079_4AdLP_Mix_201807_LvngRmLmps?qlt=75" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- section-col section-col__left -->
+
+      <div class="section-col section-col__mid">
+        <div class="fade-up">
+          <a href="/element-metal-vases/f74863">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_LvngRm3?qlt=75" alt="">
+          </a>
+        </div>
+
+        <div class="fade-up">
+          <a href="/milo-baughman-leather-chair/s479504">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_LvngRm4?qlt=75" alt="">
+          </a>
+        </div>
+
+        <div class="fade-up">
+          <a href="/vespa-silk-pillow-18/f83883">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_LvngRm5?qlt=75" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- section-col section-col__mid -->
+
+      <div class="section-col section-col__right">
+
+        <div class="fade-up">
+          <a href="/cuomo-pillow-arrangement/f84883">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/H1079_56B_V1dLP_Mix_201807_LvngRmPllws?qlt=75" alt="">
+          </a>
+        </div>
+
+        <div class="flex-group">
+          <div class="fade-up">
+            <a href="/geo-bunching-accent-tables/f83641">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_LvngRm6?qlt=75" alt="/geo-bunching-accent-tables/f83641">
+            </a>
+          </div>
+
+          <div class="fade-up">
+            <a href="/dez-grey-cowhide-rug/f69279">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_LvngRm7?qlt=75" alt="/dez-grey-cowhide-rug/f69279">
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <!-- section-col section-col__right -->
+
+    </div>
+
+  </section>
+  <!-- pillows Curated -->
+
+  <!--=============== Dining Room ===============-->
+  <section class="dining fullDiv">
+
+    <a href="/special-features/gramercy-bedoom/1">
+      <div class="section-heading">
+        <h2 class="crate-italic headline-small">
+          <strong>Sparkle&amp;Serve</strong>
+        </h2>
+        <p class="crate-italic copy-sub">
+          A twist of gold, a dash of brass, and the beauty of mixed metallics.
+        </p>
+      </div>
+      <!-- section-heading -->
+    </a>
+
+    <div class="section-hero fade-up" style="width: 98.5%;margin: 1% auto;">
+      <a href="/special-features/gramercy-bedoom/1">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_DngRmHero?wid=1440&qlt=75" alt="">
+
+        <div class="section-hero__text">
+          <p class="crate-light copy-sub">
+            A blend of metallics is the perfect
+            <br> recipe for a luxe table setting.
+          </p>
+        </div>
+        <!-- section-hero__text -->
+      </a>
+    </div>
+    <!-- section-hero -->
+
+    <div class="flex-group">
+      <div class="section-col section-col__right">
+
+        <div class="fade-up">
+          <a href="/shop-by-room/mixed-material-dining-room/1">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_DngRmTable?qlt=75" alt="">
+          </a>
+        </div>
+
+
+        <div class="flex-group">
+          <div class="fade-up">
+            <a href="/hayes-60-round-acacia-dining-table/s584624">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_DngRm5?qlt=75" alt="">
+            </a>
+          </div>
+
+          <div class="fade-up">
+            <a href="/sona-glass-hurricane-candle-holders/f84570">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_DngRm6?qlt=75" alt="">
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- section-col section-col__left -->
+
+      <div class="section-col section-col__mid">
+        <div class="fade-up">
+          <a href="/lunette-smoke-wine-glasses/f83929">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_DngRm1?qlt=75" alt="">
+          </a>
+        </div>
+
+        <div class="fade-up">
+          <a href="/marbled-grey-metallic-table-runner/f83918">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_DngRm4?qlt=75" alt="">
+          </a>
+        </div>
+
+        <div class="fade-up">
+          <a href="/gwen-metal-serving-tray/s440937">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_DngRm7?qlt=75" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- section-col section-col__mid -->
+
+      <div class="section-col section-col__left">
+        <div class="flex-group">
+          <div class="fade-up">
+            <a href="/french-kitchen-marble-gold-trivet/s454565">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_DngRm2?qlt=75" alt="">
+            </a>
+          </div>
+
+          <div class="fade-up">
+            <a href="/elara-metal-globe-pendant-light/s613242">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_DngRm3?qlt=75" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="fade-up">
+          <a href="/dinnerware-collections/caspian-dinnerware/">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_DngRmPlates?qlt=75" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- section-col section-col__right -->
+    </div>
+
+  </section>
+  <!-- couch -->
+
+  <!--=============== Bedroom ===============-->
+  <section class="bedroom fullDiv">
+
+    <a href="/special-features/gramercy-bedoom/1">
+      <div class="section-heading">
+        <h2 class="crate-italic headline-small">
+          <strong>Rise&amp;Shine</strong>
+        </h2>
+        <p class="crate-italic copy-sub">
+          Luxe textiles and warm wood tones bring any bedroom together.
+        </p>
+      </div>
+      <!-- section-heading -->
+    </a>
+
+    <div class="section-hero fade-up" style="width: 98.5%;margin: 1% auto;">
+      <a href="/special-features/gramercy-bedoom/1">
+        <img class="fullImg" src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_BedRmHero?wid=1440&qlt=75" alt="">
+
+        <div class="section-hero__text">
+          <p class="crate-light copy-sub">
+            Sweeten your dreams (and bed) by
+            <br> mixing textiles, pillows and more.
+          </p>
+        </div>
+        <!-- section-hero__text -->
+      </a>
+
+    </div>
+    <!-- section-hero -->
+
+    <div class="flex-group">
+      <div class="section-col section-col__left">
+
+        <div class="flex-group">
+          <div class="fade-up">
+            <a href="/oxford-black-2-drawer-nightstand/s322373">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_BedRm1?qlt=75" alt="">
+            </a>
+          </div>
+
+          <div class="fade-up">
+            <a href="/white-marble-bookends-set-of-2/s600794">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_BedRm2?qlt=75" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="fade-up">
+          <a href="/special-features/contemporary-furniture-decor-lighting/1">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_BedRmLmps?qlt=75" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- section-col section-col__left -->
+
+      <div class="section-col section-col__mid">
+        <div class="fade-up">
+          <a href="/hunter-vase/s340079">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_BedRm3?qlt=75" alt="">
+          </a>
+        </div>
+
+        <div class="fade-up">
+          <a href="/slice-accent-table/s443218">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_BedRm4?qlt=75" alt="">
+          </a>
+        </div>
+
+        <div class="fade-up">
+          <a href="/pelliccia-silver-grey-16-pillow-with-feather-down-insert/s541129">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_BedRm5?qlt=75" alt="">
+          </a>
+        </div>
+
+      </div>
+      <!-- section-col section-col__mid -->
+
+      <div class="section-col section-col__right">
+
+        <div class="fade-up">
+          <a href="/furniture/oxford-collection/">
+            <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_BedRmHdbrd?qlt=75" alt="">
+          </a>
+        </div>
+
+        <div class="flex-group">
+          <div class="fade-up">
+            <a href="/clarus-brass-display-boxes/f52979">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_BedRm6?qlt=75" alt="">
+            </a>
+          </div>
+
+          <div class="fade-up">
+            <a href="/reverse-brass-bronze-pillar-holder/f84070">
+              <img src="https://images.crateandbarrel.com/is/image/Crate/dLP_Mix_201807_BedRm7?qlt=75" alt="">
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <!-- section-col section-col__right -->
+    </div>
+
+  </section>
+  <!-- Bedding -->
+
+  <!--=============== Endcap Section ===============-->
+  <section class="shopAll fullDiv">
+    <a href="/special-features/gramercy-bedoom/1">
+      <h2 class="headline-small">
+        <span class="crate-italic">
+          <strong>Shop All Mixed Material Products</strong>
+        </span>
+        <span style="font-size: 20px;">&#9654;</span>
+      </h2>
+    </a>
+  </section>
+
+  <!-- endcap -->
+  <p style="width:90%;margin: 0 auto 2%;text-align:center;">
+    Integrate mixed material decor into your home for a contemporary take on classic ideas. In your dining room, showcase your
+    dinner set on an industrial shelf. Merging black metal frames with wooden shelves, mixed material bookcases highlight
+    any decorative display. Illuminate your hallway or entryway with table lamps that combine metal, porcelain and other
+    materials in unexpected ways. On your patio, pair an outdoor dining table featuring an edgy mix of glass and stainless
+    steel with crochet decorative pillows for the perfect balance of warmth and minimalism. Trying to blend old with new?
+    In the bedroom, opt for a post-modern wooden dresser with a chic stainless steel frame to update your clothing storage.
+  </p>
+
+</section>
+<!-- main-content -->
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+      function boxOpen() {
+        $(".empty-box, .empty-box--2, .empty-box--3").each(function (i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass("expanded-box");
+          }
+        });
+      }
+
+      function fadeDown() {
+        $(".fade-up").each(function (i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass("fade-down");
+            $(this).removeClass("fade-up");
+          } else {
+            $(this).removeClass("fade-down");
+            $(this).addClass("fade-up");
+          }
+        });
+      }
+
+      function fadeIn() {
+        $(".fade-out").each(function (i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass("fade-in");
+            $(this).removeClass("fade-out");
+          } else {
+            $(this).removeClass("fade-in");
+            $(this).addClass("fade-out");
+          }
+        });
+      }
+
+      //when scrolling
+      window.addEventListener("scroll", function (event) {
+        fadeDown();
+        fadeIn();
+      });
+
+      //onload check
+      fadeDown();
+      fadeIn();
+    });
+  }
+
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+  jQueryIsLoaded();
+</script>

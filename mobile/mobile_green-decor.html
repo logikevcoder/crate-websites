@@ -1,554 +1,613 @@
 <style>
-    /*=======================================================
+  /*=======================================================
 Main Content
 =======================================================*/
-.main-content {
-  width:100%;
-  margin: 0 auto;
-}
-/*=======================================================
+
+  .main-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
 Headlines
 =======================================================*/
-.hero__text {
-  position:absolute;
-  top:10%;
-  left:25%;
-}
-.pillows__header {
-  margin: 0 0 5% 5%;
-}
-.pillows__header p:first-child {
 
-}
-.living__header {
- margin: 5% 0 5% 5%;
-}
+  .hero__text {
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    width: 50%;
 
-.kitchenAid__header {
-  margin: 10% auto 5%;
-  text-align:center;
-  width:100%
-}
-.kitchenAid__header p:first-child {
+  }
 
-}
-.dinnerware__header {
-  margin: 5% 0 5% 40%;
-}
-.endcap__header {
-  text-align:center;
-  width:100%;
-  text-align:center;
-}
-/*=======================================================
+  .pillows__header {
+    margin: 0 0 5% 5%;
+  }
+
+  .pillows__header p:first-child {}
+
+  .living__header {
+    position: absolute;
+    top: 0;
+    left: 4%;
+    z-index: 10;
+  }
+
+  .bedding__header {
+    text-align: right;
+    margin-right: 20%;
+    margin-bottom: -3.7%;
+  }
+
+  .kitchen__header {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    text-align: right;
+  }
+
+  .kitchenAid__header {
+    margin: 10% 0 1% 4%;
+    width: 100%;
+  }
+
+  .dinnerware__header {
+    margin: 5% 10% 5% 0%;
+    text-align: right;
+  }
+
+  .endcap__header {
+    text-align: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  /*=======================================================
 Pillows
 =======================================================*/
-.pillows {
-  position:relative;
-  margin: 0 auto;
-}
-.group-imgs div:not(:last-child) {
-  padding-right:5px;
-}
-.pillows .group-imgs__image2 {
-  margin-top:10%;
-  transition-delay:.3s;
-}
-.pillows .group-imgs__image3 {
-  margin-top:20%;
-  transition-delay:.7s;
-}
-/*=======================================================
+
+  .pillows {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .group-imgs div:not(:last-child) {
+    padding-right: 5px;
+  }
+
+  .pillows .group-imgs__image2 {
+    margin-top: 10%;
+    transition-delay: 0.3s;
+  }
+
+  .pillows .group-imgs__image3 {
+    margin-top: 20%;
+    transition-delay: 0.7s;
+  }
+
+  /*=======================================================
 Couch Living Silo
 =======================================================*/
-.couch-living .couch-living__image-couch {
-  position: absolute;
-  width: 80%;
-  z-index: 10;
-  bottom: 1%;
-  left: 0;
-}
-.couch-living .couch-living__image-living {
-  width:65%;
-  margin-left:auto;
-  padding-bottom:40%;
-  transition-delay:.4s;
-}
-/*=======================================================
+
+  .couch-living {
+    padding-top: 22%;
+  }
+
+  .couch-living .couch-living__image-couch {
+    position: absolute;
+    width: 80%;
+    z-index: 10;
+    bottom: 1%;
+    left: 0;
+  }
+
+  .couch-living .couch-living__image-living {
+    width: 68%;
+    margin-left: auto;
+    padding-bottom: 40%;
+    transition-delay: 0.4s;
+  }
+
+  /*=======================================================
 Bedding 
 =======================================================*/
-.bedding__image {
-  width:80%;
-  padding:5% 10% 5% 5%;
-  margin: 0 auto;
-}
-/*=======================================================
+
+  .bedding__image {
+    width: 80%;
+    padding: 5% 10% 5% 5%;
+    margin: 0 auto;
+  }
+
+  /*=======================================================
 Kitchen Silo
 =======================================================*/
 
-/*=======================================================
+  .kitchen {
+    padding-top: 5%;
+  }
+
+  /*=======================================================
 kitchenAid - LeCreuset
 =======================================================*/
-.group-imgs-2 .group-imgs__mixer {
-  margin-right: 2%;
-  margin-top:10%;
-  transition-delay:.5s;
-}
-/*=======================================================
+
+  .group-imgs-2 .group-imgs__mixer {
+    margin-right: 2%;
+    margin-top: 10%;
+    transition-delay: 0.5s;
+  }
+
+  /*=======================================================
 Dinnerware Silo
 =======================================================*/
-/*=======================================================
+
+  /*=======================================================
 End Cap
 =======================================================*/
-.endcap {
-  text-align:center;
-}
-.encap-btn {
-  padding: 10px 60px;
-  margin: 2% auto;
-  border-radius: 5px;
-  background-color: #456741;
-}
-/*=======================================================
+
+  .endcap {
+    text-align: center;
+  }
+
+  .encap-btn {
+    padding: 10px 60px;
+    margin: 3% auto;
+    border-radius: 5px;
+    background-color: #456741;
+  }
+
+  /*=======================================================
 Fade animation
 =======================================================*/
-.fade-in {
-  opacity: 1;
-  -webkit-transform: translateY(0%);
-  transform: translateY(0%);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
 
-.fade-out {
-  opacity: 0;
-  -webkit-transform: translateY(10%);
-  transform: translateY(10%);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
+  .fade-in {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
 
-.fade-down {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
+  .fade-out {
+    opacity: 0;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    -webkit-transition: all 2s;
+    transition: all 2s;
+  }
 
-.fade-up {
-  opacity: 0;
-  -webkit-transform: translateY(-20%);
-  transform: translateY(-20%);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
-.fade-left {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-
-.fade-right {
-  opacity: 0;
-  -webkit-transform: translateX(-20%);
-  transform: translateX(-20%);
-  -webkit-transition: all 2s;
-  transition: all 2s;
-}
-/*=======================================================
+  /*=======================================================
 Sliding Background Animation
 =======================================================*/
-.empty-box {
-  width: 0%;
-  height: 100%;
-}
-.empty-box.expanded-box {
-  width: 65%;
-  height: 58%;
-  margin: 25% 0 0 10%;
-}
-.empty-box--2 {
-  width: 0%;
-  height: 100%;
-}
-.empty-box--2.expanded-box {
-  width: 80%;
-  height: 100%;
-}
-.empty-box--3 {
-  width:0%;
-}
-.empty-box--3.expanded-box {
-  top: 35%;
-  right: 0;
-  width: 50%;
-  height: 47%;
-}
-.section-bg-style {
-  position: absolute;
-  z-index: -5;
-  background-color: #69907e;
-  transition: width 1s ease;
-}
 
-/*=======================================================
+  .empty-box {
+    width: 0%;
+    height: 100%;
+  }
+
+  .empty-box.expanded-box {
+    width: 70%;
+    height: 62%;
+    margin: 25% 0 0 10%;
+  }
+
+  .empty-box--2 {
+    width: 0%;
+    height: 100%;
+  }
+
+  .empty-box--2.expanded-box {
+    width: 80%;
+    height: 100%;
+    z-index: -5;
+  }
+
+  .empty-box--3 {
+    width: 0%;
+  }
+
+  .empty-box--3.expanded-box {
+    top: 30%;
+    right: 0;
+    width: 50%;
+    height: 51%;
+  }
+
+  .section-bg-style {
+    position: absolute;
+    background-color: #69907e;
+    transition: width 1s ease;
+  }
+
+  /*=======================================================
 General Styling
 =======================================================*/
-.mBot5 {
-  margin-bottom: 5%;
-}
-.mBot10 {
-  margin-bottom: 10%;
-}
-.flex-group {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  position:relative;
-}
-/*=======================================================
+
+  .mBot5 {
+    margin-bottom: 5%;
+  }
+
+  .mBot10 {
+    margin-bottom: 10%;
+  }
+
+  .flex-group {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    /* NEW, Spec - Firefox, Chrome, Opera */
+    position: relative;
+  }
+
+  /*=======================================================
 Breakouts
 =======================================================*/
-.m-fullDiv {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-.m-fullImg {
-  width: 100%;
-}
-.m-insetDiv {
-  width: 90%;
-  margin: 5% auto;
-  position: relative;
-  overflow: hidden;
-}
-.m-fullDiv a,
-.m-insetDiv a {
-  text-decoration: none;
-  color: #222;
-}
-.m-fullImg {
-  width: 100%;
-}
-.main-content h2, p {
-  color: #222;
-  padding:0;
-  margin:0;
-}
-.main-content a h2 {
-  padding: 0;
-}
 
-/*=======================================================
+  .m-fullDiv {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .m-insetDiv {
+    width: 90%;
+    margin: 5% auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .m-fullDiv a,
+  .m-insetDiv a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  .m-fullImg {
+    width: 100%;
+  }
+
+  .main-content h2,
+  p {
+    color: #222;
+    padding: 0;
+    margin: 0;
+  }
+
+  .main-content a h2 {
+    padding: 0;
+  }
+
+  /*=======================================================
 Fonts 
 =======================================================*/
-.m-head-XL {
-  font-size: 64px;
-  line-height: 1;
-}
-.m-head-large {
-  font-size: 36px;
-  line-height: 1;
-}
-.m-head-medium {
-  font-size: 28px;
-  line-height: 1;
-}
-.m-head-small {
-  font-size: 20px;
-  line-height: 1;
-}
-.m-body {
-  font-size: 15px;
-  line-height: 1.2;
-}
-.m-eyebrow {
-  font-size: 13px;
-}
-.m-cta {
-  text-transform: uppercase;
-  font-size: 12px;
-}
 
-/*=======================================================
-Media Queries 
-=======================================================*/
-@media only screen and (max-width: 340px) {
-  .m-XLheadline {
-    font-size: 54px;
-  }
-  .m-head-large {
-    font-size: 19px;
-  }
-  .m-head-medium {
-    font-size: 16px;
-    margin: 0;
-  }
-  .m-body {
-    font-size: 14px;
-    margin-top: 8px;
-  }
-  .m-eyebrow {
-    font-size: 12px;
-    margin: 0;
-  }
-  .m-cta {
-    font-size: 10px;
-    margin: 5px 0 0 0;
-  }
-  .b2bminus:after {
-    top: 5px;
-  }
-  .b2bplus:after {
-    top: 5px;
-  }
-}
-@media only screen and (min-width: 412px) {
   .m-head-XL {
-    font-size: 70px;
-    margin: 0;
+    font-size: 64px;
     line-height: 1;
   }
+
   .m-head-large {
-    font-size: 42px;
+    font-size: 35px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-style: italic !important;
   }
+
   .m-head-medium {
-    font-size: 32px;
-    margin: 0;
+    font-size: 25px;
+    line-height: 1;
+    font-style: italic !important;
   }
+
   .m-head-small {
-    font-size: 22px;
-    margin: 0;
+    font-size: 20px;
+    line-height: 1;
   }
+
   .m-body {
-    font-size: 18px;
-  }
-  .m-eyebrow {
     font-size: 15px;
+    line-height: 1.2;
   }
-}
+
+  .m-eyebrow {
+    font-size: 13px;
+  }
+
+  .m-cta {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  /*=======================================================
+Media Queries 
+=======================================================*/
+
+  @media only screen and (max-width: 340px) {
+    .m-XLheadline {
+      font-size: 54px;
+    }
+    .m-head-large {
+      font-size: 29px;
+    }
+    .m-head-medium {
+      font-size: 23px;
+    }
+    .m-body {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    .m-eyebrow {
+      font-size: 12px;
+      margin: 0;
+    }
+    .m-cta {
+      font-size: 10px;
+      margin: 5px 0 0 0;
+    }
+    .b2bminus:after {
+      top: 5px;
+    }
+    .b2bplus:after {
+      top: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 410px) {
+    .m-head-XL {
+      font-size: 70px;
+      margin: 0;
+      line-height: 1;
+    }
+    .m-head-large {
+      font-size: 38px;
+    }
+    .m-head-medium {
+      font-size: 28px;
+    }
+    .m-head-small {
+      font-size: 22px;
+      margin: 0;
+    }
+    .m-body {
+      font-size: 18px;
+    }
+    .m-eyebrow {
+      font-size: 15px;
+    }
+  }
 </style>
 
 <section class="main-content m-fullDiv">
 
-    <!--=============== Green HERO ===============-->
-    <section class="hero m-fullDiv mBot10">
-      <div class="hero__img">
-        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_IntroImg?wid=768&qlt=75" alt="">
-      </div>
-      <div class="hero__text product-heading">
-        <h2 class="crate-thin m-head-large cmsWhite" style="margin-left:-20px;">GREEN</h2>
-        <h2 class="crate-thin m-head-large cmsWhite" style="margin: -6px 0 -10px 30px;">
-          MEANS
-        </h2>
-        <h2 class="crate-bold m-head-XL cmsWhite" style="margin-left:-30px;">GO</h2>
-      </div>
-      <!-- hero__img -->
-    </section>
-  
-    <!--=============== Pillows, Rugs, and Vases===============-->
-    <section class="pillows m-fullDiv mBot5">
-      <div class="section-bg-style section-bg-style--1 empty-box">
-      </div>
-      <a href="/special-features/green-furniture-decor/1">
-        <div class="pillows__header product-heading">
-          <p class="crate-thin m-head-medium">Layer on the bold,</p>
-          <h2 class="crate-bold m-head-large" style="margin-left:70px;">beautiful hue...</h2>
-        </div>
-        <!-- pillows__header -->
-        <div class="group-imgs flex-group fade-out">
-          <div class="group-imgs__image1">
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_TrptchPillow?wid=249&qlt=75" alt="three green and striped pillows">
-          </div>
-          <!-- group-imgs__image -->
-          <div class="group-imgs__image2 fade-out">
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_TrptchRug?wid=249&qlt=75" alt="green and grey patterned rug">
-          </div>
-          <!-- group-imgs__image -->
-          <div class="group-imgs__image3 fade-out">
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_TrptchVase?wid=249&qlt=75" alt="green vases">
-          </div>
-          <!-- group-imgs__image -->
-        </div>
-        <!-- group-imgs -->
-      </a>
-    </section>
-    <!-- pillows Curated -->
-  
-    <!--=============== Couch Silo ===============-->
-    <section class="couch-living m-fullDiv mBot10">
-      <div class="living__header product-heading">
-        <p class="crate-thin m-head-medium" style="margin-left:30px;">...that sparks</p>
-        <p class="crate-thin m-head-medium" style="margin-left:70px;">energy and</p>
-        <h2 class="crate-bold m-head-large">fresh ideas.</h2>
-      </div>
-      <!-- living__header -->
-      <div class="couch-living__image-couch fade-out">
-        <a href="/special-features/green-furniture-decor/1">
-          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_SofaSilo?wid=648&qlt=75&fmt=png-alpha" alt="green curved couch">
-        </a>
-      </div>
-      <!-- couch__image -->
-      <div class="couch-living__image-living fade-out">
-        <a href="/special-features/green-furniture-decor/1">
-          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_LvngRm?wid=549&qlt=75" alt="assortment of living room items including chairs tv and plants">
-        </a>
-      </div>
-      <!-- living room image -->
-    </section>
-    <!-- couch -->
-  
-    <!--=============== Bedding ===============-->
-    <section class="bedding m-fullDiv  fade-out mBot10">
-      <div class="section-bg-style section-bg-style--2 empty-box--2"></div>
-      <div class="bedding__image">
-        <a href="https://www.crateandbarrel.com/shop-by-room/green-and-brown-bedroom/1">
-        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_Bdrm?wid=582&qlt=75" alt="bedding with green pillow and blanket">
-        </a>
-      </div>
-      <!-- bedding__image -->
-    </section>
-    <!-- Bedding -->
-  
-    <!--=============== Kitchen Silo ===============-->
-    <section class="kitchen m-fullDiv  fade-out mBot5">
-  <!--     <div class="kitchen__header">
-        <p class="crate-thin m-head-medium">Layer on the bold,</p>
-        <h2 class="crate-thin m-head-large">beautiful hue...</h2>
-      </div> -->
-      <!-- kitchen__header -->
-      <div class="kitchen__image">
-        <a href="/kitchen-and-food/artisan-green-kitchen/1">
-          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_KtchnSilo?wid=768&qlt=75" alt="Assortment of green kitchen dinnerware and serving trays">
-        </a>
-      </div>
-      <!-- kitchen__image -->
-    </section>
-    <!-- Bottom Bar -->
-  
-    <!--=============== kitchenAid - LeCreuset ===============-->
-    <section class="kitchenAid m-fullDiv mBot10">
-      <div class="section-bg-style section-bg-style--3 empty-box--3"></div>
-      <div class="kitchenAid__header">
-        <p class="crate-thin m-head-medium">Go big,</p>
-        <p class="crate-thin m-head-medium" style="margin-left:-100px;">go bold,</p>
-        <h2 class="crate-bold m-head-large">go bright...</h2>
-      </div>
-      <!-- kitchen__header -->
-      <div class="group-imgs-2 flex-group">
-        <div class="group-imgs__mixer fade-out">
-          <a href="/kitchenaid-artisan-green-apple-stand-mixer/s652379">
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_Ckwr?wid=483&qlt=75" alt="green kitchenAid mixer">
-          </a>
-        </div>
-        <div class="group-imgs__bakeware fade-out">
-          <a href="/le-creuset-spinach">
-            <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_KtchAid?wid=267&qlt=75" alt="green bakeware">
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- KitchenAid - LeCreuset Section -->
-  
-    <!--=============== Dinnerware Silo ===============-->
-    <section class="dinnerware m-fullDiv fade-out mBot5">
-      <a href="/special-features/green-tableware/1">
-        <div class="dinnerware__header">
-          <p class="crate-thin m-head-medium">...or keep it</p>
-          <p class="crate-thin m-head-medium">low-key,</p>
-          <h2 class="crate-bold m-head-large">subtle and simple.</h2>
-        </div>
-        <!-- dinnerware__header -->
-        <div class="dinnerware__image">
-          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_Dnnrwr?wid=768&qlt=75" alt="green bowls plates and mugs">
-        </div>
-      </a>
-    </section>
-    <!-- Dinnerware -->
-    
-      <!--=============== Endcap Section ===============-->
-    <section class="endcap m-fullDiv">
-      <div class="endcap__header">
-        <p class="crate-roman m-head-small fade-out">
-          Ready to go for it? Get <br>
-          in on the green trend and <br>
-          find your perfect shade.
-        </p>
-      </div>
-      <!-- endcap__header -->
-      
-      <a href="/special-features/green-furniture-decor/1">
-        <button class="encap-btn crate-bold m-cta cmsWhite">
-          Shop All Green
-        </button>
-      </a>
-    </section>
-    <!-- endcap -->
-    <p style="width:90%;margin: 0 auto 2%;text-align:center;">
-      Enhance your living space with green home decor. Decorative pieces such as ornate stoneware vases for your dining table or dreamlike, abstract wall art hung over a sofa enhance any living space. In the bedroom, layer various shades of green throw pillows on the bed to bring a hint of nature into the space. Bring the outdoors in with exotic plants and succulents fit for any vase in your living room. Accessorize an empty bookcase with a watercolor glass bowl to perfectly capture the spirit of the sea in the comfort of your home office. Add subtle hints of the green outdoors by adding intricately embroidered vine placemats or leafy ceramic serving bowl to your dining room table. In the entryway, entice guests by hanging a life-like olive garland over your door to spruce up and enliven the hallway.
-    </p>
-  
+  <!--=============== Green HERO ===============-->
+  <section class="hero m-fullDiv mBot10">
+    <div class="hero__img">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_IntroImg?wid=768&qlt=75"
+        alt="">
+    </div>
+    <div class="hero__text product-heading">
+      <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_dLP_Green_20180701_IntroCopy  ?wid=474&qlt=100&fmt=png-alpha"
+        alt="">
+    </div>
+    <!-- hero__img -->
   </section>
-  <!-- main-content -->
 
-  <script>
-      function runTheThings() {
-  $(document).ready(function() {
-    
-    function boxOpen() {
-      $(".empty-box, .empty-box--2, .empty-box--3").each(function(i) {
-        var bottom_of_object = $(this).offset().top;
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if (bottom_of_window > bottom_of_object) {
-          $(this).addClass('expanded-box');
-        }
+  <!--=============== Pillows, Rugs, and Vases===============-->
+  <section class="pillows m-fullDiv mBot5">
+    <div class="section-bg-style section-bg-style--1 empty-box">
+    </div>
+    <a href="/special-features/green-furniture-decor/1">
+      <div class="pillows__header product-heading">
+        <p class="crate-light m-head-medium">Layer on energy, spark</p>
+        <h2 class="crate-bold m-head-large" style="margin-left:15%;">fresh ideas...</h2>
+      </div>
+      <!-- pillows__header -->
+      <div class="group-imgs flex-group fade-out">
+        <div class="group-imgs__image1">
+          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_TrptchPillow?wid=249&qlt=75"
+            alt="three green and striped pillows">
+        </div>
+        <!-- group-imgs__image -->
+        <div class="group-imgs__image2 fade-out">
+          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_TrptchRug?wid=249&qlt=75"
+            alt="green and grey patterned rug">
+        </div>
+        <!-- group-imgs__image -->
+        <div class="group-imgs__image3 fade-out">
+          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_TrptchVase?wid=249&qlt=75"
+            alt="green vases">
+        </div>
+        <!-- group-imgs__image -->
+      </div>
+      <!-- group-imgs -->
+    </a>
+  </section>
+  <!-- pillows Curated -->
+
+  <!--=============== Couch Silo ===============-->
+  <section class="couch-living m-fullDiv mBot10">
+    <div class="living__header product-heading">
+      <p class="crate-light m-head-medium" style="margin-left:10px;">...with bold,</p>
+      <h2 class="crate-bold m-head-large" style="margin-left:31%;">beautiful</h2>
+      <h2 class="crate-bold m-head-large">green</h2>
+    </div>
+    <!-- living__header -->
+    <div class="couch-living__image-couch fade-out">
+      <a href="/special-features/green-furniture-decor/1">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_SofaSilo?wid=648&qlt=75&fmt=png-alpha"
+          alt="green curved couch">
+      </a>
+    </div>
+    <!-- couch__image -->
+    <div class="couch-living__image-living fade-out">
+      <a href="/special-features/green-furniture-decor/1">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_LvngRm?wid=549&qlt=75"
+          alt="assortment of living room items including chairs tv and plants">
+      </a>
+    </div>
+    <!-- living room image -->
+  </section>
+  <!-- couch -->
+
+  <!--=============== Bedding ===============-->
+  <section class="bedding m-fullDiv  fade-out mBot10">
+    <div class="bedding__header product-heading">
+      <p class="crate-light m-head-medium">Follow your</p>
+      <h2 class="crate-bold m-head-large" style="margin-right:22px;">DREAMS...</h2>
+    </div>
+    <!-- living__header -->
+    <div class="section-bg-style section-bg-style--2 empty-box--2"></div>
+    <div class="bedding__image">
+      <a href="https://www.crateandbarrel.com/shop-by-room/green-and-brown-bedroom/1">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_Bdrm?wid=582&qlt=75" alt="bedding with green pillow and blanket">
+      </a>
+    </div>
+    <!-- bedding__image -->
+  </section>
+  <!-- Bedding -->
+
+  <!--=============== Kitchen Silo ===============-->
+  <section class="kitchen m-fullDiv  fade-out mBot5">
+    <div class="kitchen__header">
+      <p class="crate-light m-head-medium" style="margin-right:21%;">...and</p>
+      <h2 class="crate-bold m-head-large">MIX</h2>
+      <h2 class="crate-bold m-head-large">THINGS</h2>
+      <h2 class="crate-bold m-head-large" style="margin-right:48%;">UP.</h2>
+    </div>
+    <div class="kitchen__image">
+      <a href="/kitchen-and-food/artisan-green-kitchen/1">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_KtchnSilo?wid=768&qlt=75"
+          alt="Assortment of green kitchen dinnerware and serving trays">
+      </a>
+    </div>
+    <!-- kitchen__image -->
+  </section>
+  <!-- Bottom Bar -->
+
+  <!--=============== kitchenAid - LeCreuset ===============-->
+  <section class="kitchenAid m-fullDiv mBot10">
+    <div class="section-bg-style section-bg-style--3 empty-box--3"></div>
+    <div class="kitchenAid__header">
+      <p class="crate-light m-head-medium" style="margin-left:26%;">Get happy with a</p>
+      <h2 class="crate-bold m-head-large">bright pop...</h2>
+    </div>
+    <!-- kitchen__header -->
+    <div class="group-imgs-2 flex-group">
+      <div class="group-imgs__mixer fade-out">
+        <a href="/kitchenaid-artisan-green-apple-stand-mixer/s652379">
+          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_Ckwr?wid=483&qlt=75" alt="green kitchenAid mixer">
+        </a>
+      </div>
+      <div class="group-imgs__bakeware fade-out">
+        <a href="/le-creuset-spinach">
+          <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_KtchAid?wid=267&qlt=75"
+            alt="green bakeware">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- KitchenAid - LeCreuset Section -->
+
+  <!--=============== Dinnerware Silo ===============-->
+  <section class="dinnerware m-fullDiv fade-out mBot10">
+    <a href="/special-features/green-tableware/1">
+      <div class="dinnerware__header">
+        <p class="crate-light m-head-medium" style="margin-right:14%;">...or go simple and</p>
+        <h2 class="crate-bold m-head-large">serene.</h2>
+      </div>
+      <!-- dinnerware__header -->
+      <div class="dinnerware__image">
+        <img class="m-fullImg" src="https://images.crateandbarrel.com/is/image/Crate/CB_mLP_Green_20180701_Dnnrwr?wid=768&qlt=75"
+          alt="green bowls plates and mugs">
+      </div>
+    </a>
+  </section>
+  <!-- Dinnerware -->
+
+  <!--=============== Endcap Section ===============-->
+  <section class="endcap m-fullDiv">
+    <div class="endcap__header">
+      <p class="crate-light m-head-medium fade-out">
+        Ready to get into green?
+      </p>
+    </div>
+    <!-- endcap__header -->
+
+    <a href="/special-features/green-furniture-decor/1">
+      <button class="encap-btn crate-bold m-cta cmsWhite">
+        Shop All Green
+      </button>
+    </a>
+  </section>
+  <!-- endcap -->
+  <p style="width:90%;margin: 10% auto 5%;text-align:center;">
+    Enhance your living space with green home decor. Decorative pieces such as ornate stoneware vases for your dining table or
+    dreamlike, abstract wall art hung over a sofa enhance any living space. In the bedroom, layer various shades of green
+    throw pillows on the bed to bring a hint of nature into the space. Bring the outdoors in with exotic plants and succulents
+    fit for any vase in your living room. Accessorize an empty bookcase with a watercolor glass bowl to perfectly capture
+    the spirit of the sea in the comfort of your home office. Add subtle hints of the green outdoors by adding intricately
+    embroidered vine placemats or leafy ceramic serving bowl to your dining room table. In the entryway, entice guests by
+    hanging a life-like olive garland over your door to spruce up and enliven the hallway.
+  </p>
+
+</section>
+<!-- main-content -->
+
+<script>
+  function runTheThings() {
+    $(document).ready(function () {
+      function boxOpen() {
+        $(".empty-box, .empty-box--2, .empty-box--3").each(function (i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass("expanded-box");
+          }
+        });
+      }
+
+      function fade() {
+        $(".fade-out").each(function (i) {
+          var bottom_of_object = $(this).offset().top;
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+          if (bottom_of_window > bottom_of_object) {
+            $(this).addClass("fade-in");
+            $(this).removeClass("fade-out");
+          } else {
+            $(this).removeClass("fade-in");
+            $(this).addClass("fade-out");
+          }
+        });
+      }
+
+      //when scrolling
+      window.addEventListener("scroll", function (event) {
+        fade();
+        boxOpen();
       });
-    }
-    
-    function fade() {
-      
-      $(".fade-out").each(function(i) {
-        var bottom_of_object = $(this).offset().top;
-        var bottom_of_window = $(window).scrollTop() + $(window).height();
-        if (bottom_of_window > bottom_of_object) {
-          $(this).addClass("fade-in");
-          $(this).removeClass("fade-out");
-        } else {
-          $(this).removeClass("fade-in");
-          $(this).addClass("fade-out");
-        }
-      });
 
-    }
-
-    //when scrolling
-    window.addEventListener("scroll", function(event) {
+      //onload check
       fade();
       boxOpen();
     });
-
-    //onload check
-    fade();
-    boxOpen();
-
-  });
-}
-
-function jQueryIsLoaded() {
-  if (window.jQuery) {
-    console.log("jQuery is loaded");
-
-    runTheThings();
-  } else {
-    setTimeout(jQueryIsLoaded, 50);
   }
-}
 
-jQueryIsLoaded();
-  </script>
+  function jQueryIsLoaded() {
+    if (window.jQuery) {
+      console.log("jQuery is loaded");
+
+      runTheThings();
+    } else {
+      setTimeout(jQueryIsLoaded, 50);
+    }
+  }
+
+  jQueryIsLoaded();
+</script>
