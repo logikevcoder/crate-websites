@@ -3,333 +3,331 @@
 Main Content
 =======================================================*/
 
-  body {
-    margin: 0;
-  }
+/* reset page body margin to 0 */
+body {
+  margin: 0;
+}
 
-  .main-content {
-    min-width: 1024px;
-    margin: 0 auto;
-  }
+/* container for all custom styling of the body content  */
+.main-content {
+  min-width: 1024px;
+  margin: 0 auto;
+}
+/*=======================================================
+Hero Styling
+=======================================================*/
+.hero-col__container-1 {
+  margin-top: 3%;
+  width: 38%;
+}
 
-  .hero-col__container-1 {
-    margin-top: 3%;
-    width: 38%;
-  }
+.hero-col__container-1 > .flex-column:not(:last-child) {
+  padding-right: 5px;
+}
 
-  .hero-col__container-1>.flex-column:not(:last-child) {
-    padding-right: 5px;
-  }
+.hero-col__container-1 > .flex-column > :not(:last-child) {
+  padding-bottom: 5px;
+}
 
-  .hero-col__container-1>.flex-column>:not(:last-child) {
-    padding-bottom: 5px;
-  }
+.hero-col__container-1 > div:first-child {
+  margin-top: 43%;
+}
 
-  .hero-col__container-1>div:first-child {
-    margin-top: 43%;
-  }
+.hero-col__container-1 > div:nth-child(2) {
+  margin-top: 21%;
+}
 
-  .hero-col__container-1>div:nth-child(2) {
-    margin-top: 21%;
-  }
+.hero-col__container-1 > div:nth-child(3) {
+  margin-top: 28%;
+}
 
-  .hero-col__container-1>div:nth-child(3) {
-    margin-top: 28%;
-  }
+.hero-col__container-1 > div:nth-child(4) {
+  margin-top: 7%;
+}
 
-  .hero-col__container-1>div:nth-child(4) {
-    margin-top: 7%;
-  }
+.hero-col__container-1 > div:nth-child(5) {
+  margin-top: 14%;
+}
 
-  .hero-col__container-1>div:nth-child(5) {
-    margin-top: 14%;
-  }
+.hero-col__container-1 > div:nth-child(6) {
+  margin-top: 35%;
+}
 
-  .hero-col__container-1>div:nth-child(6) {
-    margin-top: 35%;
-  }
+.hero-col__container-1 > div:last-child {
+  margin-top: 28%;
+}
 
-  .hero-col__container-1>div:last-child {
-    margin-top: 28%;
-  }
+.hero-col__container-2 {
+  width: 48%;
+  margin: 1% 1% 0 auto;
+}
 
-  .hero-col__container-2 {
-    width: 48%;
-    margin: 1% 1% 0 auto;
-  }
+.hero-col__container-3 {
+  position: absolute;
+  width: 25%;
+  left: 50%;
+  top: 51%;
+  transform: translate(-50%, -50%);
+}
 
-  .hero-col__container-3 {
-    position: absolute;
-    width: 25%;
-    left: 50%;
-    top: 51%;
-    transform: translate(-50%, -50%);
-  }
+.hero-col__container-3 > div {
+  position: relative;
+}
 
-  .hero-col__container-3>div {
-    position: relative;
-  }
+.hero-col__container-3__text {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  left: 57%;
+  transform: translatex(-50%);
+}
 
-  .hero-col__container-3__text {
-    position: absolute;
-    width: 100%;
-    top: 70%;
-    left: 57%;
-    transform: translatex(-50%);
-  }
+.main-content .hero-col__container-3__text p:nth-child(2) {
+  margin: 10px 0 10px 40px;
+}
 
-  .main-content .hero-col__container-3__text p:nth-child(2) {
-    margin: 10px 0 10px 40px;
-  }
-
-  /*=======================================================
+/*=======================================================
 Differnt Section Stylings
 =======================================================*/
 
-  .section-heading {
-    width: 100%;
-    text-align: center;
-    margin: 10% 0 2%;
-  }
+.section-heading {
+  width: 100%;
+  text-align: center;
+  margin: 10% 0 2%;
+}
 
-  .main-content .section-heading h2 {
-    margin-bottom: .5%;
-  }
+.main-content .section-heading h2 {
+  margin-bottom: 0.5%;
+}
 
-  .section-hero {
-    margin: 1%;
-    position: relative;
-  }
+.section-hero {
+  margin: 1%;
+  position: relative;
+}
 
-  .section-hero__text {
-    position: absolute;
-    right: 0;
-    bottom: 3%;
-  }
+.section-hero__text {
+  position: absolute;
+  right: 0;
+  bottom: 3%;
+}
 
-  .main-content .section-hero__text>p {
-    color: #fff;
-    padding: 15px 30px;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
+.main-content .section-hero__text > p {
+  color: #fff;
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
-  .section-col {
-    display: flex;
-    flex-direction: column;
-  }
+.section-col {
+  display: flex;
+  flex-direction: column;
+}
 
-  /*=======================================================
+/*=======================================================
 shopAll
 =======================================================*/
 
-  .shopAll {
-    text-align: center;
-    margin: 5% 0;
-  }
+.shopAll {
+  text-align: center;
+  margin: 5% 0;
+}
 
-  /*=======================================================
+/*=======================================================
 Fade animation
 =======================================================*/
 
-  .fade-down {
-    opacity: 1;
-    -webkit-transform: translateY(0%);
-    transform: translateY(0%);
-    -webkit-transition: all 2s;
-    transition: all 2s;
-    width: 100%;
-  }
+.fade-down {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  width: 100%;
+}
 
-  .fade-up {
-    opacity: 0;
-    -webkit-transform: translateY(10%);
-    transform: translateY(10%);
-    -webkit-transition: all 2s;
-    transition: all 2s;
-    width: 100%;
-  }
+.fade-up {
+  opacity: 0;
+  -webkit-transform: translateY(10%);
+  transform: translateY(10%);
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  width: 100%;
+}
 
-  .fade-out {
-    opacity: 0;
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
+.fade-out {
+  opacity: 0;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
 
-  .fade-in {
-    opacity: 1;
-    -webkit-transition: all 2s;
-    transition: all 2s;
-  }
+.fade-in {
+  opacity: 1;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
 
-  /*=======================================================
+/*=======================================================
 General Styling
 =======================================================*/
 
-  .mBot5 {
-    margin-bottom: 5%;
-  }
+.mBot5 {
+  margin-bottom: 5%;
+}
 
-  .mBot10 {
-    margin-bottom: 10%;
-  }
+.mBot10 {
+  margin-bottom: 10%;
+}
 
-  .flex-group {
-    display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;
-    /* NEW, Spec - Firefox, Chrome, Opera */
-    position: relative;
-  }
+.flex-group {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  position: relative;
+}
 
-  /*=======================================================
+/*=======================================================
 Breakout and Fixes
 =======================================================*/
 
-  .fullDiv {
-    width: 100%;
-    min-width: 1024px;
-    max-width: 1680px;
-    position: relative;
-    overflow: hidden;
-  }
+.fullDiv {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1680px;
+  position: relative;
+  overflow: hidden;
+}
 
-  .fullDiv a {
-    color: #222;
-    text-decoration: none;
-  }
+.fullDiv a {
+  color: #222;
+  text-decoration: none;
+}
 
-  #pageWrap {
-    border-top: 2px solid #222;
-    max-width: 1680px;
-    min-width: 1024px;
-    width: 100%;
-    margin: 0 auto !important;
-    float: none !important;
-    clear: left;
-  }
+#pageWrap {
+  border-top: 2px solid #222;
+  max-width: 1680px;
+  min-width: 1024px;
+  width: 100%;
+  margin: 0 auto !important;
+  float: none !important;
+  clear: left;
+}
 
-  .content-layout {
-    max-width: 1680px !important;
-  }
+.content-layout {
+  max-width: 1680px !important;
+}
 
-  .content {
-    width: 100% !important;
-  }
+.content {
+  width: 100% !important;
+}
 
-  #bodyWrap {
-    padding: 0;
-  }
+#bodyWrap {
+  padding: 0;
+}
 
-  #jsExpand1 {
-    margin: 0 !important;
-  }
+#jsExpand1 {
+  margin: 0 !important;
+}
 
-  .fullImg {
-    width: 100%;
-    max-width: 1680px;
-  }
+.fullImg {
+  width: 100%;
+  max-width: 1680px;
+}
 
-  .main-content h2 {
-    color: #222;
-    margin: 0;
-    padding: 0;
-  }
+.main-content h2 {
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
 
-  .main-content a h2 {
-    padding: 0;
-  }
+.main-content a h2 {
+  padding: 0;
+}
 
-  .main-content p {
-    margin: 0;
-  }
+.main-content p {
+  margin: 0;
+}
 
-  /*=======================================================
+/*=======================================================
 Font Sizes
 =======================================================*/
 
+.headline-XL {
+  font-size: calc(62px + (110 - 62) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(42px + (50 - 42) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: -0.15vw;
+}
+
+.headline-large {
+  font-size: calc(61px + (100 - 61) * (100vw - 1024px) / (1440 - 1024));
+  line-height: 1;
+  letter-spacing: -3px;
+  word-spacing: -0.1vw;
+}
+
+.headline-medium {
+  font-size: calc(43px + (55 - 43) * (100vw - 1024px) / (1440 - 1024));
+  line-height: 1;
+  letter-spacing: -1px;
+  word-spacing: -0.1vw;
+}
+
+.headline-small {
+  font-size: calc(24px + (30 - 24) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(28px + (30 - 24) * (100vw - 1024px) / (1440 - 1024));
+  letter-spacing: 0.15vw;
+}
+
+.copy-sub {
+  font-size: calc(12px + (15 - 12) * (100vw - 1024px) / (1440 - 1024));
+  line-height: 1.2;
+}
+
+.copy-eyebrow {
+  font-size: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
+}
+
+.copy-cta {
+  font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
+  line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
+  text-transform: uppercase;
+}
+
+/*--- 1024px ---*/
+
+@media only screen and (max-width: 1024px) {
   .headline-XL {
-    font-size: calc(62px + (110 - 62) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(42px + (50 - 42) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: -0.15vw;
+    font-size: 60px;
+    line-height: 42px;
+    letter-spacing: -1.54px;
   }
-
   .headline-large {
-    font-size: calc(61px + (100 - 61) * (100vw - 1024px) / (1440 - 1024));
-    line-height: 1;
-    letter-spacing: -3px;
-    word-spacing: -0.1vw;
+    font-size: 61px;
   }
-
   .headline-medium {
-    font-size: calc(43px + (55 - 43) * (100vw - 1024px) / (1440 - 1024));
-    line-height: 1;
-    letter-spacing: -1px;
-    word-spacing: -0.1vw;
+    font-size: 43px;
   }
-
   .headline-small {
-    font-size: calc(24px + (30 - 24) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(28px + (30 - 24) * (100vw - 1024px) / (1440 - 1024));
-    letter-spacing: 0.15vw;
+    font-size: 24px;
   }
-
   .copy-sub {
-    font-size: calc(12px + (15 - 12) * (100vw - 1024px) / (1440 - 1024));
-    line-height: 1.2;
+    font-size: 12px;
   }
-
-  .copy-eyebrow {
-    font-size: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(13px + (16 - 13) * (100vw - 1024px) / (1440 - 1024));
-  }
-
   .copy-cta {
-    font-size: calc(10px + (14 - 10) * (100vw - 1024px) / (1440 - 1024));
-    line-height: calc(20px + (21 - 20) * (100vw - 1024px) / (1440 - 1024));
-    text-transform: uppercase;
+    font-size: 10px;
   }
-
-  /*--- 1024px ---*/
-
-  @media only screen and (max-width: 1024px) {
-    .headline-XL {
-      font-size: 60px;
-      line-height: 42px;
-      letter-spacing: -1.54px;
-    }
-    .headline-large {
-      font-size: 61px;
-    }
-    .headline-medium {
-      font-size: 43px;
-    }
-    .headline-small {
-      font-size: 24px;
-    }
-    .copy-sub {
-      font-size: 12px;
-    }
-    .copy-cta {
-      font-size: 10px;
-    }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-col__container-3__text {
+    top: 71%;
+    left: 62%;
   }
+}
 
-  @media only screen and (min-width: 1025px) {}
-
-  @media only screen and (min-width: 1250px) {}
-
-  @media only screen and (min-width: 1440px) {
-    .hero-col__container-3__text {
-      top: 71%;
-      left: 62%;
-    }
-  }
-
-  @media only screen and (min-width: 1680px) {}
 </style>
 
 <section class="main-content fullDiv">
@@ -652,7 +650,6 @@ Font Sizes
           </a>
         </div>
 
-
         <div class="flex-group">
           <div class="fade-up">
             <a href="/hayes-60-round-acacia-dining-table/s584624">
@@ -853,66 +850,61 @@ Font Sizes
 <!-- main-content -->
 
 <script>
-  function runTheThings() {
-    $(document).ready(function () {
-      function boxOpen() {
-        $(".empty-box, .empty-box--2, .empty-box--3").each(function (i) {
-          var bottom_of_object = $(this).offset().top;
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
-          if (bottom_of_window > bottom_of_object) {
-            $(this).addClass("expanded-box");
-          }
-        });
-      }
-
-      function fadeDown() {
-        $(".fade-up").each(function (i) {
-          var bottom_of_object = $(this).offset().top;
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
-          if (bottom_of_window > bottom_of_object) {
-            $(this).addClass("fade-down");
-            $(this).removeClass("fade-up");
-          } else {
-            $(this).removeClass("fade-down");
-            $(this).addClass("fade-up");
-          }
-        });
-      }
-
-      function fadeIn() {
-        $(".fade-out").each(function (i) {
-          var bottom_of_object = $(this).offset().top;
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
-          if (bottom_of_window > bottom_of_object) {
-            $(this).addClass("fade-in");
-            $(this).removeClass("fade-out");
-          } else {
-            $(this).removeClass("fade-in");
-            $(this).addClass("fade-out");
-          }
-        });
-      }
-
-      //when scrolling
-      window.addEventListener("scroll", function (event) {
-        fadeDown();
-        fadeIn();
+  // Custom function to contain all JavaScript/jQuery and to run on page load
+function runTheThings() {
+  $(document).ready(function() {
+    
+    // Function to fade up and in selected containers
+    function fadeDown() {
+      $(".fade-up").each(function(i) {
+        var bottom_of_object = $(this).offset().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if (bottom_of_window > bottom_of_object) {
+          $(this).addClass("fade-down");
+          $(this).removeClass("fade-up");
+        } else {
+          $(this).removeClass("fade-down");
+          $(this).addClass("fade-up");
+        }
       });
+    }
 
-      //onload check
+    // Function to just fade in selected containers
+    function fadeIn() {
+      $(".fade-out").each(function(i) {
+        var bottom_of_object = $(this).offset().top;
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        if (bottom_of_window > bottom_of_object) {
+          $(this).addClass("fade-in");
+          $(this).removeClass("fade-out");
+        } else {
+          $(this).removeClass("fade-in");
+          $(this).addClass("fade-out");
+        }
+      });
+    }
+
+    //when scrolling
+    window.addEventListener("scroll", function(event) {
       fadeDown();
       fadeIn();
     });
-  }
 
-  function jQueryIsLoaded() {
-    if (window.jQuery) {
-      console.log("jQuery is loaded");
+    //onload check
+    fadeDown();
+    fadeIn();
+  });
+}
 
-      runTheThings();
-    } else {
-      setTimeout(jQueryIsLoaded, 50);
-    }
+function jQueryIsLoaded() {
+  if (window.jQuery) {
+    console.log("jQuery is loaded");
+
+    runTheThings();
+  } else {
+    setTimeout(jQueryIsLoaded, 50);
   }
-  jQueryIsLoaded();
+}
+jQueryIsLoaded();
+
 </script>
